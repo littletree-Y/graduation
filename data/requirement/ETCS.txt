@@ -1,0 +1,136 @@
+The roll away/reverse movement intervention shall be indicated on the dmi.
+If the responsibility for the driver increases, the etcs shall seek an acknowledgement from the driver whether the train is stationary or not.
+The driver shall be able to release an etcs emergency brake application when stationary.
+The release speed shall be indicated on the dmi.
+The target distance to be displayed on the dmi shall be based on the most restrictive braking curve.
+When the train is stationary, the release speed calculation shall be based on the distance to the danger point.
+The new target location shall be checked for acceptance by the on board.
+On lines fitted with rbc, the etcs trainborne equipment shall be able to transmit the location of the entire train to the rbc.
+Actual speed shall be indicated on the dmi.
+Exit from shunting shall take place when the driver selects exit from shunting.
+The dmi shall indicate the result of the self-test.
+Transferring to full supervision shall occur automatically when a movement authority and all other necessary information is received through track-to-train transmission.
+Within the braking curve area, a warning shall be given to the driver to enable him to react and avoid intervention from etcs equipment at least 5 sec before the intervention.
+The supervised speed shall not be shown on the dmi.
+It shall be possible to use multiple traction units without isolating the etcs trainborne equipment on traction unit.
+Once received onboard, the national values shall remain valid even if the onboard equipment is switched off.
+In partial supervision the train shall be supervised according to train speed and distance data available.
+The occurrence of a failure shall be displayed on the dmi.
+Trains equipped for ertms/etcs application level 3 shall be able to run on lines equipped with ertms/etcs application level 3 2 1 and 0.
+The etcs trainborne equipment shall transmit its own train identification to the rbc.
+Information received shall not influence the traction unit with in-operative cabs.
+The target distance shall not be shown on the dmi unless selected by the driver.
+The dmi shall display information from national train control systems this may mean displaying the information shown by the national system.
+Information shall be shown on the dmi.
+Etcs shall be able to supervise train and shunting movements.
+When the traction unit has come to a standstill, the driver shall be able to release the emergency brake.
+The etcs trainborne equipment shall calculate the static train speed profile on the basis of infrastructure data and train data.
+When the etcs trainborne equipment is isolated, the system shall not show any etcs information other than the fact that the system is isolated.
+A train shall be supervised to its static and dynamic train speed profiles.
+The following data may be entered manually by the driver provided by external sources.
+If decided by a national value, the driver may release the etcs emergency brake when the actual speed is below the permitted speed.
+Train data may be entered automatically from a railway management system or from train memory.
+When the traction unit is stationary, the driver shall be required to acknowledge the train trip condition.
+Etcs is required to be functional to a maximum train speed of 500 km/h.
+The ceiling speed value for the unfitted operation shall be determined by the lower value out of.
+The driver shall acknowledge the level transitions if requested from trackside if the driver does not acknowledge after the transition.
+The driver shall have the possibility to select the language this does not concern non pre-defined texts sent from the trackside.
+Full supervision shall provide supervision of speed and distance.
+The supervised speed shall not be shown on the dmi unless selected by the driver.
+Isolation of the etcs trainborne equipment shall disconnect the etcs trainborne equipment from the vehicle braking system.
+The driver shall be able to select train data entry on the dmi.
+The on board shall be capable of sending train data to the trackside after confirmation by the driver or when entering the rbc area.
+Visual and acoustic warnings to the driver about possible intervention from etcs shall be given to enable the driver to react and avoid intervention.
+At start up the on board equipment shall perform an automatic self-test.
+The retention period for the recorded data will be different and two levels are foreseen.
+The emergency brake shall be applied until the traction unit is stationary.
+Unfitted operation shall be possible if selected by the driver at start up.
+There shall be no discrepancy between the speed shown to the driver and the speed used for supervision of movement authorities and speed limits function.
+Unfitted operation shall be possible if ordered by trackside.
+It shall be possible to command an immediate train stop.
+It shall be possible to revoke a movement authority that has already been issued to a train in a co-operative way between rbc and train.
+The driver shall be able to confirm the train integrity to the rbc manually.
+The driver shall select an override control according to the permission received.
+When the train passes the stop signal, the train trip function shall be suppressed.
+It shall be possible to drive the train backwards in a supervised way according to information received from trackside.
+The onboard equipment shall display plain text messages as received.
+An etcs equipped traction unit shall be capable of being moved in shunting without train data, track data or movement authority.
+The etcs on-board shall be capable of receiving information about pantograph and power supply from the trackside.
+On request of the rbc, the driver shall have the possibility to confirm that the track ahead of him until the end of the on sight section is clear.
+The train shall be supervised according to train speed data available.
+The current operational status shall be indicated to the driver on the dmi.
+The train shall as a minimum be supervised to a ceiling speed.
+Standardised output interfaces shall enable transmission of information recorded to other media for investigation.
+The on board shall supervise the train against a ceiling speed.
+The supervised shunting speed shall be indicated to the driver on request.
+Etcs shall supervise shunting movement to a permitted national speed value.
+The etcs trainborne equipment shall indicate on the dmi the information regarding pantograph and power supply.
+It shall be possible to send fixed text messages from track to train.
+The driver shall know the distance to the next point defining the indicated braking curve and the permitted speed allowed this shall be shown to the driver in a way that is understandable and logical.
+The driver shall be able to consult train data when the train is stationary or moving.
+The train shall leave partial supervision when the trainborne equipment is not operative any longer when shunting is selected or when full supervision is available.
+It shall be possible to send plain text messages from track to train.
+The test shall require no action on the part of the driver.
+The etcs on-board shall be capable of receiving information regarding air tightness from the trackside.
+The character set used shall support different languages.
+When changing to a lower speed level, the front end of the train shall respect the dynamic train speed profile.
+It shall also be possible to allow the driver to change the adhesion conditions.
+during the transition period between two operational states, the supervision provided shall at least ensure the same protection provided by the least restrictive state.
+Before entering an occupied track, a driver acknowledgement shall be requested.
+The train shall have the capability of being supervised to a ceiling speed.
+When the train is stationary, the condition for this change shall be defined for each target as infrastructure data.
+The driver shall be able to override the function when the train is stationary.
+If the release speed is calculated on board, it shall ensure that the train will stop before reaching the danger point.
+The etcs on-board shall be capable of receiving national values from the trackside to adapt to national requirements.
+The etcs trainborne equipment shall be capable of supervising the following operational states.
+If the train or the shunting movement exceeds the permitted ceiling speed by a certain harmonised margin, the trainborne equipment shall execute a brake intervention until the actual speed does not exceed permitted speed.
+Permission received shall be indicated to the driver.
+If supervised by an rbc, it shall be possible to command an emergency stop to all trains in a particular area or to a specific train.
+If an etcs equipped train passes a level transition to a line fitted with more than one level, the onboard shall switch to the highest level according to the priority given by trackside for which it is equipped.
+Route unsuitability shall be indicated on the dmi.
+If an etcs equipped train passes a level transition to one or more levels for which it is not equipped, etcs shall initiate a brake application.
+Trains equipped for ertms/etcs application level 2 shall be able to run on lines equipped with ertms/etcs application level 2 1 and 0.
+Stored train data shall be offered to the driver to be confirmed when data entry starts.
+The etcs on-board shall be capable of sending to the trackside train integrity information detected by a system outside etcs.
+It shall be possible to manually select shunting from stand by operation, full supervision operation or partial supervision operation.
+Default values shall be harmonised values permanently stored in all ertms/etcs on board equipment.
+The entry of driver identification and the selection of the language shall be possible.
+The emergency stop shall be indicated to the driver on the dmi.
+Actual speed shall still be shown on the dmi.
+If the train is equipped with two operational radios, there shall be no performance penalty as a result of a transition from one rbc to another.
+The information regarding lowering and raising of the pantograph and opening/closing of the circuit breaker shall be provided separately and in combinations.
+If the onboard fails to contact the rbc when awakening, the driver shall be asked to enter the rbc contact details.
+It shall be possible to send information on adhesion conditions from trackside.
+The driver shall be able to use the reversing function without needing to re-confirm the train data.
+To prevent unauthorised use of the function, permission shall be obtained from the rbc if the train is operating under the control of the rbc.
+The etcs trainborne equipment shall be able to determine the location of the entire train.
+Trains equipped for ertms/etcs application level 1 shall be able to run on lines equipped with ertms/etcs application level 1 and 0.
+For transitions to and from national operation, the etcs shall request an acknowledgement by the driver.
+This static train speed profile shall also respect maximum line speed and track speed and special speed levels for special classes of trains.
+The following data may be entered manually by the driver or from train memory.
+If the train is equipped with only one operational radio, passing from one rbc to another shall still be possible but might result in a performance penalty.
+If there are failures of the trainborne equipment which compromise the safety of train supervision, the etcs trainborne equipment shall immediately command the brake and bring the train to a stop.
+The following train data shall be sent from the on board to the trackside.
+Etcs shall be compatible with existing national systems listed in the ccs tsi such that it does not interfere with the national systems and is not interfered with by the national systems.
+Operation of the train trip shall be indicated on the dmi.
+The etcs on-board shall be capable of receiving track description from the trackside.
+The current application level shall be indicated on the dmi.
+If acknowledgement is specified, the driver shall acknowledge transfer from full supervision to partial supervision within 5 seconds.
+Where failure to apply the full service brake is detected, the emergency brake shall stop the train in rear of the danger point.
+In case the transition has to be acknowledged and the driver fails to acknowledge as required, the etcs shall initiate a brake application.
+Etcs shall calculate the permitted speed for the train for all locations of the authorised movement.
+When changing to a higher speed level, the rear end of the train shall respect the static train speed profile.
+The etcs trainborne equipment shall be capable of being isolated.
+After the acknowledgement, the driver shall be able to continue the movement.
+A special indication shall be shown on the dmi.
+After releasing the emergency brake, etcs will provide the supervision appertaining when roll away protection was initiated.
+This ceiling speed shall not be shown continually on the dmi but may be shown momentarily when selected by the driver.
+On demand the position of the front end of the train at the time of the demand shall be indicated on the dmi this shall be possible while the train is moving or stationary.
+Partial supervision shall be indicated on the dmi.
+The distance supervised can be extended from the trackside.
+The trainborne equipment shall remain in full supervision until the trainborne equipment is not active any longer when shunting is selected or when partial supervision information is received.
+It shall be possible to use tandem traction units without isolating the etcs trainborne equipment on the tandem traction unit.
+Reversing shall be supervised to a distance and speed set as national values.
+It shall be possible to order a train trip when passing a stop signal.
+When the plain text message appears on the dmi, the driver shall be alerted.
+The etcs trainborne equipment shall be capable of receiving information from the national train control systems by means of the stm.

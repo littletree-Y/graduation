@@ -1,0 +1,136 @@
+{"id": 0, "text": "The roll away/reverse movement intervention shall be indicated on the dmi."}
+{"id": 1, "text": "If the responsibility for the driver increases, the etcs shall seek an acknowledgement from the driver whether the train is stationary or not."}
+{"id": 2, "text": "The driver shall be able to release an etcs emergency brake application when stationary."}
+{"id": 3, "text": "The release speed shall be indicated on the dmi."}
+{"id": 4, "text": "The target distance to be displayed on the dmi shall be based on the most restrictive braking curve."}
+{"id": 5, "text": "When the train is stationary, the release speed calculation shall be based on the distance to the danger point."}
+{"id": 6, "text": "The new target location shall be checked for acceptance by the on board."}
+{"id": 7, "text": "On lines fitted with rbc, the etcs trainborne equipment shall be able to transmit the location of the entire train to the rbc."}
+{"id": 8, "text": "Actual speed shall be indicated on the dmi."}
+{"id": 9, "text": "Exit from shunting shall take place when the driver selects exit from shunting."}
+{"id": 10, "text": "The dmi shall indicate the result of the self-test."}
+{"id": 11, "text": "Transferring to full supervision shall occur automatically when a movement authority and all other necessary information is received through track-to-train transmission."}
+{"id": 12, "text": "Within the braking curve area, a warning shall be given to the driver to enable him to react and avoid intervention from etcs equipment at least 5 sec before the intervention."}
+{"id": 13, "text": "The supervised speed shall not be shown on the dmi."}
+{"id": 14, "text": "It shall be possible to use multiple traction units without isolating the etcs trainborne equipment on traction unit."}
+{"id": 15, "text": "Once received onboard, the national values shall remain valid even if the onboard equipment is switched off."}
+{"id": 16, "text": "In partial supervision the train shall be supervised according to train speed and distance data available."}
+{"id": 17, "text": "The occurrence of a failure shall be displayed on the dmi."}
+{"id": 18, "text": "Trains equipped for ertms/etcs application level 3 shall be able to run on lines equipped with ertms/etcs application level 3 2 1 and 0."}
+{"id": 19, "text": "The etcs trainborne equipment shall transmit its own train identification to the rbc."}
+{"id": 20, "text": "Information received shall not influence the traction unit with in-operative cabs."}
+{"id": 21, "text": "The target distance shall not be shown on the dmi unless selected by the driver."}
+{"id": 22, "text": "The dmi shall display information from national train control systems this may mean displaying the information shown by the national system."}
+{"id": 23, "text": "Information shall be shown on the dmi."}
+{"id": 24, "text": "Etcs shall be able to supervise train and shunting movements."}
+{"id": 25, "text": "When the traction unit has come to a standstill, the driver shall be able to release the emergency brake."}
+{"id": 26, "text": "The etcs trainborne equipment shall calculate the static train speed profile on the basis of infrastructure data and train data."}
+{"id": 27, "text": "When the etcs trainborne equipment is isolated, the system shall not show any etcs information other than the fact that the system is isolated."}
+{"id": 28, "text": "A train shall be supervised to its static and dynamic train speed profiles."}
+{"id": 29, "text": "The following data may be entered manually by the driver provided by external sources."}
+{"id": 30, "text": "If decided by a national value, the driver may release the etcs emergency brake when the actual speed is below the permitted speed."}
+{"id": 31, "text": "Train data may be entered automatically from a railway management system or from train memory."}
+{"id": 32, "text": "When the traction unit is stationary, the driver shall be required to acknowledge the train trip condition."}
+{"id": 33, "text": "Etcs is required to be functional to a maximum train speed of 500 km/h."}
+{"id": 34, "text": "The ceiling speed value for the unfitted operation shall be determined by the lower value out of."}
+{"id": 35, "text": "The driver shall acknowledge the level transitions if requested from trackside if the driver does not acknowledge after the transition."}
+{"id": 36, "text": "The driver shall have the possibility to select the language this does not concern non pre-defined texts sent from the trackside."}
+{"id": 37, "text": "Full supervision shall provide supervision of speed and distance."}
+{"id": 38, "text": "The supervised speed shall not be shown on the dmi unless selected by the driver."}
+{"id": 39, "text": "Isolation of the etcs trainborne equipment shall disconnect the etcs trainborne equipment from the vehicle braking system."}
+{"id": 40, "text": "The driver shall be able to select train data entry on the dmi."}
+{"id": 41, "text": "The on board shall be capable of sending train data to the trackside after confirmation by the driver or when entering the rbc area."}
+{"id": 42, "text": "Visual and acoustic warnings to the driver about possible intervention from etcs shall be given to enable the driver to react and avoid intervention."}
+{"id": 43, "text": "At start up the on board equipment shall perform an automatic self-test."}
+{"id": 44, "text": "The retention period for the recorded data will be different and two levels are foreseen."}
+{"id": 45, "text": "The emergency brake shall be applied until the traction unit is stationary."}
+{"id": 46, "text": "Unfitted operation shall be possible if selected by the driver at start up."}
+{"id": 47, "text": "There shall be no discrepancy between the speed shown to the driver and the speed used for supervision of movement authorities and speed limits function."}
+{"id": 48, "text": "Unfitted operation shall be possible if ordered by trackside."}
+{"id": 49, "text": "It shall be possible to command an immediate train stop."}
+{"id": 50, "text": "It shall be possible to revoke a movement authority that has already been issued to a train in a co-operative way between rbc and train."}
+{"id": 51, "text": "The driver shall be able to confirm the train integrity to the rbc manually."}
+{"id": 52, "text": "The driver shall select an override control according to the permission received."}
+{"id": 53, "text": "When the train passes the stop signal, the train trip function shall be suppressed."}
+{"id": 54, "text": "It shall be possible to drive the train backwards in a supervised way according to information received from trackside."}
+{"id": 55, "text": "The onboard equipment shall display plain text messages as received."}
+{"id": 56, "text": "An etcs equipped traction unit shall be capable of being moved in shunting without train data, track data or movement authority."}
+{"id": 57, "text": "The etcs on-board shall be capable of receiving information about pantograph and power supply from the trackside."}
+{"id": 58, "text": "On request of the rbc, the driver shall have the possibility to confirm that the track ahead of him until the end of the on sight section is clear."}
+{"id": 59, "text": "The train shall be supervised according to train speed data available."}
+{"id": 60, "text": "The current operational status shall be indicated to the driver on the dmi."}
+{"id": 61, "text": "The train shall as a minimum be supervised to a ceiling speed."}
+{"id": 62, "text": "Standardised output interfaces shall enable transmission of information recorded to other media for investigation."}
+{"id": 63, "text": "The on board shall supervise the train against a ceiling speed."}
+{"id": 64, "text": "The supervised shunting speed shall be indicated to the driver on request."}
+{"id": 65, "text": "Etcs shall supervise shunting movement to a permitted national speed value."}
+{"id": 66, "text": "The etcs trainborne equipment shall indicate on the dmi the information regarding pantograph and power supply."}
+{"id": 67, "text": "It shall be possible to send fixed text messages from track to train."}
+{"id": 68, "text": "The driver shall know the distance to the next point defining the indicated braking curve and the permitted speed allowed this shall be shown to the driver in a way that is understandable and logical."}
+{"id": 69, "text": "The driver shall be able to consult train data when the train is stationary or moving."}
+{"id": 70, "text": "The train shall leave partial supervision when the trainborne equipment is not operative any longer when shunting is selected or when full supervision is available."}
+{"id": 71, "text": "It shall be possible to send plain text messages from track to train."}
+{"id": 72, "text": "The test shall require no action on the part of the driver."}
+{"id": 73, "text": "The etcs on-board shall be capable of receiving information regarding air tightness from the trackside."}
+{"id": 74, "text": "The character set used shall support different languages."}
+{"id": 75, "text": "When changing to a lower speed level, the front end of the train shall respect the dynamic train speed profile."}
+{"id": 76, "text": "It shall also be possible to allow the driver to change the adhesion conditions."}
+{"id": 77, "text": "during the transition period between two operational states, the supervision provided shall at least ensure the same protection provided by the least restrictive state."}
+{"id": 78, "text": "Before entering an occupied track, a driver acknowledgement shall be requested."}
+{"id": 79, "text": "The train shall have the capability of being supervised to a ceiling speed."}
+{"id": 80, "text": "When the train is stationary, the condition for this change shall be defined for each target as infrastructure data."}
+{"id": 81, "text": "The driver shall be able to override the function when the train is stationary."}
+{"id": 82, "text": "If the release speed is calculated on board, it shall ensure that the train will stop before reaching the danger point."}
+{"id": 83, "text": "The etcs on-board shall be capable of receiving national values from the trackside to adapt to national requirements."}
+{"id": 84, "text": "The etcs trainborne equipment shall be capable of supervising the following operational states."}
+{"id": 85, "text": "If the train or the shunting movement exceeds the permitted ceiling speed by a certain harmonised margin, the trainborne equipment shall execute a brake intervention until the actual speed does not exceed permitted speed."}
+{"id": 86, "text": "Permission received shall be indicated to the driver."}
+{"id": 87, "text": "If supervised by an rbc, it shall be possible to command an emergency stop to all trains in a particular area or to a specific train."}
+{"id": 88, "text": "If an etcs equipped train passes a level transition to a line fitted with more than one level, the onboard shall switch to the highest level according to the priority given by trackside for which it is equipped."}
+{"id": 89, "text": "Route unsuitability shall be indicated on the dmi."}
+{"id": 90, "text": "If an etcs equipped train passes a level transition to one or more levels for which it is not equipped, etcs shall initiate a brake application."}
+{"id": 91, "text": "Trains equipped for ertms/etcs application level 2 shall be able to run on lines equipped with ertms/etcs application level 2 1 and 0."}
+{"id": 92, "text": "Stored train data shall be offered to the driver to be confirmed when data entry starts."}
+{"id": 93, "text": "The etcs on-board shall be capable of sending to the trackside train integrity information detected by a system outside etcs."}
+{"id": 94, "text": "It shall be possible to manually select shunting from stand by operation, full supervision operation or partial supervision operation."}
+{"id": 95, "text": "Default values shall be harmonised values permanently stored in all ertms/etcs on board equipment."}
+{"id": 96, "text": "The entry of driver identification and the selection of the language shall be possible."}
+{"id": 97, "text": "The emergency stop shall be indicated to the driver on the dmi."}
+{"id": 98, "text": "Actual speed shall still be shown on the dmi."}
+{"id": 99, "text": "If the train is equipped with two operational radios, there shall be no performance penalty as a result of a transition from one rbc to another."}
+{"id": 100, "text": "The information regarding lowering and raising of the pantograph and opening/closing of the circuit breaker shall be provided separately and in combinations."}
+{"id": 101, "text": "If the onboard fails to contact the rbc when awakening, the driver shall be asked to enter the rbc contact details."}
+{"id": 102, "text": "It shall be possible to send information on adhesion conditions from trackside."}
+{"id": 103, "text": "The driver shall be able to use the reversing function without needing to re-confirm the train data."}
+{"id": 104, "text": "To prevent unauthorised use of the function, permission shall be obtained from the rbc if the train is operating under the control of the rbc."}
+{"id": 105, "text": "The etcs trainborne equipment shall be able to determine the location of the entire train."}
+{"id": 106, "text": "Trains equipped for ertms/etcs application level 1 shall be able to run on lines equipped with ertms/etcs application level 1 and 0."}
+{"id": 107, "text": "For transitions to and from national operation, the etcs shall request an acknowledgement by the driver."}
+{"id": 108, "text": "This static train speed profile shall also respect maximum line speed and track speed and special speed levels for special classes of trains."}
+{"id": 109, "text": "The following data may be entered manually by the driver or from train memory."}
+{"id": 110, "text": "If the train is equipped with only one operational radio, passing from one rbc to another shall still be possible but might result in a performance penalty."}
+{"id": 111, "text": "If there are failures of the trainborne equipment which compromise the safety of train supervision, the etcs trainborne equipment shall immediately command the brake and bring the train to a stop."}
+{"id": 112, "text": "The following train data shall be sent from the on board to the trackside."}
+{"id": 113, "text": "Etcs shall be compatible with existing national systems listed in the ccs tsi such that it does not interfere with the national systems and is not interfered with by the national systems."}
+{"id": 114, "text": "Operation of the train trip shall be indicated on the dmi."}
+{"id": 115, "text": "The etcs on-board shall be capable of receiving track description from the trackside."}
+{"id": 116, "text": "The current application level shall be indicated on the dmi."}
+{"id": 117, "text": "If acknowledgement is specified, the driver shall acknowledge transfer from full supervision to partial supervision within 5 seconds."}
+{"id": 118, "text": "Where failure to apply the full service brake is detected, the emergency brake shall stop the train in rear of the danger point."}
+{"id": 119, "text": "In case the transition has to be acknowledged and the driver fails to acknowledge as required, the etcs shall initiate a brake application."}
+{"id": 120, "text": "Etcs shall calculate the permitted speed for the train for all locations of the authorised movement."}
+{"id": 121, "text": "When changing to a higher speed level, the rear end of the train shall respect the static train speed profile."}
+{"id": 122, "text": "The etcs trainborne equipment shall be capable of being isolated."}
+{"id": 123, "text": "After the acknowledgement, the driver shall be able to continue the movement."}
+{"id": 124, "text": "A special indication shall be shown on the dmi."}
+{"id": 125, "text": "After releasing the emergency brake, etcs will provide the supervision appertaining when roll away protection was initiated."}
+{"id": 126, "text": "This ceiling speed shall not be shown continually on the dmi but may be shown momentarily when selected by the driver."}
+{"id": 127, "text": "On demand the position of the front end of the train at the time of the demand shall be indicated on the dmi this shall be possible while the train is moving or stationary."}
+{"id": 128, "text": "Partial supervision shall be indicated on the dmi."}
+{"id": 129, "text": "The distance supervised can be extended from the trackside."}
+{"id": 130, "text": "The trainborne equipment shall remain in full supervision until the trainborne equipment is not active any longer when shunting is selected or when partial supervision information is received."}
+{"id": 131, "text": "It shall be possible to use tandem traction units without isolating the etcs trainborne equipment on the tandem traction unit."}
+{"id": 132, "text": "Reversing shall be supervised to a distance and speed set as national values."}
+{"id": 133, "text": "It shall be possible to order a train trip when passing a stop signal."}
+{"id": 134, "text": "When the plain text message appears on the dmi, the driver shall be alerted."}
+{"id": 135, "text": "The etcs trainborne equipment shall be capable of receiving information from the national train control systems by means of the stm."}
