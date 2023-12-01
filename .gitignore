@@ -3,3 +3,4 @@
 
 # 忽略pipeline/__pycache__文件夹
 pipeline/__pycache__/
+.ssh

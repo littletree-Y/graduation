@@ -40,10 +40,3 @@ def get_top_k(a, b, k):
 
     similarity_scores = -similarity_scores
     return matched_indices, similarity_scores
-    # results = []
-    # for i, indices in enumerate(matched_indices):
-    #     text = a[i]
-    #     matches = [b[j] for j in indices]
-    #     scores = [-similarity_scores[i][j] for j in range(k)]
-    #     results.append((text, matches, scores))
-    # return results
