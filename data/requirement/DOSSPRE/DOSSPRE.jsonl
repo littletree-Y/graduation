@@ -1,0 +1,933 @@
+{"requirement": "'The system shall analyze the detected vulnerability '", "cate": "functional", "id": 0}
+{"requirement": "'The system shall identify acceptable low false positive rates '", "cate": "functional", "id": 1}
+{"requirement": "'The system shall inspect SSL certificate '", "cate": "functional", "id": 2}
+{"requirement": "'The system shall generate a report of the detected and analyzed vulnerabilities'", "cate": "functional", "id": 3}
+{"requirement": "'The system shall allow parameter inputs to be supplied using different user-friendly input components that are based on Graphical User Interface (GUI) concepts '", "cate": "functional", "id": 4}
+{"requirement": "'The system reports shall be delivered in industry-standard format '", "cate": "functional", "id": 5}
+{"requirement": "'The system shall be able to carefully diagnose the real vulnerabilities when they exist based on conducting formula-based experiments. '", "cate": "functional", "id": 6}
+{"requirement": "'The system shall analyze the detected vulnerability '", "cate": "functional", "id": 7}
+{"requirement": "'The system shall inspect SSL certificate '", "cate": "functional", "id": 8}
+{"requirement": "'The system shall generate a report of the detected and analyzed vulnerabilities '", "cate": "functional", "id": 9}
+{"requirement": "'The system shall allow parameter inputs to be supplied using different user-friendly input components that are based on Graphical User Interface (GUI) concepts '", "cate": "functional", "id": 10}
+{"requirement": "'The system reports shall be delivered in industry-standard format '", "cate": "functional", "id": 11}
+{"requirement": "'The system shall be able to carefully diagnose the real vulnerabilities when they exist based on conducting formula-based experiments. '", "cate": "functional", "id": 12}
+{"requirement": "'The system shall allow cloud user to register and create an account. In the registration process, the system shall capture user details such as user name, id number, email address, mobile number, etc. '", "cate": "functional", "id": 13}
+{"requirement": "'Upon registration, the system must generate a shared encryption key. '", "cate": "functional", "id": 14}
+{"requirement": "'The system shall allow the user to upload and download stored files. '", "cate": "functional", "id": 15}
+{"requirement": "'The system shall provide a platform that allows the user to upload files for storage and also to retrieve the files by downloading them when required.'", "cate": "functional", "id": 16}
+{"requirement": "'The system shall allow a member to spontaneously form a group of n signers using group public keys which associate the group members. '", "cate": "functional", "id": 17}
+{"requirement": "'The system shall allow a whistle-blower to send the message digest (message m + signature ?) using his mobile phone to Zimbabwe Anti-Corruption Commission. '", "cate": "functional", "id": 18}
+{"requirement": "'The system shall create an environment for embedding and extracting the watermark from an image. '", "cate": "functional", "id": 19}
+{"requirement": "'The system shall also provide a section for verification in the sense that if an image is said to have a watermark it should be able to detect and display the watermark. '", "cate": "functional", "id": 20}
+{"requirement": "'The system shall allow an author who desires to protect his/her work from unauthorized use to upload an image with his/her visible digital watermark along with the registration number '", "cate": "functional", "id": 21}
+{"requirement": "'The system shall allow the administrator to embed the invisible digital watermark whenever an author submits his /her piece of art '", "cate": "functional", "id": 22}
+{"requirement": "'The system shall be able to take face pictures of a suspect'", "cate": "functional", "id": 23}
+{"requirement": "'The system shall be able to save taken pictures into the database'", "cate": "functional", "id": 24}
+{"requirement": "'The system shall optionally allow the user to destroy the suspect\u2019s details files or save them for future records in a secure database '", "cate": "functional", "id": 25}
+{"requirement": "'The system shall be able to match current picture with database pictures'", "cate": "functional", "id": 26}
+{"requirement": "'The system shall be able to retrieve criminal records from the database based on pictures taken '", "cate": "functional", "id": 27}
+{"requirement": "'The system shall utilize a centralized database '", "cate": "functional", "id": 28}
+{"requirement": "The system shall be able to push warning script to the rogue node.'", "cate": "functional", "id": 29}
+{"requirement": "'The system shall be able to Recover unique identifiers of the node which was used to generate the node s unique ID/fingerprint upon registration when the owner entered/joined the university with it '", "cate": "functional", "id": 30}
+{"requirement": "'The system shall be able to check with students laptop and university PC register and search for device matching the rogue node and corresponding student and student personal details. '", "cate": "functional", "id": 31}
+{"requirement": "'The system shall be able to display message on rogue note screen warning the student by name that port scanning is not allowed and this is automatically added to the student s record if such an offence is repeated more than once. '", "cate": "functional", "id": 32}
+{"requirement": "'The system shall be able to generate monthly reports which can be viewed by network admin when necessary. '", "cate": "functional", "id": 33}
+{"requirement": "'The system shall look at port scanning only on the host it will be deployed on, this will devote all the listen to one part of the many policies in a computer'", "cate": "functional", "id": 34}
+{"requirement": "'The system shall be able to detect an approaching figure. '", "cate": "functional", "id": 35}
+{"requirement": "'The system shall be able to input digits and display the punched digits. '", "cate": "functional", "id": 36}
+{"requirement": "'The system shall allow the buzzer to ring if 3 consecutive wrong attempts are made. '", "cate": "functional", "id": 37}
+{"requirement": "'The system shall allow GSM to send an SMS alert message when 3 consecutive wrong attempts are entered'", "cate": "functional", "id": 38}
+{"requirement": "'The system shall send child SMS to parent device '", "cate": "functional", "id": 39}
+{"requirement": "'The system shall forward child SMS/MMS to an email account '", "cate": "functional", "id": 40}
+{"requirement": "'The system shall send phone call notifications of child device as SMS '", "cate": "functional", "id": 41}
+{"requirement": "'The system shall forward phone call notifications of child device to an email account'", "cate": "functional", "id": 42}
+{"requirement": "'The system shall be able to request for phone location by a SMS of parent device '", "cate": "functional", "id": 43}
+{"requirement": "'The system shall be able to record phone call in audio file forwarded with notification if parent asked for those (forward by email only) '", "cate": "functional", "id": 44}
+{"requirement": "'The system shall be able to send phone location with a time period '", "cate": "functional", "id": 45}
+{"requirement": "'The system shall be able to forward pictures '", "cate": "functional", "id": 46}
+{"requirement": "'The system shall be able to send a random screen shot of videos played in phone (forward by email only)'", "cate": "functional", "id": 47}
+{"requirement": "'The system shall be able to remotely start/stop mic record with keyword in SMS and forward the audio file by email '", "cate": "functional", "id": 48}
+{"requirement": "'The system shall be able to access contacts list in child device '", "cate": "functional", "id": 49}
+{"requirement": "'The system shall be able to disable/Enable applications list with keyword in SMS '", "cate": "functional", "id": 50}
+{"requirement": "'The system shall be able to keep reminders about a child '", "cate": "functional", "id": 51}
+{"requirement": "'The system-+ shall be able to collect and analyse data that the child is typing and if it captures certain keywords or a continuous sequence of expletives, it should send an alert through text to the parent\u2019s smartphone. '", "cate": "functional", "id": 52}
+{"requirement": "'The system shall prevent any applications from being installed or uninstalled '", "cate": "functional", "id": 53}
+{"requirement": "'The system shall allow a user who has a functional account with the Twitter platform to create an application to access tokens. '", "cate": "functional", "id": 54}
+{"requirement": "'The system shall be able to connect to Twitter Streaming API. '", "cate": "functional", "id": 55}
+{"requirement": "'The system shall be able to pre-process the unstructured data into meaning information and match with existing keywords in database. '", "cate": "functional", "id": 56}
+{"requirement": "'The system shall be able to apply a classification algorithm for classification of the processed tweets matching with the labeled tweets in the tweet corpus. '", "cate": "functional", "id": 57}
+{"requirement": "'The system will be used by government officials to bring relevant information to the user unlike the normal web search where web information retrieval is difficult as hundreds of irrelevant documents are returned in response to a search query. '", "cate": "functional", "id": 58}
+{"requirement": "'The system shall sync with a major international Bitcoin exchange for real time exchange prices. '", "cate": "functional", "id": 59}
+{"requirement": "'The system shall provide currency calculator for Bitcoin conversion to USD. '", "cate": "functional", "id": 60}
+{"requirement": "'The system shall provide web of trust reputation statistics '", "cate": "functional", "id": 61}
+{"requirement": "'The system shall capture and store all transactions.'", "cate": "functional", "id": 62}
+{"requirement": "'The system shall manage user profiles. '", "cate": "functional", "id": 63}
+{"requirement": "'The system shall enable Bitcoin transaction processing '", "cate": "functional", "id": 64}
+{"requirement": "'The system shall be able to sync with other exchange platforms for exchange prices. '", "cate": "functional", "id": 65}
+{"requirement": "' The system shall comply with the anti-money laundering guidelines of Zimbabwe. '", "cate": "functional", "id": 66}
+{"requirement": "'The system shall allow a member to spontaneously form a group of n signers using group public keys which associate the group members. '", "cate": "functional", "id": 67}
+{"requirement": "'The system shall allow a whistle-blower to send the message digest (message m + signature ?) using his mobile phone to Zimbabwe Anti-Corruption Commission. '", "cate": "functional", "id": 68}
+{"requirement": "'The system shall monitor motion through cameras.  '", "cate": "functional", "id": 69}
+{"requirement": "'The system shall report motion and alert the responsible parties after analyzing the conditions without the aid of external motion detection sensors. '", "cate": "functional", "id": 70}
+{"requirement": "'The system shall create a snapshot of the user\u2019s usual average CPU utilization percentage, in order to subsequently be used as a basis for comparison, enabling the detection of the tremendous CPU load increase caused by cryptojacking.'", "cate": "functional", "id": 71}
+{"requirement": "'The system shall produce a pop-up notification reporting the detected cryptojacking activity. '", "cate": "functional", "id": 72}
+{"requirement": "'The system shall automatically send email alerts of detected cryptojacking activity.  '", "cate": "functional", "id": 73}
+{"requirement": "' The system should offer password strength measuring capability to suggest password security improvements to the user. '", "cate": "functional", "id": 74}
+{"requirement": "'The system shall capture user\u2019s keyboard typing pattern and mouse movement pattern during registration. '", "cate": "functional", "id": 75}
+{"requirement": "'The system shall enable unique features to be extracted using datasets. '", "cate": "functional", "id": 76}
+{"requirement": "'The system shall learn the user\u2019s unique pattern using Na\u00efve Bayes algorithms and store the template in the database. '", "cate": "functional", "id": 77}
+{"requirement": "'The system shall give an update of balance left after every toll deduction by SMS reporting '", "cate": "functional", "id": 78}
+{"requirement": "'The system shall allow adding of a new user and updating current ones. '", "cate": "functional", "id": 79}
+{"requirement": "'The system shall be able to show all the business units that are registered afore user make a selection '", "cate": "functional", "id": 80}
+{"requirement": "'The system shall be able to create reports from activity in the system. '", "cate": "functional", "id": 81}
+{"requirement": "'The system shall allow entering the name of the individual whose details and PII are to be searched. '", "cate": "functional", "id": 82}
+{"requirement": "'The system shall allow the web application access to the social sites public profiles  '", "cate": "functional", "id": 83}
+{"requirement": "'The system shall allow Selenium scraping an individual\u2019s personally identifiable information. '", "cate": "functional", "id": 84}
+{"requirement": "'The system shall allow extraction of the personally identifiable information. '", "cate": "functional", "id": 85}
+{"requirement": "'The system shall display the personally identifiable information on a graphical user interface. '", "cate": "functional", "id": 86}
+{"requirement": "'The system shall access a profile from which the PII is scraped and displayed on the graphical user interface. '", "cate": "functional", "id": 87}
+{"requirement": "'The system should be able to generate USSD codes for the transaction. '", "cate": "functional", "id": 88}
+{"requirement": "'The system should be able to send the messages to the target number. '", "cate": "functional", "id": 89}
+{"requirement": "'The system should comply with laws governing the technology to be used'", "cate": "functional", "id": 90}
+{"requirement": "'The system should be able to terminate transaction after ninety seconds of no response.'", "cate": "functional", "id": 91}
+{"requirement": "'The system shall allow a user to have a functional account on the enterprise application '", "cate": "functional", "id": 92}
+{"requirement": "'A classification algorithm should be applied to determine the probability of a claim being fraudulent'", "cate": "functional", "id": 93}
+{"requirement": "'The system should flag a claim whose score exceeds the threshold '", "cate": "functional", "id": 94}
+{"requirement": "'System should allow users to download reports. '", "cate": "functional", "id": 95}
+{"requirement": "'System shall allow user input of Licence number/National I.D Number/Registration Number.'", "cate": "functional", "id": 96}
+{"requirement": "'The system shall allow the user to input the Licence number/national I.D Number of the driver in the system '", "cate": "functional", "id": 97}
+{"requirement": "'The system shall allow the user to capture Vehicle Registration Number using camera '", "cate": "functional", "id": 98}
+{"requirement": "'The system shall allow Fingerprint Verification of the Licence Owner'", "cate": "functional", "id": 99}
+{"requirement": "'The system shall allow the user to extract the Registration Number '", "cate": "functional", "id": 100}
+{"requirement": "'The system shall allow the user to query the database '", "cate": "functional", "id": 101}
+{"requirement": "'The system shall display the profile of licence owner '", "cate": "functional", "id": 102}
+{"requirement": "'The system shall be able to close the session '", "cate": "functional", "id": 103}
+{"requirement": "'The system shall have the ability of scanning imagines of vehicle registration numbers and undergo pattern recognition for database matching'", "cate": "functional", "id": 104}
+{"requirement": "'The system should be able to capture windows log files independent from the Window Operating System '", "cate": "functional", "id": 105}
+{"requirement": "'The system should be able to analyse the captured logs using a visual approach '", "cate": "functional", "id": 106}
+{"requirement": "'The system shall ensure the exchange of data is between some target host computers on the same network and web-based application software. '", "cate": "functional", "id": 107}
+{"requirement": "'The system shall allow a user to create and load an image '", "cate": "functional", "id": 108}
+{"requirement": "'The system shall facilitate case management for ZRP'", "cate": "functional", "id": 109}
+{"requirement": "'The system shall enable a user to find web history of a machine '", "cate": "functional", "id": 110}
+{"requirement": "'The system shall allow general users to only have access through the user interface.'", "cate": "functional", "id": 111}
+{"requirement": "'The system shall allow the user to access the start menu screen '", "cate": "functional", "id": 112}
+{"requirement": "'The system shall allow the user to view the paired devices at any time '", "cate": "functional", "id": 113}
+{"requirement": "'The system shall allow every type of file to be entered for analysis'", "cate": "functional", "id": 114}
+{"requirement": "'The system shall display interfaces describing operations performed during processes '", "cate": "functional", "id": 115}
+{"requirement": "'The system shall show descriptions of work-flows and stages as outlined in the sequence diagram '", "cate": "functional", "id": 116}
+{"requirement": "'The system must generate reports (date time file hash status) or other outputs after the file has been scanned. '", "cate": "functional", "id": 117}
+{"requirement": "'The system shall allow clients or administrator to enter the data or upload or download files from or into the system'", "cate": "functional", "id": 118}
+{"requirement": "'The system must meet applicable regulatory requirements '", "cate": "functional", "id": 119}
+{"requirement": "'The system shall allow easy storage retrieval and manipulation of data '", "cate": "functional", "id": 120}
+{"requirement": "'The system shall allow a user to be able to retrieve information from the database. '", "cate": "functional", "id": 121}
+{"requirement": "'The system shall use Bluetooth a wireless technology for the transmission of data among two devices in close proximity of each other '", "cate": "functional", "id": 122}
+{"requirement": "'The system shall allow a user to use Bluetooth to enable smartphone that communicates with a laptop over a short-range wireless link. '", "cate": "functional", "id": 123}
+{"requirement": "'The system shall allow pairing of smartphone with the laptop. '", "cate": "functional", "id": 124}
+{"requirement": "'The system shall support at least 200 concurrently connected users. '", "cate": "functional", "id": 125}
+{"requirement": "'The system should maintain basic patient information and permissions on a central server. '", "cate": "functional", "id": 126}
+{"requirement": "'The system shall allow new accounts for patients, medical centres and health practitioners to be created. '", "cate": "functional", "id": 127}
+{"requirement": "'The system capture and store users\u2019 fingerprint template at the initial signing in. '", "cate": "functional", "id": 128}
+{"requirement": "'The system should allow users to store critical information such as allergies and conditions on a central server. '", "cate": "functional", "id": 129}
+{"requirement": "'The system shall provide a common API for health information systems to update and read records. '", "cate": "functional", "id": 130}
+{"requirement": "'The system shall allow health care providers to access the system through a screen based software application.'", "cate": "functional", "id": 131}
+{"requirement": "'The system should be able to provide visualization in terms of graphs. '", "cate": "functional", "id": 132}
+{"requirement": "'The system should be able to monitor the network in real time.'", "cate": "functional", "id": 133}
+{"requirement": "'The system shall have a working environment which is the main screen which will allow the user to monitor the network. '", "cate": "functional", "id": 134}
+{"requirement": "'The system shall have imaging ability so as to make a copy of the information contained on the mobile device which will be used during the forensics process as the test data source '", "cate": "functional", "id": 135}
+{"requirement": "'The system shall have extraction modules that will be able to take out information from the image that has been created '", "cate": "functional", "id": 136}
+{"requirement": "'The system shall have analysis module that will use metadata contained with the extracted information detect location data so as to create a movement map from this information '", "cate": "functional", "id": 137}
+{"requirement": "'The system shall enable a user to have a functional account with the Twitter platform and create an application to access tokens. '", "cate": "functional", "id": 138}
+{"requirement": "'The system must be able to connect to Twitter Streaming API. '", "cate": "functional", "id": 139}
+{"requirement": "'The proposed system should be able to extract raw data from Twitter in real time. '", "cate": "functional", "id": 140}
+{"requirement": "'The system should be able to pre-process the unstructured data into meaningful information match with existing keywords in database '", "cate": "functional", "id": 141}
+{"requirement": "'The system will be used by government officials to bring relevant information to the user unlike the normal web search where information retrieval is difficult as hundreds of irrelevant documents are returned in response to a search query. '", "cate": "functional", "id": 142}
+{"requirement": "'The system shall enable web data mining from Twitter, Twitter API provides different levels of accessing data through its Twitter Data Grants program.'", "cate": "functional", "id": 143}
+{"requirement": "'The system shall allow a member to spontaneously form a group of n signers using group public keys which associate the group members '", "cate": "functional", "id": 144}
+{"requirement": "'The system shall allow whistle-blower to be able to send the message digest using his mobile phone to Zimbabwe Anti-Corruption Commission '", "cate": "functional", "id": 145}
+{"requirement": "'The system shall be able to capture data packs '", "cate": "functional", "id": 146}
+{"requirement": "'The system shall be able to de-fragment captured packets '", "cate": "functional", "id": 147}
+{"requirement": "'The system shall be able to analyse the captured packets '", "cate": "functional", "id": 148}
+{"requirement": "'The system shall be able to interpret the analysis results '", "cate": "functional", "id": 149}
+{"requirement": "'The system shall enable potential blood donors to register and answer a health history questionnaire '", "cate": "functional", "id": 150}
+{"requirement": "'The system shall be able to screening of blood to occur at the blood bank and results to be entered into the system '", "cate": "functional", "id": 151}
+{"requirement": "'The system shall be able to defer ineligible donors and inform eligible donors via SMS '", "cate": "functional", "id": 152}
+{"requirement": "'The system shall be able to keep an inventory of the donated blood id and type '", "cate": "functional", "id": 153}
+{"requirement": "'The system shall enable that when a request is made by the doctor/hospital a session is opened and a confirmation key is generated and sent to the doctor/patient via email which they then will use after receiving the correct requested blood. '", "cate": "functional", "id": 154}
+{"requirement": "'The system should be able to identify the current location of the patient in times of emergencies'", "cate": "functional", "id": 155}
+{"requirement": "'The system should generate a road map from RRT to the patient and then to the nearest hospital '", "cate": "functional", "id": 156}
+{"requirement": "'The system shall ensure that the exchange of data is between mobile and web-based application software, humans and combinations of these. '", "cate": "functional", "id": 157}
+{"requirement": "'The system data well integrated with the web-based application in a seamless manner since both systems use the same database for sharing data.  '", "cate": "functional", "id": 158}
+{"requirement": "'The system shall be able to create and enforce secure coding practices throughout the development by strictly identifying the originator of the data that is required, recognizing the data items and data structures that are necessary for exchange.  '", "cate": "functional", "id": 159}
+{"requirement": "'The system shall implement clear secure data exchange protocols, it is ideal to implement secure protocols and document the interfaces and the protocols being utilized. '", "cate": "functional", "id": 160}
+{"requirement": "'The system shall be able to locate and monitor a vehicle using GPS '", "cate": "functional", "id": 161}
+{"requirement": "'The system shall be able to locate an Examiner during Road Test '", "cate": "functional", "id": 162}
+{"requirement": "'The system shall be able to allocate an Examiner a Route to use once he finishes testing a learner driver in the Yard '", "cate": "functional", "id": 163}
+{"requirement": "'The system shall be able to produce a log of number of passes and failures, in relation to the Examiner '", "cate": "functional", "id": 164}
+{"requirement": "'The system shall be able to alert the control room through webpage notification if Objects exit defined routes'", "cate": "functional", "id": 165}
+{"requirement": "'The system shall be able to update eligible vehicles from different driving schools which are permitted to conduct Road Test '", "cate": "functional", "id": 166}
+{"requirement": "'The system shall be able to enter new applicants into the system database '", "cate": "functional", "id": 167}
+{"requirement": "'The system shall be able to allocate examination time for applicants '", "cate": "functional", "id": 168}
+{"requirement": "'The system shall be able to implement clear secure data exchange protocols, it is ideal to implement secure protocols and document the interfaces and the protocols being utilized. '", "cate": "functional", "id": 169}
+{"requirement": "'System should utilize a centralized database '", "cate": "functional", "id": 170}
+{"requirement": "'The system should be able to allow the user to swipe his or her tag/card on the RFID reader and check if its valid or not '", "cate": "functional", "id": 171}
+{"requirement": "'The system modules are designed so that they can communicate with each other,  It applies to the hardware, software interfaces that will between the user and the machine.  '", "cate": "functional", "id": 172}
+{"requirement": "'In this system the RFID system should be linked to facial recognition system so that it functions as one access control security system. Functionality'", "cate": "functional", "id": 173}
+{"requirement": "'The system shall allow users to interact with the RFID and facial recognition-based-access control system.  '", "cate": "functional", "id": 174}
+{"requirement": "'The system is supposed to alert the user on malicious activities and recommend an action to be taken. '", "cate": "functional", "id": 175}
+{"requirement": "'The classifiers (algorithms in place) must be able to classify data according to its attributes and how they can learnt.  '", "cate": "functional", "id": 176}
+{"requirement": "'The system shall ensure that in the event there are new attributes encountered, the anomaly detection part comes in, basing on the information the system already has, makes a prediction on the new data.  '", "cate": "functional", "id": 177}
+{"requirement": "The system shall collect suspicious traffic and ancillary information the describes or characterizes the traffic, identifying distinct network connections or associations (connectionless traffic) and including enough detail to assist criminal investigations and prosecutions", "cate": "functional", "id": 178}
+{"requirement": "'The system shall be monitoring and scanning the network '", "cate": "functional", "id": 179}
+{"requirement": "'The system shall monitor and scan host '", "cate": "functional", "id": 180}
+{"requirement": "'The system shall allow the user to quit the program after it has started.'", "cate": "functional", "id": 181}
+{"requirement": "'The system shall allow the user to access the start menu screen. '", "cate": "functional", "id": 182}
+{"requirement": "'The system shall allow the user to view the signature parameters and their values. '", "cate": "functional", "id": 183}
+{"requirement": "'The system shall load datasets and preprocess them through tokenization and lemmatization '", "cate": "functional", "id": 184}
+{"requirement": "'The system shall learn how a spam and good email look like for future classification through the use if machine learning algorithms '", "cate": "functional", "id": 185}
+{"requirement": "'The system shall compute probabilities of an incoming email and classify it as spam or ham through machine learning '", "cate": "functional", "id": 186}
+{"requirement": "'The system shall allow the administrator to register and create user accounts, the system shall capture user details like username, email address, phone number etc  '", "cate": "functional", "id": 187}
+{"requirement": "'The system shall allow generation of public and private keys.  These keys will be used for encryption and decryption of the AES symmetric key for a safer key exchange  '", "cate": "functional", "id": 188}
+{"requirement": "'The system shall allow uploading or viewing messages '", "cate": "functional", "id": 189}
+{"requirement": "'The system shall support embedding or retrieving message from the image without user errors. '", "cate": "functional", "id": 190}
+{"requirement": "'The system shall enable users to classify messages as spam if misclassified as ham '", "cate": "functional", "id": 191}
+{"requirement": "'The system shall enable users to classify messages as ham if misclassified as spam '", "cate": "functional", "id": 192}
+{"requirement": "'The system will have a homepage which will be responsible for redirecting the user to the desired page, this can be a login page where the user will login to his email account or a registration page where the user creates an email account. '", "cate": "functional", "id": 193}
+{"requirement": "'The system shall have a registration page to capture and verify the details of the new user to see if the provided information conforms to the requirements of the system. '", "cate": "functional", "id": 194}
+{"requirement": "'The system mailbox is responsible for displaying the emails of the logged in user as well as all the spam emails and it will have a dashboard to navigate through the emails. '", "cate": "functional", "id": 195}
+{"requirement": "'The system shall provide supervisors with ad hoc reports for decision making,\u2019'", "cate": "functional", "id": 196}
+{"requirement": "'The system should be computer based. '", "cate": "functional", "id": 197}
+{"requirement": "'The system should use report \u2013generating modules to produce reports that can be conveniently used by management in decision making. '", "cate": "functional", "id": 198}
+{"requirement": "'The system shall run over the MPLS network. '", "cate": "functional", "id": 199}
+{"requirement": "'The system shall allow different clients to run in different OSPF areas. '", "cate": "functional", "id": 200}
+{"requirement": "'The system shall ensure that the authentication server communicate with the door controller for opening and closing the door. '", "cate": "functional", "id": 201}
+{"requirement": "'The system shall have a database for storing of user accounts and particulars of the registered users. '", "cate": "functional", "id": 202}
+{"requirement": "'The system shall allow a user to search and make a selection of nearby devices for handshake initiation. '", "cate": "functional", "id": 203}
+{"requirement": "'The system shall allow a user to change the temporary PIN received from the system. '", "cate": "functional", "id": 204}
+{"requirement": "'The system shall allow traffic data in the form of HTTP requests/packets are sent back and forth from client to server during normal service provision. '", "cate": "functional", "id": 205}
+{"requirement": "'The system shall the user to enter the URL of the local host and port for the admin panel in the browser and proceeds to log in.  This is provided by the Django framework'", "cate": "functional", "id": 206}
+{"requirement": "'The system shall allow the administrator to browse for the file within their local system and submit it to the analysis platform.  '", "cate": "functional", "id": 207}
+{"requirement": "'The system shall allow the results containing a list of IP addresses that have been singled out to be viewable on the web based platform. '", "cate": "functional", "id": 208}
+{"requirement": "'The system shall allow for the creation of test-bed environment (web applications and/or websites that can be tested for penetration testing and hacking) where experiments should be conducted.   '", "cate": "functional", "id": 209}
+{"requirement": "'The system downloader shall allow downloading of contents from the server (music store). '", "cate": "functional", "id": 210}
+{"requirement": "'The system downloader shall allow trimming of each song into small parts. '", "cate": "functional", "id": 211}
+{"requirement": "'The system player fills the look-up table with required data. '", "cate": "functional", "id": 212}
+{"requirement": "'The system player locates the hidden folder. '", "cate": "functional", "id": 213}
+{"requirement": "'The system player shall be sends contents into the hidden folder. '", "cate": "functional", "id": 214}
+{"requirement": "'The system player shall locate and retrieve required contents from the hidden folder. '", "cate": "functional", "id": 215}
+{"requirement": "'The system player shall rearrange correctly the random trimmed song parts. '", "cate": "functional", "id": 216}
+{"requirement": "'The system player shall play audio files.'", "cate": "functional", "id": 217}
+{"requirement": "'The system comprises of different modules that operate hand-in-hand to accomplish the desired goal.  '", "cate": "functional", "id": 218}
+{"requirement": "'The system shall allow a user to create an account. '", "cate": "functional", "id": 219}
+{"requirement": "'The system shall allow a user to login. '", "cate": "functional", "id": 220}
+{"requirement": "'The system shall allow a user to view and update details. '", "cate": "functional", "id": 221}
+{"requirement": "'The system shall perform analysis of network traffic payloads across the organization network '", "cate": "functional", "id": 222}
+{"requirement": "'The system shall enable creation and editing of user details. '", "cate": "functional", "id": 223}
+{"requirement": "'The system shall enable patient management.'", "cate": "functional", "id": 224}
+{"requirement": "'The system shall provide invisible digital watermarking devised with use of the Discrete Cosine Transformation which encompasses the factors of complex computations and robustness. '", "cate": "functional", "id": 225}
+{"requirement": "'The system shall provide security principles such as authentication.'", "cate": "functional", "id": 226}
+{"requirement": "'The system shall enable retrieval of the watermark from the image and displaying the similarity of the original image and the watermarked image.  '", "cate": "functional", "id": 227}
+{"requirement": "'The system ensures that the time taken to embed the watermark is displayed along with the hash value of the image. '", "cate": "functional", "id": 228}
+{"requirement": "'The embedding module of the invisible digital watermark is implemented using the Discrete Cosine Transform (DCT). '", "cate": "functional", "id": 229}
+{"requirement": "The watermark verification platform is implemented using C# and a Graphical User Interface.'", "cate": "functional", "id": 230}
+{"requirement": "'The system shall monitor the virtual machine from hypervisor level. '", "cate": "functional", "id": 231}
+{"requirement": "'The system shall detect instructions based on their signatures and classify them according to severity. '", "cate": "functional", "id": 232}
+{"requirement": "'The system shall provide reports on currently stored network captures '", "cate": "functional", "id": 233}
+{"requirement": "'The system shall provide reports on intrusions their classifications and action taken '", "cate": "functional", "id": 234}
+{"requirement": "'The system shall provide reports on failure and success of forensic image acquisition '", "cate": "functional", "id": 235}
+{"requirement": "'The system shall provide reports on statistics of acquired images (documentation) '", "cate": "functional", "id": 236}
+{"requirement": "'The system ensures integration of all modules including theIntrusionD and memory acquisition modules as a proof of concept '", "cate": "functional", "id": 237}
+{"requirement": "'The reports for theIntrusionD Module as well as the reports and result of the Evidence Collection Module will be presented on a web based graphical user interface using the python web framework, Flask. '", "cate": "functional", "id": 238}
+{"requirement": "'The system shall provide compression ability so as to save data usage, time and storage space and also decompression option for the file to be presentable or readable to the end user. '", "cate": "functional", "id": 239}
+{"requirement": "'The system shall provide through the database ability to search and find a certain competent doctor who can provide help promptly, with the capability to give feedback to user in the case that no doctor is assigned in the first place.  '", "cate": "functional", "id": 240}
+{"requirement": "'The system executable files can be uploaded on online storages and can be downloaded and used by the next person on the other end. '", "cate": "functional", "id": 241}
+{"requirement": "'The system shall integrate the instructions procedures or operations guide into the deliverables so that whenever one fails to perform a certain action he/she has somewhere to refer to. '", "cate": "functional", "id": 242}
+{"requirement": "'The system shall be able to detect an approaching figure. '", "cate": "functional", "id": 243}
+{"requirement": "'The system shall be able to input digits.'", "cate": "functional", "id": 244}
+{"requirement": "'The system shall be able to display the punched digits. '", "cate": "functional", "id": 245}
+{"requirement": "'The system shall ensure that buzzer must ring if 3 consecutive wrong attempts are entered.  '", "cate": "functional", "id": 246}
+{"requirement": "'The system is designed to give the user many options that include switching '", "cate": "functional", "id": 247}
+{"requirement": "'The system shall be able to detect motion within the camera feed and capture and image where motion is detected. '", "cate": "functional", "id": 248}
+{"requirement": "'The system shall be able to detect faces in the captured image to see there are human faces within the image. '", "cate": "functional", "id": 249}
+{"requirement": "'The system shall be able to recognize the faces detected with the image. '", "cate": "functional", "id": 250}
+{"requirement": "'The system shall be able to send an SMS and an Email to security when the detected face is not in the system\u2019s database. '", "cate": "functional", "id": 251}
+{"requirement": "'The system shall allow to create and enforce secure coding practices through strictly identifying the sources of required data, identifying the data items and data structures required for the exchange. '", "cate": "functional", "id": 252}
+{"requirement": "'The system shall be able to clearly identify relevant protocols for the data exchange, document or reference the technical requirements for data exchange including: the source, data items, data structures, timing method, and protocols. '", "cate": "functional", "id": 253}
+{"requirement": "'The system shall be able to allow cloud user to register and create an account.  '", "cate": "functional", "id": 254}
+{"requirement": "'The system shall capture user details such as user name, id number, email address, mobile number etc in the registration process. '", "cate": "functional", "id": 255}
+{"requirement": "'The system shall be able to allow the user to upload and download stored files.  The system shall provide a platform that allows the user to upload files for storage and also to retrieve the files by downloading them when required. '", "cate": "functional", "id": 256}
+{"requirement": "'The system has clearly defined links and buttons that show the various functionalities that the user may require. '", "cate": "functional", "id": 257}
+{"requirement": "'The web interface is done using CSS and bootstrap which makes it possible to use the system on mobile phones. '", "cate": "functional", "id": 258}
+{"requirement": "'The system shall be an E-government content management system '", "cate": "functional", "id": 259}
+{"requirement": "'The system shall allow a user to do CRUD operations on record. '", "cate": "functional", "id": 260}
+{"requirement": "'The system shall implement a policy on technical issues like renewal of certificates and lost eIDs, to cater for all eventualities. '", "cate": "functional", "id": 261}
+{"requirement": "'The system shall offer FuGUI statistical presentation of email spam detection and filtered emails. '", "cate": "functional", "id": 262}
+{"requirement": "'The system shall allow storage of Emails in different folders as spam and ham emails. '", "cate": "functional", "id": 263}
+{"requirement": "'The system shall provide a user with an interactive Email client that will allow them to send, receive and archive emails with destiny folder that will separate legitimate emails and illegitimate emails. '", "cate": "functional", "id": 264}
+{"requirement": "'The system shall be able to allow the model as it learns new features it should also be able to learn in real-time from user actions like moving an email to spam and from spam folders interchangeably.'", "cate": "functional", "id": 265}
+{"requirement": "'The interface will have to satisfy these objectives or requirements on any device and platform. '", "cate": "functional", "id": 266}
+{"requirement": "'The system shall allow a user to send email. '", "cate": "functional", "id": 267}
+{"requirement": "'The system shall allow a user to check new email. '", "cate": "functional", "id": 268}
+{"requirement": "'The system shall allow a user to delete email. '", "cate": "functional", "id": 269}
+{"requirement": "'The system shall allow a user to view spam. '", "cate": "functional", "id": 270}
+{"requirement": "'The system shall allow a user to move email to or from spam folder. '", "cate": "functional", "id": 271}
+{"requirement": "'The system shall allow a user to view statistical report of the filter engine and possible sources of trouble over periods. '", "cate": "functional", "id": 272}
+{"requirement": "'The system shall allow doctors to register and create an account and upon registration allow the system to generate the doctors\u2019 public and private keys. '", "cate": "functional", "id": 273}
+{"requirement": "'The system shall allow the doctors to download, decrypt and decompress the images. '", "cate": "functional", "id": 274}
+{"requirement": "'The system has clearly defined links and buttons that show the various functionalities that the user may require. '", "cate": "functional", "id": 275}
+{"requirement": "'The system shall allow Cases Reported to be recommended to the closest police station. '", "cate": "functional", "id": 276}
+{"requirement": "'The system shall allow local Law Enforcement Agencies to track cases, location of reporter, receive crimes reported based on the reporter\u2019s current location. '", "cate": "functional", "id": 277}
+{"requirement": "'The system shall allow the publishing and viewing of Wanted/Missing Persons. '", "cate": "functional", "id": 278}
+{"requirement": "'The system shall allow the Submission and responding of complaints and alerts. '", "cate": "functional", "id": 279}
+{"requirement": "'The system shall allow users to track case progress on previously reported cases. '", "cate": "functional", "id": 280}
+{"requirement": "'The system shall allow users to call the nearest police station in situations of emergency using their live location. '", "cate": "functional", "id": 281}
+{"requirement": "'The system shall allow a user to push warning script to the rogue node.'", "cate": "functional", "id": 282}
+{"requirement": "'The system shall allow a user to note hostname of rogue node as well as the SSID of the network it is connected to as to know from which section on campus is the attack being done.'", "cate": "functional", "id": 283}
+{"requirement": "'The system shall allow a user to check with students laptop and university PC register and search for device matching the rogue node and corresponding student and student personal details. '", "cate": "functional", "id": 284}
+{"requirement": "'The system shall allow a user to display message on rogue note screen warning the student by name that port scanning is not allowed and this is automatically added to the student\u2019s record if such an offence is repeated more than once. '", "cate": "functional", "id": 285}
+{"requirement": "'The system shall allow a user to generate monthly reports which can be viewed by network admin when necessary.  '", "cate": "functional", "id": 286}
+{"requirement": "'The software will work as long as the server upon which it is installed in running.  There are no time limits to using the software; however it is also possible to stop the software from running should there be need.  '", "cate": "functional", "id": 287}
+{"requirement": "'The system does not continuously interact with the database, it does seek student information from the university database only when the administrator requests.  '", "cate": "functional", "id": 288}
+{"requirement": "'The capacity to do things right will depend on the monitoring tasks definition.  '", "cate": "functional", "id": 289}
+{"requirement": "'The user of the software who is the administrator logs in and sets the software to run and give desired alerts from PCs scanning the server. '", "cate": "functional", "id": 290}
+{"requirement": "'The system will permit user credentials registration. '", "cate": "functional", "id": 291}
+{"requirement": "'The system shall allow a debit/credit card to be activated. '", "cate": "functional", "id": 292}
+{"requirement": "'The system shall allow buying patterns of the purchases to be analyzed.'", "cate": "functional", "id": 293}
+{"requirement": "'The system shall enable administration services from login, doing the exchange and in addition client re-verification.  '", "cate": "functional", "id": 294}
+{"requirement": "'The System shall be able to calculate maximum soil water deficit. '", "cate": "functional", "id": 295}
+{"requirement": "'The System shall be able to control a water pump for the application of water to the crops being irrigated.'", "cate": "functional", "id": 296}
+{"requirement": "'The System shall be able to save water by reducing water applied to plants. '", "cate": "functional", "id": 297}
+{"requirement": "'The System shall be able to autonomously schedule irrigation without farmer input. '", "cate": "functional", "id": 298}
+{"requirement": "'The System shall allow creation of users (Administrator, Lecturer, Student) accounts.'", "cate": "functional", "id": 299}
+{"requirement": "'The System shall be able to allow lecturer to add students\u2019 final marks. '", "cate": "functional", "id": 300}
+{"requirement": "'The System shall be able to allow student to view final results and degree class. '", "cate": "functional", "id": 301}
+{"requirement": "'The System shall be able to allow students to view recommended careers for them.'", "cate": "functional", "id": 302}
+{"requirement": "'The system shall be able to calculate performance of each user. '", "cate": "functional", "id": 303}
+{"requirement": "'The system shall be able to simulate road rules diagrams. '", "cate": "functional", "id": 304}
+{"requirement": "'The system shall be able to save user profile of each user. '", "cate": "functional", "id": 305}
+{"requirement": "'The system shall be able to randomize scenes so that a user cannot predict the next scene '", "cate": "functional", "id": 306}
+{"requirement": "'The system shall be able to accept data from previous projects for the learning process. '", "cate": "functional", "id": 307}
+{"requirement": "'The system shall be able to give the cost engineers a platform to add features and necessary data about a desired project.'", "cate": "functional", "id": 308}
+{"requirement": "'The system shall be able to compute construction cost estimate based on data and features fed by the cost engineer. '", "cate": "functional", "id": 309}
+{"requirement": "'The system shall be able to display final cost estimate for the cost engineers. '", "cate": "functional", "id": 310}
+{"requirement": "'This system provides ability to register a mother who comes to the Healthcare Centre for the first time. '", "cate": "functional", "id": 311}
+{"requirement": "'The system shall register a new baby and its details linked to the mother. '", "cate": "functional", "id": 312}
+{"requirement": "'The system shall retain records for all babies a mother will have subsequently. '", "cate": "functional", "id": 313}
+{"requirement": "'The system shall monitor a baby\u2019s growth. '", "cate": "functional", "id": 314}
+{"requirement": "'The system shall allow a user to view mother or baby details, to add new information and update records. '", "cate": "functional", "id": 315}
+{"requirement": "'The system shall allow a user to view the progress of a baby from birth to postnatal visits.'", "cate": "functional", "id": 316}
+{"requirement": "'The system shall allow monitoring of growth and healthcare issues pertaining to a baby and its mother. '", "cate": "functional", "id": 317}
+{"requirement": "'This system will provide the user with a notification on account information updates, scheduled review dates, disease outbreaks, health practitioners advice and hints on practicing proper baby health care. '", "cate": "functional", "id": 318}
+{"requirement": "'The dispatching mechanism will employ sms, blog chats and email'", "cate": "functional", "id": 319}
+{"requirement": "'The system shall be able to predict fraudulent and non-fraudulent transactions in real time. '", "cate": "functional", "id": 320}
+{"requirement": "'The system shall be able to store transaction information. '", "cate": "functional", "id": 321}
+{"requirement": "'The system should be simple and user friendly. '", "cate": "functional", "id": 322}
+{"requirement": "'The system should provide a functionality to allow the user to view and read temperature, humidity and soil moisture content states of the plants from nursery stage up to Harvesting. '", "cate": "functional", "id": 323}
+{"requirement": "'The system should also be able to notify the user if there is any change in the conditions i.e. drop or rise that is any anomaly should be notified to the user of the system. '", "cate": "functional", "id": 324}
+{"requirement": "'The system should keep record of time and dates to facilitate data analytics. '", "cate": "functional", "id": 325}
+{"requirement": "'The system shall have the capability to inspect the SSL certificate of a given web application or a website.'", "cate": "functional", "id": 326}
+{"requirement": "'The system shall report the findings, after detecting and analysing the vulnerabilities'", "cate": "functional", "id": 327}
+{"requirement": "'The  system shall report the findings of the SSL certificate phase. '", "cate": "functional", "id": 328}
+{"requirement": "'The system shall allow an employer to add speech commands. '", "cate": "functional", "id": 329}
+{"requirement": "'The system shall receive speech input from a microphone. '", "cate": "functional", "id": 330}
+{"requirement": "'The system shall activate known commands on speech command dictation. '", "cate": "functional", "id": 331}
+{"requirement": "'The system shall respond to users via voice synthesis and graphical displays.'", "cate": "functional", "id": 332}
+{"requirement": "'System shall start a clock when an employee logs in and stop the clock when employee logs out. '", "cate": "functional", "id": 333}
+{"requirement": "'System shall add up all hours worked by an employee per month. '", "cate": "functional", "id": 334}
+{"requirement": "'System shall calculate the salary of each employee at the end of a month. '", "cate": "functional", "id": 335}
+{"requirement": "'The system shall allow a customer to register '", "cate": "functional", "id": 336}
+{"requirement": "'The system shall allow the customer to upload documents. '", "cate": "functional", "id": 337}
+{"requirement": "'The system shall allow verification and validation of the documents. '", "cate": "functional", "id": 338}
+{"requirement": "'The system shall enable block initiation and new block (record) addition onto Blockchain. '", "cate": "functional", "id": 339}
+{"requirement": "'The system shall be able to capture and verify client KYC information. '", "cate": "functional", "id": 340}
+{"requirement": "'The system shall store client KYC information in decentralised database using blockchain. '", "cate": "functional", "id": 341}
+{"requirement": "'The system shall send requests to clients to allow for consent of use of clients\u2019 KYC information. '", "cate": "functional", "id": 342}
+{"requirement": "'The website shall allow any updating of a client\u2019s KYC information. '", "cate": "functional", "id": 343}
+{"requirement": "'The system shall be able to send an alert message. '", "cate": "functional", "id": 344}
+{"requirement": "'The system shall allow capturing of the National ID for a person the stand is issued to. '", "cate": "functional", "id": 345}
+{"requirement": "'The system shall allow capturing of stand details such as location, district, ward and stand number. '", "cate": "functional", "id": 346}
+{"requirement": "'The system shall allow council to select the location on Google maps or manually enter coordinates of the location of the stand. '", "cate": "functional", "id": 347}
+{"requirement": "'The system shall communicate with the Django API to get the corresponding Ethereum address of the entered National ID. '", "cate": "functional", "id": 348}
+{"requirement": "'The system shall create a transaction sent to the Ethereum protocol. '", "cate": "functional", "id": 349}
+{"requirement": "'The system user interface shall communicate with the Blockchain Land Registry smart contract using web3.js. '", "cate": "functional", "id": 350}
+{"requirement": "'The Blockchain Land Registry system smart contract stores the data. '", "cate": "functional", "id": 351}
+{"requirement": "'The smart contract issues a token based on the ERC721 interface for Ethereum blockchain. '", "cate": "functional", "id": 352}
+{"requirement": "'The smart contract issues the block member in which the transaction was mined in. '", "cate": "functional", "id": 353}
+{"requirement": "'The system shall enable users such as medical practitioners to enter data into the system '", "cate": "functional", "id": 354}
+{"requirement": "'The system shall enable loading/ feeding video files for processing into the system. '", "cate": "functional", "id": 355}
+{"requirement": "'The system shall enable motion detection'", "cate": "functional", "id": 356}
+{"requirement": "'The system shall allow users to create a cloud account. '", "cate": "functional", "id": 357}
+{"requirement": "'The system shall allow users to upload data files of any type to their cloud accounts with a description of not less than 5 words. '", "cate": "functional", "id": 358}
+{"requirement": "'The system shall distribute keys for the RSA digital signature. '", "cate": "functional", "id": 359}
+{"requirement": "'The system shall use RFID scanner to capture the details of every passenger upon boarding the bus. '", "cate": "functional", "id": 360}
+{"requirement": "'The system shall provide a comprehensive web interface to be used to track buses on their routes. '", "cate": "functional", "id": 361}
+{"requirement": "'The system shall detect an accident upon impact and will automatically send an alert (SMS) to a designated phone. '", "cate": "functional", "id": 362}
+{"requirement": "'The system shall provide a verification procedure, where the administrators will try to make contact with the specific bus in order to verify whether an accident has indeed taken place and the level of response required. '", "cate": "functional", "id": 363}
+{"requirement": "'The system shall make use of google maps to all administrators to identify and alert nearest emergency services. '", "cate": "functional", "id": 364}
+{"requirement": "'The system shall be implemented for geo-fencing to ensure that the buses do not divert from their scheduled routes '", "cate": "functional", "id": 365}
+{"requirement": "'GPS tracking feature shall enable real-time fleet-management. '", "cate": "functional", "id": 366}
+{"requirement": "'The system shall be able to capture all the data about an individual. '", "cate": "functional", "id": 367}
+{"requirement": "'The system shall generate a QR code with the md5 hash. '", "cate": "functional", "id": 368}
+{"requirement": "'The system shall differentiate systems that represent different stages of life. '", "cate": "functional", "id": 369}
+{"requirement": "'The system shall enable a visible watermark to be used together with the email client. '", "cate": "functional", "id": 370}
+{"requirement": "'The system shall be able to register wireless connection. '", "cate": "functional", "id": 371}
+{"requirement": "'The system shall  display message for blocked website to user. '", "cate": "functional", "id": 372}
+{"requirement": "'The system shall   notify administrator through SMS. '", "cate": "functional", "id": 373}
+{"requirement": "'The system shall  show warning to users. '", "cate": "functional", "id": 374}
+{"requirement": "'The system shall analyse the caught activities, check for any approved utilisation and afterwards give a warning to the framework head by transferring the data on the web. '", "cate": "functional", "id": 375}
+{"requirement": "'The system shall  permit user credentials registration. '", "cate": "functional", "id": 376}
+{"requirement": "'The system shall  enable activation of credit or debit cards.'", "cate": "functional", "id": 377}
+{"requirement": "'The system shall  enable buying patterns to be analysed.'", "cate": "functional", "id": 378}
+{"requirement": "'The system server shall be able to generate unique transaction IDs after every purchase or free download.  '", "cate": "functional", "id": 379}
+{"requirement": "'The system shall   ensure that the transaction ID, UUID and storage serial should be used for encryption by the server and decryption by the client. '", "cate": "functional", "id": 380}
+{"requirement": "'The system shall   ensure that the client generates the symmetric key used for encryption by the server. '", "cate": "functional", "id": 381}
+{"requirement": "'The system shall   enable the virtual file to be deleted once the client application is closed. Functionality'", "cate": "functional", "id": 382}
+{"requirement": "'The system shall  be able to register wireless connection. '", "cate": "functional", "id": 383}
+{"requirement": "'The system shall  provide an invisible digital watermark based on Discrete Wavelet Transformation. '", "cate": "functional", "id": 384}
+{"requirement": "'The system shall  ensure the digital watermark agency is able to dispatch agents, collect and report the processed information from the visited hosts within the network. '", "cate": "functional", "id": 385}
+{"requirement": "'The system shall be able to guide the agent\u2019s movement by allowing the digital watermark agency to take note of the reports and to create a mutual knowledgebase . '", "cate": "functional", "id": 386}
+{"requirement": "'The system\u2019s digital watermark agency shall control the remote network as an administrator and that is where the agents are stored. '", "cate": "functional", "id": 387}
+{"requirement": "'The system shall allow that once the agents are being released, they should be able to search the watermarked images from the hosts connected within the network. '", "cate": "functional", "id": 388}
+{"requirement": "'The system shall require the agents to report the detected images to the agency\u2019s database. '", "cate": "functional", "id": 389}
+{"requirement": "'The system shall provide reports monthly regarding the anomalies detected. '", "cate": "functional", "id": 390}
+{"requirement": "'The system shall provide visualisation in the form of graphs. '", "cate": "functional", "id": 391}
+{"requirement": "'The system\u2019s main screen shall include HELP and Static Analysis Tabs. '", "cate": "functional", "id": 392}
+{"requirement": "'The system shall allow the message digest (message + signature) to be transmitted to the recipient via email. '", "cate": "functional", "id": 393}
+{"requirement": "'The system shall enable stakeholders to come up with sound, accurate and concrete decisions. '", "cate": "functional", "id": 394}
+{"requirement": "'The system shall generate performance reports. '", "cate": "functional", "id": 395}
+{"requirement": "'The system shall provide imaging ability so as to make a copy of the information contained on the mobile device which will be used during the forensics process as the test data source.'", "cate": "functional", "id": 396}
+{"requirement": "'The system shall have an extraction module that will be able to take out information from the image that has been created. '", "cate": "functional", "id": 397}
+{"requirement": "'The system shall have an analysis module that will use metadata contained within the extracted information to detect locational data so as to create a movement map from this information. '", "cate": "functional", "id": 398}
+{"requirement": "'The system shall ensure that the hashing and extraction modules are easy to use and have a user manual incorporated in the system. '", "cate": "functional", "id": 399}
+{"requirement": "'The system shall ensure that the embedding module and scanning tool offer relatively good performance and resource behaviour due to the implemented design.'", "cate": "functional", "id": 400}
+{"requirement": "'The system\u2019s hashing module shall use SHA-2 algorithm . '", "cate": "functional", "id": 401}
+{"requirement": "'The system shall have inputs of WAVE audio file, message text, public key and private key. Functionality'", "cate": "functional", "id": 402}
+{"requirement": "'The system shall process all inputs to produce a WAVE audio file  Functionality'", "cate": "functional", "id": 403}
+{"requirement": "'The system shall be able to store transaction information . '", "cate": "functional", "id": 404}
+{"requirement": "'The system shall be able to send email and sms alerts of fraudulent transactions. '", "cate": "functional", "id": 405}
+{"requirement": "'The system shall process files to be moved over to the other end of a communication channel that is from one machine to the other. '", "cate": "functional", "id": 406}
+{"requirement": "'The system shall be installed in every employee\u2019s mobile phone device to monitor the device apps and record the activities on the device. '", "cate": "functional", "id": 407}
+{"requirement": "'The system shall analyse the captured activities and then give a notification to the system administrator by uploading the information on the web. '", "cate": "functional", "id": 408}
+{"requirement": "'The system shall be able to connect to Twitter Streaming API. '", "cate": "functional", "id": 409}
+{"requirement": "'The system shall be able to extract raw data from Twitter in real-time. '", "cate": "functional", "id": 410}
+{"requirement": "'The system shall be able to pre-process the unstructured data into meaningful information and match with the existing keywords in the database. '", "cate": "functional", "id": 411}
+{"requirement": "'The system shall apply a classification algorithm to classify processed tweets matching with the labelled tweets in the tweets corpus. '", "cate": "functional", "id": 412}
+{"requirement": "'The system shall be used by the government officials to bring relevant information to the user unlike the normal web search. '", "cate": "functional", "id": 413}
+{"requirement": "'The system shall have a data collection process allowing for benign and malicious data to be collected and submitted into the system for Malware detection.  '", "cate": "functional", "id": 414}
+{"requirement": "'The system\u2019s Malware analyser shall send all the files and their logs to the main server at the end of the analysis process '", "cate": "functional", "id": 415}
+{"requirement": "'The system\u2019s classification process shall classify identified Malware into its respective families. '", "cate": "functional", "id": 416}
+{"requirement": "'The system\u2019s classification process shall generate a report of what the effects of the malware activity during execution. '", "cate": "functional", "id": 417}
+{"requirement": "'The system services shall be accessible offline since it will be a desktop application. '", "cate": "functional", "id": 418}
+{"requirement": "'The system shall detect SQL Injection and XSS vulnerabilities for a given website or a web application'", "cate": "security", "id": 419}
+{"requirement": "'The system shall detect SQL Injection and XSS vulnerabilities for a given website or a web application '", "cate": "security", "id": 420}
+{"requirement": "'The system shall allow the user to generate their ECC public and private keys. These keys are to be used for the encryption of the AES encryption key and also for PDP. '", "cate": "security", "id": 421}
+{"requirement": "'The system shall allow secure uploaded files using AES algorithm with a 256-bit key. '", "cate": "security", "id": 422}
+{"requirement": "'The system shall automatically encrypt the files that will be uploaded by the user for storage using a 256-bit encryption key. '", "cate": "security", "id": 423}
+{"requirement": "'Allow the user to check the integrity of stored data through the PDP NSR. '", "cate": "security", "id": 424}
+{"requirement": "'The system shall be easy to maintain as it can easily be integrated with other systems, modified or reused on other different platforms, '", "cate": "security", "id": 425}
+{"requirement": "'The system shall be web based and therefore guarantees maximum availability of data to the cloud data owners'", "cate": "security", "id": 426}
+{"requirement": "'The system shall be used to detect the presence of malware in an Android application, identify possible malware families and classify them accordingly into their families.  '", "cate": "security", "id": 427}
+{"requirement": "'The system shall generate a report outlining what effect the malware has done during execution in an isolated environment. '", "cate": "security", "id": 428}
+{"requirement": "'The system shall show a report containing detailed results found in files submitted for analysis and will clearly indicate which file is malicious and which one is benign. '", "cate": "security", "id": 429}
+{"requirement": "'The system shall focus on known and unknown malware families with the aim of unearthing newly developed malware which are potentially harmful to the Android applications. '", "cate": "security", "id": 430}
+{"requirement": "'The application will be available as a standalone application which will be installed on users\u2019 virtual machines and thus will not be affected by network availability, '", "cate": "security", "id": 431}
+{"requirement": "'The system shall be abstracted from the user and the application has no user interaction hence the chances of users breaking it are very limited'", "cate": "security", "id": 432}
+{"requirement": "'The system shall apply a number of methods, such as regular maintenance, to facilitate reliability assurance of the system, '", "cate": "security", "id": 433}
+{"requirement": "'The system shall allow a user to sign a document on behalf of the group using his secret key '", "cate": "security", "id": 434}
+{"requirement": "'The Zimbabwe Anti-Corruption Commission then verifies the signature using the group public key so that it will be convinced that it actually came from the organisation without the knowledge of the actual signer'", "cate": "security", "id": 435}
+{"requirement": "'The system shall be easy to transfer to another environment, including install ability'", "cate": "security", "id": 436}
+{"requirement": "'The system shall allow verification of watermarked image which is submitted twice or more by different authors to protect the owner\u2019s copyrights '", "cate": "security", "id": 437}
+{"requirement": "'The system shall apply the principle of authentication by notifying if there is a watermark on the image or not '", "cate": "security", "id": 438}
+{"requirement": "'The system shall have independent classes for databases so they can be maintained, tested and system improvements can be done easily '", "cate": "security", "id": 439}
+{"requirement": "'The system shall be able to listen for any port scan on university WIFI network.'", "cate": "security", "id": 440}
+{"requirement": "'The system shall be able to block internet connection to the computer doing port scanning.'", "cate": "security", "id": 441}
+{"requirement": "'The system shall be able to check netstat and recent network connections to see if rogue node is a victim of pivoting and if so trace the attacking machine. '", "cate": "security", "id": 442}
+{"requirement": "'The system shall be able to note hostname of rogue node as well as the SSID of the network it is connected to so as to know from which section on campus is the attack being done. '", "cate": "security", "id": 443}
+{"requirement": "'The system shall allow background processes to monitor for any scan and relay information to the registry about any unusual activities '", "cate": "security", "id": 444}
+{"requirement": "'The system shall be updated with patches and newer versions when required'", "cate": "security", "id": 445}
+{"requirement": "'The system shall be able to authenticate pin entered. '", "cate": "security", "id": 446}
+{"requirement": "'The system shall be able to open the door when the pin is correct '", "cate": "security", "id": 447}
+{"requirement": "'The system shall allow high availability of the application whenever the user needs it so a recovery module will be set in case of loss of the mobile phone. '", "cate": "security", "id": 448}
+{"requirement": "'The system shall allow that if the mobile phone is not present, some authentications are done by the user to obtain access to the system'", "cate": "security", "id": 449}
+{"requirement": "'The system shall employ encryption technics at the database side and use HTTPS when accessing networked resources over the internet'", "cate": "security", "id": 450}
+{"requirement": "'The system shall be able to filter harmful websites against URLs\u2019 of known harmful websites. Access to known harmful websites shall not be permitted.'", "cate": "security", "id": 451}
+{"requirement": "'The system shall be able to generate and send periodic logs the parent\u2019s smartphone '", "cate": "security", "id": 452}
+{"requirement": "'The system shall be up and running all the time since its checking or monitoring the child\u2019s behavior and prevent any media from being sent or received using Bluetooth '", "cate": "security", "id": 453}
+{"requirement": "'The system shall allow for a safe fail whenever there is a fault. '", "cate": "security", "id": 454}
+{"requirement": "'The system shall provide maturity, fault tolerance and recoverability in the face of a fault. '", "cate": "security", "id": 455}
+{"requirement": "'New exchange interfaces should be easily integrated into the already existing system without modifying core functionality of the product software. '", "cate": "security", "id": 456}
+{"requirement": "'The system shall allow a user to sign a document on behalf of the group using his secret key '", "cate": "security", "id": 457}
+{"requirement": "'The system shall allow the Zimbabwe Anti-Corruption Commission to verify the signature using the group public key so that it will be convinced that it actually came from the organisation without the knowledge of the actual signer '", "cate": "security", "id": 458}
+{"requirement": "'The system shall provide maturity, fault tolerance and recoverability despite the challenges of balancing development time. '", "cate": "security", "id": 459}
+{"requirement": "'The system shall ensure easy maintainability by enforcing best practices in documentation, applying complexity avoidance strategy, and following basic programming practices.  '", "cate": "security", "id": 460}
+{"requirement": "'The system shall retain video logs that only have motion.  '", "cate": "security", "id": 461}
+{"requirement": "'The system shall be maintainable by enforcing modularity which makes the system components loosely coupled such that they can be modified independently and then reintegrated into the system. '", "cate": "security", "id": 462}
+{"requirement": "'The system shall maintain a strict documentation including comments in the source code so as to make the code easy to modify and debugging.  '", "cate": "security", "id": 463}
+{"requirement": "'The system shall allow Network traffic monitoring in real-time by capturing incoming and outgoing TCP, HTTP(S) and TLS web traffic, in order to correlate it with configured cryptojacking blacklist. '", "cate": "security", "id": 464}
+{"requirement": "The system shall analyse TCP, HTTP(S) and TLS web traffic, to detect network connections to known cryptocurrency mining pools or service providers such as BTC.com and coinhive.com '", "cate": "security", "id": 465}
+{"requirement": "'The system shall monitor CPU usage to detect spikes caused by cryptojacking by constantly reading the computer\u2019s current CPU utilization percentage and compare it to the CPU usage baseline, and detect the extreme spikes or deviations from the usual. '", "cate": "security", "id": 466}
+{"requirement": "'The system shall allow the user to set an email-change password, so that it will subsequently be requested when attempting to change the set user\u2019s email address.  '", "cate": "security", "id": 467}
+{"requirement": "'The system shall allow the cryptojacking application to be terminated unless the user explicitly selects to ignore the cryptojacking application. '", "cate": "security", "id": 468}
+{"requirement": "'The system shall enable the detected cryptojacking domain or application to be logged, along with the date and time of detection. '", "cate": "security", "id": 469}
+{"requirement": "'The system should be reliable in detecting known cryptojacking malware activity. '", "cate": "security", "id": 470}
+{"requirement": "'The system should preserve the user\u2019s privacy by not publishing the monitored network traffic, and not exposing the user\u2019s registered email address.'", "cate": "security", "id": 471}
+{"requirement": "'The system should ensure only the authorized user is able to change the registered email address for receiving cryptojacking alerts. '", "cate": "security", "id": 472}
+{"requirement": "'The system should not violate laws by not infringing the privacy of sensitive user information and intellectual property rights. '", "cate": "security", "id": 473}
+{"requirement": "'The system shall use a two-way authentication system by combining keyboard activities and mouse movement biometrics to improve security.'", "cate": "security", "id": 474}
+{"requirement": "'The system shall allow that the features be extracted when the user logs in and a similarity match done to check the authenticity of the user and if a match is successful the user will be granted access or denied in the event of a mismatch. '", "cate": "security", "id": 475}
+{"requirement": "'The system shall allow for operation at all times.  '", "cate": "security", "id": 476}
+{"requirement": "'The system shall ensure that the downtime of internet will not affect its availability as any user can still be granted or denied access to the system. '", "cate": "security", "id": 477}
+{"requirement": "'The system shall circumvent the electricity power cuts challenges by the use of UPS (uninterrupted power supply). '", "cate": "security", "id": 478}
+{"requirement": "'The system shall be able to distinguish the legitimate user from an illegitimate one by the use of unique behavioral biometrics '", "cate": "security", "id": 479}
+{"requirement": "'The system shall ensure that confidential information can only be accessed to the right individuals. '", "cate": "security", "id": 480}
+{"requirement": "'The system shall be easy to maintain since the application has a clear separation of its database and logic code making it easy to sandbox the system and maintain it without affecting the whole system. '", "cate": "security", "id": 481}
+{"requirement": "'The system shall be maintained through frequent updates.  '", "cate": "security", "id": 482}
+{"requirement": "'The system shall be built to be compatible with many operating systems such as windows, android and linux. '", "cate": "security", "id": 483}
+{"requirement": "'The system shall perform verification to determine user and access rights. '", "cate": "security", "id": 484}
+{"requirement": "'The system shall keep logs for every operation made by the user for audit trailing commitments.'", "cate": "security", "id": 485}
+{"requirement": "'The system shall have a modular design catering for corrective, perfective, adaptive and preventive maintenance. '", "cate": "security", "id": 486}
+{"requirement": "'The system shall provide access whenever the user needs to check publicly available records of an individual, they should be able to do so since social media details are always available '", "cate": "security", "id": 487}
+{"requirement": "'The system shall make it easy to trace an individual\u2019s activities after a crime has taken place.'", "cate": "security", "id": 488}
+{"requirement": "'The system shall access personally, identifiable information to allow investigators to be able to reconstruct a criminal event after it happens, thereby securing the evidence. '", "cate": "security", "id": 489}
+{"requirement": "'The system should be able to secure the messages by encrypting them. '", "cate": "security", "id": 490}
+{"requirement": "'The system should keep history of the transactions in a secure database. '", "cate": "security", "id": 491}
+{"requirement": "'The system should restrict password attempts to three only. '", "cate": "security", "id": 492}
+{"requirement": "'The system should be able to carry out authentication of the user through user name and password '", "cate": "security", "id": 493}
+{"requirement": "'The system shall be accessible to users via HTTPS web portal '", "cate": "security", "id": 494}
+{"requirement": "'The system shall be able to function as desired all the time.  '", "cate": "security", "id": 495}
+{"requirement": "'The proposed system\u2019 logistics are easily accessed hence its availability is guaranteed when and as required. '", "cate": "security", "id": 496}
+{"requirement": "'The information entered is only altered by the user upon authentication being done to verify. '", "cate": "security", "id": 497}
+{"requirement": "'Permissions to access the system data should only be altered by the system\u2019s data administrator.'", "cate": "security", "id": 498}
+{"requirement": "'The system should time out after a set period of inactivity'", "cate": "security", "id": 499}
+{"requirement": "'The system should be able to enforce privacy of data by encryption of data during transmission. '", "cate": "security", "id": 500}
+{"requirement": "'The proposed system shall provide access permissions for application data may only be changed by the system\u2019s data administrator and data stored in the database to be hashed. '", "cate": "security", "id": 501}
+{"requirement": "'The system shall ensure encryption of data during transmission. '", "cate": "security", "id": 502}
+{"requirement": "'The system shall enforce security through the use of password protected user accounts '", "cate": "security", "id": 503}
+{"requirement": "'The system shall allow users to enter their usernames and passwords.  '", "cate": "security", "id": 504}
+{"requirement": "'The system shall ensure that the login password is stored in encrypted format. '", "cate": "security", "id": 505}
+{"requirement": "'The system shall be able to detect whether the input credentials are authentic, then accept or else reject if the credentials are incorrect. '", "cate": "security", "id": 506}
+{"requirement": "'The system shall allow the user to be directed to the options page or back to the login page for retrial. '", "cate": "security", "id": 507}
+{"requirement": "'This system provides functionality of verifying user\u2019 login credentials against the ones stored in the system.'", "cate": "security", "id": 508}
+{"requirement": "'The system shall be able to determine whether the login credentials are valid or not, and search for matching results of the particular licence owner, or vehicle information. '", "cate": "security", "id": 509}
+{"requirement": "The system shall ensure that if login credentials are valid, the flow control of the user logging in will pass into the system, otherwise it directs the user back to the login page, and if no information is found, the user should input another licence number, or vehicle registration number.", "cate": "security", "id": 510}
+{"requirement": "'The system shall allow the user to create an account on the system and logs in using fingerprint.  '", "cate": "security", "id": 511}
+{"requirement": "'The system shall provide storage of all important information in a secure database '", "cate": "security", "id": 512}
+{"requirement": "'The system shall provide access to sensitive information only to the privileged  user '", "cate": "security", "id": 513}
+{"requirement": "'The system should be easy to maintain such that the modules should easily interact effectively and in case of failure, a re-initialization of the program is recommended. '", "cate": "security", "id": 514}
+{"requirement": "'The system shall automatically store credential information in a central database '", "cate": "security", "id": 515}
+{"requirement": "'The system shall prompt for a password to log in to access the services '", "cate": "security", "id": 516}
+{"requirement": "'The system shall use a secure path of sending all the useful credentials to the platform '", "cate": "security", "id": 517}
+{"requirement": "'The system shall never display a user\u2019s password.  It shall always be echoed with special characters representing typed characters. '", "cate": "security", "id": 518}
+{"requirement": "'The system should use hmac to maintain integrity of the log files and detect when file has been modified using the technology '", "cate": "security", "id": 519}
+{"requirement": "'The system shall be able to use PGP to maintain security of the log files'", "cate": "security", "id": 520}
+{"requirement": "'The system should be able to produce an audit report summary to send to the user of the system.  '", "cate": "security", "id": 521}
+{"requirement": "'The system shall provide availability of the audit report to users '", "cate": "security", "id": 522}
+{"requirement": "'The system shall allow log capture to be a background process making the auditor\u2019s job much easier. '", "cate": "security", "id": 523}
+{"requirement": "'The system uses HMAC to maintain integrity of log files. '", "cate": "security", "id": 524}
+{"requirement": "'The system through pgp will incorporate both symmetric key and public key cryptography to ensure confidentiality of the log files during transmission. '", "cate": "security", "id": 525}
+{"requirement": "'The system shall allow users to have their own user specific key that is generated by the machine and has been added to the list of keys for the MAC generation process  '", "cate": "security", "id": 526}
+{"requirement": "'The system shall enable specific logs from the computers to be captured and faultlessly interfaced with the web-based application with the help of security mechanism including HMAC and PGP.  '", "cate": "security", "id": 527}
+{"requirement": "'The system shall ensure that a secure and effective interface is established to reduce the affiliated risk of errors from inaccurate data formats. '", "cate": "security", "id": 528}
+{"requirement": "'The system shall ensure that the originator of the log files that are required, recognizing the data items and data structures that are necessary for exchange. '", "cate": "security", "id": 529}
+{"requirement": "'The system shall enable implementation of clear secure data exchange protocols and document the interfaces and the protocols being utilized. '", "cate": "security", "id": 530}
+{"requirement": "'The system shall show Logs investigator activity '", "cate": "security", "id": 531}
+{"requirement": "'The system shall allow for easy maintenance. '", "cate": "security", "id": 532}
+{"requirement": "'The system make use of stored procedures '", "cate": "security", "id": 533}
+{"requirement": "'The system shall provide maturity, fault tolerance and recoverability.'", "cate": "security", "id": 534}
+{"requirement": "'This system will be easy to maintain as it will be deployed with the documentation associated with it including code snippets which allows the project to be transferable to another maintenance or updating. '", "cate": "security", "id": 535}
+{"requirement": "'The system should offer a secure single sign-on platform, which will give access to different application that the user is entitled to access. '", "cate": "security", "id": 536}
+{"requirement": "'The system shall allow user validation to be done during login to ensure that the user is who they claim to be '", "cate": "security", "id": 537}
+{"requirement": "'The system shall allow that the user only has access to his or her permitted data.  '", "cate": "security", "id": 538}
+{"requirement": "'The system shall have fault tolerance and shall have ability to do a  safe exit of the program if a problem is encountered '", "cate": "security", "id": 539}
+{"requirement": "'The system should pertain to all the situations so that it can be recoverable in any error conditions. '", "cate": "security", "id": 540}
+{"requirement": "'The system should work all the time and provide a means to handle errors with little or no input from the user.  '", "cate": "security", "id": 541}
+{"requirement": "'The data provided by the system should be validated and verified were possible. '", "cate": "security", "id": 542}
+{"requirement": "'The system should be maintained properly so that it should be able to resolve any data conflicts and sustain at any condition.  '", "cate": "security", "id": 543}
+{"requirement": "'The program coding should be well documented and laid out particularly to facilitate future upgrades and additional features being added at a later date. '", "cate": "security", "id": 544}
+{"requirement": "'The system should be developed with future upgrades and additional functionality being added to a later date '", "cate": "security", "id": 545}
+{"requirement": "'The system should be able to provide data for the current maximum number of tags presently two thousand for a period of thirty days in whatever format the user decides'", "cate": "security", "id": 546}
+{"requirement": "'The system must be scalable '", "cate": "security", "id": 547}
+{"requirement": "'The service of the system must always be available whenever it is needed '", "cate": "security", "id": 548}
+{"requirement": "'The results from the scanning process must be reliable, which means minimum or no false positives'", "cate": "security", "id": 549}
+{"requirement": "'The system shall allow every history of scans to be recoverable in case of system interrupt'", "cate": "security", "id": 550}
+{"requirement": "'The system user with privileges should input password and be able to log into the system.'", "cate": "security", "id": 551}
+{"requirement": "'The system shall allow use of passwords and usernames to access and modify data '", "cate": "security", "id": 552}
+{"requirement": "'The system survives under its boundaries, which also sets limits to its operations, and the limits make up the restrictions. '", "cate": "security", "id": 553}
+{"requirement": "'The system components shall be expandable. '", "cate": "security", "id": 554}
+{"requirement": "'The system shall apply a mechanism to establish proof of identities, to verify who a particular user is.  '", "cate": "security", "id": 555}
+{"requirement": "'The system shall provide Bluetooth authentication so that users do not need to disable laptop authentication as they have to frequently unlock the laptop during office working hours.'", "cate": "security", "id": 556}
+{"requirement": "'The system should be able to match fingerprint at login. '", "cate": "security", "id": 557}
+{"requirement": "'The system should allow certified medical facilities to access critical patient information as needed. '", "cate": "security", "id": 558}
+{"requirement": "'The system shall maintain full patient medical records in an encrypted format on a server. '", "cate": "security", "id": 559}
+{"requirement": "'The system shall allow approved certified health providers to append information into the encrypted central server. '", "cate": "security", "id": 560}
+{"requirement": "'The system shall allow individual facility  servers to remain unaffected when the central server fails. '", "cate": "security", "id": 561}
+{"requirement": "'The system shall ensure that the central server remain unaffected when the institutes system fails. '", "cate": "security", "id": 562}
+{"requirement": "'The system shall enforce encryption on all files, communication channels and backups. '", "cate": "security", "id": 563}
+{"requirement": "'The system shall allow for access levels to be implemented on patient information. '", "cate": "security", "id": 564}
+{"requirement": "'The system shall provide audit trails when required. '", "cate": "security", "id": 565}
+{"requirement": "'The system should be able to sniff the traffic to and from the network in real time\u2019. '", "cate": "security", "id": 566}
+{"requirement": "'The system should be able to analyze the network traffic and detects intrusion, attacks and threats to the network.'", "cate": "security", "id": 567}
+{"requirement": "'The system should be able to block traffic to and from the network that is identified to be potentially malicious.'", "cate": "security", "id": 568}
+{"requirement": "'The system guarantees reliability and availability because the tools used in developing the system (Apache Kafka and Apache Storm) allows the system to be resilient to failure and to be available all the time. '", "cate": "security", "id": 569}
+{"requirement": "'The system is effective because it will detect normal attacks which current systems do not detect.'", "cate": "security", "id": 570}
+{"requirement": "'The system does not use much hardware and software, hence it is not costly to maintain the system and the system does not require maintenance regularly.  '", "cate": "security", "id": 571}
+{"requirement": "'The system does not need frequent updates to its signatures as it will be learning on its own and updating its signatures on its own. '", "cate": "security", "id": 572}
+{"requirement": "'The system should ensure that there is maximum confidentiality and safety assurance on the information.  '", "cate": "security", "id": 573}
+{"requirement": "'The system should allow only those who are authorized to used and access the system and they will have to log in first to use the system. '", "cate": "security", "id": 574}
+{"requirement": "'The system shall have a log in screen to allow the network administrator to log into the system'", "cate": "security", "id": 575}
+{"requirement": "'The system will show the alert messages in case an anomaly has been detected and it will also show a panel of logs of the anomaly detected.  '", "cate": "security", "id": 576}
+{"requirement": "'The system shall have log in and logout capabilities which can be seen as the line of security which most systems should possess for authentication and accountability purposes. '", "cate": "security", "id": 577}
+{"requirement": "'The system shall implement input validation to help in increasing fault tolerance and ultimately reliability. '", "cate": "security", "id": 578}
+{"requirement": "'The system maintainability shall be implemented through the use of proper coding principles and practices such as putting comments in a proper, organized and standard manner in the program. '", "cate": "security", "id": 579}
+{"requirement": "'System modules will be loosely coupled to allow for easy maintainability when used by the users. '", "cate": "security", "id": 580}
+{"requirement": "'The system shall be able to handle a growing amount of work and also to be enlarged in order to accommodate that growth.  '", "cate": "security", "id": 581}
+{"requirement": "'The system\u2019s logistics are usually accessed hence its availability is guaranteed when and as required. '", "cate": "security", "id": 582}
+{"requirement": "'The system database storing keywords will be secured against SQL injection attacks to reduce false positives. '", "cate": "security", "id": 583}
+{"requirement": "'The system shall allow the user to sign a document  '", "cate": "security", "id": 584}
+{"requirement": "'The system shall enable verifying of the signature using the group public key so that it will be convinced that it actually came from the organization without the knowledge of the actual singer. '", "cate": "security", "id": 585}
+{"requirement": "'The system is easy to maintain as it offers modularity, understandability, changeability, testability, reusability and transferability from one team to another.  '", "cate": "security", "id": 586}
+{"requirement": "'The system shall be able to log the IP address accordingly '", "cate": "security", "id": 587}
+{"requirement": "'The system must allow scalability so as to perform legitimate modification of user data. '", "cate": "security", "id": 588}
+{"requirement": "'The system ensure a secure storage of the user patterns so as to protect against compromise attackers. '", "cate": "security", "id": 589}
+{"requirement": "'The system shall be able to block any illegitimate detections so as to render efficiently utilise system resources. '", "cate": "security", "id": 590}
+{"requirement": "'The system must be supported by the following characteristics, testability, adaptability, extensibility, serviceability and localizability. '", "cate": "security", "id": 591}
+{"requirement": "'The system adapts to all types of application and provides maturity, fault tolerance and recoverability.  '", "cate": "security", "id": 592}
+{"requirement": "'The static attributes of the system predict potential operational performance bottlenecks and future scalability problems early to allow for correction early. '", "cate": "security", "id": 593}
+{"requirement": "'The system shall be able to enable payment which will have 2 factor authentication (static password and OTP) '", "cate": "security", "id": 594}
+{"requirement": "'The system shall be able to allow a user to register and sign in for the blood recipient '", "cate": "security", "id": 595}
+{"requirement": "'The system shall be able to hash passwords '", "cate": "security", "id": 596}
+{"requirement": "'The system shall be able to authenticate the username and password '", "cate": "security", "id": 597}
+{"requirement": "'The system shall be able to validate input'", "cate": "security", "id": 598}
+{"requirement": "'The system shall be able to encrypt communication '", "cate": "security", "id": 599}
+{"requirement": "'The system shall be able to notify the respected parties of the clinical incident  even when there is a fault '", "cate": "security", "id": 600}
+{"requirement": "'The system shall be able to provide help in a short period of time. '", "cate": "security", "id": 601}
+{"requirement": "'The system shall resist unofficial and unlawful usage even the action is by accident or intended. '", "cate": "security", "id": 602}
+{"requirement": "'The system should only grant access to legitimate users and in the defined stamp. '", "cate": "security", "id": 603}
+{"requirement": "'The web application will be secured by hardening and protecting the servers and restricting access from the outside. '", "cate": "security", "id": 604}
+{"requirement": "'The system shall be able to authenticate users so that any unauthorized persons should not be granted by the system '", "cate": "security", "id": 605}
+{"requirement": "'The system shall not be vulnerable to the security attacks '", "cate": "security", "id": 606}
+{"requirement": "'Information relating to passwords must be confidential '", "cate": "security", "id": 607}
+{"requirement": "'The system should be able to log all activities taking place on the system for audit trial purposes '", "cate": "security", "id": 608}
+{"requirement": "'The system should be able to match current faceprint with the faceprints in database '", "cate": "security", "id": 609}
+{"requirement": "'The system should be able to match RFID card/tag id with the user\u2019s face/person id to make for access to be granted '", "cate": "security", "id": 610}
+{"requirement": "'The system should be able to reject access to the person who presents the tag that belongs to someone else in high probability '", "cate": "security", "id": 611}
+{"requirement": "'The system shall put proper controls for user input validations and configuration management to resist software tempering '", "cate": "security", "id": 612}
+{"requirement": "'The system shall authenticate all users and grant access only to authorized users, to prevent unauthorized access to admin console '", "cate": "security", "id": 613}
+{"requirement": "'The system shall be able to allow logging of each user activity. '", "cate": "security", "id": 614}
+{"requirement": "'The proposed system will allow only a registered user to be granted access into some restricted zones within the organization. '", "cate": "security", "id": 615}
+{"requirement": "'The system enforces security administration to manage all the rights to the system features. '", "cate": "security", "id": 616}
+{"requirement": "'The system must be able to deal with network threats on the computer it would be installed on.  '", "cate": "security", "id": 617}
+{"requirement": "'When packets come in through the NIC, the system should be able to detect traffic out of the norm.  '", "cate": "security", "id": 618}
+{"requirement": "'The system shall be detecting intrusions specific to a designated area of protection '", "cate": "security", "id": 619}
+{"requirement": "'The system shall be detecting denial of service attacks to include service overloads, broadcast storms and also message flooding '", "cate": "security", "id": 620}
+{"requirement": "'The system shall be able to apply automatic recording of events and some incidents Security '", "cate": "security", "id": 621}
+{"requirement": "'The system should pertain to all the situations so that it can be recoverable in any error conditions.  '", "cate": "security", "id": 622}
+{"requirement": "'The system should work all the time and provide a means to handle errors with little or no input from the user. '", "cate": "security", "id": 623}
+{"requirement": "'The data provided by the system should be validated and verified were possible.'", "cate": "security", "id": 624}
+{"requirement": "'The system should be maintained properly so that it should be able to resolve any data conflicts and sustain at any condition.  '", "cate": "security", "id": 625}
+{"requirement": "'The program coding should be well documented and laid out particularly to facilitate future upgrades and additional functionality being added at a later date. '", "cate": "security", "id": 626}
+{"requirement": "'The system should be developed with future upgrades and additional functionality being added at a later date. '", "cate": "security", "id": 627}
+{"requirement": "'The system should be able to provide data for the current maximum number of tags presently two thousand for a period of thirty days in whatever format the user decides. '", "cate": "security", "id": 628}
+{"requirement": "'The system shall not support reverse engineering of its source code  '", "cate": "security", "id": 629}
+{"requirement": "'The system is deployed as an application on user machines thus it is cost-effective to maintain as it does not have many modules and online documentation including system documentation and test documentation for easy user acclimatization. '", "cate": "security", "id": 630}
+{"requirement": "'The system shall send a one-time password to the user phone for the completion of the login process '", "cate": "security", "id": 631}
+{"requirement": "'The system shall allow the user to encrypt/decrypt messages using AES algorithm '", "cate": "security", "id": 632}
+{"requirement": "'The system shall allow the user to check for data integrity using MD5 hash algorithm '", "cate": "security", "id": 633}
+{"requirement": "'The system shall allow the user to embed the encrypted message and retrieve encrypted message from the image using LBS technique '", "cate": "security", "id": 634}
+{"requirement": "'The system shall allow for checking data integrity '", "cate": "security", "id": 635}
+{"requirement": "'The system shall offer high level security, as it shall give access to authorized users only, '", "cate": "security", "id": 636}
+{"requirement": "'The system must also allow users to communicate securely knowing that their confidential data is safe from eavesdroppers. '", "cate": "security", "id": 637}
+{"requirement": "'The system shall be able to detect spam messages and direct them to spam in real time '", "cate": "security", "id": 638}
+{"requirement": "'The system will deliver emails whenever there is internet connection to receive the emails with minimal downtimes '", "cate": "security", "id": 639}
+{"requirement": "'The system will operate round the clock '", "cate": "security", "id": 640}
+{"requirement": "'The system shall be able to ensure the user passwords and data will be encrypted to ensure that user information is secured '", "cate": "security", "id": 641}
+{"requirement": "'The system shall be able to ensure the user access controls will be put in place to restrict unauthorized users to access user accounts '", "cate": "security", "id": 642}
+{"requirement": "'The system shall be able to be easily maintained and updated with new data that emerge since the spammers will be trying to bypass the filter with new tricks being employed. '", "cate": "security", "id": 643}
+{"requirement": "'The system shall be able to ensure the information provided include a unique username, password and some personal details which are needed to verify that the user is eligible to create an account. '", "cate": "security", "id": 644}
+{"requirement": "' The system shall have an optional email field for recovery in case one forgets password the reset link will be sent to that email with instructions '", "cate": "security", "id": 645}
+{"requirement": "'The system login page is for already existing users where they provide their unique username and password for verification and once the details are verified they are redirected to mailbox. '", "cate": "security", "id": 646}
+{"requirement": "'The system shall provide administrator with security to data to make sure that unauthorized users do not access the information. '", "cate": "security", "id": 647}
+{"requirement": "'The system shall provide all the internal users a backup of the operational and transactional data. '", "cate": "security", "id": 648}
+{"requirement": "'The system should be easy to maintain and it should be modifiable.'", "cate": "security", "id": 649}
+{"requirement": "'The system should have access control mechanism that take into account the use of passwords and individuals access rights.  '", "cate": "security", "id": 650}
+{"requirement": "'Each user is to be configured with a unique User Name and a password that can be changed when it is necessary.  '", "cate": "security", "id": 651}
+{"requirement": "'The system super administrator should be able to grant access privilege to users and restrict access of information and data users can view or modify at any given time.  '", "cate": "security", "id": 652}
+{"requirement": "'The system should have the ability to validate entered data hence reducing redundancy and duplication in the database. '", "cate": "security", "id": 653}
+{"requirement": "'Use of passwords to control access to data to reduce corruption and preserve confidentiality. '", "cate": "security", "id": 654}
+{"requirement": "'Use of a central database to enable real time data capturing and manipulation to facilitate access to laptop details from any computer connected to the database. '", "cate": "security", "id": 655}
+{"requirement": "'The system should be able to identify and trap user input error '", "cate": "security", "id": 656}
+{"requirement": "'The system shall not permit input of wrong data type. '", "cate": "security", "id": 657}
+{"requirement": "'The system should allow use of stringent passwords and different view levels to control access to data to reduce electronic fraudulent activities and unauthorized access to data. '", "cate": "security", "id": 658}
+{"requirement": "'The system must have a log on feature limiting individual uses to those functions they have a need to access according to their responsibilities. '", "cate": "security", "id": 659}
+{"requirement": "'The system database should be backed up continuously at least once every for hour in order to minimize data loss in the case of a catastrophic failure. '", "cate": "security", "id": 660}
+{"requirement": "'The systems administrator should maintain the system and its databases to ensure integrity and availability of information.'", "cate": "security", "id": 661}
+{"requirement": "'The system shall require a password to login the Provider Routers. '", "cate": "security", "id": 662}
+{"requirement": "'The system shall ask user to provide password. '", "cate": "security", "id": 663}
+{"requirement": "'System must allow clients to run a separate routing protocol from one in ISP network. '", "cate": "security", "id": 664}
+{"requirement": "'The system shall ensure device in one ODPF area must not communicate with another in a different OSPF area. '", "cate": "security", "id": 665}
+{"requirement": "'The system shall ensure that the authentication server interact with the database to check for registered user from the database '", "cate": "security", "id": 666}
+{"requirement": "'The system shall allow a lookup of registered users if requested by the authentication server. '", "cate": "security", "id": 667}
+{"requirement": "'The system will stand in-between the client and the server, however, it is associated within the server\u2019s architecture. '", "cate": "security", "id": 668}
+{"requirement": "'The system functions as an IDS/IPD and aids in relieving traffic targeting the server, in the event that a distributed DOS attack occurs and the server is flooded with the requests and is therefore unable to provide its usual service(s) to the client. '", "cate": "security", "id": 669}
+{"requirement": "'The system shall have high availability wherever it is needed. '", "cate": "security", "id": 670}
+{"requirement": "'The system shall provide authentication service which is tested when logging into the Django admin panel (back-end) of the system when the user logs into the system by entering credentials created from command prompt when running the manage code.  '", "cate": "security", "id": 671}
+{"requirement": "'The system shall enable the administrator to log into the system and to upload the captured traffic data into the analysis system so as to be accessed by any other administrators available. '", "cate": "security", "id": 672}
+{"requirement": "'The system shall be able to detect SQL Injection and XSS vulnerabilities for a website or a web application. '", "cate": "security", "id": 673}
+{"requirement": "'The system shall be able to analyse the detected vulnerability. '", "cate": "security", "id": 674}
+{"requirement": "'The system shall be able to identify acceptable low false positive rates. '", "cate": "security", "id": 675}
+{"requirement": "'The system shall be able to inspect SSL certificate. '", "cate": "security", "id": 676}
+{"requirement": "'The system shall be able to generate a report of the detected and analysed vulnerabilities. '", "cate": "security", "id": 677}
+{"requirement": "'The system will have a very low False Positive Rate so that it can correctly identify the false positive calls and differentiate them from the real vulnerability ones. '", "cate": "security", "id": 678}
+{"requirement": "'The system will have a very low False Negative Rate which means it be able to detect an actual vulnerability when it exists. '", "cate": "security", "id": 679}
+{"requirement": "'The system scanner may accept a certain number of URLS that should test them for selected vulnerabilities. '", "cate": "security", "id": 680}
+{"requirement": "'The system should be able to carefully diagnose the real vulnerabilities when they exist based on conducting formula-based experiments. '", "cate": "security", "id": 681}
+{"requirement": "'The system player shall be responsible for hashing the trimmed parts\u2019 names. '", "cate": "security", "id": 682}
+{"requirement": "'The system will be divided into modules i.e downloader, trimmer, player to enhance the maintainability of the system and its troubleshooting '", "cate": "security", "id": 683}
+{"requirement": "'The system\u2019s ability to produce a trimmed output will deprive an attacker (pirate) access to a single complete song file from any point onwards.  '", "cate": "security", "id": 684}
+{"requirement": "'The player will hide the trimmed files from any direct contact with user or attacker, thereby reliably depriving any illegal sharing of files. '", "cate": "security", "id": 685}
+{"requirement": "'The system shall allow authorized user to edit patient details.'", "cate": "security", "id": 686}
+{"requirement": "'The system shall analyse and record suspicious packets signatures and detects an anomaly if the following packets data matches the recorded threat related signatures. '", "cate": "security", "id": 687}
+{"requirement": "'The system shall use honeypot which records and analyses packets flowing through the network.  A honeypot is a system decoy which is used to make the attacker believe that he/she is attacking the intended system.  '", "cate": "security", "id": 688}
+{"requirement": "'The system will ensure user validation will be done during login to insure that the user is valid and that the user only has access to his or her permission data.  '", "cate": "security", "id": 689}
+{"requirement": "'The system will ensure that general users will only have access through the user interface. '", "cate": "security", "id": 690}
+{"requirement": "'The system shall provide a section for verification in the sense that if an image is said to have a watermark it should be able to detect and display the watermark.'", "cate": "security", "id": 691}
+{"requirement": "'The system shall allow an author who desires to protect his/her work from unauthorized use, to upload an image to embed the invisible digital watermark whenever  submitting a piece of art.  '", "cate": "security", "id": 692}
+{"requirement": "'The system shall in the event that a watermarked image is submitted twice or more by different authors, the administrator shall be able to verify the legitimate owner of the image to protect the owner copyrights. '", "cate": "security", "id": 693}
+{"requirement": "'The system shall ensure that, as a watermark is an essential part of data, it must continue even after signal processing and data manipulation including malicious operation that endeavors to remove the watermark. '", "cate": "security", "id": 694}
+{"requirement": "'The system principle of authentication applies in that the system notifies if there is a watermark on the image or not. '", "cate": "security", "id": 695}
+{"requirement": "'The system shall capture network traffic between the hypervisor and the subject/monitored virtual machine. '", "cate": "security", "id": 696}
+{"requirement": "'The system shall automatically acquire a forensic image of the compromised VM main memory upon detection of a severe intrusion. '", "cate": "security", "id": 697}
+{"requirement": "'The system shall preserve the integrity of acquired forensic imagines by applying integrity checksums and hashes. '", "cate": "security", "id": 698}
+{"requirement": "'The Intrusion Detection module will be based on a tried and tested architecture and the same will apply to the memory acquisition tool,  to avoid violating the proper coding principles as well as best practices for documentation. ''", "cate": "security", "id": 699}
+{"requirement": "'The system shall provide access control to the user interface. '", "cate": "security", "id": 700}
+{"requirement": "'The system shall provide a secure channel of communication between the backend system and the web user interface. '", "cate": "security", "id": 701}
+{"requirement": "'The system shall provide log in and logout capabilities which can be seen as the first line of security which most systems should possess for authentication and accountability purposes. '", "cate": "security", "id": 702}
+{"requirement": "'The system shall have encrypt and decrypt modules in place to attain better and improved security, for containing privacy invasions in overall. '", "cate": "security", "id": 703}
+{"requirement": "'The system shall provide file type filtering so as to avoid overloading the normal flow information with unnecessary files. '", "cate": "security", "id": 704}
+{"requirement": "'The system offers little room for a delayed data transmissions and system failures due to error handling procedures and feedbacks. '", "cate": "security", "id": 705}
+{"requirement": "'The system is a lightweight app which has all the algorithms and libraries engraved within itself for easy management of information which that app would be working with thus making its maintenance easy and simple. '", "cate": "security", "id": 706}
+{"requirement": "'The system shall be able to authenticate pin entered. '", "cate": "security", "id": 707}
+{"requirement": "'The system shall be secured against environmental threats and this is one of its prime function. '", "cate": "security", "id": 708}
+{"requirement": "'The system components are not going to be degraded by weather changes such as heat or humidity even the casing will be designed to suit the prevailing weather conditions. '", "cate": "security", "id": 709}
+{"requirement": "' The system shall be reliable as routine maintenance shall be done often. '", "cate": "security", "id": 710}
+{"requirement": "'The system shall be fast in intrusion response, to help in stopping the intensity of the damage or mitigation of the risk.  '", "cate": "security", "id": 711}
+{"requirement": "'The system can be configured to work with a camera, a PC and other access control system to enhance multiple factor authentication. '", "cate": "security", "id": 712}
+{"requirement": "'The system will cater for its ability to be extended with more features and functionalities without compromising its original one or affecting the operations of the user. '", "cate": "security", "id": 713}
+{"requirement": "'The system shall be safeguarded against deliberate and intrusive faults from internal and external sources as it has proper controls such as user input validations and anti-software tempering '", "cate": "security", "id": 714}
+{"requirement": "' The system shall offer authentication, authorization, configuration management to prevent access to admin console. '", "cate": "security", "id": 715}
+{"requirement": "'The system shall be available to users all the time to ensure a 24/7 service delivery and give results in a short period of time. '", "cate": "security", "id": 716}
+{"requirement": "'The proposed system shall be designed such that any glitch can be fixed in no time to restore service to users and it will allow adding functionality easily. '", "cate": "security", "id": 717}
+{"requirement": "'The system must generate a shared encryption key, upon registration. '", "cate": "security", "id": 718}
+{"requirement": "'The system shall be able to allow the user to generate their ECC public and private keys.  These keys are to be used for the encryption of the AES encryption key and also for PDP. '", "cate": "security", "id": 719}
+{"requirement": "'The system shall be able to secure uploaded files using AES algorithm with a 256-bit key.  The system shall automatically encrypt the files that will be uploaded by the user for storage using a 256-bit encryption key. '", "cate": "security", "id": 720}
+{"requirement": "'The system shall be able to allow the user to check the integrity of stored data through the PDP functionality. '", "cate": "security", "id": 721}
+{"requirement": "'The system is web based and therefore guarantees maximum availability of data to the cloud data owners. '", "cate": "security", "id": 722}
+{"requirement": "'The system is easy to maintain as it can easily be integrated with other systems, modified or reused on other different platforms '", "cate": "security", "id": 723}
+{"requirement": "'The system enhances security through the use of more secure and efficient enciphering algorithms, that is Advanced encryption standard with a 256-bit key and Elliptic curve cryptography.  '", "cate": "security", "id": 724}
+{"requirement": "'The system shall implement a combination of cryptographic algorithms that are secure and have proven to be unbreakable by the current technologies, hence using these algorithms collectively strengthens the security of the system. '", "cate": "security", "id": 725}
+{"requirement": "'The proposed system is meant to use a two-factor user authentication system which ensures that only the registered and legitimate user is able to access the system and upload or view the data.  '", "cate": "security", "id": 726}
+{"requirement": "'The system shall ensure that once the account holder has provided a correct login password, he or she will receive a OTP or code sent either via the email or via the data owner\u2019s mobile phone depending on their settings.  '", "cate": "security", "id": 727}
+{"requirement": "'The system security shall add an extra layer of defense making it difficult for an adversary to successfully gain unauthorized access to the system and compromise the integrity of the stored data. '", "cate": "security", "id": 728}
+{"requirement": "'The system has got an audit or logging mechanism which enables the user to check and view if there were other malicious activities that have been happening when after they logged out of the system.  '", "cate": "security", "id": 729}
+{"requirement": "'The system shall be able to show a section which displays the last time a user logged in the system and a summary of the activities they did on the system upon logging in. '", "cate": "security", "id": 730}
+{"requirement": "'The system implements a PDP scheme which allows the user to audit and check if the untrusted server or an adversary did not compromise the integrity of the uploaded data. '", "cate": "security", "id": 731}
+{"requirement": "'The system shall implement authentication using PKI. '", "cate": "security", "id": 732}
+{"requirement": "'The system shall allow a user to register through sponsorship from relevant Human Resources. '", "cate": "security", "id": 733}
+{"requirement": "'The system shall allow a user to log into system and authenticated. '", "cate": "security", "id": 734}
+{"requirement": "'The system shall allow a user to view content or dashboard. '", "cate": "security", "id": 735}
+{"requirement": "'The system shall allow a user to manage their own password. '", "cate": "security", "id": 736}
+{"requirement": "'The system shall allow a user to be authenticated through the use of digitally signed certificates, and again single-sign-on functionality will be fused into the system to allow once off authentication as long as the session is deemed active and valid. '", "cate": "security", "id": 737}
+{"requirement": "'The system shall allow user authentication process to be done through  trusted parties via the internet '", "cate": "security", "id": 738}
+{"requirement": "'The system shall reduce the occurrence of failure in the system.  '", "cate": "security", "id": 739}
+{"requirement": "'The system will be using local Microsoft based certificates, thus the intention is to ensure availability of the certificate authority at all times.'", "cate": "security", "id": 740}
+{"requirement": "'To on the system, The system shall provide redundancy to avoid a single point of failure and reduce interruptions which will render the system unusable. '", "cate": "security", "id": 741}
+{"requirement": "'The system will employ encryption at the database side and use HTTPS when accessing networked resources over the internet.  '", "cate": "security", "id": 742}
+{"requirement": "'PlutoMail will offer spam protection at server level and eliminates the need to install and update antispam software on each desktop.  '", "cate": "security", "id": 743}
+{"requirement": "'The system is able to automatically adapt to the email environment to constantly tune and improve spam detection.  '", "cate": "security", "id": 744}
+{"requirement": "'The system shall allow the radiologist to, encrypt and upload the images to the cloud. '", "cate": "security", "id": 745}
+{"requirement": "'The system shall enable the radiologist to verify the integrity of stored images through the PoR functionality. '", "cate": "security", "id": 746}
+{"requirement": "'System shall provide access only to legitimate users, resist unathorised users, accidental or unintended usage. '", "cate": "security", "id": 747}
+{"requirement": "'The system shall allow Analysis of locations prevalent crime using crowd-sourced data and reports data. '", "cate": "security", "id": 748}
+{"requirement": "'The system database must be located in a special secure server and must be backups to other servers directly at specific times to avoid loss and damage of data '", "cate": "security", "id": 749}
+{"requirement": "'The system shall be available at all times, meaning the user can access it using a device application which addresses the user concern for how dependable the system is during normal operating times. '", "cate": "security", "id": 750}
+{"requirement": "'The system must be considered downtime impact on the business, transport unavailability and minimizing unavailability.'", "cate": "security", "id": 751}
+{"requirement": "'The system shall allow a user to listen for any port scan on university WIFI network. '", "cate": "security", "id": 752}
+{"requirement": "'The system shall allow a user to block internet to the computer doing port scanning. '", "cate": "security", "id": 753}
+{"requirement": "'The system shall allow a user to check netstat and recent network connections to see if rogue node it a victim of pivoting and if so trace the attacking machine. '", "cate": "security", "id": 754}
+{"requirement": "'The system shall allow a user to recover unique identifiers of the node which was used to generate the node\u2019s unique ID/fingerprint upon registration when the owner entered/joined the university with it '", "cate": "security", "id": 755}
+{"requirement": "'The system shall allow background processes to be monitoring for any scan and relaying information to the registry about any unusual activities.'", "cate": "security", "id": 756}
+{"requirement": "'The software is a safety-critical one and is used to perform last line of defense protection against attacks, since defects in safety-critical software can lead to serious service disruption or server down time. '", "cate": "security", "id": 757}
+{"requirement": "'The system\u2019s listening for scanning is done while listening to the OS activities.  '", "cate": "security", "id": 758}
+{"requirement": "'The software will look at port scanning only on the host it will be deployed on, this will devote all the listen to one part of the many policies in a computer. '", "cate": "security", "id": 759}
+{"requirement": "'The product can be corrected by updates, patches and with newer versions when required. '", "cate": "security", "id": 760}
+{"requirement": "'The system shall allow anomalies to be curbed after detection. '", "cate": "security", "id": 761}
+{"requirement": "'The system allows user re-verification by the usage of AVS and distinct security questions. '", "cate": "security", "id": 762}
+{"requirement": "'The framework ought to be accessible wherever it is required.  At whatever point the clients needs to make a purchase'", "cate": "security", "id": 763}
+{"requirement": "'The main system is centered around security on online transactions hence it is secure. '", "cate": "security", "id": 764}
+{"requirement": "'The system should allow for quick error recovery. '", "cate": "security", "id": 765}
+{"requirement": "'The system should allow room for quick error recovery.  '", "cate": "security", "id": 766}
+{"requirement": "'The system should allow for quick error recovery. '", "cate": "security", "id": 767}
+{"requirement": "'The system in terms of responsiveness is a real time system such that clients can easily access medical records of baby\u2019s at any given point in time. '", "cate": "security", "id": 768}
+{"requirement": "'The system will be used at a national level offering reliability, however, it is hard to balance development time but it provides maturity, fault tolerance and recoverability. '", "cate": "security", "id": 769}
+{"requirement": "'The system is a very secure system with log on credentials allowing access to only authorised members. It ensures that information is kept secured at every moment and only the right people have access to records. '", "cate": "security", "id": 770}
+{"requirement": "'The system should allow for error recovery. '", "cate": "security", "id": 771}
+{"requirement": "'The system finds indicators (patterns, attributes) of, or to exploit vulnerabilities known to exist, in the detected services / software versions'", "cate": "security", "id": 772}
+{"requirement": "'The system shall verify the SSL certificate on a given web server to make sure it\u00a0is correctly installed, valid, trusted and doesn't give any errors to any of the users.'", "cate": "security", "id": 773}
+{"requirement": "'The system connects to web application server and displays the results of the SSL connection including what SSL certificate is installed and whether it gives out the correct intermediate certificates. '", "cate": "security", "id": 774}
+{"requirement": "'The system shall create hashes of the passwords and store them upon signing up, once a user types password(s) in plain text format. '", "cate": "security", "id": 775}
+{"requirement": "'The system shall give the user an option to reset a forgotten password of an existing username by e-mail. '", "cate": "security", "id": 776}
+{"requirement": "'The system users shall be able to access the system using an existing hard to guess password. '", "cate": "security", "id": 777}
+{"requirement": "'The system ensures that the user is properly authenticated for every system access. '", "cate": "security", "id": 778}
+{"requirement": "'The system shall provide a user with the option to encrypt and decrypt data. '", "cate": "security", "id": 779}
+{"requirement": "'The system shall execute its tasks accurately when issued a command. Testing will ensure that all functions are properly included. '", "cate": "security", "id": 780}
+{"requirement": "'The system shall be self-protective and failure proof, exception handling will ensure that the system is fail safe and gracefully stops under error conditions.'", "cate": "security", "id": 781}
+{"requirement": "'Employees shall be identified by a 6 character password. '", "cate": "security", "id": 782}
+{"requirement": "'The system shall enable data multiple replications. '", "cate": "security", "id": 783}
+{"requirement": "' To system shall allow changes to be made in an authorised manner '", "cate": "security", "id": 784}
+{"requirement": "'The system shall be able to show clients KYC information to authorised users. '", "cate": "security", "id": 785}
+{"requirement": "'The system shall allow secure storage of client information. '", "cate": "security", "id": 786}
+{"requirement": "'The transaction\u2019s digital signatures are validated by the Ethereum protocol.'", "cate": "security", "id": 787}
+{"requirement": "'The transaction data is validated by the smart contract. '", "cate": "security", "id": 788}
+{"requirement": "'The system shall prompt the user to identify themselves by supplying a username and password. '", "cate": "security", "id": 789}
+{"requirement": "'The system shall allow the administrator to assign roles to users. '", "cate": "security", "id": 790}
+{"requirement": "'The system shall notify the administrator of who accesses the system in case a data breach occurs. '", "cate": "security", "id": 791}
+{"requirement": "'The system shall allow data input into the system to be encrypted before being sent to the database instance on our cloud server for storage. '", "cate": "security", "id": 792}
+{"requirement": "'The system shall enable users to retrieve the data on demand including in cases of emergency where it should be retrieved and decrypted before it can be accessed by the medical practitioner. '", "cate": "security", "id": 793}
+{"requirement": "'The system shall be designed with ease of access in mind as the data may be needed in emergency situations. '", "cate": "security", "id": 794}
+{"requirement": "'The system shall allow that as the number of patient records increases with time and the capacity of the system to hold these records must also increase as the records increase.  '", "cate": "security", "id": 795}
+{"requirement": "'The system shall have high availability in such a way that it remains accessible online even during maintenance. '", "cate": "security", "id": 796}
+{"requirement": "'The system shall ensure that the system records shall be encrypted and stored in the cloud as cyphertext. '", "cate": "security", "id": 797}
+{"requirement": "'The system shall maintain audit logs '", "cate": "security", "id": 798}
+{"requirement": "'The system shall allow the administrator to log in to access the system. '", "cate": "security", "id": 799}
+{"requirement": "'The system shall enable facial recognition. '", "cate": "security", "id": 800}
+{"requirement": "'The system shall enable face identification through details about that person if he/she is an employee.'", "cate": "security", "id": 801}
+{"requirement": "'The system components shall be built with reusability so it can be integrated into other systems. '", "cate": "security", "id": 802}
+{"requirement": "'The system shall ensure integrity and consistency in all its processes. '", "cate": "security", "id": 803}
+{"requirement": "'The system shall guarantee the privacy of user data at all times. '", "cate": "security", "id": 804}
+{"requirement": "'The system shall allow people to connect to their accounts after they initially register with the system and sign in to access it. '", "cate": "security", "id": 805}
+{"requirement": "'The system shall allow users to answer questions on their profile after they are requested to fill in questions at registration which will be used as challenge questions when password is forgotten. '", "cate": "security", "id": 806}
+{"requirement": "'The system shall allow users to download files when they want to use them upon answering correctly the randomly generated questions from their profiles. '", "cate": "security", "id": 807}
+{"requirement": "'The system shall allow authorised users to manage their files that is update and delete data from their accounts. '", "cate": "security", "id": 808}
+{"requirement": "'The system shall generate decoy files to supply to an intruder whenever a suspicious download is detected.'", "cate": "security", "id": 809}
+{"requirement": "'The system shall be clearly documented so as to allow easy maintenance on different environments on which the system will be installed. '", "cate": "security", "id": 810}
+{"requirement": "'The system shall allow only authorised users to access information and it shall protect users\u2019 data from intruders. '", "cate": "security", "id": 811}
+{"requirement": "'The system shall allow the student to experience single sign on across the university\u2019s web services. '", "cate": "security", "id": 812}
+{"requirement": "'The system shall be able to allocate resources to the actual student who has requested the service. '", "cate": "security", "id": 813}
+{"requirement": "'The system shall provide a secure student authentication and authorisation by using security SAML tokens containing assertions about a subject for communication between trusted parties. '", "cate": "security", "id": 814}
+{"requirement": "'The system shall use symmetric key encryption AES and asymmetric encryption key on the browser/client side to secure confidentiality of information. '", "cate": "security", "id": 815}
+{"requirement": "'The system shall process the data received and generate an md5 hash of the data. '", "cate": "security", "id": 816}
+{"requirement": "'The system shall report when a form of identity theft is noticed. '", "cate": "security", "id": 817}
+{"requirement": "'The system shall blacklist any user that has done identity theft. '", "cate": "security", "id": 818}
+{"requirement": "'The system shall be maintainable as it can be integrated with other systems easily, can be modified or have its components reused on other platforms.'", "cate": "security", "id": 819}
+{"requirement": "'The system shall ensure confidentiality of vital personal information collected at all the system\u2019s controllers. '", "cate": "security", "id": 820}
+{"requirement": "'The system shall ensure that personal information is not displayed to the public but is encoded in a QR code '", "cate": "security", "id": 821}
+{"requirement": "'The system shall provide the integrity service through use of md5 hash values to prevent unauthorised modification '", "cate": "security", "id": 822}
+{"requirement": "'The system shall that the information collected from the previous stage of life should be readily available in any stage and whenever it is required by the rightful user '", "cate": "security", "id": 823}
+{"requirement": "'The system shall hash the passwords using HMAC '", "cate": "security", "id": 824}
+{"requirement": "'The system shall generate Using Time-based Passwords via the Google- Authenticator Application. '", "cate": "security", "id": 825}
+{"requirement": "'The system shall authenticate the user with username and password. '", "cate": "security", "id": 826}
+{"requirement": "'The system shall allow a user to register and log in. '", "cate": "security", "id": 827}
+{"requirement": "'The system shall validate user passwords. '", "cate": "security", "id": 828}
+{"requirement": "'The system shall ensure that the password is verifiable whenever they want to log in '", "cate": "security", "id": 829}
+{"requirement": "'The system shall allow only the legitimate user to modify stored information '", "cate": "security", "id": 830}
+{"requirement": "'The system shall allow the bank server to verify the credentials of users when logging in for a short period of time. '", "cate": "security", "id": 831}
+{"requirement": "'The system server shall generate the TOTP value that lasts for the specified amount of time. '", "cate": "security", "id": 832}
+{"requirement": "'The system generated TOTP shall be a unique passcode that changes after an interval of 30 seconds. '", "cate": "security", "id": 833}
+{"requirement": "'The system shall enable password changing in a specified time.'", "cate": "security", "id": 834}
+{"requirement": "'The system shall be given a platform to select a unique watermark that will be inserted onto a document to protect data by providing ownership to the rightful people. '", "cate": "security", "id": 835}
+{"requirement": "'The system shall allow a user to log into his or her own account providing his or her own email address and password. '", "cate": "security", "id": 836}
+{"requirement": "'The system shall allow an authenticated user to insert a watermark on a document which will be in PDF format. '", "cate": "security", "id": 837}
+{"requirement": "'The system shall prevent manipulation of the watermark by an unauthorised user. '", "cate": "security", "id": 838}
+{"requirement": "'The system shall   provide authentication service for all users before they can be allowed to embed a watermark through use of an email client. '", "cate": "security", "id": 839}
+{"requirement": "'The system shall encrypt and decrypt files over a wireless connection. '", "cate": "security", "id": 840}
+{"requirement": "'The system shall be able to do random check on connection. '", "cate": "security", "id": 841}
+{"requirement": "'The system shall allow automatic locking after connection is lost.'", "cate": "security", "id": 842}
+{"requirement": "' The system shall authenticate all users.'", "cate": "security", "id": 843}
+{"requirement": "'The system shall allow files to be accessible only to authorised personnel.'", "cate": "security", "id": 844}
+{"requirement": "'The system shall provide Two Factor Authentication. '", "cate": "security", "id": 845}
+{"requirement": "'The system shall encrypt files using AES algorithm.'", "cate": "security", "id": 846}
+{"requirement": "'The system shall be able to filter outgoing traffic if it contains proxy related request. '", "cate": "security", "id": 847}
+{"requirement": "'The system shall  be able to filter incoming traffic if it is from a proxy server. '", "cate": "security", "id": 848}
+{"requirement": "'The system shall   be able to deny websites listed in the database. '", "cate": "security", "id": 849}
+{"requirement": "'The system shall notify administrators of a proxy requesting IP address or identity. '", "cate": "security", "id": 850}
+{"requirement": "'The system shall  ensure that the firewall should be able to withstand any load of traffic given to it and be able to filter it efficiently. '", "cate": "security", "id": 851}
+{"requirement": "'The system shall resist unauthorised, accidental or unintended usage and provide access only to legitimate users. '", "cate": "security", "id": 852}
+{"requirement": "'The system shall allow administrator to view IP address. '", "cate": "security", "id": 853}
+{"requirement": "'The system shall  allow administrator to make changes. '", "cate": "security", "id": 854}
+{"requirement": "'The system shall be introduced in each representative\u2019s mobile device to screen the gadget\u2019s applications and record the activities performed by the gadget. '", "cate": "security", "id": 855}
+{"requirement": "'The system shall  allow the framework executive to sign on to the site keeping in mind the end goal to see the warning messages. '", "cate": "security", "id": 856}
+{"requirement": "'The system\u2019s QoS shall guarantee its availability at  99.9% uptime.'", "cate": "security", "id": 857}
+{"requirement": "'The system shall  guarantee confidentiality through encryption of stored data with AES. '", "cate": "security", "id": 858}
+{"requirement": "'The system shall  use QR codes to facilitate access granting. '", "cate": "security", "id": 859}
+{"requirement": "'The system shall  allow for anomalies to be curbed after detection.'", "cate": "security", "id": 860}
+{"requirement": "'The system shall perform user re-verification using AVS and distinct security questions. '", "cate": "security", "id": 861}
+{"requirement": "'The framework shall  be accessible, wherever and whenever a client needs to make a purchase. '", "cate": "security", "id": 862}
+{"requirement": "'The system shall  provide mechanisms for the security of online transactions. '", "cate": "security", "id": 863}
+{"requirement": "'The system shall  restrict illegal sharing of video content protected by copyright providing a secure algorithm for downloading and playback. '", "cate": "security", "id": 864}
+{"requirement": "'The system server shall  be able to encrypt video content before it is downloaded. '", "cate": "security", "id": 865}
+{"requirement": "'The system shall ensure that the user can only download if registered with the server. '", "cate": "security", "id": 866}
+{"requirement": "'The system shall enable the client to decrypt video content to a virtual file and parse the location to media players.'", "cate": "security", "id": 867}
+{"requirement": "'The system shall  give each user who purchases a copy of a video a lifetime access right to authentic copy the video. '", "cate": "security", "id": 868}
+{"requirement": "'The system shall deny access to unauthorised users to redistribute the copy they legally purchase. '", "cate": "security", "id": 869}
+{"requirement": "'The system shall  distribute authentic copies of each supplied video. '", "cate": "security", "id": 870}
+{"requirement": "'The system shall  encrypt and decrypt files using a wireless connection. '", "cate": "security", "id": 871}
+{"requirement": "'The system shall  lock automatically after the connection is lost. '", "cate": "security", "id": 872}
+{"requirement": "'The system shall offer user authentication before any user is granted access to the services. '", "cate": "security", "id": 873}
+{"requirement": "'The system shall offer confidentiality through encryption with AES. '", "cate": "security", "id": 874}
+{"requirement": "'The system shall be flexible and adapts to changes. '", "cate": "security", "id": 875}
+{"requirement": "'The system shall be available to secure the files from unauthorised users. '", "cate": "security", "id": 876}
+{"requirement": "'The system shall  provide Two Factor Authentication. '", "cate": "security", "id": 877}
+{"requirement": "'The system shall  encompass factors of complex computations, robustness and security. '", "cate": "security", "id": 878}
+{"requirement": "'The system shall ensure that the watermark as an essential part of the data remains even after signal processing and data manipulation including any malicious activity '", "cate": "security", "id": 879}
+{"requirement": "'The system shall provide authentication by ensuring that the agents compare the watermark keys on the detected images with the keys already stored in the agency\u2019s database. '", "cate": "security", "id": 880}
+{"requirement": "'The system shall secure the network by SSL to encrypt sensitive data before it travels within a network and decrypt it when it arrives at an agent server. '", "cate": "security", "id": 881}
+{"requirement": "'The system shall ensure that the communication of the agents and the agency or server is such that only the registered agents can report to the agency. '", "cate": "security", "id": 882}
+{"requirement": "'The system shall be able to sniff the traffic to and from the network in real-time. '", "cate": "security", "id": 883}
+{"requirement": "'The system shall analyse the network traffic and detects intrusion, attacks and threats to the network. '", "cate": "security", "id": 884}
+{"requirement": "'The system shall be able to warn the network administrator about the possible occurrence of an intrusion attack and provide information regarding that attack.'", "cate": "security", "id": 885}
+{"requirement": "'The system shall block traffic to and from the network that is identified to be potentially malicious. '", "cate": "security", "id": 886}
+{"requirement": "'The system shall guarantee reliability and resilient to failure '", "cate": "security", "id": 887}
+{"requirement": "'The system shall be developed to be available all the time. '", "cate": "security", "id": 888}
+{"requirement": "'The system shall be able to detect novel attacks which current systems do not yet detect. '", "cate": "security", "id": 889}
+{"requirement": "'The system shall not require constant updating of its signature as it will be learning on its own and updating its signatures on its own. '", "cate": "security", "id": 890}
+{"requirement": "'The system shall allow access to authorised users only. '", "cate": "security", "id": 891}
+{"requirement": "'The system shall show a panel for logs of the anomalies detected.'", "cate": "security", "id": 892}
+{"requirement": "'The system shall allow a member to spontaneously form a group of n signers using group public keys which associate the group members. '", "cate": "security", "id": 893}
+{"requirement": "'The system shall allow a user to sign a document on behalf of the group using their secret key. '", "cate": "security", "id": 894}
+{"requirement": "'The system shall allow the recipient to verify the signature using the group public key so that they will be convinced that it actually came from the organisation without the knowledge of the actual signer. '", "cate": "security", "id": 895}
+{"requirement": "'The system shall be able to predict potential operational performance bottlenecks and future scalability problems.'", "cate": "security", "id": 896}
+{"requirement": "'The system shall be easy to maintain as it shall be built following best practices in documentation, complexity avoidance and good programming strategies. '", "cate": "security", "id": 897}
+{"requirement": "'The system shall ensure that only authorised users are granted access. '", "cate": "security", "id": 898}
+{"requirement": "'The system shall allow room for error recovery '", "cate": "security", "id": 899}
+{"requirement": "'The system shall be able to identify wrong input. '", "cate": "security", "id": 900}
+{"requirement": "'The system shall have log in and log out capabilities which can be seen as the first line of security which most systems should possess for authentication and accountability purposes. '", "cate": "security", "id": 901}
+{"requirement": "'The system shall provide reliability and fault tolerance through extensive stress testing '", "cate": "security", "id": 902}
+{"requirement": "'The system shall offer input validation.'", "cate": "security", "id": 903}
+{"requirement": "'The system shall employ good coding principles like loose coupling of modules for easy maintainance. '", "cate": "security", "id": 904}
+{"requirement": "'The system shall produce encrypted payload and the message signature. '", "cate": "security", "id": 905}
+{"requirement": "'The system shall ensure that each private key has to be encrypted with a password to keep it secure. '", "cate": "security", "id": 906}
+{"requirement": "'The system shall ensure that the public key is left open and accessible to the public domain. '", "cate": "security", "id": 907}
+{"requirement": "'The system shall be able to detect fraudulent transactions in rea-time. '", "cate": "security", "id": 908}
+{"requirement": "'The system shall allow for error recovery. '", "cate": "security", "id": 909}
+{"requirement": "'The system shall ensure that sensitive information of transaction details should be hashed in the database, in case of a data breach.'", "cate": "security", "id": 910}
+{"requirement": "'The system shall enforce that all users login before they can access the system. '", "cate": "security", "id": 911}
+{"requirement": "'The system shall offer error handling capabilities. '", "cate": "security", "id": 912}
+{"requirement": "'The system shall enable authorised reversal of actions. '", "cate": "security", "id": 913}
+{"requirement": "'The system shall maintain information on log in and log out for accountability. '", "cate": "security", "id": 914}
+{"requirement": "'The system shall enable encryption and decryption capabilities to protect files. '", "cate": "security", "id": 915}
+{"requirement": "'The system shall allow file type filtering to avoid the overloading of the normal flow information with unnecessary files. '", "cate": "security", "id": 916}
+{"requirement": "'The system shall be simple and easy to maintain. '", "cate": "security", "id": 917}
+{"requirement": "'The system shall enable the systems administrator to log on to the website in order to view the notification messages. '", "cate": "security", "id": 918}
+{"requirement": "'The system shall filter harmful websites against URLs of known harmful websites. '", "cate": "security", "id": 919}
+{"requirement": "'The system shall collect and analyse data that the child is typing and if it captures certain keywords or a continuous sequence of expletive, it should send an alert through text to the parent. '", "cate": "security", "id": 920}
+{"requirement": "'The system shall generate and send periodic logs to the parent\u2019s smartphone. '", "cate": "security", "id": 921}
+{"requirement": "'The system shall prevent any media from being sent or received using Bluetooth. '", "cate": "security", "id": 922}
+{"requirement": "'The system shall be able to generate periodic logs as well as collect and analyse data alerting parents whenever certain keywords are typed. '", "cate": "security", "id": 923}
+{"requirement": "'The system shall be up and running all the time as long as the smartphone is in use to monitor the child\u2019s activities. '", "cate": "security", "id": 924}
+{"requirement": "'The system shall be able to adapt as new URLs and websites are added to those filtered as they emerge. '", "cate": "security", "id": 925}
+{"requirement": "'The system shall allow a user who has a Twitter account to create an application to access tokens. '", "cate": "security", "id": 926}
+{"requirement": "'The system shall be scalable and able to handle growth in data flow leveraging the Twitter API capabilities. '", "cate": "security", "id": 927}
+{"requirement": "' The system shall ensure the database containing keywords shall be protected against SQL Injection '", "cate": "security", "id": 928}
+{"requirement": "'The system shall be capable of Malware detection and classify of both known and unknown Malware into their respective families. '", "cate": "security", "id": 929}
+{"requirement": "'The system shall be able to detect and combat both existing and new Malware. '", "cate": "security", "id": 930}
+{"requirement": "'The system shall have an analyser which will execute the Malware files to inspect the type '", "cate": "security", "id": 931}
+{"requirement": "'The system shall be maintainable as it is built with three modules with commands that avoid violating coding principles '", "cate": "security", "id": 932}

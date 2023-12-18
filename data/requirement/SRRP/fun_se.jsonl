@@ -1,0 +1,190 @@
+{"id": 1, "requirement": "The system shall display all the products that can be configured.", "cate": "functional"}
+{"id": 2, "requirement": "The system shall allow user to select the product to configure.", "cate": "functional"}
+{"id": 3, "requirement": "The system shall display all the available components of the product to configure", "cate": "functional"}
+{"id": 4, "requirement": "The system shall enable user to add one or more component to the configuration.", "cate": "functional"}
+{"id": 5, "requirement": "The system shall notify the user about any conflict in the current configuration.", "cate": "functional"}
+{"id": 6, "requirement": "The system shall allow user to update the configuration to resolve conflict in the current configuration.", "cate": "functional"}
+{"id": 7, "requirement": "The system shall allow user to confirm the completion of current configuration", "cate": "functional"}
+{"id": 8, "requirement": "The system shall display detailed information of the selected products.", "cate": "functional"}
+{"id": 9, "requirement": "The system shall provide browsing options to see product details.", "cate": "functional"}
+{"id": 10, "requirement": "The system shall display detailed product categorization to the user.", "cate": "functional"}
+{"id": 11, "requirement": "The system shall enable user to enter the search text on the screen.", "cate": "functional"}
+{"id": 12, "requirement": "The system shall enable user to select multiple options on the screen to search.", "cate": "functional"}
+{"id": 13, "requirement": "The system shall display all the matching products based on the search", "cate": "functional"}
+{"id": 14, "requirement": "The system shall display only 10 matching result on the current screen.", "cate": "functional"}
+{"id": 15, "requirement": "The system shall enable user to navigate between the search results.", "cate": "functional"}
+{"id": 16, "requirement": "The system shall notify the user when no matching product is found on the search.", "cate": "functional"}
+{"id": 17, "requirement": "The system shall allow user to create profile and set his credential", "cate": "functional"}
+{"id": 18, "requirement": "The system shall authenticate user credentials to view the profile", "cate": "functional"}
+{"id": 19, "requirement": "The system shall allow user to update the profile information", "cate": "functional"}
+{"id": 20, "requirement": "The system shall enable user to select multiple options on the screen to search.", "cate": "functional"}
+{"id": 21, "requirement": "The system shall display all the matching products based on the search", "cate": "functional"}
+{"id": 22, "requirement": "The system shall display only 10 matching result on the current screen.", "cate": "functional"}
+{"id": 23, "requirement": "The system shall enable user to navigate between the search results.", "cate": "functional"}
+{"id": 24, "requirement": "The system shall notify the user when no matching product is found on the search.", "cate": "functional"}
+{"id": 25, "requirement": "The system shall allow user to create profile and set his credential.", "cate": "functional"}
+{"id": 26, "requirement": "The system shall authenticate user credentials to view the profile.", "cate": "functional"}
+{"id": 27, "requirement": "The system shall allow user to update the profile information.", "cate": "functional"}
+{"id": 28, "requirement": "The system shall display both the active and completed order history in the customer profile.", "cate": "functional"}
+{"id": 29, "requirement": "The system shall allow user to select the order from the order history.", "cate": "functional"}
+{"id": 30, "requirement": "The system shall display the detailed information about the selected order.", "cate": "functional"}
+{"id": 31, "requirement": "The system shall display the most frequently searched items by the user in the profile.", "cate": "functional"}
+{"id": 32, "requirement": "The system shall allow user to register for newsletters and surveys in the profile.", "cate": "functional"}
+{"id": 33, "requirement": "The system shall provide online with FAQ\u2019s customer support and sitemap options for customer support.", "cate": "functional"}
+{"id": 34, "requirement": "The system shall allow user to select the support type he wants.", "cate": "functional"}
+{"id": 35, "requirement": "The system shall allow user to enter the customer and product information for the support.", "cate": "functional"}
+{"id": 36, "requirement": "The system shall display the customer support contact numbers on the screen.", "cate": "functional"}
+{"id": 37, "requirement": "The system shall allow user to enter the contact number for support personnel to call.", "cate": "functional"}
+{"id": 38, "requirement": "The system shall display the online help upon request.", "cate": "functional"}
+{"id": 39, "requirement": "The system shall display the FAQ\ufffds upon request.", "cate": "functional"}
+{"id": 40, "requirement": "The system shall maintain customer email information as a required part of customer profile.", "cate": "functional"}
+{"id": 41, "requirement": "The system shall send an order confirmation to the user through email.", "cate": "functional"}
+{"id": 42, "requirement": "The system shall display detailed invoice for current order once it is confirmed.", "cate": "functional"}
+{"id": 43, "requirement": "The system shall optionally allow user to print the invoice.", "cate": "functional"}
+{"id": 44, "requirement": "The system shall provide shopping cart during online purchase.", "cate": "functional"}
+{"id": 45, "requirement": "The system shall allow user to add/remove products in the shopping cart.", "cate": "functional"}
+{"id": 46, "requirement": "The system shall display different shipping options provided by shipping department.", "cate": "functional"}
+{"id": 47, "requirement": "The system shall enable user to select the shipping method during payment process.", "cate": "functional"}
+{"id": 48, "requirement": "The system shall display the shipping charges.", "cate": "functional"}
+{"id": 49, "requirement": "The system shall display tentative duration for shipping.", "cate": "functional"}
+{"id": 50, "requirement": "The system shall allow user to enter the order information for tracking.", "cate": "functional"}
+{"id": 51, "requirement": "The system shall display the current tracking information about the order.", "cate": "functional"}
+{"id": 52, "requirement": "The system shall calculate tax for the order", "cate": "functional"}
+{"id": 53, "requirement": "The system shall display tax information for the order", "cate": "functional"}
+{"id": 54, "requirement": "The system shall display available payment methods for payment.", "cate": "functional"}
+{"id": 55, "requirement": "The system shall allow user to select the payment method for order", "cate": "functional"}
+{"id": 56, "requirement": "The system shall display the orders that are eligible to change.", "cate": "functional"}
+{"id": 57, "requirement": "The system shall allow user to select the order to be changed.", "cate": "functional"}
+{"id": 58, "requirement": "The system shall allow user to cancel the order", "cate": "functional"}
+{"id": 59, "requirement": "The system shall allow user to change shipping payment method.", "cate": "functional"}
+{"id": 60, "requirement": "The system shall notify the user about any changes made to the order.", "cate": "functional"}
+{"id": 61, "requirement": "The system shall display the reviews and ratings of each product when it is selected.", "cate": "functional"}
+{"id": 62, "requirement": "The system shall enable the user to enter their reviews and ratings.", "cate": "functional"}
+{"id": 63, "requirement": "The system shall display all the available financing options.", "cate": "functional"}
+{"id": 64, "requirement": "The system shall allow user to select the financing option.", "cate": "functional"}
+{"id": 65, "requirement": "The system shall notify the use about the financing request.", "cate": "functional"}
+{"id": 66, "requirement": "The system shall allow user to view detailed sitemap.", "cate": "functional"}
+{"id": 67, "requirement": "The system shall display all the available promotions to the user.", "cate": "functional"}
+{"id": 68, "requirement": "The system shall allow user to select available promotion.", "cate": "functional"}
+{"id": 69, "requirement": "The system shall allow user to confirm the purchase.", "cate": "functional"}
+{"id": 70, "requirement": "The system shall enable user to enter the payment information.", "cate": "functional"}
+{"id": 84, "requirement": "The system shall use secure sockets in all transactions that include any confidential customer information.", "cate": "security"}
+{"id": 85, "requirement": "The system shall automatically log out all customers after a period of inactivity.", "cate": "security"}
+{"id": 86, "requirement": "The system shall confirm all transactions with the customer\ufffds web browser.", "cate": "security"}
+{"id": 87, "requirement": "The system shall not leave any cookies on the customer\ufffds computer containing the user\ufffds password.", "cate": "security"}
+{"id": 88, "requirement": "The system shall not leave any cookies on the customer\ufffds computer containing any of the user\ufffds confidential information.", "cate": "security"}
+{"id": 89, "requirement": "The customer\ufffds web browser shall never display a customer\ufffds password.  It shall always be echoed with special characters representing typed characters.", "cate": "security"}
+{"id": 90, "requirement": "The customer\ufffds web browser shall never display a customer\ufffds credit card number after retrieving from the database.  It shall always be shown with just the last 4 digits of the credit card number.", "cate": "security"}
+{"id": 91, "requirement": "The system\ufffds back-end servers shall never display a customer\ufffds password.  The customer\ufffds password may be reset but never shown", "cate": "security"}
+{"id": 92, "requirement": "The system\ufffds back-end servers shall only be accessible to authenticated administrators.", "cate": "security"}
+{"id": 93, "requirement": "The system\ufffds back-end databases shall be encrypted.", "cate": "security"}
+{"id": 119, "requirement": "The patient\ufffds information such as date of birth, address and telephone number should be entered into computer system", "cate": "functional"}
+{"id": 120, "requirement": "If a patient checks out the administrative staff shall delete his Personal Health Number from the system and the just evacuated bed is included in available-beds list", "cate": "functional"}
+{"id": 121, "requirement": "The system generates reports List of detailed information regarding the patient who ha admitted in the hospital", "cate": "functional"}
+{"id": 122, "requirement": "The system is also designed to be user-friendly", "cate": "functional"}
+{"id": 123, "requirement": "It uses a Graphical User 0.25 (GUI)", "cate": "functional"}
+{"id": 124, "requirement": "Staff is responsible for patient\ufffds check-in or notification of appropriate people", "cate": "functional"}
+{"id": 125, "requirement": "Administrators are responsible for all of the scheduling and updating day/night employee shifts", "cate": "functional"}
+{"id": 131, "requirement": "The HPIMS shall generate reports on patients about the following information: patient\u2019s Phone Number, patient\u2019s name, ward name bed number and the doctor\u2019s name which was assigned", "cate": "functional"}
+{"id": 132, "requirement": "The HPIMS shall generate reports on bed availability about the following information: ward name, bed number, occupied/unoccupied", "cate": "functional"}
+{"id": 133, "requirement": "Each patient shall have the following mandatory information: first name, last name, phone number, personal health number, address, postal code, city, country, patient identification number.", "cate": "functional"}
+{"id": 134, "requirement": "The HPIMS shall allow the user to update any of the patient\ufffds information as described in SRS", "cate": "functional"}
+{"id": 138, "requirement": "The system requires the patient to identify himself /herself using PHN", "cate": "security"}
+{"id": 139, "requirement": "Any user who uses the system shall have a Logon ID and Password", "cate": "security"}
+{"id": 140, "requirement": "Any modification  (Insert, Delete, Update) for the Database shall be synchronized and done only by the administrator in the ward", "cate": "security"}
+{"id": 141, "requirement": "Front Desk staff shall be able to view all information in HPIMS add new patients to HPIMS but shall not be able to modify any information in it", "cate": "security"}
+{"id": 142, "requirement": "Administrators shall be able to view and modify all information in HPIMS", "cate": "security"}
+{"id": 150, "requirement": "Students are directed to a Main page that has links to the other systems. (Course Registration, Course time-Table, Student Accounts and Records)", "cate": "functional"}
+{"id": 151, "requirement": "The Course Registration page will provide course information and allow the user to register for course as well as view his time-table", "cate": "functional"}
+{"id": 152, "requirement": "The Course time-Table page will provide general course information without any need of registration", "cate": "functional"}
+{"id": 153, "requirement": "The Student Accounts page will display a student\ufffds personal and tuition (monetary) information. It will also contain access to their Netlink account", "cate": "functional"}
+{"id": 154, "requirement": "The Records page will display information regarding the student\ufffds academic progress at UVic and allow interaction with the Records Department at UVic", "cate": "functional"}
+{"id": 155, "requirement": "The Employee is directed to a page that allows them to process Student Record related requests", "cate": "functional"}
+{"id": 158, "requirement": "The system must allow students to request official transcripts from WebView.  All requests will be sent and managed by the university records database", "cate": "functional"}
+{"id": 159, "requirement": "The system contains the properties of WebView, WebReg, WebTT and PinChg whole System will be consolidated into one central system while maintaining the portability of each system", "cate": "functional"}
+{"id": 160, "requirement": "System is specifically intended for Records Employee.", "cate": "functional"}
+{"id": 161, "requirement": "It will have a separate log in page where Records Employee\ufffds can log in with their Netlink id and password.", "cate": "functional"}
+{"id": 162, "requirement": "This connects them with the transcript database. From there they will be able to fulfil transcript requests", "cate": "functional"}
+{"id": 163, "requirement": "The system will display account outstanding balances.", "cate": "functional"}
+{"id": 164, "requirement": "An account balance will be placed on the 0.25 indicating the amount owned until payment is fulfilled.", "cate": "functional"}
+{"id": 165, "requirement": "There will also be another function within the system that will provide a detailed breakdown of all fees charged by the University", "cate": "functional"}
+{"id": 183, "requirement": "In the event of a system crash during a transaction the current transaction will either completed or not completed. This will be handled by an already existing database", "cate": "security"}
+{"id": 184, "requirement": "The system must effectively recover from a crash within five seconds.  For the system to effectively recover it must be able to restart a sessions with the user within the time limit", "cate": "security"}
+{"id": 212, "requirement": "The System will contain a Customer Service module that will allow Store and Corporate employees to provide information to customers", "cate": "functional"}
+{"id": 213, "requirement": "The System will contain a Customer Service module that will allow Store and Corporate employees\ufffd access to the system for the purpose of Creating Rental Agreements", "cate": "functional"}
+{"id": 214, "requirement": "The System will contain a Customer Service module that will allow Store and Corporate employees to collect payments", "cate": "functional"}
+{"id": 215, "requirement": "The System will contain a Customer Portal Website that will provide information to the public and customers about the company and operations of the company", "cate": "functional"}
+{"id": 216, "requirement": "This information will include Locations, Hours of operation ,contact information, available rental vehicles, rental packages, price estimate and any other information deemed necessary by the company.\u2019", "cate": "functional"}
+{"id": 217, "requirement": "The customer portal website will provide the customer with the closest location to their zip code and up to the next five (5) closest locations in addition to hours of operations contact info and directions\u2019", "cate": "functional"}
+{"id": 218, "requirement": "The System will generate an inventory capacity report for the desired time and location", "cate": "functional"}
+{"id": 219, "requirement": "The System will allow for new vehicles to be added to the inventory of the company", "cate": "functional"}
+{"id": 220, "requirement": "The Fleet management module will allow the system to track vehicle maintenance. Maintenance will be tracked through mileage and or time as decided by the company", "cate": "functional"}
+{"id": 221, "requirement": "The System will contain a Report and Analytics Module that will serve the purpose of generating reports on the operations of the company", "cate": "functional"}
+{"id": 222, "requirement": "The System will contain a Report and Analytics Module that will be capable of generating reports for items such as sales maintenance, vehicle history, operations, rentals, and insurance\u2019", "cate": "functional"}
+{"id": 223, "requirement": "The System will contain a Report and Analytics Module that will be capable of generating reports for a desired time and location", "cate": "functional"}
+{"id": 224, "requirement": "The system will batch the daily operations to headquarters at the end of each business day", "cate": "functional"}
+{"id": 225, "requirement": "The system will generate a backup of all data weekly for the purpose of data loss prevention at the headquarters", "cate": "functional"}
+{"id": 226, "requirement": "The system will allow the customer to input the desired date, location and package options to determine vehicle availability\u2019", "cate": "functional"}
+{"id": 227, "requirement": "The system will display only vehicles that are currently available to rent to the customer during the rental process", "cate": "functional"}
+{"id": 228, "requirement": "The system will create a customer account if the customer is not in the system", "cate": "functional"}
+{"id": 229, "requirement": "The customer account will require name, address, date of birth, driver\u2019s License and credit card number.", "cate": "functional"}
+{"id": 230, "requirement": "The system will require a credit card be on file but will allow customer to use different forms of payment at time of rental", "cate": "functional"}
+{"id": 231, "requirement": "The system will provide a report of the vehicles that are scheduled to be rented out and returned for the specified day", "cate": "functional"}
+{"id": 232, "requirement": "The system will allow for a block reservation of more than one (1) car at a time", "cate": "functional"}
+{"id": 233, "requirement": "at time of pickup the system will allow the employee to bring up the specified reservation and to print out a rental agreement", "cate": "functional"}
+{"id": 234, "requirement": "The system will require the employee to verify the information on the Rental Agreement and to then input into the system a notice that the agreement has been gone over.", "cate": "functional"}
+{"id": 235, "requirement": "This will ensure that the employee has in fact gone over the agreement and everything is in place.", "cate": "functional"}
+{"id": 236, "requirement": "The system will ask if the employee has obtained the customer Signature on the rental agreement. Customer signature is required on the rental agreement by company policy.", "cate": "functional"}
+{"id": 237, "requirement": "The system will allow for preliminary payment to be collected at time of pickup if company policies states that payment is to be collected at time of pickup.", "cate": "functional"}
+{"id": 238, "requirement": "The customer will liable for a no show charge if they fail to pick up the vehicle at the specified time.", "cate": "functional"}
+{"id": 239, "requirement": "The system will require that the charge be process before the reservation can be closed out in the case of a no show", "cate": "functional"}
+{"id": 240, "requirement": "The customer will have twenty four (24) hours before pickup time to call and cancel the reservation before the system requires the  no show charge", "cate": "functional"}
+{"id": 241, "requirement": "At time of return of rental vehicle the system will allow the employee to print out a Vehicle inspection form. This form is to be filled out at the vehicle and then input back into the system.", "cate": "functional"}
+{"id": 242, "requirement": "The vehicle inspection form will require information including model license number, vin number, damage to the vehicle, level of fuel in the tank, mileage and a section for other issues.\u2019", "cate": "functional"}
+{"id": 243, "requirement": "The system will allow for a vehicle to be returned to a different location than the original rental location for the charge of a fee to be determined by the company", "cate": "functional"}
+{"id": 244, "requirement": "The system will identify and additional charges that need to be charged for any damage or issue to the rental vehicle", "cate": "functional"}
+{"id": 245, "requirement": "For company accounts the system will allow for the invoice (bill) to be sent to the company", "cate": "functional"}
+{"id": 246, "requirement": "Company billing will be required to be set up in advance with the company to prevent fraud", "cate": "functional"}
+{"id": 247, "requirement": "After the vehicle inspection is done then the system will print off a final invoice for the costumer to sign", "cate": "functional"}
+{"id": 248, "requirement": "This invoice will contain the total amount charged by the rental company including primary rental and additional charges. Physical copy will be saved as proof of transaction.", "cate": "functional"}
+{"id": 249, "requirement": "The system will provide employees with a login", "cate": "functional"}
+{"id": 250, "requirement": "The system will provide employees with a logout", "cate": "functional"}
+{"id": 251, "requirement": "The system will provide employees with the option to reset their login password", "cate": "functional"}
+{"id": 252, "requirement": "The system will provide employees with the option to change their login password", "cate": "functional"}
+{"id": 253, "requirement": "The system will allow employees with quick an efficient access to customer information.", "cate": "functional"}
+{"id": 254, "requirement": "The system will provide employees with a screen view of all customer pickups for a specified day", "cate": "functional"}
+{"id": 255, "requirement": "The system will provide employees with a screen view of an existing reservation of a customer", "cate": "functional"}
+{"id": 256, "requirement": "The system will provide customers to login on the web portal and view existing reservation in the system", "cate": "functional"}
+{"id": 257, "requirement": "The system will allow employees to check vehicle availability from inventory for customers", "cate": "functional"}
+{"id": 258, "requirement": "The system will allow employees to get specific vehicle information for customers", "cate": "functional"}
+{"id": 265, "requirement": "The user should have a valid user id and password", "cate": "functional"}
+{"id": 266, "requirement": "Web site contains login window for each user", "cate": "functional"}
+{"id": 267, "requirement": "User should provide a valid user id and password to access the web site", "cate": "functional"}
+{"id": 268, "requirement": "The user (pedestrians, vehicle owners and traffic police)should provide a valid information.'", "cate": "functional"}
+{"id": 269, "requirement": "Web site contains Registration   window for each users", "cate": "functional"}
+{"id": 270, "requirement": "User should provide a valid details to create account in the web site", "cate": "functional"}
+{"id": 271, "requirement": "The user (vehicle owners and pedestrains) should have to provide valid information to traffic police through admin'", "cate": "functional"}
+{"id": 272, "requirement": "Web site contains Compliant issued dialog box for every user", "cate": "functional"}
+{"id": 273, "requirement": "validation form for every user", "cate": "functional"}
+{"id": 274, "requirement": "The user (pedstrains and vehicle owners)can give compliant any time to traffic police'", "cate": "functional"}
+{"id": 275, "requirement": "Web site contains Compliant issued dialog box for every user", "cate": "functional"}
+{"id": 276, "requirement": "Admin can manage all users and maintain their data securely He can update the details and day to day updating can be done by admin", "cate": "functional"}
+{"id": 277, "requirement": "System can give the suggestions to the users during their discussion in discussion forum. He /She will give the traffic details. For participating in discussion forum he/she has to be registered.", "cate": "functional"}
+{"id": 278, "requirement": "Smart Traffic Management plays a important role in maintaining data of road Traffic of a region which is helpful to users.", "cate": "functional"}
+{"id": 279, "requirement": "User can ask any questions with the system and server during their chat", "cate": "functional"}
+{"id": 280, "requirement": "With the information provided by administrator user can directly contact with system or he can contact during their chat.", "cate": "functional"}
+{"id": 281, "requirement": "Smart Traffic Management System can help by creating awareness", "cate": "functional"}
+{"id": 282, "requirement": "User can enter into his account only by login", "cate": "functional"}
+{"id": 283, "requirement": "User can exit from his account", "cate": "functional"}
+{"id": 284, "requirement": "Administrator can maintain all backup data", "cate": "functional"}
+{"id": 285, "requirement": "System can participate in chat with user and SERVER", "cate": "functional"}
+{"id": 286, "requirement": "Admin has to provide the Traffic information to the user", "cate": "functional"}
+{"id": 287, "requirement": "System can respond to the queries asked by user", "cate": "functional"}
+{"id": 288, "requirement": "Day to day updating in improvements of operations can be provided by admin and they can be send to registered users every day", "cate": "functional"}
+{"id": 289, "requirement": "System can view the queries which are asked by user", "cate": "functional"}
+{"id": 290, "requirement": "User can view the response to their queries which are sent by system", "cate": "functional"}
+{"id": 291, "requirement": "User can view the updating provided by admin", "cate": "functional"}
+{"id": 296, "requirement": "Sensitive data is protected from unwanted access by user\ufffds appropriate technology and implementing strict user-access criteria", "cate": "security"}
+{"id": 297, "requirement": "Facility of unique user number and Password in such a way that unauthorized user cannot log in", "cate": "security"}
+{"id": 298, "requirement": "Operational rights for each user/terminal can be defined", "cate": "security"}
+{"id": 299, "requirement": "Operational rights for each user/terminal can be defined", "cate": "security"}

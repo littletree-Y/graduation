@@ -1,0 +1,42 @@
+{"id": 84, "requirement": "The system shall use secure sockets in all transactions that include any confidential customer information.", "cate": "security"}
+{"id": 85, "requirement": "The system shall automatically log out all customers after a period of inactivity.", "cate": "security"}
+{"id": 86, "requirement": "The system shall confirm all transactions with the customer\ufffds web browser.", "cate": "security"}
+{"id": 87, "requirement": "The system shall not leave any cookies on the customer\ufffds computer containing the user\ufffds password.", "cate": "security"}
+{"id": 88, "requirement": "The system shall not leave any cookies on the customer\ufffds computer containing any of the user\ufffds confidential information.", "cate": "security"}
+{"id": 89, "requirement": "The customer\ufffds web browser shall never display a customer\ufffds password.  It shall always be echoed with special characters representing typed characters.", "cate": "security"}
+{"id": 90, "requirement": "The customer\ufffds web browser shall never display a customer\ufffds credit card number after retrieving from the database.  It shall always be shown with just the last 4 digits of the credit card number.", "cate": "security"}
+{"id": 91, "requirement": "The system\ufffds back-end servers shall never display a customer\ufffds password.  The customer\ufffds password may be reset but never shown", "cate": "security"}
+{"id": 92, "requirement": "The system\ufffds back-end servers shall only be accessible to authenticated administrators.", "cate": "security"}
+{"id": 93, "requirement": "The system\ufffds back-end databases shall be encrypted.", "cate": "security"}
+{"id": 138, "requirement": "The system requires the patient to identify himself /herself using PHN", "cate": "security"}
+{"id": 139, "requirement": "Any user who uses the system shall have a Logon ID and Password", "cate": "security"}
+{"id": 140, "requirement": "Any modification  (Insert, Delete, Update) for the Database shall be synchronized and done only by the administrator in the ward", "cate": "security"}
+{"id": 141, "requirement": "Front Desk staff shall be able to view all information in HPIMS add new patients to HPIMS but shall not be able to modify any information in it", "cate": "security"}
+{"id": 142, "requirement": "Administrators shall be able to view and modify all information in HPIMS", "cate": "security"}
+{"id": 183, "requirement": "In the event of a system crash during a transaction the current transaction will either completed or not completed. This will be handled by an already existing database", "cate": "security"}
+{"id": 184, "requirement": "The system must effectively recover from a crash within five seconds.  For the system to effectively recover it must be able to restart a sessions with the user within the time limit", "cate": "security"}
+{"id": 296, "requirement": "Sensitive data is protected from unwanted access by user\ufffds appropriate technology and implementing strict user-access criteria", "cate": "security"}
+{"id": 297, "requirement": "Facility of unique user number and Password in such a way that unauthorized user cannot log in", "cate": "security"}
+{"id": 298, "requirement": "Operational rights for each user/terminal can be defined", "cate": "security"}
+{"id": 299, "requirement": "Operational rights for each user/terminal can be defined", "cate": "security"}
+{"id": 12, "requirement": "The system shall enable user to select multiple options on the screen to search.", "cate": "functional"}
+{"id": 229, "requirement": "The customer account will require name, address, date of birth, driver\u2019s License and credit card number.", "cate": "functional"}
+{"id": 3, "requirement": "The system shall display all the available components of the product to configure", "cate": "functional"}
+{"id": 213, "requirement": "The System will contain a Customer Service module that will allow Store and Corporate employees\ufffd access to the system for the purpose of Creating Rental Agreements", "cate": "functional"}
+{"id": 214, "requirement": "The System will contain a Customer Service module that will allow Store and Corporate employees to collect payments", "cate": "functional"}
+{"id": 122, "requirement": "The system is also designed to be user-friendly", "cate": "functional"}
+{"id": 276, "requirement": "Admin can manage all users and maintain their data securely He can update the details and day to day updating can be done by admin", "cate": "functional"}
+{"id": 8, "requirement": "The system shall display detailed information of the selected products.", "cate": "functional"}
+{"id": 134, "requirement": "The HPIMS shall allow the user to update any of the patient\ufffds information as described in SRS", "cate": "functional"}
+{"id": 227, "requirement": "The system will display only vehicles that are currently available to rent to the customer during the rental process", "cate": "functional"}
+{"id": 280, "requirement": "With the information provided by administrator user can directly contact with system or he can contact during their chat.", "cate": "functional"}
+{"id": 279, "requirement": "User can ask any questions with the system and server during their chat", "cate": "functional"}
+{"id": 163, "requirement": "The system will display account outstanding balances.", "cate": "functional"}
+{"id": 254, "requirement": "The system will provide employees with a screen view of all customer pickups for a specified day", "cate": "functional"}
+{"id": 277, "requirement": "System can give the suggestions to the users during their discussion in discussion forum. He /She will give the traffic details. For participating in discussion forum he/she has to be registered.", "cate": "functional"}
+{"id": 40, "requirement": "The system shall maintain customer email information as a required part of customer profile.", "cate": "functional"}
+{"id": 265, "requirement": "The user should have a valid user id and password", "cate": "functional"}
+{"id": 63, "requirement": "The system shall display all the available financing options.", "cate": "functional"}
+{"id": 284, "requirement": "Administrator can maintain all backup data", "cate": "functional"}
+{"id": 131, "requirement": "The HPIMS shall generate reports on patients about the following information: patient\u2019s Phone Number, patient\u2019s name, ward name bed number and the doctor\u2019s name which was assigned", "cate": "functional"}
+{"id": 132, "requirement": "The HPIMS shall generate reports on bed availability about the following information: ward name, bed number, occupied/unoccupied", "cate": "functional"}
