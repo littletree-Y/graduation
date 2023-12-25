@@ -1,0 +1,306 @@
+{"requirement": "The system shall integrate the instructions procedures or operations guide into the deliverables so that whenever one fails to perform a certain action he/she has somewhere to refer to.", "cate": "functional", "id": "DOSSPRE-242"}
+{"requirement": "The system shall resist unauthorised, accidental or unintended usage and provide access only to legitimate users.", "cate": "security", "id": "DOSSPRE-852"}
+{"requirement": "The system will show the alert messages in case an anomaly has been detected and it will also show a panel of logs of the anomaly detected.", "cate": "security", "id": "DOSSPRE-576"}
+{"requirement": "The system shall ensure confidentiality of vital personal information collected at all the system\u2019s controllers.", "cate": "security", "id": "DOSSPRE-820"}
+{"requirement": "\"If no full or partial match is found at all, the currently selected Application on the Basic Logical Channel shall remain the selected Application and - If the SELECT [by name] command has the [first or only occurrence] parameter set, the SELECT command is dispatched to the Application, - If the SELECT [by name] command has the [next occurrence] parameter set, the OPEN shall return the appropriate error to the off-card entity,\"", "cate": "functional", "id": "SecReq-469"}
+{"requirement": "The system shall send phone call notifications of child device as SMS", "cate": "functional", "id": "DOSSPRE-41"}
+{"requirement": "Each Executable Load File or Executable Module is associated with an AID that shall be unique on the card.", "cate": "functional", "id": "SecReq-507"}
+{"requirement": "In case of managed services, QoS rules applied by CNG shall be configurable by a remote management system.", "cate": "functional", "id": "SecReq-97"}
+{"requirement": "The system shall allow the user to create an account on the system and logs in using fingerprint.", "cate": "security", "id": "DOSSPRE-511"}
+{"requirement": "A GlobalPlatform card may also support asymmetric cryptography such as the Rivest / Shamir / Adleman (RSA) algorithm.", "cate": "security", "id": "SecReq-398"}
+{"requirement": "All credit card information will be encrypted in the database.", "cate": "security", "id": "promise-232"}
+{"requirement": "The system shall enable password changing in a specified time.", "cate": "security", "id": "DOSSPRE-834"}
+{"requirement": "The system shall be able to ensure the user access controls will be put in place to restrict unauthorized users to access user accounts", "cate": "security", "id": "DOSSPRE-642"}
+{"requirement": "The system shall comply with the anti-money laundering guidelines of Zimbabwe.", "cate": "functional", "id": "DOSSPRE-66"}
+{"requirement": "The system should keep record of time and dates to facilitate data analytics.", "cate": "functional", "id": "DOSSPRE-325"}
+{"requirement": "The system should offer password strength measuring capability to suggest password security improvements to the user.", "cate": "functional", "id": "DOSSPRE-74"}
+{"requirement": "At OP_READY, initial key shall be available within the issuer security domain", "cate": "functional", "id": "SecReq-420"}
+{"requirement": "The OPEN shall Ensure that the Card Content changes are authorized by the Card Issuer,", "cate": "security", "id": "SecReq-376"}
+{"requirement": "The system will operate round the clock", "cate": "security", "id": "DOSSPRE-640"}
+{"requirement": "Any other type of command received shall be dispatched to the currently selected Application.", "cate": "functional", "id": "SecReq-439"}
+{"requirement": "Realtor shall be able to generate a CMA report based on property criteria", "cate": "functional", "id": "promise-29"}
+{"requirement": "Only collision estimators shall search for recycled parts.  Users without the collision estimator role shall not have access to the search for recycled parts.", "cate": "security", "id": "promise-129"}
+{"requirement": "The system shall be able to show clients KYC information to authorised users.", "cate": "security", "id": "DOSSPRE-785"}
+{"requirement": "The card under CARD_LOCKED state shall only allow the application to select the final application privilege", "cate": "functional", "id": "SecReq-425"}
+{"requirement": "Flexibility is required to accommodate the variety of environments where unlinked loads may be implemented. As a result, the design specification must not preclude dual-leg transactions** from taking place either sequentially or in parallel. The design of a given implementation will vary depending on the device, host, and network capabilities", "cate": "functional", "id": "SecReq-293"}
+{"requirement": "The system shall  give each user who purchases a copy of a video a lifetime access right to authentic copy the video.", "cate": "security", "id": "DOSSPRE-868"}
+{"requirement": "The user should be able to personalize bookmarks to UGC.", "cate": "functional", "id": "SecReq-82"}
+{"requirement": "As multiple Applications on the card may have the same partial AID, it is required that a method exists to select all Applications matching the partial AID.", "cate": "functional", "id": "SecReq-454"}
+{"requirement": "The system maintainability shall be implemented through the use of proper coding principles and practices such as putting comments in a proper, organized and standard manner in the program.", "cate": "security", "id": "DOSSPRE-579"}
+{"requirement": "The system shall allow doctors to register and create an account and upon registration allow the system to generate the doctors\u2019 public and private keys.", "cate": "functional", "id": "DOSSPRE-273"}
+{"requirement": "The system shall provide access to sensitive information only to the privileged  user", "cate": "security", "id": "DOSSPRE-513"}
+{"requirement": "The system shall enable facial recognition.", "cate": "security", "id": "DOSSPRE-800"}
+{"requirement": "The system shall allow users to enter their usernames and passwords.", "cate": "security", "id": "DOSSPRE-504"}
+{"requirement": "The card issuer needs to ensure that the load acquirer is guaranteeing payment for the electronic value, and that the card is authentic", "cate": "security", "id": "SecReq-218"}
+{"requirement": "The watermark verification platform is implemented using C# and a Graphical User Interface.'", "cate": "functional", "id": "DOSSPRE-230"}
+{"requirement": "Dr Susan Poslusny and Dr Julie Donalek are the only people who shall have access to students\u2019 personal information.", "cate": "security", "id": "promise-38"}
+{"requirement": "The system shall maintain information on log in and log out for accountability.", "cate": "security", "id": "DOSSPRE-914"}
+{"requirement": "The system shall allow for a safe fail whenever there is a fault.", "cate": "security", "id": "DOSSPRE-454"}
+{"requirement": "The system shall be able to locate and monitor a vehicle using GPS", "cate": "functional", "id": "DOSSPRE-161"}
+{"requirement": "The system shall maintain full patient medical records in an encrypted format on a server.", "cate": "security", "id": "DOSSPRE-559"}
+{"requirement": "The system player shall locate and retrieve required contents from the hidden folder.", "cate": "functional", "id": "DOSSPRE-215"}
+{"requirement": "Load devices that are available to the general public should support multiple sources of funding and support both linked and unlinked loads", "cate": "functional", "id": "SecReq-328"}
+{"requirement": "The system shall  allow the framework executive to sign on to the site keeping in mind the end goal to see the warning messages.", "cate": "security", "id": "DOSSPRE-856"}
+{"requirement": "A proof must be sent to the load acquirer that a load or unload occurred to avoid repudiation", "cate": "security", "id": "SecReq-320"}
+{"requirement": "The system shall allow an authenticated user to insert a watermark on a document which will be in PDF format.", "cate": "security", "id": "DOSSPRE-837"}
+{"requirement": "GPS tracking feature shall enable real-time fleet-management.", "cate": "functional", "id": "DOSSPRE-366"}
+{"requirement": "The systems administrator should maintain the system and its databases to ensure integrity and availability of information.", "cate": "security", "id": "DOSSPRE-661"}
+{"requirement": "The application will be available as a standalone application which will be installed on users\u2019 virtual machines and thus will not be affected by network availability,", "cate": "security", "id": "DOSSPRE-431"}
+{"requirement": "The issuer validates S1 to authenticate the card and the data to be used in the transaction", "cate": "security", "id": "SecReq-222"}
+{"requirement": "The system shall confirm all transactions with the customer\ufffds web browser.", "cate": "security", "id": "SRRP-72"}
+{"requirement": "If the number of logical channels supported by the OPEN is not sufficient to open a new Supplementary Logical Channel, return the appropriate error,", "cate": "functional", "id": "SecReq-498"}
+{"requirement": "Payment for a transaction is only required when a detail transaction is submitted for payment, A merchant acquirer may choose to pay the merchant using the batch total", "cate": "functional", "id": "SecReq-259"}
+{"requirement": "The system shall ensure that sensitive information of transaction details should be hashed in the database, in case of a data breach.", "cate": "security", "id": "DOSSPRE-910"}
+{"requirement": "The system shall automatically store credential information in a central database", "cate": "security", "id": "DOSSPRE-515"}
+{"requirement": "The Issuer Security Domain shall have no multi-selection restrictions on cards that support multiple logical channels i.e. it shall be capable of being selected across multiple logical channels.", "cate": "functional", "id": "SecReq-443"}
+{"requirement": "The system should be developed with future upgrades and additional functionality being added to a later date", "cate": "security", "id": "DOSSPRE-545"}
+{"requirement": "\"The OPEN shall search the GlobalPlatform Registry for the Application that supports the current card interface and that is marked as implicitly selectable on the new Supplementary Logical Channel (or failing that, on the Basic Logical Channel) and: - If this is an Application in the Life Cycle State LOCKED, the Application with the Final Application privilege shall become the selected Application on the Supplementary Logical Channel, - If this Application cannot be selected due to a multi-selection restriction, the new logical channel shall not be opened and the OPEN shall return the appropriate error, - Otherwise, the Supplementary Logical Channel is opened and this Application shall become the selected Application on the Supplementary Logical Channel.\"", "cate": "functional", "id": "SecReq-477"}
+{"requirement": "The system shall allow extraction of the personally identifiable information.", "cate": "functional", "id": "DOSSPRE-85"}
+{"requirement": "\"The GlobalPlatform Registry is used to:   Store card management information,   Store relevant application management information (e.g., AID, associated Security Domain and Privileges),   Support card resource management data,   Store Application Life Cycle information,   Store card Life Cycle information,   Track any counters associated with logs.\"", "cate": "functional", "id": "SecReq-504"}
+{"requirement": "The system shall be able to allow a user to register and sign in for the blood recipient", "cate": "security", "id": "DOSSPRE-595"}
+{"requirement": "Load acquirers must determine the currencies that they must support for load transaction", "cate": "functional", "id": "SecReq-291"}
+{"requirement": "The OPEN shall responsible to load application code, card content and memory management", "cate": "functional", "id": "SecReq-340"}
+{"requirement": "The system should be able to provide data for the current maximum number of tags presently two thousand for a period of thirty days in whatever format the user decides", "cate": "security", "id": "DOSSPRE-546"}
+{"requirement": "The system should use hmac to maintain integrity of the log files and detect when file has been modified using the technology", "cate": "security", "id": "DOSSPRE-519"}
+{"requirement": "For cancel last purchase transactions, the terminal must validate the card and sign the cancellation", "cate": "security", "id": "SecReq-313"}
+{"requirement": "The system shall collect and analyse data that the child is typing and if it captures certain keywords or a continuous sequence of expletive, it should send an alert through text to the parent.", "cate": "security", "id": "DOSSPRE-920"}
+{"requirement": "The system shall provide log in and logout capabilities which can be seen as the first line of security which most systems should possess for authentication and accountability purposes.", "cate": "security", "id": "DOSSPRE-702"}
+{"requirement": "The system shall allow the user to generate their ECC public and private keys. These keys are to be used for the encryption of the AES encryption key and also for PDP.", "cate": "security", "id": "DOSSPRE-421"}
+{"requirement": "The system shall display the profile of licence owner", "cate": "functional", "id": "DOSSPRE-102"}
+{"requirement": "The system shall be available to secure the files from unauthorised users.", "cate": "security", "id": "DOSSPRE-876"}
+{"requirement": "The system shall ensure that personal information is not displayed to the public but is encoded in a QR code", "cate": "security", "id": "DOSSPRE-821"}
+{"requirement": "The system shall allow user validation to be done during login to ensure that the user is who they claim to be", "cate": "security", "id": "DOSSPRE-537"}
+{"requirement": "The card issuer and the CEP card share a secret key to generate and verify MACs", "cate": "security", "id": "SecReq-212"}
+{"requirement": "The system shall forward child SMS/MMS to an email account", "cate": "functional", "id": "DOSSPRE-40"}
+{"requirement": "This system provides functionality of verifying user\u2019 login credentials against the ones stored in the system.", "cate": "security", "id": "DOSSPRE-508"}
+{"requirement": "The system must protect the integrity of key transaction data including transaction identification, currency code and amount. If tampering is suspected, the system must cause the transaction to fail", "cate": "security", "id": "SecReq-323"}
+{"requirement": "This system will be easy to maintain as it will be deployed with the documentation associated with it including code snippets which allows the project to be transferable to another maintenance or updating.", "cate": "security", "id": "DOSSPRE-535"}
+{"requirement": "The card issuer must notify the cardholder if the assessment of service fees by the card issuer during the currency exchange transaction may result in a balance of zero after the transaction has completed", "cate": "functional", "id": "SecReq-301"}
+{"requirement": "The system shall learn the user\u2019s unique pattern using Na\u00efve Bayes algorithms and store the template in the database.", "cate": "functional", "id": "DOSSPRE-77"}
+{"requirement": "The system shall display only 10 matching result on the current screen.", "cate": "functional", "id": "SRRP-13"}
+{"requirement": "Card issuers must inform their cardholders as to which currencies they support in electronic purses", "cate": "functional", "id": "SecReq-290"}
+{"requirement": "\"For both the SELECT [by name] [first or only occurrence] command and the SELECT [by name] [next occurrence] command, an Application becomes the selected Application on the Supplementary Logical Channel if:   The requested AID matches (fully or partially) the Application\u2019s AID,   The Application being selected is in the correct Life Cycle State,   The Application has no restrictions due to multi-selection, and supports the current card interface.\"", "cate": "functional", "id": "SecReq-486"}
+{"requirement": "The system shall be able to check netstat and recent network connections to see if rogue node is a victim of pivoting and if so trace the attacking machine.", "cate": "security", "id": "DOSSPRE-442"}
+{"requirement": "The PSAM authenticates that the purchase transaction being canceled was performed by the PSAM, and that the transaction being canceled is part of the active batch", "cate": "security", "id": "SecReq-235"}
+{"requirement": "The CND should support protocols for remote access management.", "cate": "functional", "id": "SecReq-125"}
+{"requirement": "The system shall be able to access contacts list in child device", "cate": "functional", "id": "DOSSPRE-49"}
+{"requirement": "The system shall be fast in intrusion response, to help in stopping the intensity of the damage or mitigation of the risk.", "cate": "security", "id": "DOSSPRE-711"}
+{"requirement": "The system should be able to reject access to the person who presents the tag that belongs to someone else in high probability", "cate": "security", "id": "DOSSPRE-611"}
+{"requirement": "Funds issuers must accept funds authorization requests, regardless of the load currency type, as permitted", "cate": "security", "id": "SecReq-327"}
+{"requirement": "The website shall prevent its data from being corrupted when incorrect data is entered in.", "cate": "security", "id": "promise-225"}
+{"requirement": "The system shall monitor and scan host", "cate": "functional", "id": "DOSSPRE-180"}
+{"requirement": "The system shall be able to take face pictures of a suspect", "cate": "functional", "id": "DOSSPRE-23"}
+{"requirement": "CPN should support inter-destination content synchronisation of streaming multimedia content. This should achieve that all or a specific group of users consuming specific content get the content presented simultaneously, i.e. without user-noticeable delay difference.", "cate": "functional", "id": "SecReq-83"}
+{"requirement": "The system shall analyse the network traffic and detects intrusion, attacks and threats to the network.", "cate": "security", "id": "DOSSPRE-884"}
+{"requirement": "The system shall provide a section for verification in the sense that if an image is said to have a watermark it should be able to detect and display the watermark.", "cate": "security", "id": "DOSSPRE-691"}
+{"requirement": "A GlobalPlatform card may provide security services related to information exchanged between the card and an offcard entity.", "cate": "functional", "id": "SecReq-407"}
+{"requirement": "The system will ensure that general users will only have access through the user interface.", "cate": "security", "id": "DOSSPRE-690"}
+{"requirement": "The system shall sync with a major international Bitcoin exchange for real time exchange prices.", "cate": "functional", "id": "DOSSPRE-59"}
+{"requirement": "The PSAM in the POS device generates a merchant acquirer S5 MAC for the transaction and a new S4 MAC for the batch total count and amount and logs the transaction. The amount of the canceled last purchase transaction is subtracted from the header amount. The transaction is kept in a data store associated with the POS device until the merchant acquirer collects it", "cate": "security", "id": "SecReq-270"}
+{"requirement": "The proposed system should be able to extract raw data from Twitter in real time.", "cate": "functional", "id": "DOSSPRE-140"}
+{"requirement": "The system shall be detecting intrusions specific to a designated area of protection", "cate": "security", "id": "DOSSPRE-619"}
+{"requirement": "When packets come in through the NIC, the system should be able to detect traffic out of the norm.", "cate": "security", "id": "DOSSPRE-618"}
+{"requirement": "The system shall have an extraction module that will be able to take out information from the image that has been created.", "cate": "functional", "id": "DOSSPRE-397"}
+{"requirement": "The system shall have an analysis module that will use metadata contained within the extracted information to detect locational data so as to create a movement map from this information.", "cate": "functional", "id": "DOSSPRE-398"}
+{"requirement": "The system shall allow user authentication process to be done through  trusted parties via the internet", "cate": "security", "id": "DOSSPRE-738"}
+{"requirement": "The system shall allow a user to check new email.", "cate": "functional", "id": "DOSSPRE-268"}
+{"requirement": "The system shall provide a secure channel of communication between the backend system and the web user interface.", "cate": "security", "id": "DOSSPRE-701"}
+{"requirement": "Currency exchange rate fluctuations may increase the card issuers liability. The card issuer must be able to adjust maximum balances to bring them in line with their policies. The card issuer may update the maximum balances as part of a load, a partial unload, and a currency exchange transaction. On a currency exchange transaction, only the \u0083??to\u0083?\u009d currency maximum balance may be updated", "cate": "functional", "id": "SecReq-296"}
+{"requirement": "Clinical site information shall include (but not be limited to) the name of the site  contact person  and contact information.", "cate": "functional", "id": "promise-66"}
+{"requirement": "The system shall make use of google maps to all administrators to identify and alert nearest emergency services.", "cate": "functional", "id": "DOSSPRE-364"}
+{"requirement": "The life cycle models is responsible to functionality and security of Card, Executable Load Files, Executable Modules, Security Domains, and Applications.", "cate": "security", "id": "SecReq-413"}
+{"requirement": "The system shall allow verification and validation of the documents.", "cate": "functional", "id": "DOSSPRE-338"}
+{"requirement": "The terminal must authenticate the card and the transaction at the point of sale, ensuring that they are genuine and valid", "cate": "security", "id": "SecReq-311"}
+{"requirement": "Once the card session has been established (for contact cards according to ISO/IEC 7816-4 after Answer-to-Reset, or after the activation sequence for contactless cards according to ISO/IEC 14443-3), and before the first command is issued to the card, the Application defined as implicitly selectable on the Basic Logical Channel and for that card I/O interface shall become the selected Application on the Basic Logical Channel for that card I/O interface.", "cate": "functional", "id": "SecReq-455"}
+{"requirement": "The system will be used by government officials to bring relevant information to the user unlike the normal web search where information retrieval is difficult as hundreds of irrelevant documents are returned in response to a search query.", "cate": "functional", "id": "DOSSPRE-142"}
+{"requirement": "The system should allow certified medical facilities to access critical patient information as needed.", "cate": "security", "id": "DOSSPRE-558"}
+{"requirement": "If a scheme provider establishes a central error repository, all transactions for the scheme with MAC errors must be sent to that central error repository whether or not they are submitted to the dispute process", "cate": "security", "id": "SecReq-258"}
+{"requirement": "The system is designed to give the user many options that include switching", "cate": "functional", "id": "DOSSPRE-247"}
+{"requirement": "The system shall automatically encrypt the files that will be uploaded by the user for storage using a 256-bit encryption key.", "cate": "security", "id": "DOSSPRE-423"}
+{"requirement": "The system is easy to maintain as it offers modularity, understandability, changeability, testability, reusability and transferability from one team to another.", "cate": "security", "id": "DOSSPRE-586"}
+{"requirement": "The Disputes System must provide the user the ability to initiate a single dispute case on multiple transactions that belong to a single merchant.", "cate": "functional", "id": "promise-109"}
+{"requirement": "The system shall facilitate case management for ZRP", "cate": "functional", "id": "DOSSPRE-109"}
+{"requirement": "The system shall prompt the user to identify themselves by supplying a username and password.", "cate": "security", "id": "DOSSPRE-789"}
+{"requirement": "The system shall focus on known and unknown malware families with the aim of unearthing newly developed malware which are potentially harmful to the Android applications.", "cate": "security", "id": "DOSSPRE-430"}
+{"requirement": "The system must generate a shared encryption key, upon registration.", "cate": "security", "id": "DOSSPRE-718"}
+{"requirement": "System should utilize a centralized database", "cate": "functional", "id": "DOSSPRE-170"}
+{"requirement": "The product shall have the ability to receive automatic software updates as new threats emerge.  100\\% of customers will be able to receive automatic software updates transmitted to the installed product.", "cate": "security", "id": "promise-174"}
+{"requirement": "The product shall ensure that the database\u2019s data corresponds to the data entered by the user.  Each conference room reservation in the system will contain the same information as was entered by the user.", "cate": "security", "id": "promise-172"}
+{"requirement": "The system shall employ encryption technics at the database side and use HTTPS when accessing networked resources over the internet", "cate": "security", "id": "DOSSPRE-450"}
+{"requirement": "The system shall allow a user to create and load an image", "cate": "functional", "id": "DOSSPRE-108"}
+{"requirement": "If the leads score falls within the high average score then it will be process by the ARA functionality.", "cate": "functional", "id": "promise-259"}
+{"requirement": "The system shall allow Cases Reported to be recommended to the closest police station.", "cate": "functional", "id": "DOSSPRE-276"}
+{"requirement": "The system shall be able to give the cost engineers a platform to add features and necessary data about a desired project.", "cate": "functional", "id": "DOSSPRE-308"}
+{"requirement": "The product can be corrected by updates, patches and with newer versions when required.", "cate": "security", "id": "DOSSPRE-760"}
+{"requirement": "The system shall be able to enable payment which will have 2 factor authentication (static password and OTP)", "cate": "security", "id": "DOSSPRE-594"}
+{"requirement": "If the card is in the Life Cycle State CARD_LOCKED or TERMINATED, the Application with the Final Application privilege is the selected Application on the Basic Logical Channel and the OPEN shall not attempt to identify the implicitly selectable Application", "cate": "functional", "id": "SecReq-456"}
+{"requirement": "All other commands (including SELECT commands not described in section 6.4.3.1.2 - Explicit Selection) are immediately dispatched to the Application currently selected on the Supplementary Logical Channel. The processing of the command by the Application is beyond the scope of this Specification.", "cate": "functional", "id": "SecReq-503"}
+{"requirement": "For increased security and convenience, asymmetric cryptography must be used as the authentication security for off-line transactions", "cate": "security", "id": "SecReq-309"}
+{"requirement": "The system shall be able to show all the business units that are registered afore user make a selection", "cate": "functional", "id": "DOSSPRE-80"}
+{"requirement": "The system should be able to pre-process the unstructured data into meaningful information match with existing keywords in database", "cate": "functional", "id": "DOSSPRE-141"}
+{"requirement": "The product shall have a customizable Look and Feel.", "cate": "functional", "id": "promise-199"}
+{"requirement": "The system shall allow an employer to add speech commands.", "cate": "functional", "id": "DOSSPRE-329"}
+{"requirement": "The Application Provider is responsible for Working with the Card Issuer to load generated keys into the Application Provider's Security Domain,", "cate": "security", "id": "SecReq-354"}
+{"requirement": "\"One of the major requirements for a GlobalPlatform card is the ability to provide a minimum level of cryptographic functionality. This cryptography is, for example, used for the generation of signatures, and is available for use by the Applications present on the card.\"", "cate": "security", "id": "SecReq-394"}
+{"requirement": "The system shall filter data by: Venues and Key Events.", "cate": "functional", "id": "promise-15"}
+{"requirement": "The system is a lightweight app which has all the algorithms and libraries engraved within itself for easy management of information which that app would be working with thus making its maintenance easy and simple.", "cate": "security", "id": "DOSSPRE-706"}
+{"requirement": "The system shall allow the student to experience single sign on across the university\u2019s web services.", "cate": "security", "id": "DOSSPRE-812"}
+{"requirement": "The system shall be able to predict potential operational performance bottlenecks and future scalability problems.", "cate": "security", "id": "DOSSPRE-896"}
+{"requirement": "The system shall be able to notify the respected parties of the clinical incident  even when there is a fault", "cate": "security", "id": "DOSSPRE-600"}
+{"requirement": "A classification algorithm should be applied to determine the probability of a claim being fraudulent", "cate": "functional", "id": "DOSSPRE-93"}
+{"requirement": "The product shall free of computer viruses.", "cate": "security", "id": "promise-132"}
+{"requirement": "The system shall allow general users to only have access through the user interface.", "cate": "functional", "id": "DOSSPRE-111"}
+{"requirement": "\"The OPEN shall support Application selection on an available Supplementary Logical Channel via two processes:   Implicit Selection following a successful MANAGE CHANNEL [open] command,   Explicit Selection through the SELECT [by name] command.\"", "cate": "functional", "id": "SecReq-481"}
+{"requirement": "The system shall be able to capture all the data about an individual.", "cate": "functional", "id": "DOSSPRE-367"}
+{"requirement": "The product shall display room equipment according to search parameters.", "cate": "functional", "id": "promise-192"}
+{"requirement": "The WCS system shall not allow automatic logins by any user. Cookies containing WCS login information about a user will not be stored on a user\u2019s computer.", "cate": "security", "id": "promise-316"}
+{"requirement": "All applications under the GlobalPlatform shall be implemented in a hardware-neutral secure runtime environment", "cate": "security", "id": "SecReq-334"}
+{"requirement": "The system shall apply the principle of authentication by notifying if there is a watermark on the image or not", "cate": "security", "id": "DOSSPRE-438"}
+{"requirement": "The system shall be able to randomize scenes so that a user cannot predict the next scene", "cate": "functional", "id": "DOSSPRE-306"}
+{"requirement": "The system shall allow the user to be directed to the options page or back to the login page for retrial.", "cate": "security", "id": "DOSSPRE-507"}
+{"requirement": "The CNG should detect replayed user and/or device credentials.", "cate": "security", "id": "SecReq-6"}
+{"requirement": "The system shall provide access whenever the user needs to check publicly available records of an individual, they should be able to do so since social media details are always available", "cate": "security", "id": "DOSSPRE-487"}
+{"requirement": "The system shall enable a visible watermark to be used together with the email client.", "cate": "functional", "id": "DOSSPRE-370"}
+{"requirement": "The system shall enable patient management.", "cate": "functional", "id": "DOSSPRE-224"}
+{"requirement": "The system shall register a new baby and its details linked to the mother.", "cate": "functional", "id": "DOSSPRE-312"}
+{"requirement": "The system shall allow different clients to run in different OSPF areas.", "cate": "functional", "id": "DOSSPRE-200"}
+{"requirement": "The system shall allow background processes to monitor for any scan and relay information to the registry about any unusual activities", "cate": "security", "id": "DOSSPRE-444"}
+{"requirement": "The system shall allow use of passwords and usernames to access and modify data", "cate": "security", "id": "DOSSPRE-552"}
+{"requirement": "The system shall enable users to classify messages as ham if misclassified as spam", "cate": "functional", "id": "DOSSPRE-192"}
+{"requirement": "The system will employ encryption at the database side and use HTTPS when accessing networked resources over the internet.", "cate": "security", "id": "DOSSPRE-742"}
+{"requirement": "The system shall allow the user to extract the Registration Number", "cate": "functional", "id": "DOSSPRE-100"}
+{"requirement": "The system shall enable the client to decrypt video content to a virtual file and parse the location to media players.", "cate": "security", "id": "DOSSPRE-867"}
+{"requirement": "The system should pertain to all the situations so that it can be recoverable in any error conditions.", "cate": "security", "id": "DOSSPRE-540"}
+{"requirement": "Off-line PIN verification must include both encrypted and unencrypted PIN", "cate": "security", "id": "SecReq-287"}
+{"requirement": "CPN should support bookmarks (e.g. hyperlinks) to stored and streaming user-generated content in order to store and exchange references to uploaded and streaming UGC,.", "cate": "functional", "id": "SecReq-81"}
+{"requirement": "The aggregated totals by card issuer must be transmitted to the merchant acquirer at the same time and manner as the non-aggregated detail transactions in the batch", "cate": "functional", "id": "SecReq-277"}
+{"requirement": "On detection of any system failure or discontinuity not specifically handled by other mechanisms the CNG shall revert to a known safe state.", "cate": "security", "id": "SecReq-20"}
+{"requirement": "The system shall allow files to be accessible only to authorised personnel.", "cate": "security", "id": "DOSSPRE-844"}
+{"requirement": "The Intrusion Detection module will be based on a tried and tested architecture and the same will apply to the memory acquisition tool,  to avoid violating the proper coding principles as well as best practices for documentation. '", "cate": "security", "id": "DOSSPRE-699"}
+{"requirement": "The system shall allow a user to register through sponsorship from relevant Human Resources.", "cate": "security", "id": "DOSSPRE-733"}
+{"requirement": "The CNG may provide Home to Home (H2H) communication service  connecting CNDs in  different CPNs.", "cate": "functional", "id": "SecReq-48"}
+{"requirement": "The system shall allow a customer to register", "cate": "functional", "id": "DOSSPRE-336"}
+{"requirement": "On receipt of a valid (i.e. authorized) request for access to a CNG hosted service or application the CNG shall provide the requested service or application to the requesting user.", "cate": "security", "id": "SecReq-19"}
+{"requirement": "The system shall use a secure path of sending all the useful credentials to the platform", "cate": "security", "id": "DOSSPRE-517"}
+{"requirement": "The system implements a PDP scheme which allows the user to audit and check if the untrusted server or an adversary did not compromise the integrity of the uploaded data.", "cate": "security", "id": "DOSSPRE-731"}
+{"requirement": "On-line authentication must take place between the card issuer and the CEP card for load, unload, and currency exchange transactions", "cate": "security", "id": "SecReq-211"}
+{"requirement": "The card generates S1, using data from the card and load device, and sends S1 to the card issuer to authenticate the card and the data that is to be used in the transaction", "cate": "security", "id": "SecReq-227"}
+{"requirement": "The system must have a log on feature limiting individual uses to those functions they have a need to access according to their responsibilities.", "cate": "security", "id": "DOSSPRE-659"}
+{"requirement": "Each Trusted Framework present on the card shall Check the application access rules of the inter-acting Applications according to their respective privileges,", "cate": "security", "id": "SecReq-369"}
+{"requirement": "The system shall process the data received and generate an md5 hash of the data.", "cate": "security", "id": "DOSSPRE-816"}
+{"requirement": "The system shall require a password to login the Provider Routers.", "cate": "security", "id": "DOSSPRE-662"}
+{"requirement": "The system shall allow a user who has a functional account with the Twitter platform to create an application to access tokens.", "cate": "functional", "id": "DOSSPRE-54"}
+{"requirement": "The system shall be able to remotely start/stop mic record with keyword in SMS and forward the audio file by email", "cate": "functional", "id": "DOSSPRE-48"}
+{"requirement": "The system shall  allow administrator to make changes.", "cate": "security", "id": "DOSSPRE-854"}
+{"requirement": "The system shall allow the user to access the start menu screen", "cate": "functional", "id": "DOSSPRE-112"}
+{"requirement": "The system shall receive speech input from a microphone.", "cate": "functional", "id": "DOSSPRE-330"}
+{"requirement": "The system shall allow a user to sign a document on behalf of the group using their secret key.", "cate": "security", "id": "DOSSPRE-894"}
+{"requirement": "The system shall be able to save taken pictures into the database", "cate": "functional", "id": "DOSSPRE-24"}
+{"requirement": "The system shall be able to detect novel attacks which current systems do not yet detect.", "cate": "security", "id": "DOSSPRE-889"}
+{"requirement": "The system shall provide authentication by ensuring that the agents compare the watermark keys on the detected images with the keys already stored in the agency\u2019s database.", "cate": "security", "id": "DOSSPRE-880"}
+{"requirement": "Any modification  (Insert, Delete, Update) for the Database shall be synchronized and done only by the administrator in the ward", "cate": "security", "id": "SRRP-93"}
+{"requirement": "The system shall  allow for anomalies to be curbed after detection.", "cate": "security", "id": "DOSSPRE-860"}
+{"requirement": "The system enhances security through the use of more secure and efficient enciphering algorithms, that is Advanced encryption standard with a 256-bit key and Elliptic curve cryptography.", "cate": "security", "id": "DOSSPRE-724"}
+{"requirement": "The product shall allow the user to save the property search results.", "cate": "functional", "id": "promise-34"}
+{"requirement": "The system shall enable stakeholders to come up with sound, accurate and concrete decisions.", "cate": "functional", "id": "DOSSPRE-394"}
+{"requirement": "The adjuster shall enter the preferred repair facility on the estimate assignment.", "cate": "functional", "id": "promise-140"}
+{"requirement": "Each time a conference room is reserved  the conference room schedule shall be updated to reflect the time and date of the reservation.", "cate": "functional", "id": "promise-187"}
+{"requirement": "Program Administrators/Nursing Staff Members are the only people who shall have access to clinical site details.", "cate": "security", "id": "promise-36"}
+{"requirement": "The system shall allow a user to change the temporary PIN received from the system.", "cate": "functional", "id": "DOSSPRE-204"}
+{"requirement": "The OPEN shall responsible to enforce security principles defined for Card Content management.", "cate": "security", "id": "SecReq-341"}
+{"requirement": "The user shall enter new ratings based on the audit report", "cate": "functional", "id": "promise-165"}
+{"requirement": "Use of passwords to control access to data to reduce corruption and preserve confidentiality.", "cate": "security", "id": "DOSSPRE-654"}
+{"requirement": "The system shall capture user details such as user name, id number, email address, mobile number etc in the registration process.", "cate": "functional", "id": "DOSSPRE-255"}
+{"requirement": "The system shall be able to listen for any port scan on university WIFI network.", "cate": "security", "id": "DOSSPRE-440"}
+{"requirement": "The system shall be able to defer ineligible donors and inform eligible donors via SMS", "cate": "functional", "id": "DOSSPRE-152"}
+{"requirement": "The product shall prevent its data from incorrect data being introduced.", "cate": "security", "id": "promise-23"}
+{"requirement": "The system shall enable creation and editing of user details.", "cate": "functional", "id": "DOSSPRE-223"}
+{"requirement": "The system must be supported by the following characteristics, testability, adaptability, extensibility, serviceability and localizability.", "cate": "security", "id": "DOSSPRE-591"}
+{"requirement": "The system shall allow Selenium scraping an individual\u2019s personally identifiable information.", "cate": "functional", "id": "DOSSPRE-84"}
+{"requirement": "The system player locates the hidden folder.", "cate": "functional", "id": "DOSSPRE-213"}
+{"requirement": "The GlobalPlatform Environment(OPEN) shall responsible for to provide an API to applications,command dispatch, Application selection, (optional) logical channel management, and Card Content management", "cate": "functional", "id": "SecReq-339"}
+{"requirement": "The system should be able to send the messages to the target number.", "cate": "functional", "id": "DOSSPRE-89"}
+{"requirement": "When a game is ended  the product shall allow each player to identify himself or herself as an available player in the list of players.", "cate": "functional", "id": "promise-307"}
+{"requirement": "If Home to Home (H2H) communication service is provided, then each CNG must ensure that emergency service sessions originating in its CPN are associated with the appropriate location information and/or calling identity.", "cate": "functional", "id": "SecReq-50"}
+{"requirement": "The system should restrict password attempts to three only.", "cate": "security", "id": "DOSSPRE-492"}
+{"requirement": "The system shall  be able to filter incoming traffic if it is from a proxy server.", "cate": "security", "id": "DOSSPRE-848"}
+{"requirement": "The system shall allow storage of Emails in different folders as spam and ham emails.", "cate": "functional", "id": "DOSSPRE-263"}
+{"requirement": "The product shall prevent the input of malicious data.  The product and/or adjacent hardware/software systems\u2019 data shall remain 100\\% uncorrupted each time malicious data is input into the product.", "cate": "security", "id": "promise-173"}
+{"requirement": "The system shall be able to display a printable summary of the system log.", "cate": "functional", "id": "promise-79"}
+{"requirement": "The system shall allow data input into the system to be encrypted before being sent to the database instance on our cloud server for storage.", "cate": "security", "id": "DOSSPRE-792"}
+{"requirement": "The System shall allow on demand generation of all Inventory Quantity Adjustment documents since certain point of time.", "cate": "functional", "id": "promise-205"}
+{"requirement": "The system shall automatically send email alerts of detected cryptojacking activity.", "cate": "functional", "id": "DOSSPRE-73"}
+{"requirement": "If Home to Home (H2H) communication service is provided, then each CNG must limit access to local CNDs and/or media classes based on the access rights of the remote H2H user identity.", "cate": "functional", "id": "SecReq-49"}
+{"requirement": "The System shall be able to save water by reducing water applied to plants.", "cate": "functional", "id": "DOSSPRE-297"}
+{"requirement": "If a full or partial match is found and this Application is selectable (i.e. in the correct Life Cycle State and has no multi-selection restrictions), then it shall become the currently selected Application on this Supplementary Logical Channel and the SELECT [by name] command, whether [first or only occurrence] or [next occurrence], shall be processed according to the requirements of the runtime environment (e.g. dispatched to the Application),", "cate": "functional", "id": "SecReq-494"}
+{"requirement": "The system shall allow the buzzer to ring if 3 consecutive wrong attempts are made.", "cate": "functional", "id": "DOSSPRE-37"}
+{"requirement": "The system shall allow the user to quit the program after it has started.", "cate": "functional", "id": "DOSSPRE-181"}
+{"requirement": "The system shall compute probabilities of an incoming email and classify it as spam or ham through machine learning", "cate": "functional", "id": "DOSSPRE-186"}
+{"requirement": "The system shall be able to handle a growing amount of work and also to be enlarged in order to accommodate that growth.", "cate": "security", "id": "DOSSPRE-581"}
+{"requirement": "Sensitive data is protected from unwanted access by user\ufffds appropriate technology and implementing strict user-access criteria", "cate": "security", "id": "SRRP-186"}
+{"requirement": "The system will provide customers to login on the web portal and view existing reservation in the system", "cate": "functional", "id": "SRRP-156"}
+{"requirement": "The system shall be clearly documented so as to allow easy maintenance on different environments on which the system will be installed.", "cate": "security", "id": "DOSSPRE-810"}
+{"requirement": "The system shall provide Bluetooth authentication so that users do not need to disable laptop authentication as they have to frequently unlock the laptop during office working hours.", "cate": "security", "id": "DOSSPRE-556"}
+{"requirement": "The system shall use Bluetooth a wireless technology for the transmission of data among two devices in close proximity of each other", "cate": "functional", "id": "DOSSPRE-122"}
+{"requirement": "The system shall be able to validate input", "cate": "security", "id": "DOSSPRE-598"}
+{"requirement": "All updates to data files or database must be initiated from the Disputes System.", "cate": "security", "id": "promise-101"}
+{"requirement": "The system shall be able to adapt as new URLs and websites are added to those filtered as they emerge.", "cate": "security", "id": "DOSSPRE-925"}
+{"requirement": "All on-line messages must have the ability to include card issuer discretionary data from the CEP card", "cate": "functional", "id": "SecReq-300"}
+{"requirement": "The leads washing functionality shall receive a period list of available reps from the enterprise system.", "cate": "functional", "id": "promise-269"}
+{"requirement": "The product shall information Security. The product shall enable privacy by encryption WS-Security and Integrity Checking.", "cate": "security", "id": "promise-313"}
+{"requirement": "The system-+ shall be able to collect and analyse data that the child is typing and if it captures certain keywords or a continuous sequence of expletives, it should send an alert through text to the parent\u2019s smartphone.", "cate": "functional", "id": "DOSSPRE-52"}
+{"requirement": "The system shall provide reliability and fault tolerance through extensive stress testing", "cate": "security", "id": "DOSSPRE-902"}
+{"requirement": "The system\u2019s Malware analyser shall send all the files and their logs to the main server at the end of the analysis process", "cate": "functional", "id": "DOSSPRE-415"}
+{"requirement": "The CNG shall detect the end of the life of the key used for cryptographic protection of the wireless communication between the CND and the CNG.", "cate": "security", "id": "SecReq-2"}
+{"requirement": "The system through pgp will incorporate both symmetric key and public key cryptography to ensure confidentiality of the log files during transmission.", "cate": "security", "id": "DOSSPRE-525"}
+{"requirement": "If the business rules allow this transaction is to be aggregated, the PSAM must determine if it has an aggregation record for the card issuer. If the PSAM does not have an aggregation record for the card issuer, a new aggregation record for the card issuer must be created", "cate": "functional", "id": "SecReq-276"}
+{"requirement": "The system shall implement a policy on technical issues like renewal of certificates and lost eIDs, to cater for all eventualities.", "cate": "functional", "id": "DOSSPRE-261"}
+{"requirement": "The system shall   enable the virtual file to be deleted once the client application is closed. Functionality", "cate": "functional", "id": "DOSSPRE-382"}
+{"requirement": "The system shall allow an author who desires to protect his/her work from unauthorized use to upload an image with his/her visible digital watermark along with the registration number", "cate": "functional", "id": "DOSSPRE-21"}
+{"requirement": "During a Cancel Last Purchase transaction, the CEP card is authenticated by the PSAM in the POS device", "cate": "security", "id": "SecReq-234"}
+{"requirement": "To system shall allow changes to be made in an authorised manner", "cate": "security", "id": "DOSSPRE-784"}
+{"requirement": "The system shall be able to ensure the user passwords and data will be encrypted to ensure that user information is secured", "cate": "security", "id": "DOSSPRE-641"}
+{"requirement": "The system shall be able to hash passwords", "cate": "security", "id": "DOSSPRE-596"}
+{"requirement": "An Application installed or made selectable with the Card Reset privilege and no Implicit Selection parameter is registered in the GlobalPlatform Registry as the implicitly selectable Application on the Basic Logical Channel for all card I/O interfaces supported by the card if no other Application (other than the Issuer Security Domain) is already registered as implicitly selectable on the Basic Logical Channel of any card I/O interface,", "cate": "functional", "id": "SecReq-446"}
+{"requirement": "The system shall also provide a section for verification in the sense that if an image is said to have a watermark it should be able to detect and display the watermark.", "cate": "functional", "id": "DOSSPRE-20"}
+{"requirement": "The system shall offer input validation.", "cate": "security", "id": "DOSSPRE-903"}
+{"requirement": "The system shall allow the message digest (message + signature) to be transmitted to the recipient via email.", "cate": "functional", "id": "DOSSPRE-393"}
+{"requirement": "Administrators shall be able to view and modify all information in HPIMS", "cate": "security", "id": "SRRP-95"}
+{"requirement": "The system shall protect private information in accordance with the organization\u2019s information policy.", "cate": "security", "id": "promise-42"}
+{"requirement": "The system shall be abstracted from the user and the application has no user interaction hence the chances of users breaking it are very limited", "cate": "security", "id": "DOSSPRE-432"}
+{"requirement": "The Application Provider is responsible for Providing applications that meet the Card Issuer's security standards and policies,", "cate": "functional", "id": "SecReq-355"}
+{"requirement": "The system should flag a claim whose score exceeds the threshold", "cate": "functional", "id": "DOSSPRE-94"}
+{"requirement": "The system shall allow generation of public and private keys.  These keys will be used for encryption and decryption of the AES symmetric key for a safer key exchange", "cate": "functional", "id": "DOSSPRE-188"}
+{"requirement": "The system shall show a report containing detailed results found in files submitted for analysis and will clearly indicate which file is malicious and which one is benign.", "cate": "security", "id": "DOSSPRE-429"}
+{"requirement": "The system shall authenticate all users and grant access only to authorized users, to prevent unauthorized access to admin console", "cate": "security", "id": "DOSSPRE-613"}
+{"requirement": "The GlobalPlatform Registry is a data store required to support the various system functions of the GlobalPlatform.", "cate": "functional", "id": "SecReq-432"}
+{"requirement": "The CND/CNG shall support a mechanism allowing the user to manually modify the association between a public identity (e.g. phone number) and a specific private identity corresponding to a single customer device not provided with a UICC and corresponding also to legal service level agreements between the user and the service provider.", "cate": "functional", "id": "SecReq-115"}
+{"requirement": "The system shall be accessible to users via HTTPS web portal", "cate": "security", "id": "DOSSPRE-494"}
+{"requirement": "The CND shall support the NGN services usage (e.g. voice communications, video communications, IPTV, entertainment, etc.) allowing the connection to the right service control platforms to process the media.", "cate": "functional", "id": "SecReq-127"}
+{"requirement": "The system shall allow cloud user to register and create an account. In the registration process, the system shall capture user details such as user name, id number, email address, mobile number, etc.", "cate": "functional", "id": "DOSSPRE-13"}
+{"requirement": "The system shall the user to enter the URL of the local host and port for the admin panel in the browser and proceeds to log in.  This is provided by the Django framework", "cate": "functional", "id": "DOSSPRE-206"}
+{"requirement": "The system\u2019s ability to produce a trimmed output will deprive an attacker (pirate) access to a single complete song file from any point onwards.", "cate": "security", "id": "DOSSPRE-684"}
+{"requirement": "The system shall allow council to select the location on Google maps or manually enter coordinates of the location of the stand.", "cate": "functional", "id": "DOSSPRE-347"}
+{"requirement": "The system\ufffds back-end servers shall only be accessible to authenticated administrators.", "cate": "security", "id": "SRRP-78"}
+{"requirement": "Applications should Perform internal security measures required by the Application Provider", "cate": "security", "id": "SecReq-392"}
+{"requirement": "A credit command, which contains the S2 MAC computed by the PSAM using the session key, is sent to the CEP card", "cate": "security", "id": "SecReq-271"}
+{"requirement": "The SELECT [by name] command is processed by the OPEN.", "cate": "functional", "id": "SecReq-435"}
+{"requirement": "The system shall allow buying patterns of the purchases to be analyzed.", "cate": "functional", "id": "DOSSPRE-293"}
+{"requirement": "\"Each Trusted Framework present on the card shall Ensure that any response messages are properly returned unaltered (except for any cryptographic protection) to the original receiver of the incoming message.\"", "cate": "security", "id": "SecReq-372"}
+{"requirement": "Incremental purchase transactions must use two-way authentication for the initial session authentication, and at least one-way, with the terminal authenticating the card, for the remaining increments or some of the remaining increments", "cate": "security", "id": "SecReq-316"}
+{"requirement": "The system shall have an analyser which will execute the Malware files to inspect the type", "cate": "security", "id": "DOSSPRE-931"}
+{"requirement": "The system shall provide reports on statistics of acquired images (documentation)", "cate": "functional", "id": "DOSSPRE-236"}
+{"requirement": "The Employee is directed to a page that allows them to process Student Record related requests", "cate": "functional", "id": "SRRP-101"}
+{"requirement": "The system must effectively recover from a crash within five seconds.  For the system to effectively recover it must be able to restart a sessions with the user within the time limit", "cate": "security", "id": "SRRP-111"}
+{"requirement": "The system shall be able to detect SQL Injection and XSS vulnerabilities for a website or a web application.", "cate": "security", "id": "DOSSPRE-673"}
+{"requirement": "The system shall authenticate the user with username and password.", "cate": "security", "id": "DOSSPRE-826"}
+{"requirement": "The OPEN shall support Application selection on the Basic Logical Channel via Implicit Selection following the card reset (see ISO/IEC 7816-3 for contact cards) or activation sequence (see ISO/IEC 14443-3 for contactless cards),", "cate": "functional", "id": "SecReq-450"}
+{"requirement": "The system should be able to block traffic to and from the network that is identified to be potentially malicious.", "cate": "security", "id": "DOSSPRE-568"}
+{"requirement": "The system shall be safeguarded against deliberate and intrusive faults from internal and external sources as it has proper controls such as user input validations and anti-software tempering", "cate": "security", "id": "DOSSPRE-714"}
+{"requirement": "Ensure that CA public keys, aggregation parameters, blocking lists and issuer certificate revocation lists from the scheme providers are sent to the POS devices", "cate": "security", "id": "SecReq-252"}
+{"requirement": "The patient\ufffds information such as date of birth, address and telephone number should be entered into computer system", "cate": "functional", "id": "SRRP-80"}
+{"requirement": "The OPEN shall Manage card and Application Life Cycle", "cate": "functional", "id": "SecReq-375"}
+{"requirement": "The system user with privileges should input password and be able to log into the system.", "cate": "security", "id": "DOSSPRE-551"}
+{"requirement": "Only the System Administrator shall be able to reset a revoked user logon account", "cate": "security", "id": "promise-99"}
+{"requirement": "The system shall allow a user to send email.", "cate": "functional", "id": "DOSSPRE-267"}
+{"requirement": "Since these transactions are on-line to the issuer, the issuer has the opportunity to lock the card or the application. These transactions are not available to a card that has already been locked", "cate": "security", "id": "SecReq-289"}

@@ -32,7 +32,7 @@ def get_promise_example_dicts():
 
 if __name__ == "__main__":
     # example_dicts = get_promise_example_dicts()
-    # add_id2example_dicts(example_dicts)
+    # add_id2example_dicts(example_dicts, "promise")
     # show_requirement_cate(example_dicts)
     # output_name =  "../../data/requirement/promise/fun_se.jsonl"
     # write_jsonl(output_name, example_dicts)

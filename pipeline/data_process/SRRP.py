@@ -19,19 +19,16 @@ def get_SRRP_examples():
     # 遍历 DataFrame 的每一行
     for index, row in df.iterrows():
         # 在这里处理每一行的数据
-        id = row["id"]
         requirement = row["requirement_text"]
         cate = row["requirement_category"].lower()
         if cate == "functional":
             tmp_dict = {
-                "id":id,
                 "requirement":requirement.strip(),
                 "cate" : "functional"
             }
             example_dicts.append(tmp_dict)
         if cate == "security":
             tmp_dict = {
-                "id": id,
                 "requirement": requirement.strip(),
                 "cate": "security"
             }
@@ -42,6 +39,7 @@ def get_SRRP_examples():
 
 if __name__ == "__main__":
     # example_dicts = get_SRRP_examples()
+    # add_id2example_dicts(example_dicts, "SRRP")
     # show_requirement_cate(example_dicts)
     # output_name =  "../../data/requirement/SRRP/fun_se.jsonl"
     # write_jsonl(output_name, example_dicts)

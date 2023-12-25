@@ -14,6 +14,9 @@ def get_fun_examples():
     # 遍历 DataFrame 的每一行
     for index, row in df.iterrows():
         requirement = row["Requirement"]
+        # 去除单引号
+        if requirement[0]=="'" and requirement[-1]=="'":
+            requirement = requirement[1:len(requirement)-1]
         cate = row["Class"].lower()
         if cate == "functionality":
             tmp_dict = {
@@ -30,6 +33,9 @@ def get_sec_examples():
     # 遍历 DataFrame 的每一行
     for index, row in df.iterrows():
         requirement = row["Requirement"]
+        # 去除单引号
+        if requirement[0] == "'" and requirement[-1] == "'":
+            requirement = requirement[1:len(requirement) - 1]
         cate = row["Class"].lower()
         if cate == "sr":
             tmp_dict = {
@@ -44,7 +50,7 @@ def get_all_dosspre():
     example_dicts = []
     example_dicts.extend(get_fun_examples())
     example_dicts.extend(get_sec_examples())
-    add_id2example_dicts(example_dicts)
+    add_id2example_dicts(example_dicts, "DOSSPRE")
     show_requirement_cate(example_dicts)
     return example_dicts
 

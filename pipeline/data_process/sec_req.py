@@ -46,6 +46,6 @@ def get_all():
 
 if __name__ == "__main__":
     example_dicts = get_all()
-    example_dicts = add_id2example_dicts(example_dicts)
-    output_name = "../../data/requirement/SecReq/secreq.jsonl"
+    example_dicts = add_id2example_dicts(example_dicts, "SecReq")
+    output_name = "../../data/requirement/SecReq/SecReq.jsonl"
     write_jsonl(output_name, example_dicts)

@@ -60,3 +60,22 @@ def convert_txt_to_jsonl(filename, res_filename):
         example_dicts.append(example_dict)
     write_jsonl(res_filename, example_dicts)
     print(f"{res_filename}保存成功,共{len(example_dicts)}条数据")
+
+def read_txt2list(filename):
+    texts = []
+    with open(filename, encoding="utf-8") as f:
+        for line in f:
+            texts.append(line.strip())
+    return texts
+
+def remove_duplicate_examples(examples, key_name="requirement"):
+    print(f"去重前数量:{len(examples)}")
+    has_texts = set()
+    filter_examples = []
+    for example in examples:
+        text = example[key_name].lower()
+        if text not in has_texts:
+            filter_examples.append(example)
+            has_texts.add(text)
+    print(f"去重后数量:{len(filter_examples)}")
+    return filter_examples

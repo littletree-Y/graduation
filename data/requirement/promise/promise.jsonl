@@ -1,132 +1,132 @@
-{"requirement": "The product shall ensure that it can only be accessed by authorized users.  The product will be able to distinguish between authorized and unauthorized users in all access attempts", "cate": "security", "id": 0}
-{"requirement": "Only registered realtors shall be able to access the system.", "cate": "security", "id": 21}
-{"requirement": "Every user of the system shall be authenticated and authorized.", "cate": "security", "id": 22}
-{"requirement": "The product shall prevent its data from incorrect data being introduced.", "cate": "security", "id": 23}
-{"requirement": "Only authorized users shall have access to clinical site information.", "cate": "security", "id": 35}
-{"requirement": "Program Administrators/Nursing Staff Members are the only people who shall have access to clinical site details.", "cate": "security", "id": 36}
-{"requirement": "Only authorized users shall have access to students\u2019 personal information.", "cate": "security", "id": 37}
-{"requirement": "Dr Susan Poslusny and Dr Julie Donalek are the only people who shall have access to students\u2019 personal information.", "cate": "security", "id": 38}
-{"requirement": "Only authorized users shall have access to the portion of the system that interfaces with CampusConnect.", "cate": "security", "id": 39}
-{"requirement": "Fit Criterion: Dr Susan Poslusny and Karen Sysol are the only people who shall have access to the final class section scheduling for the system that interfaces with CampusConnect.", "cate": "security", "id": 40}
-{"requirement": "The system shall have basic data integrity checking to reduce the possibility of incorrect or invalid data being introduced.", "cate": "security", "id": 41}
-{"requirement": "The system shall protect private information in accordance with the organization\u2019s information policy.", "cate": "security", "id": 42}
-{"requirement": "The system shall be built such that it is as secure as possible from malicious interference.", "cate": "security", "id": 43}
-{"requirement": "The system shall use the organization\u2019s standard virus protection software to help monitor threats to itself.", "cate": "security", "id": 44}
-{"requirement": "The Disputes application shall ensure that only users with the appropriate access level are allowed to initiate dispute requests.", "cate": "security", "id": 92}
-{"requirement": "Only users with Update access must be able to initiate dispute requests.", "cate": "security", "id": 93}
-{"requirement": "The Disputes application shall ensure that only authorized users are allowed to logon to the application.", "cate": "security", "id": 94}
-{"requirement": "All authorized users  once authenticated must be able to logon to the Disputes System", "cate": "security", "id": 95}
-{"requirement": "The Disputes System shall generate a User Report that details any new users that have been added and any changes to an existing user\u2019s access level.  The report will be reviewed for auditing purposes.", "cate": "security", "id": 96}
-{"requirement": "All additions of new users and modifications to user\u2019s access shall be recorded on the User Report.", "cate": "security", "id": 97}
-{"requirement": "If a user account is revoked  it can only be re-instantiated by the System Administrator.", "cate": "security", "id": 98}
-{"requirement": "Only the System Administrator shall be able to reset a revoked user logon account", "cate": "security", "id": 99}
-{"requirement": "The Disputes application shall manipulate and view business data. Users will not have direct access to data files or databases.", "cate": "security", "id": 100}
-{"requirement": "All updates to data files or database must be initiated from the Disputes System.", "cate": "security", "id": 101}
-{"requirement": "Only adjusters can request recycled parts audit reports. No users without an adjuster role shall request recycled parts audits.", "cate": "security", "id": 127}
-{"requirement": "Only adjusters with a supervisor role can update preferred repair facility ratings. Users without the supervisor role cannot access the repair facility ratings.", "cate": "security", "id": 128}
-{"requirement": "Only collision estimators shall search for recycled parts.  Users without the collision estimator role shall not have access to the search for recycled parts.", "cate": "security", "id": 129}
-{"requirement": "Only valid data shall be entered into the system.  No invalid data shall be entered into the system.", "cate": "security", "id": 130}
-{"requirement": "One insurance company shall not be able to view another insurance companys claim data.", "cate": "security", "id": 131}
-{"requirement": "The product shall free of computer viruses.", "cate": "security", "id": 132}
-{"requirement": "The system shall prevent malicious attacks including denial of service.", "cate": "security", "id": 133}
-{"requirement": "The product shall ensure that only company employees or external users with company-approved user IDs may have product access.  100\\% of all logons shall be by either company employees or external users with company-approved user IDs.", "cate": "security", "id": 170}
-{"requirement": "Only managers are able to perform search queries for reservations by user.  100\\% of all search queries for reservations by user shall be from logons of only management logons.", "cate": "security", "id": 171}
-{"requirement": "The product shall ensure that the database\u2019s data corresponds to the data entered by the user.  Each conference room reservation in the system will contain the same information as was entered by the user.", "cate": "security", "id": 172}
-{"requirement": "The product shall prevent the input of malicious data.  The product and/or adjacent hardware/software systems\u2019 data shall remain 100\\% uncorrupted each time malicious data is input into the product.", "cate": "security", "id": 173}
-{"requirement": "The product shall have the ability to receive automatic software updates as new threats emerge.  100\\% of customers will be able to receive automatic software updates transmitted to the installed product.", "cate": "security", "id": 174}
-{"requirement": "The System shall maintain consistent security.  Any changes in user passwords and/or permissions should take affect in all parts of the System.", "cate": "security", "id": 202}
-{"requirement": "The System shall granularly control access rights to all major subsystems.  It should be possible to assign access rights to all subsystems independently.", "cate": "security", "id": 203}
-{"requirement": "All credit card information will be secured on the server  and only accessible by authorized Izogn administrators.  Information will be encrypted in the database.", "cate": "security", "id": 219}
-{"requirement": "Only registered customers can purchase streaming movies.", "cate": "security", "id": 220}
-{"requirement": "A customer can only stream a movie if they purchased it  and are within the 2 day viewing period.", "cate": "security", "id": 221}
-{"requirement": "Only authorized personnel can access customer records in the database.", "cate": "security", "id": 222}
-{"requirement": "Only administrators can activate a pre-paid card.", "cate": "security", "id": 223}
-{"requirement": "Only authorized personnel can access sales information.", "cate": "security", "id": 224}
-{"requirement": "The website shall prevent its data from being corrupted when incorrect data is entered in.", "cate": "security", "id": 225}
-{"requirement": "The website shall protect itself from intentional abuse  and notify the administrator at all occurrences.", "cate": "security", "id": 226}
-{"requirement": "Data integrity scripts will be run on a weekly basis to verify the integrity of the database.", "cate": "security", "id": 227}
-{"requirement": "The website shall make its user aware of its information practices before collection data from them via a Privacy Policy  accessible on all pages of the website.", "cate": "security", "id": 228}
-{"requirement": "The system shall notify customers of changes to its information policy.", "cate": "security", "id": 229}
-{"requirement": "The system shall reveal private information only in compliance with the organization\u2019s information policy.", "cate": "security", "id": 230}
-{"requirement": "All customer information will be stored on a secure database  accessible only to authorized personnel.", "cate": "security", "id": 231}
-{"requirement": "All credit card information will be encrypted in the database.", "cate": "security", "id": 232}
-{"requirement": "The streaming server will have anti-virus software to prevent infection of malicious viruses.", "cate": "security", "id": 233}
-{"requirement": "The product shall provide players no access to information that might reveal the identity of another player", "cate": "security", "id": 270}
-{"requirement": "The product shall ensure that only supervisors can advertise empty time slots.The product must ensure that supervisors are allowed to access advertise empty time slots.", "cate": "security", "id": 309}
-{"requirement": "The product shall ensure that only supervisors can enter a caller\u2019s schedule.The product must ensure that supervisors are allowed to access advertise empty time slots.", "cate": "security", "id": 310}
-{"requirement": "The product shall ensure that only supervisors can view schedule of all callers.The product must ensure that supervisors are allowed to access advertise empty time slots.", "cate": "security", "id": 311}
-{"requirement": "The product shall have security.The product shall provide authentication  and authorization.", "cate": "security", "id": 312}
-{"requirement": "The product shall information Security. The product shall enable privacy by encryption WS-Security and Integrity Checking.", "cate": "security", "id": 313}
-{"requirement": "The product shall have audit capabilities.The product shall store messages for a minimum of one year for audit and transaction tracking purposes.", "cate": "security", "id": 314}
-{"requirement": "The system shall only be accessed by authorized Corporate Community Grants (CCR) employees. Users must be authenticated using their IBM intranet user name and password.", "cate": "security", "id": 315}
-{"requirement": "The WCS system shall not allow automatic logins by any user. Cookies containing WCS login information about a user will not be stored on a user\u2019s computer.", "cate": "security", "id": 316}
-{"requirement": "Each team owner will need to use a username and password in order to be authenticated to reach the team owner\u2019s page", "cate": "security", "id": 317}
-{"requirement": "The Commissioner will be the only authorized user per league to adjust league settings.", "cate": "security", "id": 318}
-{"requirement": "\\tOnly authorized user shall access the RFS system. ONLY users that exist in the UAS system  with the RFS system assigned to their role(s)  shall access the RFS system and use it.", "cate": "security", "id": 319}
-{"requirement": "\\tUser access should be limited to the permissions granted to their role(s) Each level in the PCG hierarchy will be assigned a role and users will be assigned to these roles. Access to functionality within RFS system is dependent on the privileges/permission assigned to the role..", "cate": "security", "id": 320}
-{"requirement": "The system shall display the local and exercise time in separate clocks", "cate": "functional", "id": 17}
-{"requirement": "For each class within a sequence for a cohort  Program Administrators and Nursing Staff Members shall be able to specify which quarter that class will be offered.", "cate": "functional", "id": 51}
-{"requirement": "When both players have positioned their 5 ships on their defensive grids  the product shall define the status of each player for the first turn.", "cate": "functional", "id": 286}
-{"requirement": "The System shall generate Inventory Quantity Adjustment document based on product daily sales data and product formulas.", "cate": "functional", "id": 217}
-{"requirement": "Program Administrators and Nursing Staff Members shall be able to add a listing of students to a cohort.", "cate": "functional", "id": 46}
-{"requirement": "Classes for a given cohort shall not conflict with regards to the time and day that they are offered.", "cate": "functional", "id": 64}
-{"requirement": "The preferred repair facility shall be returned to the user.", "cate": "functional", "id": 142}
-{"requirement": "The product shall be able to store new room equipment.", "cate": "functional", "id": 183}
-{"requirement": "PME Subsystem shall allow keeping submenus within menus and products within submenus in a managed and persisted order.", "cate": "functional", "id": 214}
-{"requirement": "The product shall have the ability to send meeting reminders to employees.", "cate": "functional", "id": 177}
-{"requirement": "viewing a movie details  the website will display the movies description  actor  and director entered in by the administrator.", "cate": "functional", "id": 235}
-{"requirement": "When a game is ended  the product shall notify the players that the game is ended.", "cate": "functional", "id": 305}
-{"requirement": "The Disputes System will provide the user the ability to create or initiate a ticket retrieval request.   As part of ticket retrieval creation process the system must prompt the user to enter all the required information to create the ticket retrieval request.  The ticket retrieval request is a document that is sent to merchant inquiring the validity of a transaction.", "cate": "functional", "id": 110}
-{"requirement": "The notification of the game ending will include the reason the game is ended (i.e.  a player has won the game or a player has ended the game).", "cate": "functional", "id": 306}
-{"requirement": "Program Administrators/Nursing Staff Members shall have the ability to modify information relating to cohorts  including cohort identifier  program of study  preferred sequence of classes and quarters that a cohort will be taking specific classes.", "cate": "functional", "id": 87}
-{"requirement": "The adjuster shall be able to override the preferred repair facitlity on the estimate assignment.", "cate": "functional", "id": 141}
-{"requirement": "The product shall prevent a player from viewing the offensive or defensive grids of the other player.", "cate": "functional", "id": 280}
-{"requirement": "The product shall allow a user to remove himself or herself from the list of players at any time.", "cate": "functional", "id": 274}
-{"requirement": "The vehicle data shall include vehicle year  make  and model", "cate": "functional", "id": 135}
-{"requirement": "The system shall offer the ability to pause and resume the refresh of data.", "cate": "functional", "id": 18}
-{"requirement": "The realtor shall be able to retrieve a map showing property locations for a specified area", "cate": "functional", "id": 32}
-{"requirement": "The user shall search for the preferred repair facility using vehicle  vehicle location  and radius in miles", "cate": "functional", "id": 134}
-{"requirement": "PME Subsystem shall allow building product menus based on the list of products kept in the accounting system.", "cate": "functional", "id": 213}
-{"requirement": "The product shall assign the organizers contact information to each meeting they create.", "cate": "functional", "id": 178}
-{"requirement": "The user shall be able to download appointments and contact information for clients", "cate": "functional", "id": 26}
-{"requirement": "The product shall prevent the player from overlapping ships on their grid.", "cate": "functional", "id": 285}
-{"requirement": "Once a game has been initiated  the product shall make the players assigned to the game unavailable for selection from the list of players.", "cate": "functional", "id": 273}
-{"requirement": "The product shall have a customizable Look and Feel.", "cate": "functional", "id": 199}
-{"requirement": "When the hit results in sinking a ship  the product shall mark the ship as sunk on the defensive grid of the defensive player.", "cate": "functional", "id": 296}
-{"requirement": "The product will notify employees of meeting invitations.", "cate": "functional", "id": 176}
-{"requirement": "The system shall allow a Program Administrator/Nursing Staff Member to move a student from one clinical lab section to another clinical lab section corresponding to the same clinical class.", "cate": "functional", "id": 71}
-{"requirement": "The adjuster shall review the collision estimate.", "cate": "functional", "id": 152}
-{"requirement": "The product will display an available status for unreserved conference rooms.", "cate": "functional", "id": 201}
-{"requirement": "The product shall make inactive players unavailable for selection from the list of players.", "cate": "functional", "id": 275}
-{"requirement": "The audit report shall be displayed to the user.", "cate": "functional", "id": 160}
-{"requirement": "The product shall allow a player to position ships horizontally on their grid.", "cate": "functional", "id": 282}
-{"requirement": "The leads washing functionality will verify the users authentication and rights to make parameter updates.", "cate": "functional", "id": 266}
-{"requirement": "The vendor will verify the invalid lead.", "cate": "functional", "id": 254}
-{"requirement": "The system shall be able to display a printable summary for individual nursing students  which will include (but not be limited to) student name  student ID  admission date  classes  credits  GPA  and the cohort that the student is enrolled in.", "cate": "functional", "id": 78}
-{"requirement": "A class shall be either a non-clinical class or a clinical class.", "cate": "functional", "id": 56}
-{"requirement": "The product shall be able to send meeting notifications via different kinds of end-user specified methods.", "cate": "functional", "id": 198}
-{"requirement": "Website shall allow customers to add their own movie review for a selected movie.", "cate": "functional", "id": 240}
-{"requirement": "The system shall retain the available recycled parts and suppliers returned from the search.", "cate": "functional", "id": 148}
-{"requirement": "For each class within a sequence for a cohort  Program Administrators and Nursing Staff Members shall be able to specify which quarter that class will be offered.", "cate": "functional", "id": 50}
-{"requirement": "The system shall return a list of repair facilities within the radius if the preferred repair facility cannot be determined.", "cate": "functional", "id": 143}
-{"requirement": "The system shall be able to display a printable summary for individual clinical labs  which will include (but not be limited to) class name  class number  lab section  listing of students enrolled  instructor  day(s)  time  and location.", "cate": "functional", "id": 77}
-{"requirement": "The Disputes System shall allow the user to create or initiate a chargeback request.  The system must prompt the user to enter the required information to initiate a chargeback request. The chargeback request results in a printed chargeback notification that is sent to merchant indicating that their account will be charged back if no proof is provided that the disputed transaction is valid.", "cate": "functional", "id": 114}
-{"requirement": "The system shall be able to call the seller or buyer to schedule an appointment", "cate": "functional", "id": 30}
-{"requirement": "The system shall allow a Program Administrator or Nursing staff member to remove a student from a clinical lab section.", "cate": "functional", "id": 70}
-{"requirement": "When the hit results in sinking a ship  the product shall indicate the type of ship sunk on the defensive grid of the defensive player.", "cate": "functional", "id": 297}
-{"requirement": "The Disputes System must provide a confirmation to the user upon the creation of ticket retrieval request that contains the following information; the dispute case number  the type of retrieval requested (copy  original or portfolio)  and the date that the merchant response is due.", "cate": "functional", "id": 113}
-{"requirement": "The System shall generate Inventory Quantity Adjustment document automatically when daily Product Sales data is available.", "cate": "functional", "id": 218}
-{"requirement": "The Disputes System must provide Search functionality.  The search method must include the ability to search by (1) the dispute case number  (2) the merchant account number  (3) the cardmember account number and (4) the issuer number.  In addition to the above criteria  the search functionality must further allow the user to limit the results of the search by a date range  the type of dispute (ticket retrieval request or chargeback notification)  the case status (open  closed or all) and the dispute reason code.", "cate": "functional", "id": 119}
-{"requirement": "The system will notify affected parties when changes occur affecting cohorts  including but not limited to changes to the sequence for a cohort\u2019s program of study and changes to a given week\u2019s schedule (lab cancelled this week due to instructor illness).", "cate": "functional", "id": 85}
-{"requirement": "Once a game is initiated  the product shall allow each player to position their 5 ships on their respective defensive grids.", "cate": "functional", "id": 281}
-{"requirement": "The Disputes System must be accessible by both internal and external users.", "cate": "functional", "id": 102}
-{"requirement": "The owner shall have free access to all of the streaming movies.", "cate": "functional", "id": 253}
-{"requirement": "The bottom 3/4 of the table will hold events that occur according to its relevance to current time.", "cate": "functional", "id": 9}
-{"requirement": "Once a game is initiated  the product shall display a defensive grid to each player", "cate": "functional", "id": 278}
-{"requirement": "The system will notify affected parties when changes occur affecting specific students  including but not limited to changing a student\u2019s status from full time to part time and moving a student to a different clinical section.", "cate": "functional", "id": 86}
-{"requirement": "Program Administrators and Nursing Staff Members shall be able to add a new clinical lab section for an existing clinical class into the System.", "cate": "functional", "id": 67}
-{"requirement": "The Disputes System shall record the name of the user and the date for any activity that creates or modifies the disputes case in the system.  A detailed history of the actions taken on the case  including the date and the user that performed the action must be maintained for auditing purposes.", "cate": "functional", "id": 123}
-{"requirement": "Program Administrators and Nursing Staff Members shall be able to add new classes for the nursing department into the system.", "cate": "functional", "id": 55}
-{"requirement": "A Program of Study shall consist of a program name and listing of required classes (both clinical and non-clinical) that must be completed.", "cate": "functional", "id": 60}
-{"requirement": "All streaming movie sales will be logged in the database  and accessible by the administrator.", "cate": "functional", "id": 250}
-{"requirement": "The product shall notify building personnel of equipment transport requests.", "cate": "functional", "id": 196}
+{"requirement": "The product shall ensure that it can only be accessed by authorized users.  The product will be able to distinguish between authorized and unauthorized users in all access attempts", "cate": "security", "id": "promise-0"}
+{"requirement": "Only registered realtors shall be able to access the system.", "cate": "security", "id": "promise-21"}
+{"requirement": "Every user of the system shall be authenticated and authorized.", "cate": "security", "id": "promise-22"}
+{"requirement": "The product shall prevent its data from incorrect data being introduced.", "cate": "security", "id": "promise-23"}
+{"requirement": "Only authorized users shall have access to clinical site information.", "cate": "security", "id": "promise-35"}
+{"requirement": "Program Administrators/Nursing Staff Members are the only people who shall have access to clinical site details.", "cate": "security", "id": "promise-36"}
+{"requirement": "Only authorized users shall have access to students\u2019 personal information.", "cate": "security", "id": "promise-37"}
+{"requirement": "Dr Susan Poslusny and Dr Julie Donalek are the only people who shall have access to students\u2019 personal information.", "cate": "security", "id": "promise-38"}
+{"requirement": "Only authorized users shall have access to the portion of the system that interfaces with CampusConnect.", "cate": "security", "id": "promise-39"}
+{"requirement": "Fit Criterion: Dr Susan Poslusny and Karen Sysol are the only people who shall have access to the final class section scheduling for the system that interfaces with CampusConnect.", "cate": "security", "id": "promise-40"}
+{"requirement": "The system shall have basic data integrity checking to reduce the possibility of incorrect or invalid data being introduced.", "cate": "security", "id": "promise-41"}
+{"requirement": "The system shall protect private information in accordance with the organization\u2019s information policy.", "cate": "security", "id": "promise-42"}
+{"requirement": "The system shall be built such that it is as secure as possible from malicious interference.", "cate": "security", "id": "promise-43"}
+{"requirement": "The system shall use the organization\u2019s standard virus protection software to help monitor threats to itself.", "cate": "security", "id": "promise-44"}
+{"requirement": "The Disputes application shall ensure that only users with the appropriate access level are allowed to initiate dispute requests.", "cate": "security", "id": "promise-92"}
+{"requirement": "Only users with Update access must be able to initiate dispute requests.", "cate": "security", "id": "promise-93"}
+{"requirement": "The Disputes application shall ensure that only authorized users are allowed to logon to the application.", "cate": "security", "id": "promise-94"}
+{"requirement": "All authorized users  once authenticated must be able to logon to the Disputes System", "cate": "security", "id": "promise-95"}
+{"requirement": "The Disputes System shall generate a User Report that details any new users that have been added and any changes to an existing user\u2019s access level.  The report will be reviewed for auditing purposes.", "cate": "security", "id": "promise-96"}
+{"requirement": "All additions of new users and modifications to user\u2019s access shall be recorded on the User Report.", "cate": "security", "id": "promise-97"}
+{"requirement": "If a user account is revoked  it can only be re-instantiated by the System Administrator.", "cate": "security", "id": "promise-98"}
+{"requirement": "Only the System Administrator shall be able to reset a revoked user logon account", "cate": "security", "id": "promise-99"}
+{"requirement": "The Disputes application shall manipulate and view business data. Users will not have direct access to data files or databases.", "cate": "security", "id": "promise-100"}
+{"requirement": "All updates to data files or database must be initiated from the Disputes System.", "cate": "security", "id": "promise-101"}
+{"requirement": "Only adjusters can request recycled parts audit reports. No users without an adjuster role shall request recycled parts audits.", "cate": "security", "id": "promise-127"}
+{"requirement": "Only adjusters with a supervisor role can update preferred repair facility ratings. Users without the supervisor role cannot access the repair facility ratings.", "cate": "security", "id": "promise-128"}
+{"requirement": "Only collision estimators shall search for recycled parts.  Users without the collision estimator role shall not have access to the search for recycled parts.", "cate": "security", "id": "promise-129"}
+{"requirement": "Only valid data shall be entered into the system.  No invalid data shall be entered into the system.", "cate": "security", "id": "promise-130"}
+{"requirement": "One insurance company shall not be able to view another insurance companys claim data.", "cate": "security", "id": "promise-131"}
+{"requirement": "The product shall free of computer viruses.", "cate": "security", "id": "promise-132"}
+{"requirement": "The system shall prevent malicious attacks including denial of service.", "cate": "security", "id": "promise-133"}
+{"requirement": "The product shall ensure that only company employees or external users with company-approved user IDs may have product access.  100\\% of all logons shall be by either company employees or external users with company-approved user IDs.", "cate": "security", "id": "promise-170"}
+{"requirement": "Only managers are able to perform search queries for reservations by user.  100\\% of all search queries for reservations by user shall be from logons of only management logons.", "cate": "security", "id": "promise-171"}
+{"requirement": "The product shall ensure that the database\u2019s data corresponds to the data entered by the user.  Each conference room reservation in the system will contain the same information as was entered by the user.", "cate": "security", "id": "promise-172"}
+{"requirement": "The product shall prevent the input of malicious data.  The product and/or adjacent hardware/software systems\u2019 data shall remain 100\\% uncorrupted each time malicious data is input into the product.", "cate": "security", "id": "promise-173"}
+{"requirement": "The product shall have the ability to receive automatic software updates as new threats emerge.  100\\% of customers will be able to receive automatic software updates transmitted to the installed product.", "cate": "security", "id": "promise-174"}
+{"requirement": "The System shall maintain consistent security.  Any changes in user passwords and/or permissions should take affect in all parts of the System.", "cate": "security", "id": "promise-202"}
+{"requirement": "The System shall granularly control access rights to all major subsystems.  It should be possible to assign access rights to all subsystems independently.", "cate": "security", "id": "promise-203"}
+{"requirement": "All credit card information will be secured on the server  and only accessible by authorized Izogn administrators.  Information will be encrypted in the database.", "cate": "security", "id": "promise-219"}
+{"requirement": "Only registered customers can purchase streaming movies.", "cate": "security", "id": "promise-220"}
+{"requirement": "A customer can only stream a movie if they purchased it  and are within the 2 day viewing period.", "cate": "security", "id": "promise-221"}
+{"requirement": "Only authorized personnel can access customer records in the database.", "cate": "security", "id": "promise-222"}
+{"requirement": "Only administrators can activate a pre-paid card.", "cate": "security", "id": "promise-223"}
+{"requirement": "Only authorized personnel can access sales information.", "cate": "security", "id": "promise-224"}
+{"requirement": "The website shall prevent its data from being corrupted when incorrect data is entered in.", "cate": "security", "id": "promise-225"}
+{"requirement": "The website shall protect itself from intentional abuse  and notify the administrator at all occurrences.", "cate": "security", "id": "promise-226"}
+{"requirement": "Data integrity scripts will be run on a weekly basis to verify the integrity of the database.", "cate": "security", "id": "promise-227"}
+{"requirement": "The website shall make its user aware of its information practices before collection data from them via a Privacy Policy  accessible on all pages of the website.", "cate": "security", "id": "promise-228"}
+{"requirement": "The system shall notify customers of changes to its information policy.", "cate": "security", "id": "promise-229"}
+{"requirement": "The system shall reveal private information only in compliance with the organization\u2019s information policy.", "cate": "security", "id": "promise-230"}
+{"requirement": "All customer information will be stored on a secure database  accessible only to authorized personnel.", "cate": "security", "id": "promise-231"}
+{"requirement": "All credit card information will be encrypted in the database.", "cate": "security", "id": "promise-232"}
+{"requirement": "The streaming server will have anti-virus software to prevent infection of malicious viruses.", "cate": "security", "id": "promise-233"}
+{"requirement": "The product shall provide players no access to information that might reveal the identity of another player", "cate": "security", "id": "promise-270"}
+{"requirement": "The product shall ensure that only supervisors can advertise empty time slots.The product must ensure that supervisors are allowed to access advertise empty time slots.", "cate": "security", "id": "promise-309"}
+{"requirement": "The product shall ensure that only supervisors can enter a caller\u2019s schedule.The product must ensure that supervisors are allowed to access advertise empty time slots.", "cate": "security", "id": "promise-310"}
+{"requirement": "The product shall ensure that only supervisors can view schedule of all callers.The product must ensure that supervisors are allowed to access advertise empty time slots.", "cate": "security", "id": "promise-311"}
+{"requirement": "The product shall have security.The product shall provide authentication  and authorization.", "cate": "security", "id": "promise-312"}
+{"requirement": "The product shall information Security. The product shall enable privacy by encryption WS-Security and Integrity Checking.", "cate": "security", "id": "promise-313"}
+{"requirement": "The product shall have audit capabilities.The product shall store messages for a minimum of one year for audit and transaction tracking purposes.", "cate": "security", "id": "promise-314"}
+{"requirement": "The system shall only be accessed by authorized Corporate Community Grants (CCR) employees. Users must be authenticated using their IBM intranet user name and password.", "cate": "security", "id": "promise-315"}
+{"requirement": "The WCS system shall not allow automatic logins by any user. Cookies containing WCS login information about a user will not be stored on a user\u2019s computer.", "cate": "security", "id": "promise-316"}
+{"requirement": "Each team owner will need to use a username and password in order to be authenticated to reach the team owner\u2019s page", "cate": "security", "id": "promise-317"}
+{"requirement": "The Commissioner will be the only authorized user per league to adjust league settings.", "cate": "security", "id": "promise-318"}
+{"requirement": "\\tOnly authorized user shall access the RFS system. ONLY users that exist in the UAS system  with the RFS system assigned to their role(s)  shall access the RFS system and use it.", "cate": "security", "id": "promise-319"}
+{"requirement": "\\tUser access should be limited to the permissions granted to their role(s) Each level in the PCG hierarchy will be assigned a role and users will be assigned to these roles. Access to functionality within RFS system is dependent on the privileges/permission assigned to the role..", "cate": "security", "id": "promise-320"}
+{"requirement": "When a game is ended  the product shall allow each player to identify himself or herself as an available player in the list of players.", "cate": "functional", "id": "promise-307"}
+{"requirement": "The available recycled parts information and their suppliers shall be returned to the user.", "cate": "functional", "id": "promise-149"}
+{"requirement": "Program Administrators and Nursing Staff Members shall be able to add new classes for the nursing department into the system.", "cate": "functional", "id": "promise-55"}
+{"requirement": "Vendor will submit a credit validation record to be applied to the enterprise billing system.", "cate": "functional", "id": "promise-255"}
+{"requirement": "The leads washing functionality will return the lead data supplied to the vendor along with the reason of rejection.", "cate": "functional", "id": "promise-264"}
+{"requirement": "Clinical site information shall include (but not be limited to) the name of the site  contact person  and contact information.", "cate": "functional", "id": "promise-66"}
+{"requirement": "The product shall display room equipment according to search parameters.", "cate": "functional", "id": "promise-192"}
+{"requirement": "The adjuster shall request a recycled parts audit of the collision estimate.", "cate": "functional", "id": "promise-153"}
+{"requirement": "PME Subsystem shall allow keeping submenus within menus and products within submenus in a managed and persisted order.", "cate": "functional", "id": "promise-214"}
+{"requirement": "A Program of Study shall consist of a program name and listing of required classes (both clinical and non-clinical) that must be completed.", "cate": "functional", "id": "promise-60"}
+{"requirement": "The user shall search for the preferred repair facility using vehicle  vehicle location  and radius in miles", "cate": "functional", "id": "promise-134"}
+{"requirement": "The user shall be able to get driving directions to a selected property", "cate": "functional", "id": "promise-25"}
+{"requirement": "When a game is ended  the product shall allow each player to remove himself or herself from the list of players.", "cate": "functional", "id": "promise-308"}
+{"requirement": "The user shall enter new ratings based on the audit report", "cate": "functional", "id": "promise-165"}
+{"requirement": "The product shall allow the user to save the property search results.", "cate": "functional", "id": "promise-34"}
+{"requirement": "The system shall be able to display a printable summary for individual clinical sites  which will include information on labs being held at that site for the given quarter (Clinical site  general information on labs held at that location  dates and times of all labs held there).", "cate": "functional", "id": "promise-76"}
+{"requirement": "The product shall prevent a player from viewing the offensive or defensive grids of the other player.", "cate": "functional", "id": "promise-280"}
+{"requirement": "The system shall allow a Program Administrator/Nursing Staff Member to move a student from one clinical lab section to another clinical lab section corresponding to the same clinical class.", "cate": "functional", "id": "promise-71"}
+{"requirement": "The product shall have a customizable Look and Feel.", "cate": "functional", "id": "promise-199"}
+{"requirement": "The product shall send a meeting confirmation to the meeting organizer.", "cate": "functional", "id": "promise-191"}
+{"requirement": "The leads washing functionality shall receive a period list of available reps from the enterprise system.", "cate": "functional", "id": "promise-269"}
+{"requirement": "When the hit results in sinking a ship  the product shall notify the players that the ship was sunk.", "cate": "functional", "id": "promise-295"}
+{"requirement": "The Disputes System shall accurately provide a list of possible reason codes for a given transaction.  The list of possible reason codes must be derived based on the type of transaction and the industry that the merchant belongs to  according to the business rules defined for the Disputes System.", "cate": "functional", "id": "promise-117"}
+{"requirement": "The product shall maintain a list of players.", "cate": "functional", "id": "promise-271"}
+{"requirement": "The display shall have two regions:  left 2/3 of the display is graphical  right 1/3 of the display is a data table", "cate": "functional", "id": "promise-5"}
+{"requirement": "For each shot  the product shall notify the players whether the shot was a hit or miss.", "cate": "functional", "id": "promise-292"}
+{"requirement": "The report of needed classes shall include (but not be limited to) classes to be offered  number of sections needed  number of labs needed  and room types needed.", "cate": "functional", "id": "promise-63"}
+{"requirement": "The leads washing functionality will have an interface in which lead data parameters can be maintained.", "cate": "functional", "id": "promise-265"}
+{"requirement": "The table side of the display shall be split into 2 regions: sequential and temporal.", "cate": "functional", "id": "promise-7"}
+{"requirement": "A list of all disputes cases that meet the entered search criteria must be provided to the user.  The list of cases must differentiate the type and/or status of the case by color -coding the line item in the list.  For example all open cases will be yellow and all closed cases will be gray.", "cate": "functional", "id": "promise-120"}
+{"requirement": "The system shall allow modification of the display.", "cate": "functional", "id": "promise-13"}
+{"requirement": "The product shall have the ability to send meeting reminders to employees.", "cate": "functional", "id": "promise-177"}
+{"requirement": "The Disputes System must provide the user the ability to initiate a single dispute case on multiple transactions that belong to a single merchant.", "cate": "functional", "id": "promise-109"}
+{"requirement": "The leads washing functionality will validate all leads received by the web service for valid data", "cate": "functional", "id": "promise-257"}
+{"requirement": "The system shall be able to display a report of needed classes for a given quarter for all cohorts of all programs for Program Administrators/Nursing Staff Members\u2019 planning purposes.", "cate": "functional", "id": "promise-62"}
+{"requirement": "When the hit results in sinking a ship  the product shall mark the ship as sunk on the offensive grid of the offensive player.", "cate": "functional", "id": "promise-298"}
+{"requirement": "The system shall be able to display a printable summary of the system log.", "cate": "functional", "id": "promise-79"}
+{"requirement": "Prior to submitting the lead to the enterprise system the leads washing functionality will assign the lead to an admissions rep.", "cate": "functional", "id": "promise-268"}
+{"requirement": "Program Administrators and Nursing Staff Members shall be able to add new classes to a sequence of classes", "cate": "functional", "id": "promise-52"}
+{"requirement": "The system shall filter data by: Venues and Key Events.", "cate": "functional", "id": "promise-15"}
+{"requirement": "The product shall allow an organizer to invite other employees to meetings.", "cate": "functional", "id": "promise-186"}
+{"requirement": "The product shall record meeting entries.", "cate": "functional", "id": "promise-175"}
+{"requirement": "If the leads score falls within the high average score then it will be process by the ARA functionality.", "cate": "functional", "id": "promise-259"}
+{"requirement": "If the shot was marked as a miss  the product shall change the status of the offensive player to defensive", "cate": "functional", "id": "promise-300"}
+{"requirement": "For each class within a sequence for a cohort  Program Administrators and Nursing Staff Members shall be able to specify which quarter that class will be offered.", "cate": "functional", "id": "promise-50"}
+{"requirement": "The system shall allow a user to define the time segments", "cate": "functional", "id": "promise-16"}
+{"requirement": "The system shall be able to display a printable summary for individual nursing students  which will include (but not be limited to) student name  student ID  admission date  classes  credits  GPA  and the cohort that the student is enrolled in.", "cate": "functional", "id": "promise-78"}
+{"requirement": "If the leads score falls within the medium average then it will be set for manual verification by an Enrollment Coordinator through the eleads system.", "cate": "functional", "id": "promise-260"}
+{"requirement": "Realtor shall be able to generate a CMA report based on property criteria", "cate": "functional", "id": "promise-29"}
+{"requirement": "The product shall remove players who have been inactive for 24 hours from the list of players.", "cate": "functional", "id": "promise-276"}
+{"requirement": "Program Administrators/Nursing Staff Members shall have the ability to modify information relating to a Nursing Student  including student ID  student name  phone number  e-mail  status (full time or part time)  and program of study.", "cate": "functional", "id": "promise-91"}
+{"requirement": "The system shall allow a Program Administrator or Nursing staff member to remove a student from a clinical lab section.", "cate": "functional", "id": "promise-70"}
+{"requirement": "shall be able to stream purchased movie via Windows Media Player  for up to 2 days aftere purchase date.", "cate": "functional", "id": "promise-237"}
+{"requirement": "The RMS System shall have Windows XP look and feel and use GUI futures making its use intuitive.", "cate": "functional", "id": "promise-216"}
+{"requirement": "The Disputes System must prevent users from accessing any dispute cases that do not belong to their cardholder base.", "cate": "functional", "id": "promise-103"}
+{"requirement": "The System shall allow on demand generation of all Inventory Quantity Adjustment documents since certain point of time.", "cate": "functional", "id": "promise-205"}
+{"requirement": "The Disputes System must provide a confirmation to the user upon the creation of a chargeback request. The confirmation must contain the following information; the dispute case number  the type of chargeback requested (pending or immediate)  and the date that the merchant response is due.", "cate": "functional", "id": "promise-115"}
+{"requirement": "The product shall allow the player to position ships diagonally on their grid", "cate": "functional", "id": "promise-284"}
+{"requirement": "Each time a conference room is reserved  the conference room schedule shall be updated to reflect the time and date of the reservation.", "cate": "functional", "id": "promise-187"}
+{"requirement": "The realtor shall be notified of new client appointments after automatic synchronization with office system", "cate": "functional", "id": "promise-31"}
+{"requirement": "The adjuster shall enter the preferred repair facility on the estimate assignment.", "cate": "functional", "id": "promise-140"}
+{"requirement": "The system shall offer the ability to pause and resume the refresh of data.", "cate": "functional", "id": "promise-18"}
+{"requirement": "The System shall allow entering  storing and modifying product formulas.", "cate": "functional", "id": "promise-207"}
+{"requirement": "The product shall be able to send meeting notifications via different kinds of end-user specified methods.", "cate": "functional", "id": "promise-198"}
+{"requirement": "When the hit results in sinking a ship  the product shall indicate the type of ship sunk on the defensive grid of the defensive player.", "cate": "functional", "id": "promise-297"}
+{"requirement": "The ratings shall be from a scale of 1-10", "cate": "functional", "id": "promise-166"}

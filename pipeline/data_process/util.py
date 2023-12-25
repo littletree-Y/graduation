@@ -23,10 +23,10 @@ def show_requirement_cate(filename_example_dicts):
             se_num += 1
     print(f"需求总数：{num}, 功能需求：{fun_num}, 安全需求：{se_num}")
 
-def add_id2example_dicts(example_dicts):
+def add_id2example_dicts(example_dicts, dataset_prefix):
     for i, example_dict in enumerate(example_dicts):
         assert "id" not in example_dict
-        example_dict["id"] = i
+        example_dict["id"] = dataset_prefix + f"-{i}"
     return example_dicts
 
 def sample_fun_se(example_dicts, ratio):
@@ -50,3 +50,9 @@ def sample_fun_se(example_dicts, ratio):
     all_examples = se_examples
     all_examples.extend(sample_fun_example_dicts)
     return all_examples
+
+def write_text_file(filename, texts):
+    with open(filename, mode="w", encoding="utf-8") as f:
+        for text in texts:
+            f.write(text + "\n")
+    print(f"{filename}保存成功")
