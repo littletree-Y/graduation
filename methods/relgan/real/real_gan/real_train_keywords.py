@@ -74,13 +74,13 @@ def real_train_keywords(generator, discriminator, oracle_loader, config):
     assert x_fake_keywords_onehot.get_shape().as_list() == [batch_size, keywords_len, vocab_size]
     
     # generator and discriminator outputs
-    x_fake_onehot_appr, x_fake, g_pretrain_loss, gen_o = generator(x_real=x_real, keywords_onehot=x_keywords_onehot, keywords_len=keywords_len_list, temperature=temperature)
+    x_fake_onehot_appr, x_fake, g_pretrain_loss, gen_o = generator(x_real=x_real, keywords_onehot=x_keywords_onehot, keywords_len=x_keywords_len_list, temperature=temperature)
     # 真实数据及其匹配条件作为判别器输入
-    d_out_real = discriminator(x_onehot=x_real_onehot, keywords_onehot=x_keywords_onehot, keywords_len=keywords_len_list)
+    d_out_real = discriminator(x_onehot=x_real_onehot, keywords_onehot=x_keywords_onehot, keywords_len=x_keywords_len_list)
     # 生成数据及其匹配条件作为判别器输入
-    d_out_fake = discriminator(x_onehot=x_fake_onehot_appr, keywords_onehot=x_keywords_onehot, keywords_len=keywords_len_list)
+    d_out_fake = discriminator(x_onehot=x_fake_onehot_appr, keywords_onehot=x_keywords_onehot, keywords_len=x_keywords_len_list)
     # 真实数据与不匹配的条件作为判别器输入
-    d_out_not_match = discriminator(x_onehot=x_real_onehot, keywords_onehot=x_fake_keywords_onehot, keywords_len=fake_keywords_len_list)
+    d_out_not_match = discriminator(x_onehot=x_real_onehot, keywords_onehot=x_fake_keywords_onehot, keywords_len=x_fake_keywords_len_list)
 
     # GAN / Divergence type
     log_pg, g_loss, d_loss = get_losses(d_out_real, d_out_fake, d_out_not_match,x_real_onehot, x_fake_onehot_appr,
@@ -131,7 +131,8 @@ def real_train_keywords(generator, discriminator, oracle_loader, config):
         test_loader.create_batches(oracle_test_file, oracle_test_keywords_file)
 
         
-        metrics = get_metrics(config, oracle_loader, test_file, gen_text_file, g_pretrain_loss, x_real, sess)
+        metrics = get_metrics(config, oracle_loader, test_file, gen_text_file, g_pretrain_loss,
+         x_real,x_keywords, x_keywords_len_list,x_fake_keywords,x_fake_keywords_len_list,sess)
 
         print('Start pre-training...')
         for epoch in range(npre_epochs):
@@ -144,7 +145,7 @@ def real_train_keywords(generator, discriminator, oracle_loader, config):
             if np.mod(epoch, ntest_pre) == 0:
                 # generate fake data and create batches
                 gen_save_file = os.path.join(sample_dir, 'pre_samples_{:05d}.txt'.format(epoch))
-                generate_samples_keywords(sess, x_fake, test_loader, gen_file)
+                generate_samples_keywords(sess, x_fake, test_loader, x_keywords, x_keywords_len_list, gen_file)
                 get_real_test_file(gen_file, gen_save_file, index_word_dict)
                 get_real_test_file(gen_file, gen_text_file, index_word_dict)
 
@@ -203,7 +204,7 @@ def real_train_keywords(generator, discriminator, oracle_loader, config):
             if np.mod(niter, config['ntest']) == 0:
                 # generate fake data and create batches
                 gen_save_file = os.path.join(sample_dir, 'adv_samples_{:05d}.txt'.format(niter))
-                generate_samples_keywords(sess, x_fake, test_loader, gen_file)
+                generate_samples_keywords(sess, x_fake, test_loader, x_keywords, x_keywords_len_list, gen_file)
                 get_real_test_file(gen_file, gen_save_file, index_word_dict)
                 get_real_test_file(gen_file, gen_text_file, index_word_dict)
 
@@ -356,11 +357,14 @@ def get_train_ops(config, g_pretrain_loss, g_loss, d_loss, global_step):
 
 
 # A function to get various evaluation metrics
-def get_metrics(config, oracle_loader, test_file, gen_file, g_pretrain_loss, x_real, sess):
+def get_metrics(config, oracle_loader, test_file, gen_file, g_pretrain_loss, x_real,
+x_keywords, x_keywords_len_list,x_fake_keywords,x_fake_keywords_len_list,sess):
     # set up evaluation metric
     metrics = []
     if config['nll_gen']:
-        nll_gen = Nll(oracle_loader, g_pretrain_loss, x_real, sess, name='nll_gen', is_keywords=True)
+        nll_gen = Nll(oracle_loader, g_pretrain_loss, x_real, sess, name='nll_gen', 
+        x_keywords=x_keywords, x_keywords_len_list=x_keywords_len_list, x_fake_keywords=x_fake_keywords, x_fake_keywords_len_list=x_fake_keywords_len_list
+        ,is_keywords=True)
         metrics.append(nll_gen)
     if config['doc_embsim']:
         doc_embsim = DocEmbSim(test_file, gen_file, config['vocab_size'], name='doc_embsim')

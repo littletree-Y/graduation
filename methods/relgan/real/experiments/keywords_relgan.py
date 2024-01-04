@@ -44,9 +44,11 @@ num_rep = '64'
 sn = False
 decay = False
 adapt = 'exp'
-npre_epochs = '150'
-nadv_steps = '2000'
-ntest = '20'
+# npre_epochs = '150'
+# nadv_steps = '2000'
+npre_epochs = '10'
+nadv_steps = '20'
+ntest = '10'
 
 # Paths
 rootdir = '../..'
