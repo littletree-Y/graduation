@@ -31,13 +31,13 @@ def generate_samples(sess, gen_x, batch_size, generated_num, output_file=None, g
         codes += buffer
     return codes
 
-def generate_samples_keywords(sess, gen_x, test_loader, output_file=None, get_code=True):
+def generate_samples_keywords(sess, gen_x, test_loader, x_keywords, x_keywords_len_list,output_file=None, get_code=True):
     # Generate Samples
     generated_samples = []
     test_loader.reset_pointer()
     for it in range(test_loader.num_batch):
-        _, keywords, keywords_len_list = data_loader.next_batch()
-        generated_samples.extend(sess.run(gen_x, feed_dict={x_keywords:keywords, keywords_len_list:keywords_len_list}))
+        _, keywords, keywords_len_list = test_loader.next_batch()
+        generated_samples.extend(sess.run(gen_x, feed_dict={x_keywords:keywords, x_keywords_len_list:keywords_len_list}))
     codes = list()
     if output_file is not None:
         with open(output_file, 'w') as fout:
