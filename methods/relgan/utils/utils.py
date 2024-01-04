@@ -62,7 +62,7 @@ def init_sess():
     return sess
 
 
-def pre_train_epoch(sess, g_pretrain_op, g_pretrain_loss, x_real, data_loader, is_keywords=False):
+def pre_train_epoch(sess, g_pretrain_op, g_pretrain_loss, x_real, x_keywords, x_keywords_len_list,data_loader, is_keywords=False):
     # Pre-train the generator using MLE for one epoch
     supervised_g_losses = []
     data_loader.reset_pointer()
@@ -70,7 +70,7 @@ def pre_train_epoch(sess, g_pretrain_op, g_pretrain_loss, x_real, data_loader, i
     for it in range(data_loader.num_batch):
         if is_keywords:
             batch, keywords, keywords_len_list = data_loader.next_batch()
-            _, g_loss = sess.run([g_pretrain_op, g_pretrain_loss], feed_dict={x_real: batch, x_keywords:keywords, keywords_len_list:keywords_len_list })
+            _, g_loss = sess.run([g_pretrain_op, g_pretrain_loss], feed_dict={x_real: batch, x_keywords:keywords, x_keywords_len_list:keywords_len_list })
         else:
             batch = data_loader.next_batch()
             _, g_loss = sess.run([g_pretrain_op, g_pretrain_loss], feed_dict={x_real: batch})

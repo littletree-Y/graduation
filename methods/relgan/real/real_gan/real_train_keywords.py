@@ -61,9 +61,9 @@ def real_train_keywords(generator, discriminator, oracle_loader, config):
     # placeholder definitions
     x_real = tf.placeholder(tf.int32, [batch_size, seq_len], name="x_real")  # tokens of oracle sequences
     x_keywords = tf.placeholder(tf.int32, [batch_size, keywords_len], name="x_keywords") 
-    keywords_len_list = tf.placeholder(tf.int32, [batch_size], name="keywords_len_list")
+    x_keywords_len_list = tf.placeholder(tf.int32, [batch_size], name="x_keywords_len_list")
     x_fake_keywords = tf.placeholder(tf.int32, [batch_size, keywords_len], name="x_fake_keywords") 
-    fake_keywords_len_list = tf.placeholder(tf.int32, [batch_size], name="fake_keywords_len_list")
+    x_fake_keywords_len_list = tf.placeholder(tf.int32, [batch_size], name="x_fake_keywords_len_list")
     temperature = tf.Variable(1., trainable=False, name='temperature')
 
     x_real_onehot = tf.one_hot(x_real, vocab_size)  # batch_size x seq_len x vocab_size
@@ -136,7 +136,7 @@ def real_train_keywords(generator, discriminator, oracle_loader, config):
         print('Start pre-training...')
         for epoch in range(npre_epochs):
             # pre-training  
-            g_pretrain_loss_np = pre_train_epoch(sess, g_pretrain_op, g_pretrain_loss, x_real, oracle_loader)
+            g_pretrain_loss_np = pre_train_epoch(sess, g_pretrain_op, g_pretrain_loss, x_real, x_keywords, x_keywords_len_list,oracle_loader, is_keywords=True)
 
             # Test
             ntest_pre = 10
@@ -174,10 +174,12 @@ def real_train_keywords(generator, discriminator, oracle_loader, config):
             # adversarial training
             for _ in range(config['gsteps']):
                 batch, keywords, keywords_len_list =  oracle_loader.random_batch()
-                sess.run(g_train_op, feed_dict={x_real: batch, x_keywords:keywords, keywords_len_list:keywords_len_list})
+                sess.run(g_train_op, feed_dict={x_real: batch, x_keywords:keywords, x_keywords_len_list:keywords_len_list})
             for _ in range(config['dsteps']):
                 batch, keywords, keywords_len_list =  oracle_loader.random_batch()
-                sess.run(d_train_op, feed_dict={x_real: batch, x_keywords:keywords, keywords_len_list:keywords_len_list})
+                _, fake_keywords, fake_keywords_len_list = oracle_loader.random_batch()
+                sess.run(d_train_op, feed_dict={x_real: batch, x_keywords:keywords, x_keywords_len_list:keywords_len_list,
+                 x_fake_keywords: fake_keywords, x_fake_keywords_len_list: fake_keywords_len_list})
 
             t1 = time.time()
             sess.run(update_Wall_op, feed_dict={time_diff: t1 - t0})
@@ -187,7 +189,9 @@ def real_train_keywords(generator, discriminator, oracle_loader, config):
             sess.run(update_temperature_op, feed_dict={temp_var: temp_var_np})
 
             batch, keywords, keywords_len_list =  oracle_loader.random_batch()
-            feed = {x_real: batch, x_keywords:keywords, keywords_len_list:keywords_len_list}
+            _, fake_keywords, fake_keywords_len_list = oracle_loader.random_batch()
+            feed = {x_real: batch, x_keywords:keywords, keywords_len_list:keywords_len_list,
+                x_fake_keywords: fake_keywords, fake_keywords_len_list: fake_keywords_len_list}
             g_loss_np, d_loss_np, loss_summary_str = sess.run([g_loss, d_loss, loss_summary_op], feed_dict=feed)
             sum_writer.add_summary(loss_summary_str, niter)
 
