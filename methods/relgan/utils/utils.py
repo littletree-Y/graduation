@@ -31,7 +31,7 @@ def generate_samples(sess, gen_x, batch_size, generated_num, output_file=None, g
         codes += buffer
     return codes
 
-def generate_samples_keywords(sess, gen_x, test_loader, batch_size, generated_num, output_file=None, get_code=True):
+def generate_samples_keywords(sess, gen_x, test_loader, output_file=None, get_code=True):
     # Generate Samples
     generated_samples = []
     test_loader.reset_pointer()
@@ -107,7 +107,10 @@ def get_oracle_file(data_file, oracle_file, seq_len):
 def get_oracle_file_keywords(data_file, keywords_file, oracle_file, oracle_keywords_file, 
     seq_len, keywords_len, test_file, oracle_test_file, test_keywords_file, oracle_test_keywords_file):
     tokens = get_tokenlized(data_file)
-    word_set = get_word_list(tokens)
+    # add test tokens
+    test_tokens = get_tokenlized(test_file)
+    word_set = get_word_list(tokens + test_tokens)
+
     [word_index_dict, index_word_dict] = get_dict(word_set)
     with open(oracle_file, 'w') as outfile:
         outfile.write(text_to_code(tokens, word_index_dict, seq_len))

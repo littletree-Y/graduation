@@ -7,6 +7,7 @@ from utils.metrics.DocEmbSim import DocEmbSim
 from utils.metrics.Bleu import Bleu
 from utils.metrics.SelfBleu import SelfBleu
 from utils.utils import *
+from real.real_gan.real_loader_keywords import *
 from utils.ops import gradient_penalty
 
 EPS = 1e-10
@@ -40,12 +41,12 @@ def real_train_keywords(generator, discriminator, oracle_loader, config):
     oracle_test_file = os.path.join(sample_dir, 'oracle_test_{}.txt'.format(dataset))
     test_keywords_file = os.path.join(data_dir, 'testdata/test_{}_keywords.txt'.format(dataset))
     oracle_test_keywords_file = os.path.join(sample_dir, 'oracle_test_keywords_{}.txt'.format(dataset))
-    if dataset == 'image_coco':
-        test_file = os.path.join(data_dir, 'testdata/test_coco.txt')
-    elif dataset == 'emnlp_news':
-        test_file = os.path.join(data_dir, 'testdata/test_emnlp.txt')
-    else:
-        raise NotImplementedError('Unknown dataset!')
+    # if dataset == 'image_coco':
+    #     test_file = os.path.join(data_dir, 'testdata/test_coco.txt')
+    # elif dataset == 'emnlp_news':
+    #     test_file = os.path.join(data_dir, 'testdata/test_emnlp.txt')
+    # else:
+    #     raise NotImplementedError('Unknown dataset!')
 
     # create necessary directories
     if not os.path.exists(data_dir):
@@ -122,13 +123,13 @@ def real_train_keywords(generator, discriminator, oracle_loader, config):
         log = open(csv_file, 'w')
         sum_writer = tf.summary.FileWriter(os.path.join(log_dir, 'summary'), sess.graph)
 
-        test_loader.create_batches(oracle_test_file, oracle_test_keywords_file)
-
         # generate oracle data and create batches
         index_word_dict = get_oracle_file_keywords(data_file, keywords_file, oracle_file,
             oracle_keywords_file, seq_len, keywords_len, test_file, oracle_test_file,
             test_keywords_file, oracle_test_keywords_file)
         oracle_loader.create_batches(oracle_file, oracle_keywords_file)
+        test_loader.create_batches(oracle_test_file, oracle_test_keywords_file)
+
         
         metrics = get_metrics(config, oracle_loader, test_file, gen_text_file, g_pretrain_loss, x_real, sess)
 

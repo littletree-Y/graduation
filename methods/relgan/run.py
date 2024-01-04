@@ -105,15 +105,17 @@ def main():
     elif args.dataset in ['four']:
         data_file = os.path.join(args.data_dir, '{}.txt'.format(args.dataset))
         keywords_file = os.path.join(args.data_dir, '{}_keywords.txt'.format(args.dataset))
-        seq_len, vocab_size = text_precess(data_file)
-        keywords_len, _ = text_precess(keywords_file)
+        test_file = os.path.join(args.data_dir, 'testdata/test_{}.txt'.format(args.dataset))
+        test_keywords_file = os.path.join(args.data_dir, 'testdata/test_{}_keywords.txt'.format(args.dataset))
+        seq_len, vocab_size = text_precess(data_file, test_file)
+        keywords_len, _ = text_precess(keywords_file, test_keywords_file)
         config['seq_len'] = seq_len
         config['vocab_size'] = vocab_size
         config['keywords_len'] = keywords_len
-        print('seq_len: %d, vocab_size: %d, keyword_len' % (seq_len, vocab_size, keywords_len))
+        print('seq_len: %d, vocab_size: %d, keyword_len: %d' % (seq_len, vocab_size, keywords_len))
 
         oracle_loader = RealDataKeywordsLoader(args.batch_size, args.seq_len, args.keywords_len)
-        print('[flag]seq_len: %d, vocab_size: %d, keyword_len' % (args.seq_len, args.vocab_size, args.keywords_len))
+        print('[flag]seq_len: %d, vocab_size: %d, keyword_len: %d' % (args.seq_len, args.vocab_size, args.keywords_len))
 
         generator = models.get_generator(args.g_architecture, vocab_size=vocab_size, batch_size=args.batch_size,
                                          seq_len=seq_len, gen_emb_dim=args.gen_emb_dim, mem_slots=args.mem_slots,
