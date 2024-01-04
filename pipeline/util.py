@@ -3,6 +3,9 @@ import gzip
 import json
 import os
 import csv
+import sys
+sys.path.append("..")
+from const import *
 
 def write_jsonl(filename: str, data: Iterable[Dict], append: bool = False):
     """
@@ -79,3 +82,20 @@ def remove_duplicate_examples(examples, key_name="requirement"):
             has_texts.add(text)
     print(f"去重后数量:{len(filter_examples)}")
     return filter_examples
+
+def extract_keywords(text):
+    from rake_nltk import Rake
+    # 使用Rake算法，同时传入自定义的停用词
+    rake_nltk_var = Rake(stopwords=my_stopwords)
+    # 提取关键词
+    rake_nltk_var.extract_keywords_from_text(text)
+
+    # 获取关键词短语排名
+    keyword_ranked = rake_nltk_var.get_ranked_phrases()
+    return keyword_ranked
+
+def remove_punctuation(text):
+    import re
+    # 使用正则表达式去除标点符号：匹配所有非单词字符
+    stripped_text = re.sub(r'[^\w\s]', '', text)
+    return stripped_text

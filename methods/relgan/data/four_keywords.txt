@@ -1,0 +1,607 @@
+service usage purposes
+user
+using local microsoft based certificates
+match fingerprint
+improve spam detection
+authentication server interact
+view content
+provide maturity
+received using bluetooth
+therefore guarantees maximum availability
+normal operating times
+provide maturity
+web application
+enforce encryption
+rightful user
+contains proxy related request
+grant access privilege
+sensitive user information
+allocate resources
+else reject
+protect files
+transactional data
+trusted third party
+detect normal attacks
+intentional abuse
+given web server
+cep card must specify support
+digital signature generation
+data breach occurs
+provide file type filtering
+authentication applies
+uses hmac
+stored data
+permanent shared secret key may exist
+trusted framework security rules
+distinct security questions
+hpims add new patients
+approved user ids may
+support mechanisms
+maintains control
+card issuer generates s2
+detects intrusion
+prime function
+card data securely
+authorization management handling policy
+team owner
+data using
+authenticate pin entered
+strict documentation including comments
+sql injection attacks
+report outlining
+separate routing protocol
+offers little room
+unique behavioral biometrics
+traffic
+time
+patient information
+applying complexity avoidance strategy
+allow approved certified health providers
+image using lbs technique
+batch total count
+users
+allow anomalies
+distribute authentic copies
+user patterns
+basic data integrity checking
+whatever point
+times
+fingerprint upon registration
+registered users
+edit patient details
+provide authentication service
+recent network connections
+network administrator
+unauthorized users
+permitted data
+including install ability
+minimize data loss
+modifiable
+application providers governing
+unauthorized persons
+individuals access rights
+ensure encryption
+user activity
+inaccurate data formats
+scheme provider must ensure
+passwords must
+real vulnerabilities
+cep card must ensure
+load file data block signature
+error recovery
+clear secure data exchange protocols
+reveal private information
+identify possible malware families
+guarantee reliability
+provide password
+enforce privacy
+providing load file data block signatures according
+easily accessed hence
+access customer records
+special characters representing typed characters
+emergency situations
+considered downtime impact
+job much easier
+support reverse engineering
+last 4 digits
+rules protecting
+encrypt files using aes algorithm
+allow authorised users
+card issuer mac
+user
+thereby reliably depriving
+using security saml tokens containing assertions
+deny websites listed
+logic code making
+denied access
+wireless connection
+generate decoy files
+secure database
+pos transaction s5 mac
+match current faceprint
+view business data
+online transactions hence
+authorized users
+scanner may accept
+protect users data
+watermarked image
+also message flooding
+modify stored information
+client needs
+terminal must secure transactions
+known harmful websites
+2 day viewing period
+prevailing weather conditions
+cpn authorization management handling policy
+prevent unauthorised modification
+need frequent updates
+merchant acquirers must
+des session key
+group public key
+psam using certificates previously exchanged
+sequence number
+load device must support
+authentication failure handling policy
+globalplatform security mechanism cannot
+s2 mac computed
+allow secure uploaded files using aes algorithm
+automatically log
+students personal information
+detect sql injection
+valid data
+properly authenticated
+quick error recovery
+way authentication process
+existing user
+different platforms
+including transient session data
+data provided
+security policies defined
+ensure integrity
+serious service disruption
+short period
+unauthorized users
+user data
+way authentication process
+single point
+load device must support
+loosely coupled
+detected vulnerability
+taken place
+uptime
+time
+user account
+use qr codes
+locations prevalent crime using crowd
+card content changes initiated
+remains accessible online even
+digitally signed certificates
+credentials allowing access
+load file data block hash
+unique watermark
+easy maintenance
+load device sends s1
+analysed vulnerabilities
+load file data block signature
+modular design catering
+many operating systems
+wrong data type
+special secure server
+issuer security domain keys
+allow high availability
+frequent updates
+issuer host must authenticate
+user types password
+safety assurance
+ibm intranet user name
+video content protected
+using phn
+easily access medical records
+unauthorised user
+code sent either via
+traffic given
+ensure card security
+provide access permissions
+unauthorized users
+email address
+registered agents
+prevent access
+invisible digital watermark whenever submitting
+access sales information
+validate entered data hence reducing redundancy
+built following best practices
+secure
+encompass factors
+mouse movement biometrics
+group public key
+every operation made
+initiate dispute requests
+algorithms collectively strengthens
+facilitate future upgrades
+validate user passwords
+des session key used
+user
+support symmetric cryptography
+card issuer validates
+transaction signatures ensure end
+particular user
+handle errors
+allow individual facility servers
+one odpf area must
+tasks accurately
+transmission sent
+updated batch total count
+functionalities without compromising
+card needs
+guess password
+appropriate security domain
+certificates previously received
+secret key
+tonly authorized user
+operational rights
+also sets limits
+offer user authentication
+authorized users
+transaction tracking purposes
+containing privacy invasions
+set user
+employ good coding principles like loose coupling
+globalplatform card offers integrity
+high availability wherever
+stored images
+use symmetric key encryption aes
+easily interact effectively
+clinical site information
+systems
+appropriate security domain
+maintain audit logs
+flexible
+encrypt sensitive data
+case one forgets password
+security mechanism including hmac
+encrypt communication
+enable real time data capturing
+send periodic logs
+user
+check application access rules according
+user
+random check
+successfully gain unauthorized access
+access advertise empty time slots
+offer error handling capabilities
+user name
+audit report summary
+load transactions require
+newer versions
+systems administrator
+authorised users
+unknown malware
+message containing management information
+transaction collection process must exist
+service usage purposes
+allow users
+input another licence number
+purchase streaming movies
+generate using time
+malicious activities
+compromised vm main memory upon detection
+identify acceptable low false positive rates
+child
+support parental control related functionalities limiting
+cng transmitting private
+unload functions must
+error recovery
+registered realtors
+monitored virtual machine
+security domain provider
+lock automatically
+trusted framework present
+match rfid card
+security services
+scheme providers must assign unique identifying numbers
+cancel last purchase transaction
+related data securely
+recorded threat related signatures
+group public key
+services
+factor user authentication
+port scanning
+issuer security domain
+legitimate account owner
+cep card exchanges cryptograms must
+representative
+cep card must
+stateful firewall function
+proxy requesting ip address
+produce encrypted payload
+access advertise empty time slots
+request recycled parts audit reports
+keys must
+one overall highest level certification authority
+specific communication protocol rules
+without modifying core functionality
+simple
+particular licence owner
+short period
+user input validations
+medical practitioner
+granularly control access rights
+safe exit
+inspect ssl certificate
+load device
+update preferred repair facility ratings
+reduce electronic fraudulent activities
+rogue node
+allow secure storage
+op_ready state may insert security domain keys
+local authentication failure handling policy
+merchant acquirer also authenticate
+allow every history
+data remains even
+privacy protection policy
+enhance multiple factor authentication
+perform search queries
+unlawful usage even
+access advertise empty time slots
+issuer host upon
+balancing development time
+update configuration information
+end systems may exist
+routine maintenance
+gracefully stops
+totp value
+update antispam software
+retain video logs
+checking data integrity
+virus software
+tools used
+detecting known cryptojacking malware activity
+distributed dos attack occurs
+separate secure storage
+cep card verifies
+analyse data alerting parents whenever certain keywords
+one secure channel protocol
+card security domain provider
+later date
+residual data associated
+7 service delivery
+provide audit trails
+web application server
+enforces security administration
+provide players
+must also allow users
+assign roles
+audit trial purposes
+restricted zones within
+decrypt files using
+perform verification
+detected cryptojacking domain
+stored
+set period
+line transactions
+provide two factor authentication
+send periodic logs
+new malware
+analyses packets flowing
+similar mechanisms may
+similarity match done
+predict potential operational performance bottlenecks
+reduce
+data integrity scripts
+logon id
+unique passcode
+block internet connection
+records must also increase
+governmental restrictions upon cryptography
+authorized user per league
+proper application functionality
+user attempting
+received using bluetooth
+different platforms
+trusted third party
+exploit vulnerabilities known
+malicious interference
+allow background processes
+login password
+load device establishes
+n signers using group public keys
+unauthorized user cannot log
+granted access
+done identity theft
+performing secure memory management
+detect fraudulent transactions
+systems easily
+privacy policy accessible
+provide information regarding
+runtime environment security mechanisms cannot
+os activities
+require constant updating
+aes encryption key
+privacy protection policy specifying
+scalable
+registered email address
+facilitate future upgrades
+line pin plain text verification method
+ensure complete seperation
+first line
+including transient session data
+ensure user validation
+stored data
+password protected user accounts
+load device also provides
+provides maturity
+notify customers
+therefore guarantees maximum availability
+load acquirer needs
+memory recovery process
+username
+unique user name
+allow file type filtering
+render efficiently utilise
+user machines thus
+never shown
+real time
+low false negative rate
+acquired forensic imagines
+enable data multiple replications
+wan side network
+security attacks
+card issuer authenticates
+new tricks
+stored data
+ip address accordingly
+apply automatic recording
+cryptographically authorizing load
+detect spam messages
+national level offering reliability
+resist unathorised users
+data integrity using md5 hash algorithm
+right individuals
+6 character password
+current cpu utilization percentage
+scanning process must
+already existing users
+require cardholder authentication
+provide two factor authentication
+special characters representing typed characters
+database containing keywords
+user upon authentication
+upload
+application providers represented
+must always
+view ip address
+e downloader
+error recovery
+line authentication must take place
+stored procedures
+identity theft
+globalplatform card offers entity authentication
+users login
+controlling authority represented
+implement authentication using pki
+submitted twice
+central server remain unaffected
+expandable
+user logged
+logout capabilities
+authorized users
+message integrity error
+encrypt video content
+user
+user specific key
+card issuer
+offline ceps transaction
+anomalies detected
+functionality within rfs
+load generated keys
+private key
+public key
+merchant acquirer
+maintained properly
+unauthorised users
+known cryptocurrency mining pools
+offer high level security
+provide authentication
+components loosely coupled
+provide access control
+legitimate users
+information provided include
+secure database accessible
+authorized izogn administrators
+known harmful websites
+port scanning
+issuer sends s2
+forgotten password
+verification using avs
+registered email address
+independent classes
+perform internal security measures
+decrypt messages using aes algorithm
+data administrator
+low false positive rate
+unique psam id
+user phone
+end databases
+allow automatic locking
+log files
+transaction data
+provide cryptographic protection services
+deliver emails whenever
+cng receiving private
+quick error recovery
+pos device must ensure
+requesting user
+already existing database
+show logs investigator activity
+network threats
+enable authorised reversal
+user
+every user
+providing load file data block signatures according
+view another insurance companys claim data
+selected data elements
+data manipulation including malicious operation
+standard virus protection software
+allow network traffic monitoring
+use pgp
+secure single sign
+enable face identification
+potentially malicious
+secured state may
+offer confidentiality
+obtain access
+provide availability
+passwords using hmac
+trimmed parts names
+decrypt data
+usually accessed hence
+increasing fault tolerance
+provide authentication service
+pin
+unique keys
+identify wrong input
+thereby securing
+transaction
+upon answering correctly
+maintain security
+university wifi network
+secure database
+allow adding functionality easily
+verifiable whenever
+perform legitimate modification
+log
+globalplatform card offers confidentiality
+scheme provider rules
+symmetric macing key signature
+twitter api capabilities
+cng detects replayed user
+use much hardware
+paid card
+secure memory management
+associated within
+ca public rsa key
+tags presently two thousand
+implement one secure channel protocol
+secure uploaded files using aes algorithm
+invoking device identity
+card must ensure
+trap user input error
+group public key
+avoid violating coding principles
+use secure sockets
+supplementary security domains
+captured traffic data
+update access must
+user explicitly selects
+unique diversified secret key
+maintain consistent security
+provide mechanisms
+prevent malicious attacks including denial
+facilitate reliability assurance
+used
+uninterrupted power supply
+private rsa key
+initially register
+twitter account
+final class section scheduling
+user

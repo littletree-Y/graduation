@@ -1,0 +1,607 @@
+The CNG shall support mechanisms to authenticate CNDs to the NGN for service usage purposes if they are not able to fully support the related procedures in an autonomous way .
+The system shall allow the user to sign a document
+The system will be using local Microsoft based certificates , thus the intention is to ensure availability of the certificate authority at all times .
+The system should be able to match fingerprint at login .
+The system is able to automatically adapt to the email environment to constantly tune and improve spam detection .
+The system shall ensure that the authentication server interact with the database to check for registered user from the database
+The system shall allow a user to view content or dashboard .
+The system shall provide maturity , fault tolerance and recoverability in the face of a fault .
+The system shall be up and running all the time since its checking or monitoring the child ’ s behavior and prevent any media from being sent or received using Bluetooth
+The system shall be web based and therefore guarantees maximum availability of data to the cloud data owners
+The system shall be available at all times , meaning the user can access it using a device application which addresses the user concern for how dependable the system is during normal operating times .
+The system shall provide maturity , fault tolerance and recoverability .
+The web application will be secured by hardening and protecting the servers and restricting access from the outside .
+The system shall enforce encryption on all files , communication channels and backups .
+The system shall that the information collected from the previous stage of life should be readily available in any stage and whenever it is required by the rightful user
+The system shall be able to filter outgoing traffic if it contains proxy related request .
+The system super administrator should be able to grant access privilege to users and restrict access of information and data users can view or modify at any given time .
+The system should not violate laws by not infringing the privacy of sensitive user information and intellectual property rights .
+The system shall be able to allocate resources to the actual student who has requested the service .
+The system shall be able to detect whether the input credentials are authentic , then accept or else reject if the credentials are incorrect .
+The system shall enable encryption and decryption capabilities to protect files .
+The system shall provide all the internal users a backup of the operational and transactional data .
+" A Controlling Authority is responsible for Generating the keys for its own Security Domain or obtaining Security Domain keys from a trusted third party , "
+The system is effective because it will detect normal attacks which current systems do not detect .
+The website shall protect itself from intentional abuse and notify the administrator at all occurrences .
+The system shall verify the SSL certificate on a given web server to make sure it is correctly installed , valid , trusted and doesn ' t give any errors to any of the users .
+The card verification method indicator ( CVMI ) in the CEP card must specify support of online PIN verification and at least one method of off - line PIN verification ( encrypted or unencrypted )
+" Security Domains shall support security services such as key handling , encryption , decryption , digital signature generation and verification for their providers ' such as card issuer , applicaiton providers and controlling authority "
+The system shall notify the administrator of who accesses the system in case a data breach occurs .
+The system shall provide file type filtering so as to avoid overloading the normal flow information with unnecessary files .
+The system principle of authentication applies in that the system notifies if there is a watermark on the image or not .
+The system uses HMAC to maintain integrity of log files .
+The system shall guarantee confidentiality through encryption of stored data with AES .
+The card and the PSAM must use a public key algorithm for mutual authentication and session key exchange , as no permanent shared secret key may exist between the CEP card and the PSAM
+" Each Trusted Framework present on the card shall Enforce the Trusted Framework security rules for inter - application communication , including the rules , defined in appendix G , "
+The system allows user re - verification by the usage of AVS and distinct security questions .
+Front Desk staff shall be able to view all information in HPIMS add new patients to HPIMS but shall not be able to modify any information in it
+The product shall ensure that only company employees or external users with company - approved user IDs may have product access . 100 \ % of all logons shall be by either company employees or external users with company - approved user IDs .
+The CNG shall support mechanisms to authenticate itself to the NGN for connectivity purposes .
+Be the entity that maintains control over the flow of a transaction , ensuring that all security is enforced
+The card issuer generates S2 , which is sent to the card to allow the card to validate the card issuer  ? ? s authenticity and to ensure that the data used by the card in the transaction is the same as the card issuer intended
+The system should be able to analyze the network traffic and detects intrusion , attacks and threats to the network .
+The system shall be secured against environmental threats and this is one of its prime function .
+When applicable a Security Domain shall Manage on - card data securely ,
+The CNG shall implement an authorization management handling policy .
+Each team owner will need to use a username and password in order to be authenticated to reach the team owner ’ s page
+When present , services to encrypt and decrypt any pattern of data using these algorithms shall be available to Applications .
+The system shall be able to authenticate pin entered .
+The system shall maintain a strict documentation including comments in the source code so as to make the code easy to modify and debugging .
+The system database storing keywords will be secured against SQL injection attacks to reduce false positives .
+The system shall generate a report outlining what effect the malware has done during execution in an isolated environment .
+System must allow clients to run a separate routing protocol from one in ISP network .
+The system offers little room for a delayed data transmissions and system failures due to error handling procedures and feedbacks .
+The system shall be able to distinguish the legitimate user from an illegitimate one by the use of unique behavioral biometrics
+The system shall be able to sniff the traffic to and from the network in real - time .
+The system shall be developed to be available all the time .
+The system shall allow for access levels to be implemented on patient information .
+The system shall ensure easy maintainability by enforcing best practices in documentation , applying complexity avoidance strategy , and following basic programming practices .
+The system shall allow approved certified health providers to append information into the encrypted central server .
+The system shall allow the user to embed the encrypted message and retrieve encrypted message from the image using LBS technique
+Each POS transaction completed at the POS device is given a S5 MAC by the PSAM , which is used by the merchant acquirer to validate that the transactions were made at a POS device with a valid PSAM . The batch total count and amount must be protected by the S4 MAC , which must also be validated by the merchant acquirer
+The system shall authenticate all users .
+The system shall allow anomalies to be curbed after detection .
+The system shall distribute authentic copies of each supplied video .
+The system ensure a secure storage of the user patterns so as to protect against compromise attackers .
+The system shall have basic data integrity checking to reduce the possibility of incorrect or invalid data being introduced .
+The framework ought to be accessible wherever it is required . At whatever point the clients needs to make a purchase
+The system shall allow for operation at all times .
+The system shall allow a user to recover unique identifiers of the node which was used to generate the node ’ s unique ID / fingerprint upon registration when the owner entered / joined the university with it
+The system shall allow a lookup of registered users if requested by the authentication server .
+The system shall allow authorized user to edit patient details .
+The system shall provide authentication service which is tested when logging into the Django admin panel ( back - end ) of the system when the user logs into the system by entering credentials created from command prompt when running the manage code .
+The system shall allow a user to check netstat and recent network connections to see if rogue node it a victim of pivoting and if so trace the attacking machine .
+The system shall have a log in screen to allow the network administrator to log into the system
+The system shall provide administrator with security to data to make sure that unauthorized users do not access the information .
+The system shall allow that the user only has access to his or her permitted data .
+The system shall be easy to transfer to another environment , including install ability
+The system database should be backed up continuously at least once every for hour in order to minimize data loss in the case of a catastrophic failure .
+The system should be easy to maintain and it should be modifiable .
+" The Card Issuer is responsible for Enforcing standards and policies for Application Providers governing all aspects of Applications to be provided to the Card Issuer or operated on the Card Issuer ' s cards , "
+The system shall be able to authenticate users so that any unauthorized persons should not be granted by the system
+The system should have access control mechanism that take into account the use of passwords and individuals access rights .
+The system shall ensure encryption of data during transmission .
+The system shall be able to allow logging of each user activity .
+The system shall ensure that a secure and effective interface is established to reduce the affiliated risk of errors from inaccurate data formats .
+The scheme provider must ensure that the entire process between merchants , merchant acquirers , card issuers , and processors is auditable and reconcilable
+Information relating to passwords must be confidential
+The system should be able to carefully diagnose the real vulnerabilities when they exist based on conducting formula - based experiments .
+During a purchase transaction , the CEP card must ensure that it is dealing with an authentic POS device , and it must generate a signature to allow the card issuer to verify the integrity of the transaction
+The Load File Data Block Hash is used in the computation of The Load File Data Block Signature
+The system shall allow room for error recovery
+The system shall enable implementation of clear secure data exchange protocols and document the interfaces and the protocols being utilized .
+The system shall reveal private information only in compliance with the organization ’ s information policy .
+The system shall be used to detect the presence of malware in an Android application , identify possible malware families and classify them accordingly into their families .
+The system shall guarantee reliability and resilient to failure
+The system shall ask user to provide password .
+The system should be able to enforce privacy of data by encryption of data during transmission .
+" The Application Provider is responsible for Providing load file data block signatures according to its own security policy for integrity and source authenticity , "
+The proposed system ’ logistics are easily accessed hence its availability is guaranteed when and as required .
+Only authorized personnel can access customer records in the database .
+The customer � s web browser shall never display a customer � s password . It shall always be echoed with special characters representing typed characters .
+The system shall be designed with ease of access in mind as the data may be needed in emergency situations .
+The system must be considered downtime impact on the business , transport unavailability and minimizing unavailability .
+The system shall allow log capture to be a background process making the auditor ’ s job much easier .
+The system shall not support reverse engineering of its source code
+The customer � s web browser shall never display a customer � s credit card number after retrieving from the database . It shall always be shown with just the last 4 digits of the credit card number .
+The diagnostic operations on the CPN by an operator shall be performed in accordance with rules protecting the users ' privacy .
+The system shall encrypt files using AES algorithm .
+The system shall allow authorised users to manage their files that is update and delete data from their accounts .
+If errors in the card issuer MAC are discovered by the card issuer during its processing of the transactions , a dispute mechanism , established by the scheme provider , may be used to have money refunded
+All additions of new users and modifications to user ’ s access shall be recorded on the User Report .
+The player will hide the trimmed files from any direct contact with user or attacker , thereby reliably depriving any illegal sharing of files .
+The system shall provide a secure student authentication and authorisation by using security SAML tokens containing assertions about a subject for communication between trusted parties .
+The system shall be able to deny websites listed in the database .
+The system shall be easy to maintain since the application has a clear separation of its database and logic code making it easy to sandbox the system and maintain it without affecting the whole system .
+The system shall ensure that the downtime of internet will not affect its availability as any user can still be granted or denied access to the system .
+The system shall encrypt and decrypt files over a wireless connection .
+The system shall generate decoy files to supply to an intruder whenever a suspicious download is detected .
+The system shall provide storage of all important information in a secure database
+Pay on detail is the default payment arrangement for merchant acquirers to provide payment to their merchants . In this arrangement , the merchant acquirer relies on the POS transaction S5 MAC to determine acceptance . Merchants are paid only for valid POS transactions
+The system should be able to match current faceprint with the faceprints in database
+The Disputes application shall manipulate and view business data . Users will not have direct access to data files or databases .
+The main system is centered around security on online transactions hence it is secure .
+All authorized users once authenticated must be able to logon to the Disputes System
+The system scanner may accept a certain number of URLS that should test them for selected vulnerabilities .
+The system shall allow only authorised users to access information and it shall protect users ’ data from intruders .
+The system shall allow verification of watermarked image which is submitted twice or more by different authors to protect the owner ’ s copyrights
+The system shall be detecting denial of service attacks to include service overloads , broadcast storms and also message flooding
+The system shall allow only the legitimate user to modify stored information
+The framework shall be accessible , wherever and whenever a client needs to make a purchase .
+The terminal must secure transactions by retaining the card  ? ? s symmetric MACing key signature as part of the transaction
+The system shall filter harmful websites against URLs of known harmful websites .
+A customer can only stream a movie if they purchased it and are within the 2 day viewing period .
+The system components are not going to be degraded by weather changes such as heat or humidity even the casing will be designed to suit the prevailing weather conditions .
+On reception at the CNG of a message to access configuration information for update and detection of authorization failure the CNG shall reject the request and manage the failure in accordance with the CPN authorization management handling policy .
+The system shall provide the integrity service through use of md5 hash values to prevent unauthorised modification
+The system does not need frequent updates to its signatures as it will be learning on its own and updating its signatures on its own .
+These merchant acquirers must then assign unique identifiers to PSAMs
+The CEP card verifies that the PSAM is the PSAM used in the original transaction , computes a S1 MAC using the same DES session key that was used for the purchase transaction being cancelled , and responds to the POS device with the S1 and the identification of the last transaction . If the purchase transaction to be canceled has been canceled or is not part of the active batch , the command is not allowed
+The Zimbabwe Anti - Corruption Commission then verifies the signature using the group public key so that it will be convinced that it actually came from the organisation without the knowledge of the actual signer
+A purchase transaction may be reversed , prior to the removal of the CEP card from the POS device , by sending a purchase reversal command to the CEP card , The CEP card must authenticate the PSAM using certificates previously exchanged
+On transmission of management information from the CNG to a CND the CNG shall append a timestamp or sequence number to the outgoing message .
+The load device must support on - line PIN encryption or off - line PIN verification
+The CNG shall implement an authentication failure handling policy .
+" The OPEN shall Provide an interface to all Applications that ensures that the GlobalPlatform security mechanism cannot be bypassed , deactivated , corrupted or otherwise circumvented , "
+The amount to be reversed is the amount of the last step of the transaction . The reversal command sent to the CEP card contains a S2 MAC computed by the PSAM
+The system shall allow secure uploaded files using AES algorithm with a 256 - bit key .
+The system shall automatically log out all customers after a period of inactivity .
+Only authorized users shall have access to students ’ personal information .
+The system shall detect SQL Injection and XSS vulnerabilities for a given website or a web application
+Only valid data shall be entered into the system . No invalid data shall be entered into the system .
+The system ensures that the user is properly authenticated for every system access .
+The system should allow for quick error recovery .
+The terminal must participate in a two - way authentication process with the card
+The Disputes System shall generate a User Report that details any new users that have been added and any changes to an existing user ’ s access level . The report will be reviewed for auditing purposes .
+The system shall be easy to maintain as it can easily be integrated with other systems , modified or reused on other different platforms ,
+" Secure memory management shall ensure that Each application ' s code and data ( including transient session data ) as well as the runtime environment itself and its data ( including transient session data ) is protected from unauthorized access from within the card , "
+The data provided by the system should be validated and verified were possible .
+The capacity of the authorized entities should depend on the security policies defined by the service providers , managing the CNG .
+The system shall ensure integrity and consistency in all its processes .
+The software is a safety - critical one and is used to perform last line of defense protection against attacks , since defects in safety - critical software can lead to serious service disruption or server down time .
+The system shall allow the bank server to verify the credentials of users when logging in for a short period of time .
+The product shall ensure that it can only be accessed by authorized users . The product will be able to distinguish between authorized and unauthorized users in all access attempts
+The system shall guarantee the privacy of user data at all times .
+The card must authenticate the terminal at the point of sale , ensuring that it is genuine and valid , and use a two - way authentication process
+To on the system , The system shall provide redundancy to avoid a single point of failure and reduce interruptions which will render the system unusable .
+All load transactions are on - line transactions . Authorization of funds for load transactions must require a form of cardholder verification . The load device must support on - line encrypted PIN or off - line PIN verification
+System modules will be loosely coupled to allow for easy maintainability when used by the users .
+The system shall be able to analyse the detected vulnerability .
+The system shall make it easy to trace an individual ’ s activities after a crime has taken place .
+The system ’ s QoS shall guarantee its availability at 99 . 9 % uptime .
+The system shall be able to function as desired all the time .
+If a user account is revoked it can only be re - instantiated by the System Administrator .
+The system shall use QR codes to facilitate access granting .
+The system shall allow Analysis of locations prevalent crime using crowd - sourced data and reports data .
+When applicable a Security Domain shall Verify the authorization for Card Content changes initiated by an off - card authority ,
+The system shall have high availability in such a way that it remains accessible online even during maintenance .
+The system shall allow a user to be authenticated through the use of digitally signed certificates , and again single - sign - on functionality will be fused into the system to allow once off authentication as long as the session is deemed active and valid .
+The system is a very secure system with log on credentials allowing access to only authorised members . It ensures that information is kept secured at every moment and only the right people have access to records .
+The Load File Data Block Hash is intended to verify the integrity of a complete Load File Data Block when loaded to a GlobalPlatform card .
+The system shall be given a platform to select a unique watermark that will be inserted onto a document to protect data by providing ownership to the rightful people .
+The system shall allow for easy maintenance .
+The load device sends S1 in an authorization request to the issuer
+The system shall be able to generate a report of the detected and analysed vulnerabilities .
+When applicable a Security Domain shall Verify the load file data block signature when requested by the OPEN .
+The system shall have a modular design catering for corrective , perfective , adaptive and preventive maintenance .
+The system shall be built to be compatible with many operating systems such as windows , android and linux .
+The system shall not permit input of wrong data type .
+The system database must be located in a special secure server and must be backups to other servers directly at specific times to avoid loss and damage of data
+The Card Issuer is responsible for Generating and loading the Issuer Security Domain keys ,
+The system shall allow high availability of the application whenever the user needs it so a recovery module will be set in case of loss of the mobile phone .
+The system shall be maintained through frequent updates .
+The issuer host must authenticate the card upon the load / unload request
+The system shall create hashes of the passwords and store them upon signing up , once a user types password ( s ) in plain text format .
+The system should ensure that there is maximum confidentiality and safety assurance on the information .
+The system shall only be accessed by authorized Corporate Community Grants ( CCR ) employees . Users must be authenticated using their IBM intranet user name and password .
+The system shall restrict illegal sharing of video content protected by copyright providing a secure algorithm for downloading and playback .
+The system requires the patient to identify himself / herself using PHN
+The system in terms of responsiveness is a real time system such that clients can easily access medical records of baby ’ s at any given point in time .
+The system shall prevent manipulation of the watermark by an unauthorised user .
+The system shall ensure that once the account holder has provided a correct login password , he or she will receive a OTP or code sent either via the email or via the data owner ’ s mobile phone depending on their settings .
+The system shall ensure that the firewall should be able to withstand any load of traffic given to it and be able to filter it efficiently .
+To ensure card security and integrity , the GlobalPlatform is designed to support a range of secure mechanisms for : Data integrity , Resource availability , Confidentiality , Authentication .
+The proposed system shall provide access permissions for application data may only be changed by the system ’ s data administrator and data stored in the database to be hashed .
+The CNG and CPN shall support mechanisms that prevent access to the network by unauthorized users .
+The system shall allow a user to log into his or her own account providing his or her own email address and password .
+The system shall ensure that the communication of the agents and the agency or server is such that only the registered agents can report to the agency .
+The system shall offer authentication , authorization , configuration management to prevent access to admin console .
+The system shall allow an author who desires to protect his / her work from unauthorized use , to upload an image to embed the invisible digital watermark whenever submitting a piece of art .
+Only authorized personnel can access sales information .
+The system should have the ability to validate entered data hence reducing redundancy and duplication in the database .
+The system shall be easy to maintain as it shall be built following best practices in documentation , complexity avoidance and good programming strategies .
+The system should be able to secure the messages by encrypting them .
+The system shall encompass factors of complex computations , robustness and security .
+The system shall use a two - way authentication system by combining keyboard activities and mouse movement biometrics to improve security .
+The system shall allow the Zimbabwe Anti - Corruption Commission to verify the signature using the group public key so that it will be convinced that it actually came from the organisation without the knowledge of the actual signer
+The system shall keep logs for every operation made by the user for audit trailing commitments .
+The Disputes application shall ensure that only users with the appropriate access level are allowed to initiate dispute requests .
+The system shall implement a combination of cryptographic algorithms that are secure and have proven to be unbreakable by the current technologies , hence using these algorithms collectively strengthens the security of the system .
+The program coding should be well documented and laid out particularly to facilitate future upgrades and additional functionality being added at a later date .
+The system shall validate user passwords .
+The PSAM either retrieves or re - derives the DES session key used for the purchase transaction being cancelled . The POS device authenticates the CEP card using this key and the S1 MAC
+The system shall not leave any cookies on the customer � s computer containing the user � s password .
+A GlobalPlatform card should support symmetric cryptography such as the Data Encryption Standard ( DES ) algorithm .
+Each purchase transaction is signed by the CEP card with a S6 MAC , which is used by the card issuer to validate that the transaction was made with a legitimate , not counterfeit , CEP card . The card issuer validates the CEP card  ? ? s MAC
+The transaction signatures ensure end to end integrity of transmitted data for load , unload , and currency exchange transactions
+The system shall apply a mechanism to establish proof of identities , to verify who a particular user is .
+The system should work all the time and provide a means to handle errors with little or no input from the user .
+The system shall allow individual facility servers to remain unaffected when the central server fails .
+The system shall ensure device in one ODPF area must not communicate with another in a different OSPF area .
+The system shall execute its tasks accurately when issued a command . Testing will ensure that all functions are properly included .
+Share one or more MAC keys with connecting processors , create a MAC on each transmission sent to another processor , and verify the MAC on each transmission received from another processor
+The PSAM in the POS device generates a merchant acquirer S5 MAC for the transaction , computes a new S4 MAC on the updated batch total count and amount , and logs the transaction
+The system will cater for its ability to be extended with more features and functionalities without compromising its original one or affecting the operations of the user .
+The issuer needs only to authenticate the card , and the card needs only to authenticate the issuer and that the data is the same as used by the issuer
+The system users shall be able to access the system using an existing hard to guess password .
+Tokens shall be verified by the appropriate Security Domain .
+The CEP card authenticates the PSAM using the certificates previously received and the S2 , The CEP card increments the value of the purse and logs the transaction
+The system shall allow a user to sign a document on behalf of the group using his secret key
+\ tOnly authorized user shall access the RFS system . ONLY users that exist in the UAS system with the RFS system assigned to their role ( s ) shall access the RFS system and use it .
+Operational rights for each user / terminal can be defined
+The system survives under its boundaries , which also sets limits to its operations , and the limits make up the restrictions .
+The system shall offer user authentication before any user is granted access to the services .
+The Disputes application shall ensure that only authorized users are allowed to logon to the application .
+The product shall have audit capabilities . The product shall store messages for a minimum of one year for audit and transaction tracking purposes .
+The system shall have encrypt and decrypt modules in place to attain better and improved security , for containing privacy invasions in overall .
+The system shall allow the user to set an email - change password , so that it will subsequently be requested when attempting to change the set user ’ s email address .
+The system shall employ good coding principles like loose coupling of modules for easy maintainance .
+A GlobalPlatform card offers Integrity and authentication - in which the receiving entity ( the card or off - card entity ) ensures that the data being received from the sending entity ( respectively the off - card entity or card ) actually came from an authenticated entity in the correct sequence and has not been altered ,
+The system shall have high availability wherever it is needed .
+The system shall enable the radiologist to verify the integrity of stored images through the PoR functionality .
+The system shall use symmetric key encryption AES and asymmetric encryption key on the browser / client side to secure confidentiality of information .
+The system should be easy to maintain such that the modules should easily interact effectively and in case of failure , a re - initialization of the program is recommended .
+Only authorized users shall have access to clinical site information .
+The system components shall be built with reusability so it can be integrated into other systems .
+When present during the loading of a Load File to the card , each signature shall be verified by the appropriate Security Domain .
+The system shall maintain audit logs
+The system shall be flexible and adapts to changes .
+The system shall secure the network by SSL to encrypt sensitive data before it travels within a network and decrypt it when it arrives at an agent server .
+The system shall have an optional email field for recovery in case one forgets password the reset link will be sent to that email with instructions
+The system shall enable specific logs from the computers to be captured and faultlessly interfaced with the web - based application with the help of security mechanism including HMAC and PGP .
+The system shall be able to encrypt communication
+Use of a central database to enable real time data capturing and manipulation to facilitate access to laptop details from any computer connected to the database .
+The system shall generate and send periodic logs to the parent ’ s smartphone .
+The system shall ensure that the user can only download if registered with the server .
+The OPEN shall Check application access rules according to the Applications ' privileges ,
+The system shall allow a user to manage their own password .
+The system shall be able to do random check on connection .
+The system security shall add an extra layer of defense making it difficult for an adversary to successfully gain unauthorized access to the system and compromise the integrity of the stored data .
+The product shall ensure that only supervisors can enter a caller ’ s schedule . The product must ensure that supervisors are allowed to access advertise empty time slots .
+The system shall offer error handling capabilities .
+The system should be able to carry out authentication of the user through user name and password
+The system should be able to produce an audit report summary to send to the user of the system .
+Authorizations for load transactions require a form of cardholder authentication for funds requests
+The system shall be updated with patches and newer versions when required
+The system shall enable the systems administrator to log on to the website in order to view the notification messages .
+The system shall allow access to authorised users only .
+The system shall be capable of Malware detection and classify of both known and unknown Malware into their respective families .
+On reception at the CNG of a message containing management information the CNG shall extract the timestamp or sequence number and verify that the message has not been replayed .
+A transaction collection process must exist . Data being transmitted from the POS devices must be transmitted in a manner that ensures integrity of the data
+The CNG shall support mechanisms to authenticate itself to the NGN for service usage purposes .
+The system shall allow users to answer questions on their profile after they are requested to fill in questions at registration which will be used as challenge questions when password is forgotten .
+The system shall ensure that if login credentials are valid , the flow control of the user logging in will pass into the system , otherwise it directs the user back to the login page , and if no information is found , the user should input another licence number , or vehicle registration number .
+Only registered customers can purchase streaming movies .
+The system shall generate Using Time - based Passwords via the Google - Authenticator Application .
+The system has got an audit or logging mechanism which enables the user to check and view if there were other malicious activities that have been happening when after they logged out of the system .
+The system shall automatically acquire a forensic image of the compromised VM main memory upon detection of a severe intrusion .
+The system shall be able to identify acceptable low false positive rates .
+The system shall be up and running all the time as long as the smartphone is in use to monitor the child ’ s activities .
+The CNG and the CPN shall be able to support parental control related functionalities limiting the use of the broadband connection on a user or time basis . Limitations on a content basis may be shared with devoted network servers .
+Internally to the CPN , a CNG transmitting private or other critical information ( i . e . to a CND ) shall protect the data from unauthorised disclosure .
+Load and unload functions must be authenticated using end - to - end security between the card and the card issuer
+The system should allow for error recovery .
+Only registered realtors shall be able to access the system .
+The system shall capture network traffic between the hypervisor and the subject / monitored virtual machine .
+" When applicable a Security Domain shall Communicate with off - card entities in accordance with its Security Domain Provider ' s security policy in Pre - Issuance and Post - Issuance , "
+The system shall lock automatically after the connection is lost .
+Each Trusted Framework present on the card shall Ensure that incoming messages are properly routed unaltered to their intended destinations ,
+The system should be able to match RFID card / tag id with the user ’ s face / person id to make for access to be granted
+The GlobalPlatform API shall provides services to the application such as card verification and security services
+Scheme providers must assign unique identifying numbers to merchant acquirers who provide PSAMs
+Perform the verification of signatures and certificates during a purchase and cancel last purchase transaction
+A Global Services Application shall Hold the Global Services application - related data securely ,
+The system shall analyse and record suspicious packets signatures and detects an anomaly if the following packets data matches the recorded threat related signatures .
+The system shall enable verifying of the signature using the group public key so that it will be convinced that it actually came from the organization without the knowledge of the actual singer .
+The system shall prompt for a password to log in to access the services
+The proposed system is meant to use a two - factor user authentication system which ensures that only the registered and legitimate user is able to access the system and upload or view the data .
+The software will look at port scanning only on the host it will be deployed on , this will devote all the listen to one part of the many policies in a computer .
+The off - card entity under the SECURE state shall be used to ensure the availability of all keys by the issuer security domain
+If this is not a cash load , the funds issuer needs to verify that the funds are requested by the legitimate account owner , which is normally done by the presentation of an enciphered PIN
+Only one version of the CA public key is required in the card . This requires that the PSAMs with which the CEP card exchanges cryptograms must be capable of generating and validating cryptograms using the relevant keys from all current cards
+The system shall be introduced in each representative ’ s mobile device to screen the gadget ’ s applications and record the activities performed by the gadget .
+In the case of a reversal , the CEP card must re - authenticate the PSAM
+CPN environment shall be protected with a stateful firewall function , that may be implemented in the CNG .
+The system shall notify administrators of a proxy requesting IP address or identity .
+The system shall produce encrypted payload and the message signature .
+The product shall ensure that only supervisors can view schedule of all callers . The product must ensure that supervisors are allowed to access advertise empty time slots .
+Only adjusters can request recycled parts audit reports . No users without an adjuster role shall request recycled parts audits .
+The management of keys must be accomplished in a secure , certified environment
+There may be multiple certification authorities that manage keys for the system , including the possibility of one overall highest level certification authority ( perhaps on an international level ) , and domestic certification authorities for each country or region
+" The runtime environment is responsible for Providing communication services with off - card entities that ensures the proper transmission ( according to the specific communication protocol rules ) of unaltered command and response messages . "
+New exchange interfaces should be easily integrated into the already existing system without modifying core functionality of the product software .
+The system shall be simple and easy to maintain .
+The system shall be able to determine whether the login credentials are valid or not , and search for matching results of the particular licence owner , or vehicle information .
+The system shall be able to provide help in a short period of time .
+The system shall put proper controls for user input validations and configuration management to resist software tempering
+The system shall enable users to retrieve the data on demand including in cases of emergency where it should be retrieved and decrypted before it can be accessed by the medical practitioner .
+The System shall granularly control access rights to all major subsystems . It should be possible to assign access rights to all subsystems independently .
+The system shall have fault tolerance and shall have ability to do a safe exit of the program if a problem is encountered
+The system shall be able to inspect SSL certificate .
+Unloads are permitted only to an account controlled by the card issuer and are performed only at a load device under the control of the card issuer
+Only adjusters with a supervisor role can update preferred repair facility ratings . Users without the supervisor role cannot access the repair facility ratings .
+The system should allow use of stringent passwords and different view levels to control access to data to reduce electronic fraudulent activities and unauthorized access to data .
+The system shall be able to note hostname of rogue node as well as the SSID of the network it is connected to so as to know from which section on campus is the attack being done .
+The system shall allow secure storage of client information .
+The off - card entity under the OP_READY state may insert Security Domain keys in order to maintain a cryptographic key separation from the Issuer Security Domain keys
+The CNG shall take action according to local authentication failure handling policy ( which may include silently discarding the authentication and explicit failure notification , or in the case of a replay of credentials may include notification of the true owner of the credentials ) upon detection of failure during identification , authentication and authorization .
+The card issuer and the merchant acquirer also authenticate the transaction when they receive it
+The system shall allow every history of scans to be recoverable in case of system interrupt
+The system shall ensure that the watermark as an essential part of the data remains even after signal processing and data manipulation including any malicious activity
+When the CNG detects violation of the privacy protection policy the CNG shall discard all signalling , including signalling from the NGN .
+The system can be configured to work with a camera , a PC and other access control system to enhance multiple factor authentication .
+Only managers are able to perform search queries for reservations by user . 100 \ % of all search queries for reservations by user shall be from logons of only management logons .
+The system shall resist unofficial and unlawful usage even the action is by accident or intended .
+The product shall ensure that only supervisors can advertise empty time slots . The product must ensure that supervisors are allowed to access advertise empty time slots .
+The card must authenticate the issuer host upon the response to the request
+The system shall provide maturity , fault tolerance and recoverability despite the challenges of balancing development time .
+On reception at the CNG of a message to access or update configuration information the CNG shall allow access only if the sender is an administrator .
+The back - end systems ( multiple back - end systems may exist for a single card ) , which communicate with the cards , perform the verifications , and manage the off - card key databases , also shall be trusted .
+The system shall be reliable as routine maintenance shall be done often .
+The system shall be self - protective and failure proof , exception handling will ensure that the system is fail safe and gracefully stops under error conditions .
+The system server shall generate the TOTP value that lasts for the specified amount of time .
+PlutoMail will offer spam protection at server level and eliminates the need to install and update antispam software on each desktop .
+The system shall retain video logs that only have motion .
+The system shall allow for checking data integrity
+The streaming server will have anti - virus software to prevent infection of malicious viruses .
+The system guarantees reliability and availability because the tools used in developing the system ( Apache Kafka and Apache Storm ) allows the system to be resilient to failure and to be available all the time .
+The system should be reliable in detecting known cryptojacking malware activity .
+The system functions as an IDS / IPD and aids in relieving traffic targeting the server , in the event that a distributed DOS attack occurs and the server is flooded with the requests and is therefore unable to provide its usual service ( s ) to the client .
+The run time environment shall be responsible to separate secure storage for the application code and data
+The CEP card authenticates the terminal using the S2 MAC and the session key from the purchase transaction being cancelled . The CEP card increments the value of the purse and logs the transaction . The CEP card verifies that the cancellation amount is equal to the amount of the last step of the purchase transaction
+The system shall be able to generate periodic logs as well as collect and analyse data alerting parents whenever certain keywords are typed .
+A Security Domain other than the Issuer Security Domain shall implement [ at least ] one Secure Channel Protocol .
+Security Domains enforce the security policies of their off - card Security Domain Provider .
+The system should be developed with future upgrades and additional functionality being added at a later date .
+On indication received at the CNG of a resource allocation expiry the CNG shall delete all residual data associated with the invocation of the resource .
+The system shall be available to users all the time to ensure a 24 / 7 service delivery and give results in a short period of time .
+The system shall provide audit trails when required .
+The system connects to web application server and displays the results of the SSL connection including what SSL certificate is installed and whether it gives out the correct intermediate certificates .
+The system enforces security administration to manage all the rights to the system features .
+The product shall provide players no access to information that might reveal the identity of another player
+The system must also allow users to communicate securely knowing that their confidential data is safe from eavesdroppers .
+The system shall allow the administrator to assign roles to users .
+The system should be able to log all activities taking place on the system for audit trial purposes
+The proposed system will allow only a registered user to be granted access into some restricted zones within the organization .
+The system shall encrypt and decrypt files using a wireless connection .
+The system shall perform verification to determine user and access rights .
+The system shall enable the detected cryptojacking domain or application to be logged , along with the date and time of detection .
+The system shall ensure that the system records shall be encrypted and stored in the cloud as cyphertext .
+The system should time out after a set period of inactivity
+Two - way , or mutual , authentication , where the card authenticates the terminal and the terminal authenticates the card for each transaction , must be performed for off - line transactions
+The system shall provide Two Factor Authentication .
+The system shall be able to generate and send periodic logs the parent ’ s smartphone
+The system shall be able to detect and combat both existing and new Malware .
+The system shall use honeypot which records and analyses packets flowing through the network . A honeypot is a system decoy which is used to make the attacker believe that he / she is attacking the intended system .
+The CNG shall support mechanisms for authentication of wireless CNDs for local connectivity . Similar mechanisms may be also implemented for non - wireless devices .
+The system shall allow that the features be extracted when the user logs in and a similarity match done to check the authenticity of the user and if a match is successful the user will be granted access or denied in the event of a mismatch .
+The static attributes of the system predict potential operational performance bottlenecks and future scalability problems early to allow for correction early .
+The system shall reduce the occurrence of failure in the system .
+Data integrity scripts will be run on a weekly basis to verify the integrity of the database .
+Any user who uses the system shall have a Logon ID and Password
+The system generated TOTP shall be a unique passcode that changes after an interval of 30 seconds .
+The system shall be able to block internet connection to the computer doing port scanning .
+The system shall allow that as the number of patient records increases with time and the capacity of the system to hold these records must also increase as the records increase .
+" It is the responsibility of the Card Issuer or the Controlling Authority to set up the appropriate off - card procedures to comply with the governmental restrictions upon cryptography . Features to disable or restrict cryptography usage by Applications on a card are beyond the scope of this Specification . "
+The Commissioner will be the only authorized user per league to adjust league settings .
+Applications should Expose only data and resources that are necessary for proper application functionality
+A CPN - user attempting to invoke a CNG - mediated service shall be identified and authenticated by the CNG before being granted access to the service .
+The system shall prevent any media from being sent or received using Bluetooth .
+The system is easy to maintain as it can easily be integrated with other systems , modified or reused on other different platforms
+" The Application Provider is responsible for Generating the keys for its own Security Domains or obtaining Security Domain keys from a trusted third party , "
+The system finds indicators ( patterns , attributes ) of , or to exploit vulnerabilities known to exist , in the detected services / software versions
+The system shall be built such that it is as secure as possible from malicious interference .
+The system shall allow background processes to be monitoring for any scan and relaying information to the registry about any unusual activities .
+The system shall ensure that the login password is stored in encrypted format .
+To load value into a slot of the CEP card securely , the load device establishes a connection between the issuer and the CEP card
+The system shall allow a member to spontaneously form a group of n signers using group public keys which associate the group members .
+Facility of unique user number and Password in such a way that unauthorized user cannot log in
+The system shall ensure that only authorised users are granted access .
+The system shall blacklist any user that has done identity theft .
+The runtime environment is responsible for Performing secure memory management
+The system shall be able to detect fraudulent transactions in rea - time .
+The system shall be maintainable as it can be integrated with other systems easily , can be modified or have its components reused on other platforms .
+The website shall make its user aware of its information practices before collection data from them via a Privacy Policy accessible on all pages of the website .
+The system shall be able to warn the network administrator about the possible occurrence of an intrusion attack and provide information regarding that attack .
+" The runtime environment is responsible for Providing an interface to all Applications that ensures that the runtime environment security mechanisms cannot be bypassed , deactivated , corrupted or otherwise circumvented , "
+The system ’ s listening for scanning is done while listening to the OS activities .
+The system shall not require constant updating of its signature as it will be learning on its own and updating its signatures on its own .
+The system shall be able to allow the user to generate their ECC public and private keys . These keys are to be used for the encryption of the AES encryption key and also for PDP .
+The CNG shall implement a privacy protection policy specifying as a minimum private and critical information .
+The system must be scalable
+The system should ensure only the authorized user is able to change the registered email address for receiving cryptojacking alerts .
+The program coding should be well documented and laid out particularly to facilitate future upgrades and additional features being added at a later date .
+The load device which supports only off - line PIN verification must support both the off - line PIN encryption method and the off - line PIN plain text verification method as defined in EMV
+Security domain shall ensure complete seperation of keys among the card issuers and other application providers
+The system shall have log in and log out capabilities which can be seen as the first line of security which most systems should possess for authentication and accountability purposes .
+" Secure memory management shall ensure that When more than one logical channel is supported , each concurrently selected Application ' s code and data ( including transient session data ) as well as the runtime environment itself and its data ( including transient session data ) is protected from unauthorized access from within the card , "
+The system will ensure user validation will be done during login to insure that the user is valid and that the user only has access to his or her permission data .
+Allow the user to check the integrity of stored data through the PDP NSR .
+The system shall enforce security through the use of password protected user accounts
+The load device also provides for verification of the identity of the cardholder ( with either on - line or off - line PIN verification ) and forwards verification data in the authorization request
+The system adapts to all types of application and provides maturity , fault tolerance and recoverability .
+The system shall notify customers of changes to its information policy .
+The system is web based and therefore guarantees maximum availability of data to the cloud data owners .
+The load acquirer needs to ensure that the issuer is the true owner of the card , and , in the case of an apparent failure of the load , the load acquirer needs the card presented to authenticate the failure
+" Secure memory management shall ensure that The memory recovery process is secure and consistent in case of a loss of power or withdrawal of the card from the card reader while an operation is in progress , "
+The system shall be able to authenticate the username and password
+Each user is to be configured with a unique User Name and a password that can be changed when it is necessary .
+The system shall allow file type filtering to avoid the overloading of the normal flow information with unnecessary files .
+The system shall be able to block any illegitimate detections so as to render efficiently utilise system resources .
+The system is deployed as an application on user machines thus it is cost - effective to maintain as it does not have many modules and online documentation including system documentation and test documentation for easy user acclimatization .
+The system � s back - end servers shall never display a customer � s password . The customer � s password may be reset but never shown
+The system should be able to sniff the traffic to and from the network in real time ’ .
+The system will have a very low False Negative Rate which means it be able to detect an actual vulnerability when it exists .
+The system shall preserve the integrity of acquired forensic imagines by applying integrity checksums and hashes .
+The system shall enable data multiple replications .
+The CNG and the CPN shall implement mechanisms to limit the visibility of the WAN side network and resources to authorized entities .
+The system shall not be vulnerable to the security attacks
+The cardholder must have an account relationship with the card issuer , and funds removed from the card are credited to the cardholder account only after the card issuer authenticates the card
+The system shall be able to be easily maintained and updated with new data that emerge since the spammers will be trying to bypass the filter with new tricks being employed .
+The system shall be able to allow the user to check the integrity of stored data through the PDP functionality .
+The system shall be able to log the IP address accordingly
+The system shall be able to apply automatic recording of events and some incidents Security
+The Card Issuer is responsible for Cryptographically authorizing load , install , and extradition to be performed by Application Providers .
+The system shall be able to detect spam messages and direct them to spam in real time
+The system will be used at a national level offering reliability , however , it is hard to balance development time but it provides maturity , fault tolerance and recoverability .
+System shall provide access only to legitimate users , resist unathorised users , accidental or unintended usage .
+The system shall allow the user to check for data integrity using MD5 hash algorithm
+The system shall ensure that confidential information can only be accessed to the right individuals .
+Employees shall be identified by a 6 character password .
+The system shall monitor CPU usage to detect spikes caused by cryptojacking by constantly reading the computer ’ s current CPU utilization percentage and compare it to the CPU usage baseline , and detect the extreme spikes or deviations from the usual .
+The results from the scanning process must be reliable , which means minimum or no false positives
+The system login page is for already existing users where they provide their unique username and password for verification and once the details are verified they are redirected to mailbox .
+Unload transactions do not require cardholder authentication . ( However , an acquirer  ? ? s devices may be configured such that authentication is required for access . )
+The system shall provide Two Factor Authentication .
+The system shall never display a user ’ s password . It shall always be echoed with special characters representing typed characters .
+The system shall ensure the database containing keywords shall be protected against SQL Injection
+The information entered is only altered by the user upon authentication being done to verify .
+The system shall allow the radiologist to , encrypt and upload the images to the cloud .
+The OPEN shall Ensure that application code has been signed by Application Providers represented on the card , if required .
+The service of the system must always be available whenever it is needed
+The system shall allow administrator to view IP address .
+The system will be divided into modules i . e downloader , trimmer , player to enhance the maintainability of the system and its troubleshooting
+The system shall allow for error recovery .
+Off - line authentication must take place between a PSAM in the POS device and the CEP card for purchase and cancel last purchase transactions
+The system make use of stored procedures
+The system shall report when a form of identity theft is noticed .
+A GlobalPlatform card offers Entity authentication - in which the card or the off - card entity proves its authenticity to the other entity through a cryptographic exchange ,
+The system shall enforce that all users login before they can access the system .
+The OPEN shall Ensure that application code has been signed by the Controlling Authority represented on the card ,
+The system shall implement authentication using PKI .
+The system shall in the event that a watermarked image is submitted twice or more by different authors , the administrator shall be able to verify the legitimate owner of the image to protect the owner copyrights .
+The system shall ensure that the central server remain unaffected when the institutes system fails .
+The system components shall be expandable .
+The system shall be able to show a section which displays the last time a user logged in the system and a summary of the activities they did on the system upon logging in .
+The system shall have log in and logout capabilities which can be seen as the line of security which most systems should possess for authentication and accountability purposes .
+Only authorized users shall have access to the portion of the system that interfaces with CampusConnect .
+On detection of a message integrity error at the CNG the CNG shall discard the message .
+The system server shall be able to encrypt video content before it is downloaded .
+The system shall allow a user to log into system and authenticated .
+The system shall allow users to have their own user specific key that is generated by the machine and has been added to the list of keys for the MAC generation process
+The count and amount of the transactions in the batch must be protected by the S4 MAC , This information is not part of the card issuer  ? ? s verification process
+Successful authentication is a prerequisite for the processing of any on - line or offline CEPS transaction
+The system shall show a panel for logs of the anomalies detected .
+\ tUser access should be limited to the permissions granted to their role ( s ) Each level in the PCG hierarchy will be assigned a role and users will be assigned to these roles . Access to functionality within RFS system is dependent on the privileges / permission assigned to the role . .
+A Controlling Authority is responsible for Working with the Card Issuer to load generated keys into the Controlling Authority ' s Security Domain ,
+The system shall ensure that each private key has to be encrypted with a password to keep it secure .
+The system shall ensure that the public key is left open and accessible to the public domain .
+These totals are used by the merchant acquirer to ensure the integrity of the batch
+The system should be maintained properly so that it should be able to resolve any data conflicts and sustain at any condition .
+The system shall deny access to unauthorised users to redistribute the copy they legally purchase .
+The system shall analyse TCP , HTTP ( S ) and TLS web traffic , to detect network connections to known cryptocurrency mining pools or service providers such as BTC . com and coinhive . com '
+The system shall offer high level security , as it shall give access to authorized users only ,
+The product shall have security . The product shall provide authentication and authorization .
+The system shall be maintainable by enforcing modularity which makes the system components loosely coupled such that they can be modified independently and then reintegrated into the system .
+The system shall provide access control to the user interface .
+The system should only grant access to legitimate users and in the defined stamp .
+The system shall be able to ensure the information provided include a unique username , password and some personal details which are needed to verify that the user is eligible to create an account .
+All customer information will be stored on a secure database accessible only to authorized personnel .
+All credit card information will be secured on the server and only accessible by authorized Izogn administrators . Information will be encrypted in the database .
+The system shall be able to filter harmful websites against URLs ’ of known harmful websites . Access to known harmful websites shall not be permitted .
+The system shall allow a user to block internet to the computer doing port scanning .
+The issuer sends S2 to the load acquirer in the authorization response message
+The system shall give the user an option to reset a forgotten password of an existing username by e - mail .
+The system shall perform user re - verification using AVS and distinct security questions .
+The system should preserve the user ’ s privacy by not publishing the monitored network traffic , and not exposing the user ’ s registered email address .
+The system shall have independent classes for databases so they can be maintained , tested and system improvements can be done easily
+A Global Services Application shall Perform internal security measures as required by the service .
+The system shall allow the user to encrypt / decrypt messages using AES algorithm
+Permissions to access the system data should only be altered by the system ’ s data administrator .
+The system will have a very low False Positive Rate so that it can correctly identify the false positive calls and differentiate them from the real vulnerability ones .
+Each PSAM must maintain a transaction count , The unique PSAM ID and the transaction count are used during a conversation with a CEP card . The transaction count must not be reset during the life of the PSAM
+The system shall send a one - time password to the user phone for the completion of the login process
+The system � s back - end databases shall be encrypted .
+The system shall allow automatic locking after connection is lost .
+The system shall ensure that the originator of the log files that are required , recognizing the data items and data structures that are necessary for exchange .
+The transaction data is validated by the smart contract .
+" When applicable a Security Domain shall Provide cryptographic protection services for its own Applications during their personalization and optionally during their subsequent operation , "
+The system will deliver emails whenever there is internet connection to receive the emails with minimal downtimes
+Internally to the CPN , a CNG receiving private or other critical information ( i . e . from a CND ) should verify that the data was protected from unauthorised disclosure .
+The system should allow room for quick error recovery .
+The POS device must ensure that it is dealing with an authentic card , and guarantee integrity of transactions and batches to the merchant acquirer
+On receipt of a valid ( i . e . authorized ) request for data stored in the CNG the CNG shall return the requested data to the requesting user .
+In the event of a system crash during a transaction the current transaction will either completed or not completed . This will be handled by an already existing database
+The system shall show Logs investigator activity
+The system must be able to deal with network threats on the computer it would be installed on .
+The system shall enable authorised reversal of actions .
+The system shall allow a user to register and log in .
+Every user of the system shall be authenticated and authorized .
+" A Controlling Authority is responsible for Providing load file data block signatures according to its own security policy for integrity and source authenticity . "
+One insurance company shall not be able to view another insurance companys claim data .
+The merchant acquirer validates the PSAM  ? ? s MACs prior to accepting the POS transactions for payment . In addition , selected data elements are validated to ensure correct processing by the POS device and its PSAM
+The system shall ensure that , as a watermark is an essential part of data , it must continue even after signal processing and data manipulation including malicious operation that endeavors to remove the watermark .
+The system shall use the organization ’ s standard virus protection software to help monitor threats to itself .
+The system shall allow Network traffic monitoring in real - time by capturing incoming and outgoing TCP , HTTP ( S ) and TLS web traffic , in order to correlate it with configured cryptojacking blacklist .
+The system shall be able to use PGP to maintain security of the log files
+The system should offer a secure single sign - on platform , which will give access to different application that the user is entitled to access .
+The system shall enable face identification through details about that person if he / she is an employee .
+The system shall block traffic to and from the network that is identified to be potentially malicious .
+The SECURED state may be used to enforce the relevant security policies of the security domain and applications
+The system shall offer confidentiality through encryption with AES .
+The system shall allow that if the mobile phone is not present , some authentications are done by the user to obtain access to the system
+The system shall provide availability of the audit report to users
+The system shall hash the passwords using HMAC
+The system player shall be responsible for hashing the trimmed parts ’ names .
+The system shall provide a user with the option to encrypt and decrypt data .
+The system ’ s logistics are usually accessed hence its availability is guaranteed when and as required .
+The system shall implement input validation to help in increasing fault tolerance and ultimately reliability .
+The system shall provide authentication service for all users before they can be allowed to embed a watermark through use of an email client .
+The system shall be able to open the door when the pin is correct
+Transmissions between host systems should be protected by MACs based on unique keys that are shared by the nodes involved
+The system shall be able to identify wrong input .
+The system shall access personally , identifiable information to allow investigators to be able to reconstruct a criminal event after it happens , thereby securing the evidence .
+The transaction ’ s digital signatures are validated by the Ethereum protocol .
+The system shall allow users to download files when they want to use them upon answering correctly the randomly generated questions from their profiles .
+The OPEN shall be responsible to maintain security and administration of the card and its content
+The system shall allow a user to listen for any port scan on university WIFI network .
+The system should keep history of the transactions in a secure database .
+The proposed system shall be designed such that any glitch can be fixed in no time to restore service to users and it will allow adding functionality easily .
+The system shall ensure that the password is verifiable whenever they want to log in
+The system must allow scalability so as to perform legitimate modification of user data .
+The system shall allow the administrator to log in to access the system .
+A GlobalPlatform card offers Confidentiality - in which data being transmitted from the sending entity ( the off - card entity or card ) to the receiving entity ( respectively the card or off - card entity ) is not viewable by an unauthenticated entity .
+Payment decisions are based on signature validations , scheme provider rules , and merchant and merchant acquirer agreements
+The terminal must generate a symmetric MACing key signature and send it to the merchant acquirer
+The system shall be scalable and able to handle growth in data flow leveraging the Twitter API capabilities .
+When the CNG detects replayed user and / or device credentials , the CNG shall stop the relevant processes .
+The system does not use much hardware and software , hence it is not costly to maintain the system and the system does not require maintenance regularly .
+Only administrators can activate a pre - paid card .
+Secure memory management shall ensure that The previous contents of the memory is not accessible when that memory is reused ,
+The system will stand in - between the client and the server , however , it is associated within the server ’ s architecture .
+Contain the CA public RSA key , the PSAM  ? ? s private RSA key and optionally the certificates that the POS device uses to perform mutual authentication with the CEP card
+The system should be able to provide data for the current maximum number of tags presently two thousand for a period of thirty days in whatever format the user decides .
+The Issuer Security Domain shall implement one Secure Channel Protocol .
+The system shall be able to secure uploaded files using AES algorithm with a 256 - bit key . The system shall automatically encrypt the files that will be uploaded by the user for storage using a 256 - bit encryption key .
+Where a CND invokes a session at the CNG the CNG shall record the association of session - id , invoking device identity and invoking user - id .
+The card must ensure that the transaction is performed by the same POS device as was used for the purchase being canceled , and that the amount of the cancellation is the same as the amount of the purchase , or , in the case of an incremental purchase , the same as the amount of the last step
+The system should be able to identify and trap user input error
+The system shall allow the recipient to verify the signature using the group public key so that they will be convinced that it actually came from the organisation without the knowledge of the actual signer .
+The system shall be maintainable as it is built with three modules with commands that avoid violating coding principles
+The system shall use secure sockets in all transactions that include any confidential customer information .
+The primary goal of the GlobalPlatform is to ensure the security and integrity of the card ' s components for the life of the card . These components are The runtime environment , The OPEN , The Issuer Security Domain , Supplementary Security Domains , The Applications .
+The system shall enable the administrator to log into the system and to upload the captured traffic data into the analysis system so as to be accessed by any other administrators available .
+Only users with Update access must be able to initiate dispute requests .
+The system shall allow the cryptojacking application to be terminated unless the user explicitly selects to ignore the cryptojacking application .
+The card should use a unique diversified secret key , personalized into the card , to generate and authenticate transaction signatures
+The System shall maintain consistent security . Any changes in user passwords and / or permissions should take affect in all parts of the System .
+The system shall provide mechanisms for the security of online transactions .
+The system shall prevent malicious attacks including denial of service .
+The system shall apply a number of methods , such as regular maintenance , to facilitate reliability assurance of the system ,
+The system should allow only those who are authorized to used and access the system and they will have to log in first to use the system .
+The system shall circumvent the electricity power cuts challenges by the use of UPS ( uninterrupted power supply ) .
+Perform the calculation required to generate a signature using the PSAM  ? ? s private RSA key , to allow the CEP card to validate the PSAM
+The system shall allow people to connect to their accounts after they initially register with the system and sign in to access it .
+The system shall allow a user who has a Twitter account to create an application to access tokens .
+Fit Criterion : Dr Susan Poslusny and Karen Sysol are the only people who shall have access to the final class section scheduling for the system that interfaces with CampusConnect .
+The system shall not leave any cookies on the customer � s computer containing any of the user � s confidential information .

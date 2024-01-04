@@ -4,6 +4,9 @@
 """
 import re
 import os
+import sys
+sys.path.append("..")
+sys.path.append("../..")
 from pipeline.util import *
 import random
 from util import *
@@ -19,8 +22,11 @@ if not os.path.exists(folder_path):
     # 如果不存在，则创建文件夹
     os.makedirs(folder_path)
 
-train_file = "../../methods/RelGAN/data/four.txt"
-test_file = "../../methods/RelGAN/data/testdata/test_four.txt"
+train_file = "../../methods/relgan/data/four.txt"
+test_file = "../../methods/relgan/data/testdata/test_four.txt"
+
+train_keywords_file = "../../methods/relgan/data/four_keywords.txt"
+test_keywords_file = "../../methods/relgan/data/testdata/test_four_keywords.txt"
 
 # RelGAN 需要将标点符号分隔开
 def separate_punctuation_and_words(sentence):
@@ -96,12 +102,58 @@ def see_duplicate():
     print(f"测试集在训练集里的数量：{dup_num}")
 
 
+def convert2relgankeywords():
+    # 只保留安全需求
+    train_set = read_example_dict(train_json_file)
+    test_set = read_example_dict(test_json_file)
+    train_texts = []
+    test_texts = []
+    train_keywords = []
+    test_keywords = []
+    for item in train_set:
+        if item["cate"] == "security":
+            train_texts.append(separate_punctuation_and_words(item["requirement"]))
+            keywords = extract_keywords(item["requirement"])
+            keywords = get_keywords(keywords)
+            train_keywords.append(separate_punctuation_and_words(keywords))
+    assert len(train_texts) == len(train_keywords)
+
+    for item in test_set:
+        if item["cate"] == "security":
+            test_texts.append(separate_punctuation_and_words(item["requirement"]))
+            keywords = extract_keywords(item["requirement"])
+            keywords = get_keywords(keywords)
+            test_keywords.append(separate_punctuation_and_words(keywords))
+    assert len(test_texts) == len(test_keywords)
+    
+    write_text_file(train_file, train_texts)
+    write_text_file(train_keywords_file, train_keywords)
+    write_text_file(test_file, test_texts)
+    write_text_file(test_keywords_file, test_keywords)
+
+
+def get_keywords(keywords):
+    """
+    从keywords里选择一个去除标点后不为空的
+    """
+    find_keywords = ""
+    index = 0
+    while len(find_keywords)==0 and index < len(keywords):
+        tmp = keywords[index]
+        tmp = remove_punctuation(tmp).strip()
+        find_keywords = tmp
+        index += 1
+    if find_keywords == "":
+        return "not find"
+    return find_keywords
+
+
 if __name__ == "__main__":
     # 汇总&采样
     # examples = get_all_examples()
     # make_relgan_data(examples)
 
-    convert2relgan()
+    convert2relgankeywords()
 
     # see_duplicate()
 
