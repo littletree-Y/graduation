@@ -1,5 +1,6 @@
 import os
 from subprocess import call
+import subprocess
 import sys, time
 
 # Job id and gpu_id
@@ -119,4 +120,24 @@ if decay:
 # Run
 os.environ['CUDA_VISIBLE_DEVICES'] = gpu_id
 my_env = os.environ.copy()
-call([executable, scriptname] + args, env=my_env, cwd=rootdir)
+
+# call([executable, scriptname] + args, env=my_env, cwd=rootdir)
+
+# 注意：这里的 'executable' 和 'scriptname' 应替换为你的实际路径和脚本名
+call_args = [executable, '-u', scriptname] + args
+
+# 通过Popen更好地控制进程执行和输出处理
+with subprocess.Popen(
+    call_args,
+    stdout=subprocess.PIPE,  # 将stdout重定向到管道
+    stderr=subprocess.STDOUT,  # 将stderr也重定向到stdout
+    bufsize=0,  # 设置缓冲区大小为0，无缓冲
+    env=my_env,
+    cwd=rootdir,
+    universal_newlines=True  # 也可以用universal_newlines=True，它在 Python 3.7+ 已经被废弃
+) as proc:
+
+    # 实时打印输出
+    for line in proc.stdout:
+        sys.stdout.write(line)
+        sys.stdout.flush()  # 正确使用 flush 来确保输出被写出
