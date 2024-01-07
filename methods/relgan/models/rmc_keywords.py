@@ -214,13 +214,18 @@ def generator(x_real, keywords_onehot, keywords_len, temperature, vocab_size, ba
                 greater_than_zero = tf.greater(num_keywords_vector, 0)
 
             def compute_loss():
-                # Gather the last valid embeddings for keywords
-                valid_keywords_embeddings_sample = tf.gather_nd(target_keywords_embeddings, indices)
+                # 验证target_keywords_embeddings是否为预期的形状
+                assert_op_target_shape = tf.Assert(
+                    tf.equal(tf.rank(target_keywords_embeddings), 2),
+                    ["target_keywords_embeddings should be 2D, but got shape: ", tf.shape(target_keywords_embeddings)])
+                with tf.control_dependencies([assert_op_target_shape]):
+                    # 因为我们知道target_keywords_embeddings应该是二维的，下面这行是安全的
+                    valid_keywords_embeddings_sample = tf.gather_nd(target_keywords_embeddings, indices)
             
-                # Calculate loss using cosine similarity for valid keyword embeddings
-                keyword_loss = cosine_similarity_loss(generated_text_embeddings, valid_keywords_embeddings_sample)
-                
-                return keyword_loss
+                    # Calculate loss using cosine similarity for valid keyword embeddings
+                    keyword_loss = cosine_similarity_loss(generated_text_embeddings, valid_keywords_embeddings_sample)
+                    
+                    return keyword_loss
         
         # Return zero loss if there are no keywords
         keyword_loss = tf.cond(tf.reduce_any(greater_than_zero), compute_loss, lambda: tf.constant(0.0))
