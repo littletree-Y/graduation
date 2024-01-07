@@ -166,28 +166,19 @@ def generator(x_real, keywords_onehot, keywords_len, temperature, vocab_size, ba
     target_keywords_embedding = tf.reshape(target_keywords_embedding, [batch_size, -1, gen_emb_dim])
     generated_text_adv_embedding = tf.reshape(generated_text_adv_embedding, [batch_size, -1, gen_emb_dim])
     generated_text_embedding = tf.reshape(generated_text_embedding, [batch_size, -1, gen_emb_dim])
-    def cosine_similarity_loss(generated_embeddings, keywords_embeddings):
-        generated_embeddings = tf.reshape(generated_embeddings, [-1, tf.shape(keywords_embeddings)[-1]])
-        keywords_embeddings = tf.reshape(keywords_embeddings, [-1, tf.shape(keywords_embeddings)[-1]])
 
-        similarity = cosine_similarity(generated_embeddings, keywords_embeddings)
-        keyword_loss = -tf.reduce_mean(tf.reduce_max(similarity, axis=1))
-        return keyword_loss
     def compute_keyword_loss(args):
         generated_text_embeddings, target_keywords_embeddings, num_keywords = args
 
-        num_keywords_vector = tf.reshape(num_keywords, [-1])
-        batch_range = tf.range(tf.shape(num_keywords_vector)[0])
-
-        indices = tf.stack([batch_range * tf.reduce_max(num_keywords), tf.maximum(num_keywords_vector - 1, 0)], axis=1)
-        greater_than_zero = tf.greater(num_keywords_vector, 0)
+        greater_than_zero = tf.greater(num_keywords, 0)
 
         def compute_loss():
-            valid_keywords_embeddings_sample = tf.gather_nd(target_keywords_embeddings, indices)
-            keyword_loss = cosine_similarity_loss(generated_text_embeddings, valid_keywords_embeddings_sample)
+            similarity = cosine_similarity(generated_text_embeddings, target_keywords_embeddings)
+            top_k_similarities = tf.nn.top_k(similarity, k=num_keywords)
+            keyword_loss = -tf.reduce_mean(top_k_similarities.values)
             return keyword_loss
 
-        keyword_loss = tf.cond(tf.reduce_any(greater_than_zero), compute_loss, lambda: tf.constant(0.0))
+        keyword_loss = tf.cond(greater_than_zero, compute_loss, lambda: tf.constant(0.0))
         return keyword_loss
 
     elems = (generated_text_embedding, target_keywords_embedding, keywords_len)
@@ -201,8 +192,7 @@ def generator(x_real, keywords_onehot, keywords_len, temperature, vocab_size, ba
 
     adv_keyword_loss = tf.map_fn(compute_keyword_loss, elems=(generated_text_adv_embedding, target_keywords_embedding, keywords_len), dtype=tf.float32, swap_memory=True)
     adv_keyword_loss = tf.reduce_mean(adv_keyword_loss)
-
-
+    
     return gen_x_onehot_adv, gen_x, pretrain_loss, gen_o, pretrain_keyword_loss, adv_keyword_loss
 
 
