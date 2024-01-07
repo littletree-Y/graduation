@@ -166,6 +166,7 @@ def generator(x_real, keywords_onehot, keywords_len, temperature, vocab_size, ba
     # target_keywords_embedding_ragged = tf.RaggedTensor.from_row_lengths(target_keywords_embedding, row_lengths=keywords_len)
 
 
+
     def compute_sample_keyword_loss(args):
         generated_text_embedding_sample, target_keywords_embedding_sample, num_keywords_sample = args
 
@@ -173,7 +174,7 @@ def generator(x_real, keywords_onehot, keywords_len, temperature, vocab_size, ba
         valid_keywords_embedding_sample = target_keywords_embedding_sample[:num_keywords_sample]
 
         # Calculate the cosine similarity between each word in the generated text and each valid keyword
-        similarity_per_word = cosine_similarity(tf.transpose(generated_text_embedding_sample), valid_keywords_embedding_sample)  # seq_len x num_keywords_sample
+        similarity_per_word = cosine_similarity(generated_text_embedding_sample, tf.transpose(valid_keywords_embedding_sample))  # seq_len x num_keywords_sample
 
         # Define the keyword loss as the negative sum of the maximum cosine similarities for each keyword
         max_similarities_per_keyword = tf.reduce_max(similarity_per_word, axis=0)  # num_keywords_sample
@@ -205,7 +206,7 @@ def generator(x_real, keywords_onehot, keywords_len, temperature, vocab_size, ba
         valid_keywords_embedding_sample = target_keywords_embedding_sample[:num_keywords_sample]
 
         # Calculate the cosine similarity between each word in the generated text and each valid keyword for adversarial training
-        similarity_adv_per_word = cosine_similarity(tf.transpose(generated_text_adv_embedding_sample), valid_keywords_embedding_sample)  # seq_len x num_keywords_sample
+        similarity_adv_per_word = cosine_similarity(generated_text_adv_embedding_sample, tf.transpose(valid_keywords_embedding_sample))  # seq_len x num_keywords_sample
 
         # Define the keyword loss as the negative sum of the maximum cosine similarities for each keyword for adversarial training
         max_similarities_per_keyword_adv = tf.reduce_max(similarity_adv_per_word, axis=0)  # num_keywords_sample
