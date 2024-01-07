@@ -155,7 +155,7 @@ def generator(x_real, keywords_onehot, keywords_len, temperature, vocab_size, ba
 
     # # Define the keyword loss as the negative cosine similarity for adversarial training
     # adv_keyword_loss = -tf.reduce_mean(similarity_adv)
-    
+
     generated_text_embedding = tf.matmul(tf.reshape(g_predictions, [-1, vocab_size]), g_embeddings)  # (batch_size * seq_len) x emb_dim
     keywords_onehot_flat = tf.reshape(tf.cast(keywords_onehot, tf.float32), [-1, vocab_size])  # (batch_size * num_keywords) x vocab_size
     target_keywords_embedding = tf.matmul(keywords_onehot_flat, g_embeddings)  # (batch_size * num_keywords) x emb_dim
@@ -169,14 +169,13 @@ def generator(x_real, keywords_onehot, keywords_len, temperature, vocab_size, ba
         similarity = cosine_similarity(generated_embeddings, keywords_embeddings)
         keyword_loss = -tf.reduce_mean(tf.reduce_max(similarity, axis=1))
         return keyword_loss
-
     def compute_keyword_loss(args):
         generated_text_embeddings, target_keywords_embeddings, num_keywords = args
 
         num_keywords_vector = tf.reshape(num_keywords, [-1])
         batch_range = tf.range(tf.shape(num_keywords_vector)[0])
 
-        indices = tf.stack([batch_range, tf.maximum(num_keywords_vector - 1, 0)], axis=1)
+        indices = tf.stack([batch_range * tf.reduce_max(num_keywords), tf.maximum(num_keywords_vector - 1, 0)], axis=1)
         greater_than_zero = tf.greater(num_keywords_vector, 0)
 
         def compute_loss():
