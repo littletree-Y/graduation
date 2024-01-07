@@ -170,23 +170,28 @@ def generator(x_real, keywords_onehot, keywords_len, temperature, vocab_size, ba
     def compute_keyword_loss(args):
         generated_text_embedding_sample, target_keywords_embedding_sample, num_keywords_sample = args
 
-        # Only consider the valid keywords (i.e., non-padding keywords)
-        valid_keywords_embedding_sample = target_keywords_embedding_sample[:num_keywords_sample]
+        # Only use the first num_keywords_sample embeddings for each batch item
+        valid_keywords_embedding_sample = tf.slice(
+            target_keywords_embedding_sample, 
+            [0, 0], 
+            [num_keywords_sample, -1]
+        )
 
-        # Ensure valid_keywords_embedding_sample is always 2D
-        valid_keywords_embedding_sample = tf.reshape(valid_keywords_embedding_sample, [num_keywords_sample, -1])
-
-        # Calculate the cosine similarity between each word in the generated text and each valid keyword
-        similarity_per_word = cosine_similarity(generated_text_embedding_sample, valid_keywords_embedding_sample)  # seq_len x num_keywords_sample
-
-        # Define the keyword loss as the negative sum of the maximum cosine similarities for each keyword
-        max_similarities_per_keyword = tf.reduce_max(similarity_per_word, axis=0)  # num_keywords_sample
+        similarity_per_word = cosine_similarity(generated_text_embedding_sample, valid_keywords_embedding_sample)
+        # Ensure to take the max over the keyword axis
+        max_similarities_per_keyword = tf.reduce_max(similarity_per_word, axis=1)
         keyword_loss = -tf.reduce_sum(max_similarities_per_keyword)
-
         return keyword_loss
 
-    # Calculate keyword loss for each sample in the batch
-    pretrain_keyword_loss = tf.map_fn(compute_keyword_loss, elems=(generated_text_embedding, target_keywords_embedding, keywords_len), dtype=tf.float32, swap_memory=True)
+    #  Compute the keyword loss for each element in the batch
+    elems = (generated_text_embedding, target_keywords_embedding, keywords_len)
+    pretrain_keyword_loss = tf.map_fn(
+        compute_keyword_loss, 
+        elems, 
+        dtype=tf.float32, 
+        back_prop=True
+    )
+
     pretrain_keyword_loss = tf.reduce_mean(pretrain_keyword_loss)
 
     # Calculate keyword loss for each sample in the batch for adversarial training
@@ -275,7 +280,7 @@ def discriminator(x_onehot, keywords_onehot, keywords_len, batch_size, seq_len, 
 
 def cosine_similarity(a, b):
     a_norm = tf.sqrt(tf.reduce_sum(tf.square(a), axis=1))
-    b_norm = tf.sqrt(tf.reduce_sum(tf.square(b), axis=0))
+    b_norm = tf.sqrt(tf.reduce_sum(tf.square(b), axis=1))
     a_norm = tf.where(tf.equal(a_norm, 0), tf.ones_like(a_norm), a_norm)
     b_norm = tf.where(tf.equal(b_norm, 0), tf.ones_like(b_norm), b_norm)
     normalize_a = a / tf.expand_dims(a_norm, -1)
