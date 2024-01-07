@@ -128,32 +128,61 @@ def generator(x_real, keywords_onehot, keywords_len, temperature, vocab_size, ba
 
 
     # pretain keywords loss
+    # 平均embedding
     # Calculate the keyword loss
-    generated_text_embedding = tf.matmul(tf.reshape(g_predictions, [-1, vocab_size]), g_embeddings)  # (batch_size * seq_len) x emb_dim
-    generated_text_embedding = tf.reshape(generated_text_embedding, [batch_size, seq_len, gen_emb_dim])  # batch_size x seq_len x emb_dim
-    generated_text_embedding_mean = tf.reduce_mean(generated_text_embedding, axis=1)  # batch_size x emb_dim
+    # generated_text_embedding = tf.matmul(tf.reshape(g_predictions, [-1, vocab_size]), g_embeddings)  # (batch_size * seq_len) x emb_dim
+    # generated_text_embedding = tf.reshape(generated_text_embedding, [batch_size, seq_len, gen_emb_dim])  # batch_size x seq_len x emb_dim
+    # generated_text_embedding_mean = tf.reduce_mean(generated_text_embedding, axis=1)  # batch_size x emb_dim
 
-    # Calculate target_keywords_embedding
+    # # Calculate target_keywords_embedding
+    # keywords_onehot_flat = tf.reshape(tf.cast(keywords_onehot, tf.float32), [-1, vocab_size])  # (batch_size * num_keywords) x vocab_size
+    # target_keywords_embedding_flat = tf.matmul(keywords_onehot_flat, g_embeddings)  # (batch_size * num_keywords) x emb_dim
+    # target_keywords_embedding = tf.reshape(target_keywords_embedding_flat, [batch_size, -1, gen_emb_dim])  # batch_size x num_keywords x emb_dim
+    # target_keywords_embedding_mean = tf.reduce_mean(target_keywords_embedding, axis=1)  # batch_size x emb_dim
+
+    # # Calculate the cosine similarity between the generated text and the target keywords
+    # similarity = cosine_similarity(generated_text_embedding_mean, target_keywords_embedding_mean)
+
+    # # Define the keyword loss as the negative cosine similarity
+    # pretrain_keyword_loss = -tf.reduce_mean(similarity)
+
+    # # keyword loss for adversarial training
+    # generated_text_adv = tf.matmul(tf.reshape(gen_x_onehot_adv, [-1, vocab_size]), g_embeddings)  # (batch_size * seq_len) x emb_dim
+    # generated_text_adv_embedding = tf.reshape(generated_text_adv, [batch_size, seq_len, gen_emb_dim])  # batch_size x seq_len x emb_dim
+
+    # # Calculate the cosine similarity between the generated text and the target keywords for adversarial training
+    # similarity_adv = cosine_similarity(tf.reduce_mean(generated_text_adv_embedding, axis=1), target_keywords_embedding_mean)
+
+    # # Define the keyword loss as the negative cosine similarity for adversarial training
+    # adv_keyword_loss = -tf.reduce_mean(similarity_adv)
+
+
+    generated_text_embedding = tf.matmul(tf.reshape(g_predictions, [-1, vocab_size]), g_embeddings)  # (batch_size * seq_len) x emb_dim
     keywords_onehot_flat = tf.reshape(tf.cast(keywords_onehot, tf.float32), [-1, vocab_size])  # (batch_size * num_keywords) x vocab_size
     target_keywords_embedding_flat = tf.matmul(keywords_onehot_flat, g_embeddings)  # (batch_size * num_keywords) x emb_dim
-    target_keywords_embedding = tf.reshape(target_keywords_embedding_flat, [batch_size, -1, gen_emb_dim])  # batch_size x num_keywords x emb_dim
-    target_keywords_embedding_mean = tf.reduce_mean(target_keywords_embedding, axis=1)  # batch_size x emb_dim
+    target_keywords_embedding = tf.reshape(target_keywords_embedding_flat, [-1, gen_emb_dim])  # (batch_size * num_keywords) x emb_dim
 
-    # Calculate the cosine similarity between the generated text and the target keywords
-    similarity = cosine_similarity(generated_text_embedding_mean, target_keywords_embedding_mean)
+    # Calculate the cosine similarity between each word in the generated text and each target keyword
+    similarity_per_word = cosine_similarity(tf.reshape(generated_text_embedding, [-1, gen_emb_dim]), target_keywords_embedding)  # (batch_size * seq_len) x num_keywords
+    similarity_per_word = tf.reshape(similarity_per_word, [batch_size, seq_len, -1])  # batch_size x seq_len x num_keywords
 
-    # Define the keyword loss as the negative cosine similarity
-    pretrain_keyword_loss = -tf.reduce_mean(similarity)
+    # Define the keyword loss as the negative sum of the maximum cosine similarities for each keyword
+    max_similarities_per_keyword = tf.reduce_max(similarity_per_word, axis=1)  # batch_size x num_keywords
+    pretrain_keyword_loss = -tf.reduce_sum(max_similarities_per_keyword, axis=1)
+    pretrain_keyword_loss = tf.reduce_mean(pretrain_keyword_loss)
 
-    # keyword loss for adversarial training
     generated_text_adv = tf.matmul(tf.reshape(gen_x_onehot_adv, [-1, vocab_size]), g_embeddings)  # (batch_size * seq_len) x emb_dim
     generated_text_adv_embedding = tf.reshape(generated_text_adv, [batch_size, seq_len, gen_emb_dim])  # batch_size x seq_len x emb_dim
 
-    # Calculate the cosine similarity between the generated text and the target keywords for adversarial training
-    similarity_adv = cosine_similarity(tf.reduce_mean(generated_text_adv_embedding, axis=1), target_keywords_embedding_mean)
+    # Calculate the cosine similarity between each word in the generated text and each target keyword for adversarial training
+    similarity_adv_per_word = cosine_similarity(tf.reshape(generated_text_adv_embedding, [-1, gen_emb_dim]), target_keywords_embedding)  # (batch_size * seq_len) x num_keywords
+    similarity_adv_per_word = tf.reshape(similarity_adv_per_word, [batch_size, seq_len, -1])  # batch_size x seq_len x num_keywords
 
-    # Define the keyword loss as the negative cosine similarity for adversarial training
-    adv_keyword_loss = -tf.reduce_mean(similarity_adv)
+    # Define the keyword loss as the negative sum of the maximum cosine similarities for each keyword for adversarial training
+    max_similarities_per_keyword_adv = tf.reduce_max(similarity_adv_per_word, axis=1)  # batch_size x num_keywords
+    adv_keyword_loss = -tf.reduce_sum(max_similarities_per_keyword_adv, axis=1)
+    adv_keyword_loss = tf.reduce_mean(adv_keyword_loss)
+
 
     return gen_x_onehot_adv, gen_x, pretrain_loss, gen_o, pretrain_keyword_loss, adv_keyword_loss
 
