@@ -185,15 +185,15 @@ def generator(x_real, keywords_onehot, keywords_len, temperature, vocab_size, ba
 
         return keyword_loss
 
-    # ... (省略了生成器的其余部分)
 
-    # Calculate keyword loss for each sample in the batch
+   # Calculate keyword loss for each sample in the batch
     pretrain_keyword_loss = tf.map_fn(compute_keyword_loss, elems=(generated_text_embedding, target_keywords_embedding, keywords_len), dtype=tf.float32, swap_memory=True)
     pretrain_keyword_loss = tf.reduce_mean(pretrain_keyword_loss)
 
     # Calculate keyword loss for each sample in the batch for adversarial training
     adv_keyword_loss = tf.map_fn(compute_keyword_loss, elems=(generated_text_adv_embedding, target_keywords_embedding, keywords_len), dtype=tf.float32, swap_memory=True)
     adv_keyword_loss = tf.reduce_mean(adv_keyword_loss)
+
 
     return gen_x_onehot_adv, gen_x, pretrain_loss, gen_o, pretrain_keyword_loss, adv_keyword_loss
 
@@ -274,10 +274,10 @@ def discriminator(x_onehot, keywords_onehot, keywords_len, batch_size, seq_len, 
 
 
 def cosine_similarity(a, b):
-    a_norm = tf.sqrt(tf.reduce_sum(tf.square(a), axis=1, keep_dims=True))
-    b_norm = tf.sqrt(tf.reduce_sum(tf.square(b), axis=0, keep_dims=True))
+    a_norm = tf.sqrt(tf.reduce_sum(tf.square(a), axis=1, keepdims=True))
+    b_norm = tf.sqrt(tf.reduce_sum(tf.square(b), axis=0, keepdims=True))
     a_norm = tf.where(tf.equal(a_norm, 0), tf.ones_like(a_norm), a_norm)
     b_norm = tf.where(tf.equal(b_norm, 0), tf.ones_like(b_norm), b_norm)
     normalize_a = a / a_norm
     normalize_b = b / b_norm
-    return tf.matmul(normalize_a, normalize_b)
+    return tf.matmul(normalize_a, tf.transpose(normalize_b))
