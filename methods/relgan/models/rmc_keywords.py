@@ -162,6 +162,10 @@ def generator(x_real, keywords_onehot, keywords_len, temperature, vocab_size, ba
 
     generated_text_adv_embedding = tf.matmul(tf.reshape(gen_x_onehot_adv, [-1, vocab_size]), g_embeddings)  # (batch_size * seq_len) x emb_dim
 
+    # reshape
+    target_keywords_embedding = tf.reshape(target_keywords_embedding, [batch_size, -1, gen_emb_dim])
+    generated_text_adv_embedding = tf.reshape(generated_text_adv_embedding, [batch_size, -1, gen_emb_dim])
+    generated_text_embedding = tf.reshape(generated_text_embedding, [batch_size, -1, gen_emb_dim])
     def cosine_similarity_loss(generated_embeddings, keywords_embeddings):
         generated_embeddings = tf.reshape(generated_embeddings, [-1, tf.shape(keywords_embeddings)[-1]])
         keywords_embeddings = tf.reshape(keywords_embeddings, [-1, tf.shape(keywords_embeddings)[-1]])
