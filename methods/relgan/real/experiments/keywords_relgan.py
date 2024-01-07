@@ -31,7 +31,8 @@ head_size =    ['256', '256', '256', '256', '256', '256', '256', '256', '256']
 num_heads =    ['2', '2', '2', '2', '2', '2', '2', '2', '2']
 seed =         ['171', '171', '172', '173', '174', '179', '176', '177', '178']
 
-bs = '64'
+# bs = '64'
+bs = '32'
 gpre_lr = '1e-2'
 hidden_dim = '32'
 seq_len = '20'
@@ -47,9 +48,13 @@ decay = False
 adapt = 'exp'
 # npre_epochs = '150'
 # nadv_steps = '2000'
-npre_epochs = '30'
-nadv_steps = '40'
-ntest = '10'
+# npre_epochs = '30'
+# nadv_steps = '40'
+# ntest = '10'
+npre_epochs = '1'
+nadv_steps = '1'
+ntest = '1'
+
 
 # Paths
 rootdir = '../..'
@@ -105,7 +110,7 @@ args = [
     '--vocab-size', '5000',
     '--start-token', '0',
     '--seq-len', seq_len,
-    '--num-sentences', '10',  # how many generated sentences to use per item
+    '--num-sentences', '1',  # how many generated sentences to use per item
     '--gen-emb-dim', gen_emb_dim,
     '--dis-emb-dim', dis_emb_dim,
     '--num-rep', num_rep,
