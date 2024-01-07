@@ -214,6 +214,10 @@ def generator(x_real, keywords_onehot, keywords_len, temperature, vocab_size, ba
                 greater_than_zero = tf.greater(num_keywords_vector, 0)
 
             def compute_loss():
+                target_shape = tf.shape(target_keywords_embeddings)
+                indices_shape = tf.shape(indices)
+                target_keywords_embeddings = tf.Print(target_keywords_embeddings, [target_shape], "Shape of target_keywords_embeddings: ")
+                indices = tf.Print(indices, [indices_shape], "Shape of indices: ")
                 # 验证target_keywords_embeddings是否为预期的形状
                 assert_op_target_shape = tf.Assert(
                     tf.equal(tf.rank(target_keywords_embeddings), 2),
