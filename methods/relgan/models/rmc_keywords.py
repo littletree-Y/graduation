@@ -234,6 +234,6 @@ def discriminator(x_onehot, keywords_onehot, keywords_len, batch_size, seq_len, 
 
 
 def cosine_similarity(a, b):
-    normalize_a = tf.nn.l2_normalize(a, axis=-1)
-    normalize_b = tf.nn.l2_normalize(b, axis=-1)
-    return tf.reduce_sum(tf.multiply(normalize_a, normalize_b), axis=-1)
+    normalize_a = a / tf.sqrt(tf.reduce_sum(tf.square(a)))
+    normalize_b = b / tf.sqrt(tf.reduce_sum(tf.square(b)))
+    return tf.reduce_sum(tf.multiply(normalize_a, normalize_b))
