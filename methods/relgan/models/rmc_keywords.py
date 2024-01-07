@@ -182,17 +182,32 @@ def generator(x_real, keywords_onehot, keywords_len, temperature, vocab_size, ba
     def compute_keyword_loss(args):
         generated_text_embeddings, target_keywords_embeddings, num_keywords = args
 
-        # 使用tf.gather来获取每个批次的关键词嵌入
+        # Ensure 'num_keywords' and 'batch_range' are tensors of rank 1 (vectors)
+        num_keywords = tf.reshape(num_keywords, [-1])
         batch_range = tf.range(tf.shape(target_keywords_embeddings)[0])
-        indices = tf.stack([batch_range, num_keywords-1], axis=1)
-        valid_keywords_embeddings_sample = tf.gather_nd(target_keywords_embeddings, indices)
+
+        # Cast 'num_keywords' as a 1D tensor first if it is not already.
+        num_keywords_vector = tf.reshape(num_keywords, [-1])
+
+        # Check to make sure every element in 'num_keywords' is greater than zero
+        greater_than_zero = tf.greater(num_keywords_vector, 0)
         
-        # 如果没有有效的关键词，则返回零损失
-        keyword_loss = tf.cond(
-            tf.greater(num_keywords, 0),
-            lambda: cosine_similarity_loss(generated_text_embeddings, valid_keywords_embeddings_sample),
-            lambda: tf.constant(0.0)
-        )
+        # If there are zero keywords, we cannot proceed with indexing as we'd be indexing with -1
+        def compute_loss():
+            # Calculate indices for gathering
+            indices = tf.stack([batch_range, tf.maximum(num_keywords_vector-1, 0)], axis=1)
+            
+            # Gather the last valid embeddings for keywords
+            valid_keywords_embeddings_sample = tf.gather_nd(target_keywords_embeddings, indices)
+        
+            # Calculate loss using cosine similarity for valid keyword embeddings
+            keyword_loss = cosine_similarity_loss(generated_text_embeddings, valid_keywords_embeddings_sample)
+            
+            return keyword_loss
+        
+        # Return zero loss if there are no keywords
+        keyword_loss = tf.cond(tf.reduce_any(greater_than_zero), compute_loss, lambda: tf.constant(0.0))
+        
         return keyword_loss
 
 
