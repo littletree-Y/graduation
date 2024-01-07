@@ -12,9 +12,14 @@ pip install matplotlib==2.2.0
 pip install scipy==1.0.0
 pip install nltk==3.2.3
 pip install tqdm==4.19.6
-# Tensorflow 1.4
-# Numpy 1.14.1
-# Matplotlib 2.2.0
-# Scipy 1.0.0
-# NLTK 3.2.3
-# tqdm 4.19.6
+pip install requests
+
+
+python -m nltk.downloader punkt
+
+
+#####
+# import nltk
+# nltk.download('punkt')
+
+# nohup python -u  keywords_relgan.py 0 0 > nohup.out 2>&1 &

@@ -18,10 +18,20 @@ def generator(x_real, keywords_onehot, keywords_len, temperature, vocab_size, ba
 
     # Add keyword embedding
     mem_size = gen_mem._mem_size
-    keyword_embeddings = tf.get_variable('g_keyword_emb', shape=[vocab_size, mem_size],
-                                         initializer=create_linear_initializer(vocab_size))
-    emb_keywords_re = tf.matmul(tf.reshape(keywords_onehot, [-1, vocab_size]), keyword_embeddings)
-    emb_keywords = tf.reshape(emb_keywords_re, [batch_size, -1, mem_size])  # batch_size x num_keywords x mem_size
+    # 不同embedding
+    # keyword_embeddings = tf.get_variable('g_keyword_emb', shape=[vocab_size, mem_size],
+    #                                      initializer=create_linear_initializer(vocab_size))
+    # emb_keywords_re = tf.matmul(tf.reshape(keywords_onehot, [-1, vocab_size]), keyword_embeddings)
+    # emb_keywords = tf.reshape(emb_keywords_re, [batch_size, -1, mem_size])  # batch_size x num_keywords x mem_size
+
+    # 相同embedding
+    emb_keywords_re = tf.matmul(tf.reshape(keywords_onehot, [-1, vocab_size]), g_embeddings)
+    emb_keywords = tf.reshape(emb_keywords_re, [batch_size, -1, gen_emb_dim])   # batch_size x num_keywords x gen_emb_dim
+    # Map the keyword embeddings to the generator's memory size
+    keyword_fc = tf.get_variable('keywords_fc', shape=[gen_emb_dim, mem_size],
+                                initializer=create_linear_initializer(gen_emb_dim))
+    emb_keywords = tf.tensordot(emb_keywords, keyword_fc, axes=[[2], [0]])  # batch_size x num_keywords x mem_size
+
 
     # Compute a weighted average of keyword embeddings
     keyword_lengths = tf.expand_dims(tf.cast(keywords_len, tf.float32), -1)  # batch_size x 1
@@ -116,7 +126,36 @@ def generator(x_real, keywords_onehot, keywords_len, temperature, vocab_size, ba
         )
     ) / (seq_len * batch_size)
 
-    return gen_x_onehot_adv, gen_x, pretrain_loss, gen_o
+
+    # pretain keywords loss
+    # Calculate the keyword loss
+    generated_text_embedding = tf.matmul(tf.reshape(g_predictions, [-1, vocab_size]), g_embeddings)  # (batch_size * seq_len) x emb_dim
+    generated_text_embedding = tf.reshape(generated_text_embedding, [batch_size, seq_len, gen_emb_dim])  # batch_size x seq_len x emb_dim
+    generated_text_embedding_mean = tf.reduce_mean(generated_text_embedding, axis=1)  # batch_size x emb_dim
+
+    # Calculate target_keywords_embedding
+    keywords_onehot_flat = tf.reshape(tf.cast(keywords_onehot, tf.float32), [-1, vocab_size])  # (batch_size * num_keywords) x vocab_size
+    target_keywords_embedding_flat = tf.matmul(keywords_onehot_flat, g_embeddings)  # (batch_size * num_keywords) x emb_dim
+    target_keywords_embedding = tf.reshape(target_keywords_embedding_flat, [batch_size, -1, gen_emb_dim])  # batch_size x num_keywords x emb_dim
+    target_keywords_embedding_mean = tf.reduce_mean(target_keywords_embedding, axis=1)  # batch_size x emb_dim
+
+    # Calculate the cosine similarity between the generated text and the target keywords
+    similarity = cosine_similarity(generated_text_embedding_mean, target_keywords_embedding_mean)
+
+    # Define the keyword loss as the negative cosine similarity
+    pretrain_keyword_loss = -tf.reduce_mean(similarity)
+
+    # keyword loss for adversarial training
+    generated_text_adv = tf.matmul(tf.reshape(gen_x_onehot_adv, [-1, vocab_size]), g_embeddings)  # (batch_size * seq_len) x emb_dim
+    generated_text_adv_embedding = tf.reshape(generated_text_adv, [batch_size, seq_len, gen_emb_dim])  # batch_size x seq_len x emb_dim
+
+    # Calculate the cosine similarity between the generated text and the target keywords for adversarial training
+    similarity_adv = cosine_similarity(tf.reduce_mean(generated_text_adv_embedding, axis=1), target_keywords_embedding_mean)
+
+    # Define the keyword loss as the negative cosine similarity for adversarial training
+    adv_keyword_loss = -tf.reduce_mean(similarity_adv)
+
+    return gen_x_onehot_adv, gen_x, pretrain_loss, gen_o, pretrain_keyword_loss, adv_keyword_loss
 
 
 # The discriminator network based on the CNN classifier
@@ -192,3 +231,9 @@ def discriminator(x_onehot, keywords_onehot, keywords_len, batch_size, seq_len, 
     logits = tf.squeeze(logits, -1)  # batch_size*num_rep
 
     return logits
+
+
+def cosine_similarity(a, b):
+    normalize_a = tf.nn.l2_normalize(a, axis=-1)
+    normalize_b = tf.nn.l2_normalize(b, axis=-1)
+    return tf.reduce_sum(tf.multiply(normalize_a, normalize_b), axis=-1)

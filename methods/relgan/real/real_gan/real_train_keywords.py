@@ -74,7 +74,7 @@ def real_train_keywords(generator, discriminator, oracle_loader, config):
     assert x_fake_keywords_onehot.get_shape().as_list() == [batch_size, keywords_len, vocab_size]
     
     # generator and discriminator outputs
-    x_fake_onehot_appr, x_fake, g_pretrain_loss, gen_o = generator(x_real=x_real, keywords_onehot=x_keywords_onehot, keywords_len=x_keywords_len_list, temperature=temperature)
+    x_fake_onehot_appr, x_fake, g_pretrain_loss, gen_o, pretrain_keyword_loss, adv_keyword_loss = generator(x_real=x_real, keywords_onehot=x_keywords_onehot, keywords_len=x_keywords_len_list, temperature=temperature)
     # 真实数据及其匹配条件作为判别器输入
     d_out_real = discriminator(x_onehot=x_real_onehot, keywords_onehot=x_keywords_onehot, keywords_len=x_keywords_len_list)
     # 生成数据及其匹配条件作为判别器输入
@@ -83,8 +83,8 @@ def real_train_keywords(generator, discriminator, oracle_loader, config):
     d_out_not_match = discriminator(x_onehot=x_real_onehot, keywords_onehot=x_fake_keywords_onehot, keywords_len=x_fake_keywords_len_list)
 
     # GAN / Divergence type
-    log_pg, g_loss, d_loss = get_losses(d_out_real, d_out_fake, d_out_not_match,x_real_onehot, x_fake_onehot_appr,
-                                        gen_o, discriminator, config)
+    log_pg, g_loss, d_loss = get_losses(d_out_real, d_out_fake, d_out_not_match, x_real_onehot, x_fake_onehot_appr,
+                                        gen_o, discriminator, config, adv_keyword_loss)
 
     # Global step
     global_step = tf.Variable(0, trainable=False)
@@ -106,6 +106,7 @@ def real_train_keywords(generator, discriminator, oracle_loader, config):
     loss_summaries = [
         tf.summary.scalar('loss/discriminator', d_loss),
         tf.summary.scalar('loss/g_loss', g_loss),
+        tf.summary.scalar('loss/adv_keywords_loss', adv_keyword_loss),
         tf.summary.scalar('loss/log_pg', log_pg),
         tf.summary.scalar('loss/Wall_clock_time', Wall_clock_time),
         tf.summary.scalar('loss/temperature', temperature),
@@ -137,7 +138,7 @@ def real_train_keywords(generator, discriminator, oracle_loader, config):
         print('Start pre-training...')
         for epoch in range(npre_epochs):
             # pre-training  
-            g_pretrain_loss_np = pre_train_epoch(sess, g_pretrain_op, g_pretrain_loss, x_real, x_keywords, x_keywords_len_list,oracle_loader, is_keywords=True)
+            g_pretrain_loss_np, raw_pretrain_loss, keyword_loss = pre_train_epoch(sess, g_pretrain_op, g_pretrain_loss, pretrain_keyword_loss,x_real, x_keywords, x_keywords_len_list,oracle_loader, is_keywords=True)
 
             # Test
             ntest_pre = 10
@@ -154,7 +155,7 @@ def real_train_keywords(generator, discriminator, oracle_loader, config):
                 metrics_summary_str = sess.run(metric_summary_op, feed_dict=dict(zip(metrics_pl, scores)))
                 sum_writer.add_summary(metrics_summary_str, epoch)
 
-                msg = 'pre_gen_epoch:' + str(epoch) + ', g_pre_loss: %.4f' % g_pretrain_loss_np
+                msg = 'pre_gen_epoch:' + str(epoch) + ', g_pre_loss: %.4f' % g_pretrain_loss_np + ', raw_pre_loss: %.4f' % raw_pretrain_loss + ', keyword_loss: %.4f' % keyword_loss
                 metric_names = [metric.get_name() for metric in metrics]
                 for (name, score) in zip(metric_names, scores):
                     msg += ', ' + name + ': %.4f' % score
@@ -226,7 +227,7 @@ def real_train_keywords(generator, discriminator, oracle_loader, config):
 
 
 # A function to get different GAN losses
-def get_losses(d_out_real, d_out_fake, d_out_not_match, x_real_onehot, x_fake_onehot_appr, gen_o, discriminator, config):
+def get_losses(d_out_real, d_out_fake, d_out_not_match, x_real_onehot, x_fake_onehot_appr, gen_o, discriminator, config, adv_keyword_loss):
     batch_size = config['batch_size']
     gan_type = config['gan_type']
 
@@ -291,12 +292,13 @@ def get_losses(d_out_real, d_out_fake, d_out_not_match, x_real_onehot, x_fake_on
         g_loss = tf.reduce_mean(tf.squared_difference(d_out_fake, 1.0))
 
     elif gan_type == 'RSGAN':  # relativistic standard GAN
+        # TOOD add weight 
         d_loss = tf.reduce_mean(tf.nn.sigmoid_cross_entropy_with_logits(
             logits=d_out_real - d_out_fake - d_out_not_match, labels=tf.ones_like(d_out_real)
         ))
         g_loss = tf.reduce_mean(tf.nn.sigmoid_cross_entropy_with_logits(
             logits=d_out_fake - d_out_real, labels=tf.ones_like(d_out_fake)
-        ))
+        )) + adv_keyword_loss
 
     else:
         raise NotImplementedError("Divergence '%s' is not implemented" % gan_type)

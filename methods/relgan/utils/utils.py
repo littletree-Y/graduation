@@ -62,20 +62,28 @@ def init_sess():
     return sess
 
 
-def pre_train_epoch(sess, g_pretrain_op, g_pretrain_loss, x_real, x_keywords, x_keywords_len_list,data_loader, is_keywords=False):
+def pre_train_epoch(sess, g_pretrain_op, g_pretrain_loss, pretrain_keyword_loss, x_real, x_keywords, x_keywords_len_list,data_loader, is_keywords=False):
     # Pre-train the generator using MLE for one epoch
+    # TODO
+    total_g_losses = []
     supervised_g_losses = []
+    g_keywords_losses = []
     data_loader.reset_pointer()
 
     for it in range(data_loader.num_batch):
         if is_keywords:
             batch, keywords, keywords_len_list = data_loader.next_batch()
-            _, g_loss = sess.run([g_pretrain_op, g_pretrain_loss], feed_dict={x_real: batch, x_keywords:keywords, x_keywords_len_list:keywords_len_list })
+            _, g_loss, g_keyword_loss = sess.run([g_pretrain_op, g_pretrain_loss, pretrain_keyword_loss], feed_dict={x_real: batch, x_keywords:keywords, x_keywords_len_list:keywords_len_list })
+            # TODO add weight
+            total_g_losses.append(g_loss + g_keyword_loss)
+            supervised_g_losses.append(g_loss)
+            g_keywords_losses.append(g_keyword_loss)
         else:
             batch = data_loader.next_batch()
             _, g_loss = sess.run([g_pretrain_op, g_pretrain_loss], feed_dict={x_real: batch})
-        supervised_g_losses.append(g_loss)
-
+            supervised_g_losses.append(g_loss)
+    if is_keywords:
+        return np.mean(total_g_losses), np.mean(supervised_g_losses), np.mean(g_keywords_losses)
     return np.mean(supervised_g_losses)
 
 
