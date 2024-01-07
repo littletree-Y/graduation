@@ -168,29 +168,21 @@ def generator(x_real, keywords_onehot, keywords_len, temperature, vocab_size, ba
     generated_text_adv_embedding = tf.matmul(tf.reshape(gen_x_onehot_adv, [-1, vocab_size]), g_embeddings)  # (batch_size * seq_len) x emb_dim
 
     def compute_keyword_loss(args):
-        generated_text_embedding_sample, target_keywords_embedding_sample, num_keywords_sample = args
+        generated_text_embeddings, target_keywords_embeddings, num_keywords = args
         
-        # 确保target_keywords_embedding_sample是二维张量
-        target_keywords_embedding_sample = tf.reshape(target_keywords_embedding_sample, 
-                                                    [-1, tf.shape(generated_text_embedding_sample)[-1]])
+        # 确保target_keywords_embeddings是二维的
+        target_keywords_embeddings = tf.reshape(target_keywords_embeddings, 
+                                                [num_keywords, -1])
         
-        # 截取前num_keywords_sample个关键字嵌入
-        def slice_keywords(keywords_embeddings, count):
-            return keywords_embeddings[:count, :]
+        # 确保generated_text_embeddings是二维的
+        generated_text_embeddings = tf.reshape(generated_text_embeddings, [-1, tf.shape(target_keywords_embeddings)[-1]])
         
-        valid_keywords_embeddings_sample = tf.cond(
-            num_keywords_sample > 0,
-            lambda: slice_keywords(target_keywords_embedding_sample, num_keywords_sample),
-            lambda: tf.zeros([0, tf.shape(generated_text_embedding_sample)[-1]])
-        )
+        # 计算余弦相似度
+        similarity = cosine_similarity(generated_text_embeddings, target_keywords_embeddings)
         
-        # 计算生成文本和有效关键词嵌入之间的余弦相似度
-        similarity = cosine_similarity(generated_text_embedding_sample, valid_keywords_embeddings_sample)
+        # 最大相似度
+        max_similarity = tf.reduce_max(similarity, axis=0)
         
-        # 对于每个生成的单词，找到与其最相似的关键词的相似度
-        max_similarity = tf.reduce_max(similarity, axis=1)
-        
-        # 自定义损失：取相似度最大值的负数作为损失
         keyword_loss = -tf.reduce_sum(max_similarity)
         return keyword_loss
 
@@ -290,10 +282,13 @@ def discriminator(x_onehot, keywords_onehot, keywords_len, batch_size, seq_len, 
 
 
 def cosine_similarity(a, b):
+     # 计算a和b的范数
     a_norm = tf.sqrt(tf.reduce_sum(tf.square(a), axis=1))
     b_norm = tf.sqrt(tf.reduce_sum(tf.square(b), axis=1))
+    # 防止除以0
     a_norm = tf.where(tf.equal(a_norm, 0), tf.ones_like(a_norm), a_norm)
     b_norm = tf.where(tf.equal(b_norm, 0), tf.ones_like(b_norm), b_norm)
+    # 归一化
     normalize_a = a / tf.expand_dims(a_norm, -1)
     normalize_b = b / tf.expand_dims(b_norm, -1)
     return tf.matmul(normalize_a, tf.transpose(normalize_b))
