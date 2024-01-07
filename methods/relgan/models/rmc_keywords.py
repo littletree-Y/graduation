@@ -167,24 +167,34 @@ def generator(x_real, keywords_onehot, keywords_len, temperature, vocab_size, ba
 
     generated_text_adv_embedding = tf.matmul(tf.reshape(gen_x_onehot_adv, [-1, vocab_size]), g_embeddings)  # (batch_size * seq_len) x emb_dim
 
-    def compute_keyword_loss(args):
-        generated_text_embeddings, target_keywords_embeddings, num_keywords = args
-        
-        # 确保target_keywords_embeddings是二维的
-        target_keywords_embeddings = tf.reshape(target_keywords_embeddings, 
-                                                [num_keywords, -1])
-        
-        # 确保generated_text_embeddings是二维的
-        generated_text_embeddings = tf.reshape(generated_text_embeddings, [-1, tf.shape(target_keywords_embeddings)[-1]])
+
+    def cosine_similarity_loss(generated_embeddings, keywords_embeddings):
+        # 确保嵌入是二维的
+        generated_embeddings = tf.reshape(generated_embeddings, [-1, tf.shape(keywords_embeddings)[-1]])
+        keywords_embeddings = tf.reshape(keywords_embeddings, [-1, tf.shape(keywords_embeddings)[-1]])
         
         # 计算余弦相似度
-        similarity = cosine_similarity(generated_text_embeddings, target_keywords_embeddings)
+        similarity = cosine_similarity(generated_embeddings, keywords_embeddings)
         
-        # 最大相似度
-        max_similarity = tf.reduce_max(similarity, axis=0)
-        
-        keyword_loss = -tf.reduce_sum(max_similarity)
+        # 计算损失，这里取关键词与生成文本最相似处的负平均值作为损失
+        keyword_loss = -tf.reduce_mean(tf.reduce_max(similarity, axis=1))
         return keyword_loss
+    def compute_keyword_loss(args):
+        generated_text_embeddings, target_keywords_embeddings, num_keywords = args
+
+        # 使用tf.gather来获取每个批次的关键词嵌入
+        batch_range = tf.range(tf.shape(target_keywords_embeddings)[0])
+        indices = tf.stack([batch_range, num_keywords-1], axis=1)
+        valid_keywords_embeddings_sample = tf.gather_nd(target_keywords_embeddings, indices)
+        
+        # 如果没有有效的关键词，则返回零损失
+        keyword_loss = tf.cond(
+            tf.greater(num_keywords, 0),
+            lambda: cosine_similarity_loss(generated_text_embeddings, valid_keywords_embeddings_sample),
+            lambda: tf.constant(0.0)
+        )
+        return keyword_loss
+
 
     #  Compute the keyword loss for each element in the batch
     elems = (generated_text_embedding, target_keywords_embedding, keywords_len)
