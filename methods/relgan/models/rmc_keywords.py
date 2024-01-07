@@ -174,7 +174,7 @@ def generator(x_real, keywords_onehot, keywords_len, temperature, vocab_size, ba
         valid_keywords_embedding_sample = target_keywords_embedding_sample[:num_keywords_sample]
 
         # Ensure valid_keywords_embedding_sample is always 2D
-        valid_keywords_embedding_sample = tf.expand_dims(valid_keywords_embedding_sample, -1)
+        valid_keywords_embedding_sample = tf.reshape(valid_keywords_embedding_sample, [num_keywords_sample, -1])
 
         # Calculate the cosine similarity between each word in the generated text and each valid keyword
         similarity_per_word = cosine_similarity(generated_text_embedding_sample, valid_keywords_embedding_sample)  # seq_len x num_keywords_sample
