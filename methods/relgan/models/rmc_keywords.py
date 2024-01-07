@@ -155,126 +155,49 @@ def generator(x_real, keywords_onehot, keywords_len, temperature, vocab_size, ba
 
     # # Define the keyword loss as the negative cosine similarity for adversarial training
     # adv_keyword_loss = -tf.reduce_mean(similarity_adv)
-
-
+    
     generated_text_embedding = tf.matmul(tf.reshape(g_predictions, [-1, vocab_size]), g_embeddings)  # (batch_size * seq_len) x emb_dim
     keywords_onehot_flat = tf.reshape(tf.cast(keywords_onehot, tf.float32), [-1, vocab_size])  # (batch_size * num_keywords) x vocab_size
     target_keywords_embedding = tf.matmul(keywords_onehot_flat, g_embeddings)  # (batch_size * num_keywords) x emb_dim
-    #TODO
-    expected_keyword_embedding_shape = (batch_size * 7, gen_emb_dim) 
-    target_keywords_embedding_shape = tf.shape(target_keywords_embedding)
-    assert_op_keywords_shape = tf.Assert(
-        tf.equal(target_keywords_embedding_shape, expected_keyword_embedding_shape),
-        ["target_keywords_embedding does not have the expected shape",
-        target_keywords_embedding_shape, expected_keyword_embedding_shape])
-
-
 
     generated_text_adv_embedding = tf.matmul(tf.reshape(gen_x_onehot_adv, [-1, vocab_size]), g_embeddings)  # (batch_size * seq_len) x emb_dim
 
-
     def cosine_similarity_loss(generated_embeddings, keywords_embeddings):
-        # 确保嵌入是二维的
         generated_embeddings = tf.reshape(generated_embeddings, [-1, tf.shape(keywords_embeddings)[-1]])
         keywords_embeddings = tf.reshape(keywords_embeddings, [-1, tf.shape(keywords_embeddings)[-1]])
-        
-        # 计算余弦相似度
+
         similarity = cosine_similarity(generated_embeddings, keywords_embeddings)
-        
-        # 计算损失，这里取关键词与生成文本最相似处的负平均值作为损失
         keyword_loss = -tf.reduce_mean(tf.reduce_max(similarity, axis=1))
         return keyword_loss
+
     def compute_keyword_loss(args):
         generated_text_embeddings, target_keywords_embeddings, num_keywords = args
 
-        # 判断维度是否正确
-        assert_op_num_keywords_vector = tf.Assert(
-            tf.reduce_all(tf.equal(tf.shape(num_keywords), [batch_size])), 
-            ["num_keywords does not have the shape of [batch_size]"])
-        assert_op_batch_range = tf.Assert(
-            tf.reduce_all(tf.equal(tf.shape(target_keywords_embeddings), [batch_size * tf.reduce_max(num_keywords), gen_emb_dim])),
-            ["target_keywords_embeddings does not have the shape of [batch_size * max(num_keywords), gen_emb_dim]"])
-        
-        with tf.control_dependencies([assert_op_num_keywords_vector, assert_op_batch_range]):
-            # 保证 'num_keywords' 是一维张量
-            num_keywords_vector = tf.reshape(num_keywords, [-1])
-            batch_range = tf.range(tf.shape(num_keywords_vector)[0])
+        num_keywords_vector = tf.reshape(num_keywords, [-1])
+        batch_range = tf.range(tf.shape(num_keywords_vector)[0])
 
-            # Create indices for tf.gather_nd
-            indices = tf.stack([batch_range, tf.maximum(num_keywords_vector - 1, 0)], axis=1)
-            
-            # Assert to ensure the indices shape is compatible with target_keywords_embeddings shape
-            assert_op_indices = tf.Assert(
-                tf.less_equal(tf.shape(indices)[-1], tf.rank(target_keywords_embeddings)), 
-                ["indices.shape[-1] is not <= target_keywords_embeddings.rank",
-                tf.shape(indices), tf.rank(target_keywords_embeddings)])
+        indices = tf.stack([batch_range, tf.maximum(num_keywords_vector - 1, 0)], axis=1)
+        greater_than_zero = tf.greater(num_keywords_vector, 0)
 
-            with tf.control_dependencies([assert_op_indices]):
-                # Check if there are keywords to avoid -1 in indices
-                greater_than_zero = tf.greater(num_keywords_vector, 0)
+        def compute_loss():
+            valid_keywords_embeddings_sample = tf.gather_nd(target_keywords_embeddings, indices)
+            keyword_loss = cosine_similarity_loss(generated_text_embeddings, valid_keywords_embeddings_sample)
+            return keyword_loss
 
-            def compute_loss():
-                target_shape = tf.shape(target_keywords_embeddings)
-                indices_shape = tf.shape(indices)
-                   # Print shapes runtime information
-                target_keywords_embeddings_with_print = tf.Print(target_keywords_embeddings, [target_shape], "Shape of target_keywords_embeddings: ")
-                indices_with_print = tf.Print(indices, [indices_shape], "Shape of indices: ")
-                
-                # 验证target_keywords_embeddings是否为预期的形状
-                assert_op_target_shape = tf.Assert(
-                    tf.equal(tf.rank(target_keywords_embeddings), 2),
-                    ["target_keywords_embeddings should be 2D, but got shape: ", tf.shape(target_keywords_embeddings)])
-                with tf.control_dependencies([assert_op_target_shape]):
-                    # 因为我们知道target_keywords_embeddings应该是二维的，下面这行是安全的
-                    valid_keywords_embeddings_sample = tf.gather_nd(target_keywords_embeddings_with_print, indices_with_print)
-            
-                    # Calculate loss using cosine similarity for valid keyword embeddings
-                    keyword_loss = cosine_similarity_loss(generated_text_embeddings, valid_keywords_embeddings_sample)
-                    
-                    return keyword_loss
-        
-        # Return zero loss if there are no keywords
         keyword_loss = tf.cond(tf.reduce_any(greater_than_zero), compute_loss, lambda: tf.constant(0.0))
-        
         return keyword_loss
 
-
-    #  Compute the keyword loss for each element in the batch
     elems = (generated_text_embedding, target_keywords_embedding, keywords_len)
-    # 在 tf.map_fn 调用 compute_keyword_loss 之前，确保 elems 每个成分的维度正确
-    assert_op_generated_text_embedding = tf.Assert(
-        tf.reduce_all(tf.equal(tf.shape(generated_text_embedding), [batch_size * seq_len, gen_emb_dim])), 
-        ["generated_text_embedding does not have the shape of [batch_size * seq_len, gen_emb_dim]"])
-    assert_op_target_keywords_embedding = tf.Assert(
-        tf.reduce_all(tf.equal(tf.shape(target_keywords_embedding), [batch_size * tf.reduce_max(keywords_len), gen_emb_dim])), 
-        ["target_keywords_embedding does not have the shape of [batch_size * max(keywords_len), gen_emb_dim]"])
-    assert_op_keywords_len = tf.Assert(
-        tf.reduce_all(tf.equal(tf.rank(keywords_len), 1)), 
-        ["keywords_len is not a rank 1 tensor (vector)"])
-
-    with tf.control_dependencies([
-        assert_op_generated_text_embedding, 
-        assert_op_target_keywords_embedding, 
-        assert_op_keywords_len]):
-        pretrain_keyword_loss = tf.map_fn(
-            compute_keyword_loss,
-            elems,
-            dtype=tf.float32,
-            back_prop=True)
-
-    # pretrain_keyword_loss = tf.map_fn(
-    #     compute_keyword_loss, 
-    #     elems, 
-    #     dtype=tf.float32, 
-    #     back_prop=True
-    # )
+    pretrain_keyword_loss = tf.map_fn(
+        compute_keyword_loss,
+        elems,
+        dtype=tf.float32,
+        back_prop=True)
 
     pretrain_keyword_loss = tf.reduce_mean(pretrain_keyword_loss)
 
-    # Calculate keyword loss for each sample in the batch for adversarial training
     adv_keyword_loss = tf.map_fn(compute_keyword_loss, elems=(generated_text_adv_embedding, target_keywords_embedding, keywords_len), dtype=tf.float32, swap_memory=True)
     adv_keyword_loss = tf.reduce_mean(adv_keyword_loss)
-
 
 
     return gen_x_onehot_adv, gen_x, pretrain_loss, gen_o, pretrain_keyword_loss, adv_keyword_loss
