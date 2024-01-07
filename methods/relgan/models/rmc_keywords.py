@@ -173,10 +173,10 @@ def generator(x_real, keywords_onehot, keywords_len, temperature, vocab_size, ba
         valid_keywords_embedding_sample = target_keywords_embedding_sample[:num_keywords_sample]
 
         # Calculate the cosine similarity between each word in the generated text and each valid keyword
-        similarity_per_word = cosine_similarity(generated_text_embedding_sample, valid_keywords_embedding_sample)  # seq_len x num_keywords_sample
+        similarity_per_word = cosine_similarity(tf.transpose(generated_text_embedding_sample), valid_keywords_embedding_sample)  # seq_len x num_keywords_sample
 
         # Define the keyword loss as the negative sum of the maximum cosine similarities for each keyword
-        max_similarities_per_keyword = tf.reduce_max(similarity_per_word, axis=1)  # num_keywords_sample
+        max_similarities_per_keyword = tf.reduce_max(similarity_per_word, axis=0)  # num_keywords_sample
         keyword_loss = -tf.reduce_sum(max_similarities_per_keyword)
 
         return keyword_loss
@@ -205,13 +205,14 @@ def generator(x_real, keywords_onehot, keywords_len, temperature, vocab_size, ba
         valid_keywords_embedding_sample = target_keywords_embedding_sample[:num_keywords_sample]
 
         # Calculate the cosine similarity between each word in the generated text and each valid keyword for adversarial training
-        similarity_adv_per_word = cosine_similarity(generated_text_adv_embedding_sample, valid_keywords_embedding_sample)  # seq_len x num_keywords_sample
+        similarity_adv_per_word = cosine_similarity(tf.transpose(generated_text_adv_embedding_sample), valid_keywords_embedding_sample)  # seq_len x num_keywords_sample
 
         # Define the keyword loss as the negative sum of the maximum cosine similarities for each keyword for adversarial training
-        max_similarities_per_keyword_adv = tf.reduce_max(similarity_adv_per_word, axis=1)  # num_keywords_sample
+        max_similarities_per_keyword_adv = tf.reduce_max(similarity_adv_per_word, axis=0)  # num_keywords_sample
         keyword_loss_adv = -tf.reduce_sum(max_similarities_per_keyword_adv)
 
         return keyword_loss_adv
+
 
     # Reshape generated_text_adv_embedding to batch_size x seq_len x emb_dim
     generated_text_adv_embedding = tf.reshape(generated_text_adv_embedding, [batch_size, seq_len, gen_emb_dim])
