@@ -216,15 +216,17 @@ def generator(x_real, keywords_onehot, keywords_len, temperature, vocab_size, ba
             def compute_loss():
                 target_shape = tf.shape(target_keywords_embeddings)
                 indices_shape = tf.shape(indices)
-                target_keywords_embeddings = tf.Print(target_keywords_embeddings, [target_shape], "Shape of target_keywords_embeddings: ")
-                indices = tf.Print(indices, [indices_shape], "Shape of indices: ")
+                   # Print shapes runtime information
+                target_keywords_embeddings_with_print = tf.Print(target_keywords_embeddings, [target_shape], "Shape of target_keywords_embeddings: ")
+                indices_with_print = tf.Print(indices, [indices_shape], "Shape of indices: ")
+                
                 # 验证target_keywords_embeddings是否为预期的形状
                 assert_op_target_shape = tf.Assert(
                     tf.equal(tf.rank(target_keywords_embeddings), 2),
                     ["target_keywords_embeddings should be 2D, but got shape: ", tf.shape(target_keywords_embeddings)])
                 with tf.control_dependencies([assert_op_target_shape]):
                     # 因为我们知道target_keywords_embeddings应该是二维的，下面这行是安全的
-                    valid_keywords_embeddings_sample = tf.gather_nd(target_keywords_embeddings, indices)
+                    valid_keywords_embeddings_sample = tf.gather_nd(target_keywords_embeddings_with_print, indices_with_print)
             
                     # Calculate loss using cosine similarity for valid keyword embeddings
                     keyword_loss = cosine_similarity_loss(generated_text_embeddings, valid_keywords_embeddings_sample)
