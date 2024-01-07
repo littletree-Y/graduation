@@ -185,19 +185,14 @@ def generator(x_real, keywords_onehot, keywords_len, temperature, vocab_size, ba
 
         return keyword_loss
 
-
-    # Reshape generated_text_embedding to batch_size x seq_len x emb_dim
-    generated_text_embedding = tf.reshape(generated_text_embedding, [batch_size, seq_len, gen_emb_dim])
-
-    # Reshape generated_text_adv_embedding to batch_size x seq_len x emb_dim
-    generated_text_adv_embedding = tf.reshape(generated_text_adv_embedding, [batch_size, seq_len, gen_emb_dim])
+    # ... (省略了生成器的其余部分)
 
     # Calculate keyword loss for each sample in the batch
-    pretrain_keyword_loss = tf.map_fn(compute_keyword_loss, elems=(generated_text_embedding, target_keywords_embedding, keywords_len), dtype=tf.float32)
+    pretrain_keyword_loss = tf.map_fn(compute_keyword_loss, elems=(generated_text_embedding, target_keywords_embedding, keywords_len), dtype=tf.float32, swap_memory=True)
     pretrain_keyword_loss = tf.reduce_mean(pretrain_keyword_loss)
 
     # Calculate keyword loss for each sample in the batch for adversarial training
-    adv_keyword_loss = tf.map_fn(compute_keyword_loss, elems=(generated_text_adv_embedding, target_keywords_embedding, keywords_len), dtype=tf.float32)
+    adv_keyword_loss = tf.map_fn(compute_keyword_loss, elems=(generated_text_adv_embedding, target_keywords_embedding, keywords_len), dtype=tf.float32, swap_memory=True)
     adv_keyword_loss = tf.reduce_mean(adv_keyword_loss)
 
     return gen_x_onehot_adv, gen_x, pretrain_loss, gen_o, pretrain_keyword_loss, adv_keyword_loss
