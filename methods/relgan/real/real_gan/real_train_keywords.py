@@ -194,12 +194,12 @@ def real_train_keywords(generator, discriminator, oracle_loader, config):
             _, fake_keywords, fake_keywords_len_list = oracle_loader.random_batch()
             feed = {x_real: batch, x_keywords:keywords, x_keywords_len_list:keywords_len_list,
                 x_fake_keywords: fake_keywords, x_fake_keywords_len_list: fake_keywords_len_list}
-            g_loss_np, d_loss_np, loss_summary_str = sess.run([g_loss, d_loss, loss_summary_op], feed_dict=feed)
+            g_loss_np, d_loss_np, loss_summary_str, adv_keyword_loss_np  = sess.run([g_loss, d_loss, loss_summary_op, adv_keyword_loss], feed_dict=feed)
             sum_writer.add_summary(loss_summary_str, niter)
 
             sess.run(global_step_op)
 
-            progress.set_description('g_loss: %4.4f, d_loss: %4.4f' % (g_loss_np, d_loss_np))
+            progress.set_description('g_loss: %4.4f, d_loss: %4.4f, adv_keywords_loss：%4.4f' % (g_loss_np, d_loss_np, adv_keyword_loss_np))
 
             # Test
             if np.mod(niter, config['ntest']) == 0:
