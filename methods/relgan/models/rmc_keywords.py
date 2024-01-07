@@ -169,18 +169,29 @@ def generator(x_real, keywords_onehot, keywords_len, temperature, vocab_size, ba
 
     def compute_keyword_loss(args):
         generated_text_embedding_sample, target_keywords_embedding_sample, num_keywords_sample = args
-
-        # Only use the first num_keywords_sample embeddings for each batch item
-        valid_keywords_embedding_sample = tf.slice(
-            target_keywords_embedding_sample, 
-            [0, 0], 
-            [num_keywords_sample, -1]
+        
+        # 确保target_keywords_embedding_sample是二维张量
+        target_keywords_embedding_sample = tf.reshape(target_keywords_embedding_sample, 
+                                                    [-1, tf.shape(generated_text_embedding_sample)[-1]])
+        
+        # 截取前num_keywords_sample个关键字嵌入
+        def slice_keywords(keywords_embeddings, count):
+            return keywords_embeddings[:count, :]
+        
+        valid_keywords_embeddings_sample = tf.cond(
+            num_keywords_sample > 0,
+            lambda: slice_keywords(target_keywords_embedding_sample, num_keywords_sample),
+            lambda: tf.zeros([0, tf.shape(generated_text_embedding_sample)[-1]])
         )
-
-        similarity_per_word = cosine_similarity(generated_text_embedding_sample, valid_keywords_embedding_sample)
-        # Ensure to take the max over the keyword axis
-        max_similarities_per_keyword = tf.reduce_max(similarity_per_word, axis=1)
-        keyword_loss = -tf.reduce_sum(max_similarities_per_keyword)
+        
+        # 计算生成文本和有效关键词嵌入之间的余弦相似度
+        similarity = cosine_similarity(generated_text_embedding_sample, valid_keywords_embeddings_sample)
+        
+        # 对于每个生成的单词，找到与其最相似的关键词的相似度
+        max_similarity = tf.reduce_max(similarity, axis=1)
+        
+        # 自定义损失：取相似度最大值的负数作为损失
+        keyword_loss = -tf.reduce_sum(max_similarity)
         return keyword_loss
 
     #  Compute the keyword loss for each element in the batch
