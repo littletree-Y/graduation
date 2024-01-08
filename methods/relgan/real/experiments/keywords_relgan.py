@@ -49,7 +49,7 @@ decay = False
 adapt = 'exp'
 # npre_epochs = '150'
 # nadv_steps = '2000'
-npre_epochs = '30'
+npre_epochs = '40'
 nadv_steps = '40'
 ntest = '10'
 pre_keywords_weight = '5.0'
@@ -71,11 +71,11 @@ current_time = datetime.now()
 formatted_time = current_time.strftime('%Y-%m-%d %H:%M')
 
 outdir = os.path.join(cwd, 'out', time.strftime("%Y%m%d"), dataset,
-                      '{}_{}_{}_{}_bs{}_sl{}_sn{}_dec{}_ad-{}_npre{}_nadv{}_ms{}_hs{}_nh{}_ds{}_dlr{}_glr{}_tem{}_demb{}_nrep{}_hdim{}_sd{}_preweight{}_advweight{}_{}'.
-                      format(dataset, architecture[job_id], gantype[job_id], opt_type[job_id], bs, seq_len, int(sn),
+                      '{}_{}_{}_{}_{}_bs{}_sl{}_sn{}_dec{}_ad-{}_npre{}_nadv{}_ms{}_hs{}_nh{}_ds{}_dlr{}_glr{}_tem{}_demb{}_nrep{}_hdim{}_sd{}_preweight{}_advweight{}'.
+                      format(formatted_time, dataset, architecture[job_id], gantype[job_id], opt_type[job_id], bs, seq_len, int(sn),
                              int(decay), adapt, npre_epochs, nadv_steps, mem_slots[job_id], head_size[job_id],
                              num_heads[job_id], dsteps, d_lr[job_id], gadv_lr[job_id], temperature[job_id], dis_emb_dim,
-                             num_rep, hidden_dim, seed[job_id], pre_keywords_weight, adv_keywords_weight, formatted_time))
+                             num_rep, hidden_dim, seed[job_id], pre_keywords_weight, adv_keywords_weight))
 
 args = [
     # Architecture
