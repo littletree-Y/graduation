@@ -173,8 +173,8 @@ def generator(x_real, keywords_onehot, keywords_len, temperature, vocab_size, ba
         greater_than_zero = tf.greater(num_keywords, 0)
 
         def compute_loss():
-            similarity = cosine_similarity(generated_text_embeddings, target_keywords_embeddings)
-            top_k_similarities = tf.nn.top_k(similarity, k=num_keywords)
+            similarity = cosine_similarity(generated_text_embeddings, target_keywords_embeddings) # [seq_len, num_keywords]
+            top_k_similarities = tf.nn.top_k(similarity, k=num_keywords) 
             keyword_loss = -tf.reduce_mean(top_k_similarities.values)
             return keyword_loss
 
