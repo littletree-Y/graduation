@@ -38,8 +38,8 @@ parser.add_argument('--decay', default=False, action='store_true', help='if deca
 parser.add_argument('--adapt', default='exp', type=str, help='temperature control policy: [no, lin, exp, log, sigmoid, quad, sqrt]')
 parser.add_argument('--seed', default=123, type=int, help='for reproducing the results')
 parser.add_argument('--temperature', default=1000, type=float, help='the largest temperature')
-parser.add_argument('--pre_keywords_weight', default=1.0, type=float, help='pretrain keywords loss weight')
-parser.add_argument('--adv_keywords_weight', default=1.0, type=float, help='adversarial training keywords loss weight')
+parser.add_argument('--pre-keywords-weight', default=1.0, type=float, help='pretrain keywords loss weight')
+parser.add_argument('--adv-keywords-weight', default=1.0, type=float, help='adversarial training keywords loss weight')
 
 # evaluation
 parser.add_argument('--nll-oracle', default=False, action='store_true', help='if using nll-oracle metric')
@@ -47,6 +47,8 @@ parser.add_argument('--nll-gen', default=False, action='store_true', help='if us
 parser.add_argument('--bleu', default=False, action='store_true', help='if using bleu metric, [2,3,4,5]')
 parser.add_argument('--selfbleu', default=False, action='store_true', help='if using selfbleu metric, [2,3,4,5]')
 parser.add_argument('--doc-embsim', default=False, action='store_true', help='if using DocEmbSim metric')
+parser.add_argument('--singlebleu', default=False, action='store_true', help='if using singlebleu metric, [2,3,4,5]')
+
 
 # relational memory
 parser.add_argument('--mem-slots', default=1, type=int, help="memory size")

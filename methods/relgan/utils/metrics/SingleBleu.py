@@ -1,6 +1,7 @@
 import nltk
 from nltk.translate.bleu_score import SmoothingFunction
 
+from utils.metrics.Metrics import Metrics
 class SingleBleu(Metrics):
     def __init__(self, test_text='', real_text='', gram=3, name='Bleu', portion=1, num_sentences=10):
         super().__init__()
