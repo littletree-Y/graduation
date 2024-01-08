@@ -38,6 +38,8 @@ parser.add_argument('--decay', default=False, action='store_true', help='if deca
 parser.add_argument('--adapt', default='exp', type=str, help='temperature control policy: [no, lin, exp, log, sigmoid, quad, sqrt]')
 parser.add_argument('--seed', default=123, type=int, help='for reproducing the results')
 parser.add_argument('--temperature', default=1000, type=float, help='the largest temperature')
+parser.add_argument('--pre_keywords_weight', default=1.0, type=float, help='pretrain keywords loss weight')
+parser.add_argument('--adv_keywords_weight', default=1.0, type=float, help='adversarial training keywords loss weight')
 
 # evaluation
 parser.add_argument('--nll-oracle', default=False, action='store_true', help='if using nll-oracle metric')

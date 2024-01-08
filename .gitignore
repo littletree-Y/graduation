@@ -4,4 +4,5 @@
 # 忽略pipeline/__pycache__文件夹
 pipeline/__pycache__/
 .ssh
-./methods/RelGAN_raw
+methods/RelGAN_raw/
+methods/relgan/real/experiments/out/

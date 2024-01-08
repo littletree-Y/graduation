@@ -230,6 +230,7 @@ def real_train_keywords(generator, discriminator, oracle_loader, config):
 def get_losses(d_out_real, d_out_fake, d_out_not_match, x_real_onehot, x_fake_onehot_appr, gen_o, discriminator, config, adv_keyword_loss):
     batch_size = config['batch_size']
     gan_type = config['gan_type']
+    adv_keywords_weight = config['adv_keywords_weight']
 
     if gan_type == 'standard':  # the non-satuating GAN loss
         d_loss_real = tf.reduce_mean(tf.nn.sigmoid_cross_entropy_with_logits(
@@ -298,7 +299,7 @@ def get_losses(d_out_real, d_out_fake, d_out_not_match, x_real_onehot, x_fake_on
         ))
         g_loss = tf.reduce_mean(tf.nn.sigmoid_cross_entropy_with_logits(
             logits=d_out_fake - d_out_real, labels=tf.ones_like(d_out_fake)
-        )) + adv_keyword_loss
+        )) + adv_keywords_weight * adv_keyword_loss
 
     else:
         raise NotImplementedError("Divergence '%s' is not implemented" % gan_type)

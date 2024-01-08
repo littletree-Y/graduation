@@ -32,7 +32,7 @@ num_heads =    ['2', '2', '2', '2', '2', '2', '2', '2', '2']
 seed =         ['171', '171', '172', '173', '174', '179', '176', '177', '178']
 
 # bs = '64'
-bs = '32'
+bs = '16'
 gpre_lr = '1e-2'
 hidden_dim = '32'
 seq_len = '20'
@@ -48,12 +48,14 @@ decay = False
 adapt = 'exp'
 # npre_epochs = '150'
 # nadv_steps = '2000'
-# npre_epochs = '30'
-# nadv_steps = '40'
-# ntest = '10'
-npre_epochs = '1'
-nadv_steps = '1'
-ntest = '1'
+npre_epochs = '30'
+nadv_steps = '40'
+ntest = '10'
+pre_keywords_weight = '5.0'
+adv_keywords_weight = '1.0'
+# npre_epochs = '1'
+# nadv_steps = '1'
+# ntest = '1'
 
 
 # Paths
@@ -93,6 +95,8 @@ args = [
     '--seed', seed[job_id],
     '--temperature', temperature[job_id],
     '--adapt', adapt,
+    '--pre_keywords_weight', pre_keywords_weight,
+    '--adv_keywords_weight', adv_keywords_weight,
 
     # evaluation
     '--nll-gen',
@@ -110,7 +114,7 @@ args = [
     '--vocab-size', '5000',
     '--start-token', '0',
     '--seq-len', seq_len,
-    '--num-sentences', '1',  # how many generated sentences to use per item
+    '--num-sentences', '10',  # how many generated sentences to use per item
     '--gen-emb-dim', gen_emb_dim,
     '--dis-emb-dim', dis_emb_dim,
     '--num-rep', num_rep,
@@ -128,7 +132,6 @@ my_env = os.environ.copy()
 
 # call([executable, scriptname] + args, env=my_env, cwd=rootdir)
 
-# 注意：这里的 'executable' 和 'scriptname' 应替换为你的实际路径和脚本名
 call_args = [executable, '-u', scriptname] + args
 
 # 通过Popen更好地控制进程执行和输出处理
