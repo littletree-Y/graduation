@@ -102,7 +102,7 @@ args = [
     '--seed', seed[job_id],
     '--temperature', temperature[job_id],
     '--adapt', adapt,
-    '--pre-keywords_weight', pre_keywords_weight,
+    '--pre-keywords-weight', pre_keywords_weight,
     '--adv-keywords-weight', adv_keywords_weight,
 
     # evaluation
