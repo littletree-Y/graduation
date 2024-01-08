@@ -6,6 +6,7 @@ from utils.metrics.Nll import Nll
 from utils.metrics.DocEmbSim import DocEmbSim
 from utils.metrics.Bleu import Bleu
 from utils.metrics.SelfBleu import SelfBleu
+from utils.metrics.SingleBleu import SingleBleu
 from utils.utils import *
 from real.real_gan.real_loader_keywords import *
 from utils.ops import gradient_penalty
@@ -28,6 +29,8 @@ def real_train_keywords(generator, discriminator, oracle_loader, config):
     temper = config['temperature']
     adapt = config['adapt']
     keywords_len = config['keywords_len']
+    pre_keywords_weight = config['pre_keywords_weight']
+    adv_keywords_weight = config['adv_keywords_weight']
 
     # filename
     oracle_file = os.path.join(sample_dir, 'oracle_{}.txt'.format(dataset))
@@ -138,7 +141,7 @@ def real_train_keywords(generator, discriminator, oracle_loader, config):
         print('Start pre-training...')
         for epoch in range(npre_epochs):
             # pre-training  
-            g_pretrain_loss_np, raw_pretrain_loss, keyword_loss = pre_train_epoch(sess, g_pretrain_op, g_pretrain_loss, pretrain_keyword_loss,x_real, x_keywords, x_keywords_len_list,oracle_loader, is_keywords=True)
+            g_pretrain_loss_np, raw_pretrain_loss, keyword_loss = pre_train_epoch(sess, g_pretrain_op, g_pretrain_loss, pretrain_keyword_loss,x_real, x_keywords, x_keywords_len_list,oracle_loader, is_keywords=True, pre_keywords_weight=pre_keywords_weight)
 
             # Test
             ntest_pre = 10
@@ -362,6 +365,7 @@ def get_train_ops(config, g_pretrain_loss, g_loss, d_loss, global_step):
 # A function to get various evaluation metrics
 def get_metrics(config, oracle_loader, test_file, gen_file, g_pretrain_loss, x_real,
 x_keywords, x_keywords_len_list,x_fake_keywords,x_fake_keywords_len_list,sess):
+    num_sentences = config['num_sentences']
     # set up evaluation metric
     metrics = []
     if config['nll_gen']:
@@ -381,6 +385,10 @@ x_keywords, x_keywords_len_list,x_fake_keywords,x_fake_keywords_len_list,sess):
         for i in range(2, 6):
             selfbleu = SelfBleu(test_text=gen_file, gram=i, name='selfbleu' + str(i))
             metrics.append(selfbleu)
+    if config['singlebleu']:
+        for i in range(2, 6):
+            singlebleu = SingleBleu(test_text=gen_file, real_text=test_file, gram=i, name='singlebleu' + str(i), num_sentences=num_sentences)
+            metrics.append(singlebleu)
 
     return metrics
 
@@ -411,7 +419,11 @@ def get_metric_summary_op(config):
             temp_pl = tf.placeholder(tf.float32, name='selfbleu{}'.format(i))
             metrics_pl.append(temp_pl)
             metrics_sum.append(tf.summary.scalar('metrics/selfbleu{}'.format(i), temp_pl))
-
+    if config['singlebleu']:
+        for i in range(2, 6):
+            temp_pl = tf.placeholder(tf.float32, name='singlebleu{}'.format(i))
+            metrics_pl.append(temp_pl)
+            metrics_sum.append(tf.summary.scalar('metrics/singlebleu{}'.format(i), temp_pl))
     metric_summary_op = tf.summary.merge(metrics_sum)
     return metrics_pl, metric_summary_op
 

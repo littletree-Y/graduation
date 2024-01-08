@@ -2,6 +2,7 @@ import os
 from subprocess import call
 import subprocess
 import sys, time
+from datetime import datetime
 
 # Job id and gpu_id
 if len(sys.argv) > 2:
@@ -63,12 +64,18 @@ rootdir = '../..'
 scriptname = 'run.py'
 cwd = os.path.dirname(os.path.abspath(__file__))
 
+# 获取当前时间
+current_time = datetime.now()
+
+# 格式化时间到分钟，格式为 YYYY-MM-DD HH:MM
+formatted_time = current_time.strftime('%Y-%m-%d %H:%M')
+
 outdir = os.path.join(cwd, 'out', time.strftime("%Y%m%d"), dataset,
-                      '{}_{}_{}_{}_bs{}_sl{}_sn{}_dec{}_ad-{}_npre{}_nadv{}_ms{}_hs{}_nh{}_ds{}_dlr{}_glr{}_tem{}_demb{}_nrep{}_hdim{}_sd{}'.
+                      '{}_{}_{}_{}_bs{}_sl{}_sn{}_dec{}_ad-{}_npre{}_nadv{}_ms{}_hs{}_nh{}_ds{}_dlr{}_glr{}_tem{}_demb{}_nrep{}_hdim{}_sd{}_preweight{}_advweight{}_{}'.
                       format(dataset, architecture[job_id], gantype[job_id], opt_type[job_id], bs, seq_len, int(sn),
                              int(decay), adapt, npre_epochs, nadv_steps, mem_slots[job_id], head_size[job_id],
                              num_heads[job_id], dsteps, d_lr[job_id], gadv_lr[job_id], temperature[job_id], dis_emb_dim,
-                             num_rep, hidden_dim, seed[job_id]))
+                             num_rep, hidden_dim, seed[job_id], pre_keywords_weight, adv_keywords_weight, formatted_time))
 
 args = [
     # Architecture
@@ -95,14 +102,15 @@ args = [
     '--seed', seed[job_id],
     '--temperature', temperature[job_id],
     '--adapt', adapt,
-    '--pre_keywords_weight', pre_keywords_weight,
-    '--adv_keywords_weight', adv_keywords_weight,
+    '--pre-keywords_weight', pre_keywords_weight,
+    '--adv-keywords-weight', adv_keywords_weight,
 
     # evaluation
     '--nll-gen',
     '--bleu',
     # '--selfbleu',
     # '--doc-embsim',
+    '--singlebleu',
 
     # relational memory
     '--mem-slots', mem_slots[job_id],
